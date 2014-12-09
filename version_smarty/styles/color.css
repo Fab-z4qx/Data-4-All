@@ -1,0 +1,21 @@
+
+
+h2{
+	/*color: #00B4FF; bleu claire*/
+	color: #b30027;
+}
+
+body
+{	
+	/*background-color: rgb(247,247,247);	*/
+	background-color: white;
+	color: rgb(247,247,247);
+}
+
+
+/* Section recherche */
+
+#research{
+	/*background-color: #EAF0F2;*/
+	color: black;
+}

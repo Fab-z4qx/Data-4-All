@@ -1,0 +1,22 @@
+/* Section Contact 
+--------------------------------------*/
+
+
+.sectionContact{
+	background-color: #4aa3fe;
+	padding: 5% 0 10% 0;
+}
+.titreSectionContact{
+	color: white;
+	font-size: 300%;
+}
+
+#googleMap{
+	display: inline-block;
+ 	width: 100%;
+ 	height: 450px;
+}
+
+.section_contact{
+	display: inline-block;
+}

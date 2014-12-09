@@ -1,0 +1,19 @@
+/* Section Entreprise Partenaire 
+--------------------------------------*/
+
+h1{
+	font-family: 'Titillium',Arial,sans-serif;
+	color: #423d3d;
+	font-size: 300%;
+	padding-bottom: 5%;
+}
+
+#entreprisePartenaire{
+	padding: 5% 0 5% 0;
+	background-color: #f2f2f5;
+}
+
+.logoEntreprise{
+	width: 7%;
+	height: 7%;
+}

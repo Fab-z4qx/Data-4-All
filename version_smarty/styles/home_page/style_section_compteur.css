@@ -1,0 +1,27 @@
+/*        Section Compteur 
+------------------------------*/
+
+#compteur{
+	border-top: 1px solid #e3e3e3;
+	color: black;
+}
+
+#titre_compteur{
+	width: 30%;
+	margin: 5% 0 5%;
+	font-size: 300%;
+}
+
+.count{
+	display: inline-block;
+	font-size: 200%;
+	margin: 0 3% 5% 0;
+}
+
+.titre_nombre_entreprise{
+	margin-bottom: 2%;
+}
+
+.nombre_count{
+
+}

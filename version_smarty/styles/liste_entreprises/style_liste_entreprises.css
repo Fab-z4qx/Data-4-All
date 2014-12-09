@@ -1,0 +1,37 @@
+
+/*       page liste entreprises 
+-----------------------------------*/
+
+
+#titreListeEntreprise{
+	font-size: 250%;
+	background-color: #b30027;
+	padding: 10% 0 5% 2%;
+}
+
+.contentListeEntreprise{
+	background-color: rgb(238, 238, 238);
+	color: black;
+	border-bottom: black solid 1px;
+	padding: 5% 0 5% 2%;
+}
+
+.titreContent{
+	display: inline-block;
+	font-size: 150%;
+}
+
+.boutonListeEntreprise{
+	display: inline-block;
+	border: 2px solid rgb(115,115,115);
+	background-color: rgb(115,115,115);
+	margin-left: 75%;
+	text-decoration: none;
+	color: black;
+	padding: 1%;
+}
+
+.boutonListeEntreprise:hover{
+	background-color: #00b0ff;
+	border: 2px solid #00b0ff;
+}

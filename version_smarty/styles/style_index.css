@@ -1,0 +1,24 @@
+/*        Section générale 
+------------------------------*/
+
+@font-face
+{
+	font-family: 'FuturaKoyu';
+	src: url('polices/Futura_Koyu.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face
+{
+	font-family: 'Titillium';
+	src: url('polices/titillium/TitilliumText22L001.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {	
+	font-family: 'Titillium',Arial,sans-serif;
+	text-decoration: none;
+	margin: 0px;
+}

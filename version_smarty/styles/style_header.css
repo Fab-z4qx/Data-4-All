@@ -1,0 +1,63 @@
+
+header {
+	/*background-color: rgb(115,115,115);*/
+	background-color: rgb(117,7,43);	/*rouge*/
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	padding: 0% 0 0% 0;
+	opacity: 0.8;
+}
+
+.logo {
+	font-family: 'FuturaKoyu',Arial,sans-serif;
+	display: inline-block;
+	margin-left: 10%;
+	width: 15%;
+}
+
+nav {
+	display: inline-block; 
+	width: 70%; 
+	text-align: right;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav li {
+	display: inline-block;
+	font-size: 150%;
+	margin-left: 4%;
+}
+
+span{
+	color: #aaa;
+}
+
+.span_header {
+	text-decoration: none;
+	/*color: #00B4FF; bleu fonce*/
+	color: white;
+}
+
+#logoImage{
+	width: 60%;
+	height: 60%;
+}
+
+.span_header_logo {
+	font-size: 150%;
+	text-decoration: none;
+	/*color: #00B4FF; bleu fonce*/
+	color: white;
+}
+
+#titrePrincipal{
+
+	/*background-color: rgb(115,115,115);
+	background-color: #00B4FF; */
+	background-color: #b30027;	/*rouge*/
+	/*color: #0B486B; bleu fonce*/
+}

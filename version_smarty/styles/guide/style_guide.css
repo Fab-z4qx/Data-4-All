@@ -1,0 +1,32 @@
+
+/*      guide
+-----------------------------------*/
+
+
+#titreGuide{
+	font-size: 250%;
+	padding: 10% 0 5% 2%;
+}
+
+.contentGuide{
+	background-color: rgb(238, 238, 238);
+	color: black;
+	border-bottom: black solid 1px;
+	padding: 5% 0 5% 2%;
+}
+
+.demarcheCitoyenne{
+	background-color: rgb(41,71,97);
+}
+
+.gagnerCompetivite{
+	background-color: #6C4B82;
+}
+
+.ouvrirDonnees{
+	background-color: rgb(234,121,71);
+}
+
+.transparence{
+	background-color: #2A9E87;
+}

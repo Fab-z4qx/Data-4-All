@@ -1,0 +1,25 @@
+
+/*       titre principale 
+------------------------------*/
+
+#titrePrincipal{
+	font-family: 'FuturaKoyu',Arial,sans-serif;
+	padding: 10% 0 2% 10%;
+	font-size: 700%;
+}
+
+span{
+	font-size: 80%;
+}
+
+#fleche{
+	display: none;
+	padding-top: 17%;
+}
+
+#fleche-bas{
+	display: none;
+	height: 5%;
+	width: 5%;
+}
+

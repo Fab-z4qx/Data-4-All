@@ -1,0 +1,43 @@
+
+/*       page entreprises 
+-----------------------------------*/
+
+#titreEntreprise{
+	font-size: 250%;
+	background-color: #b30027;
+	padding: 10% 0 5% 10%;
+}
+
+
+.contentEntreprise{
+	padding: 5% 0 7% 0;
+	color: black;
+	border-bottom: black solid 1px;
+}
+
+.titreContentEntreprise{
+	margin-left: 15%;
+	font-size: 200%;
+}
+.commentaireEntreprise{
+	display: inline-block;
+	margin-left: 15%;
+	margin-top: 3%;
+	width: 30%;
+}
+
+
+.boutonRetour{
+	position: fixed;
+	top: 50%;
+	left: 0%;
+	text-decoration: none;
+	color: white;
+	background-color: rgb(115,115,115);
+	padding: 1%;
+}
+
+.boutonRetour:hover{
+	background-color: #00b0ff;
+	border: 2px solid #00b0ff;
+}
