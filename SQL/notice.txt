@@ -1,0 +1,2 @@
+Donc alors pour le SQL Il faudrait faire un MCD/MLD et en sortir un script SQL utilisable en PHP.
+
