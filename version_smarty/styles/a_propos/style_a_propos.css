@@ -2,7 +2,63 @@
 /*       a propos 
 -----------------------------------*/
 
-#titreAPropos{
-	font-size: 250%;
-	padding: 10% 0 5% 2%;
+#page_a_propos{
+	color: black;
+	margin-left: 0%;
+}
+
+.sous_titre{
+	font-size: 150%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin-left: 5%;
+}
+
+#equipe{
+
+}
+
+.membre{
+	display: inline-block;
+	width: 10%;
+	margin: 1%;
+}
+
+.photo{
+	display: inline-block;
+}
+
+.taille_photo{
+	width: 100%;
+	height: auto;
+}
+
+.nom_prenom{
+	display: inline-block;
+	position: relative;
+}
+
+.contact{
+	display: inline-block;
+}
+
+.reseau_social{
+	display: inline-block;
+	width: 25%;
+	margin: 3%;
+}
+
+.taille_icon_mail{
+	width: 100%;
+	height: auto;
+}
+
+.taille_icon_facebook{
+	width: 100%;
+	height: auto;
+}
+
+.taille_icon_twitter{
+	width: 100%;
+	height: auto;
 }
