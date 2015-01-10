@@ -18,7 +18,7 @@ id_bdd VARCHAR(50),
 date_immat_rcs DATETIME,
 forme_juridique VARCHAR(255),
 num_tva VARCHAR(50),
-activitee TEXT,
+activite TEXT,
 id_adresse INT NOT NULL,
 PRIMARY KEY (id_entreprise) ) ENGINE=InnoDB;
 
