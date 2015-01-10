@@ -56,7 +56,7 @@
 <p><label for="number_siret_siege">Numéro de Siret (Siège) :</label><input type="text" name="number_siret_siege" id="number_siret_siege" size="30" maxlength="10" /> </p>
 <p><label for="former_law">Forme juridique RCS :</label><input type="text" name="former_law" id="former_law" size="30" maxlength="10" /> </p>
 <p><label for="date_immatriculation">Date immatriculation RCS :</label><input type="text" name="date_immatriculation" id="date_immatriculation" size="30" maxlength="10" /> </p>
-<p><label for="description_activity">Description de l'activité de l'entreprise :<textarea name="description_activity" id="description_activity"></textarea> </p>
+<p><label for="description_activity">Description de l'activité de l'entreprise :</label><textarea name="description_activity" id="description_activity"></textarea> </p>
 <p><label for="password">Mot de passe :</label><input type="password" name="pass" id="pass" size="30" maxlength="10" /> </p>
 <p><label for="password_confirmation">Confirmation du mot de passe :</label><input type="password" name="pass" id="pass" size="30" maxlength="10" /> </p>
 <input type="submit" value="Submit">

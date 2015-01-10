@@ -93,12 +93,12 @@ footer {
 	background-color: #f2f2f5;
 }
 
-#sectionGuide1, #navHorizontalOuvrirDonnees{
+#sectionGuide1, .navHorizontalOuvrirDonnees{
 	background-color: #FF9800;
 	/*background-color: rgb(234,121,71);	/* orange */
 }
 
-#sectionGuide2, #navHorizontalDemarcheCitoyenne{
+#sectionGuide2, .navHorizontalDemarcheCitoyenne{
 	background-color: #3F51B5;
 	/*background-color: rgb(41,71,97);	/* bleu foncé */
 }
@@ -107,7 +107,7 @@ footer {
 	background-color: #2A9E87;	/* vert */
 }
 
-#sectionGuide4, #navHorizontalGagnerCompetivite{
+#sectionGuide4, .navHorizontalGagnerCompetivite{
 	background-color: #9C27B0;	/* purple */
 	/*background-color: #6C4B82;	/* violet */
 }

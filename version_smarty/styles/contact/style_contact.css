@@ -1,0 +1,24 @@
+
+/*       contact
+-----------------------------------*/
+#page_contact{
+	color: black;
+	margin-left: 0%;
+}
+
+.formulaire_contact{
+	margin-left: 5%;
+}
+
+.form-left{
+	display: inline-block;
+}
+
+.form-right{
+	display: inline-block;
+	margin-left: 20%;
+}
+
+#nom, #email, #sujet, #messages{
+	font-size: 200%;
+}
