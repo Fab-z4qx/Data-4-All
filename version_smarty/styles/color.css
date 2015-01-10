@@ -1,21 +1,160 @@
+/*
+Couleurs google material design
+red : #F44336;
+pink : #E91E63;
+purple : #9C27B0;
+deep purple : #673AB7;
+indigo : #3F51B5;
+blue : #2196F3;
+light blue : #03A9F4;
+cyan : #00BCD4;
+teal : #009688;
+green : #4CAF50;
+light green : #8BC34A;
+lime : #CDDC39;
+yellow : #FFEB3B;
+amber : #FFC107;
+orange : #FF9800;
+deep orange : #FF5722;
+brown : #795548;
+grey : #9E9E9E;
+blue grey : #607D8B;
+*/
 
 
-h2{
-	/*color: #00B4FF; bleu claire*/
-	color: #b30027;
+
+header {
+	opacity: 0.8;	/* opacité de la barre de recherche */
 }
 
-body
-{	
-	/*background-color: rgb(247,247,247);	*/
-	background-color: white;
-	color: rgb(247,247,247);
+
+
+/* -------- couleurs des polices  ---------- */
+
+span{
+	color: #aaa;	/* */
 }
 
+body{
+	color: rgb(247,247,247); /* couleur de la police générale */
+}
 
-/* Section recherche */
+.span_header_logo, .boutonRetour, .li-footer, .titreSectionGuide, .titreSectionContact, .boutonSectionGuide, #compteur, #navHorizontal, .span_footer, h2{
+	color: white;
+}
 
-#research{
-	/*background-color: #EAF0F2;*/
+.span_headerVertical, .span_header_logoVertical, .contentListeEntreprise, .boutonListeEntreprise, #research, .contentEntreprise, .contentGuide{
 	color: black;
+}
+
+
+
+/* -------- couleurs des background  ---------- */
+
+
+
+
+header {
+	/*background-color: white;*/
+	background-color: rgb(238, 238, 238);/* gris très clair*/
+	/*background-color: #009688; /* teal */
+	/*background-color: rgb(117,7,43);	/*rouge*/
+}
+
+footer {
+	background-color: #009688; /* teal */
+	/*background-color: rgb(30,29,31); 	/* noir clair */
+}
+
+#titrePrincipal, .contentListeEntreprise, #titreEntreprise, .navHorizontal, .navHorizontalNonIndex{
+	background-color: #009688; /* teal */
+	/*background-color: #b30027; /*rouge*/
+}
+
+.contentListeEntreprise, .contentGuide, body{
+	/*background-color: rgb(238, 238, 238); gris très clair pour le fond */
+	background-color: white;
+}
+
+.boutonListeEntreprise, .boutonRetour, .boutonSectionGuide{
+	background-color: #9E9E9E;
+	/*background-color: rgb(115,115,115);	/* gris foncé des boutons */
+}
+
+.boutonListeEntreprise:hover, .boutonRetour:hover, .boutonSectionGuide:hover, .boutons_connexion{
+	background-color: #CDDC39;		/*lime*/
+	/*background-color: #00b0ff;	/* bleu des boutons une fois pointé */
+}
+
+#compteur{
+	background-color: #E91E63; /* pink */
+}
+
+#entreprisePartenaire{
+	background-color: #f2f2f5;
+}
+
+#sectionGuide1, #navHorizontalOuvrirDonnees{
+	background-color: #FF9800;
+	/*background-color: rgb(234,121,71);	/* orange */
+}
+
+#sectionGuide2, #navHorizontalDemarcheCitoyenne{
+	background-color: #3F51B5;
+	/*background-color: rgb(41,71,97);	/* bleu foncé */
+}
+
+#sectionGuide3, .navHorizontalTransparence{
+	background-color: #2A9E87;	/* vert */
+}
+
+#sectionGuide4, #navHorizontalGagnerCompetivite{
+	background-color: #9C27B0;	/* purple */
+	/*background-color: #6C4B82;	/* violet */
+}
+
+.sectionContact, .navHorizontalContact{
+	background-color: #03A9F4;
+	/*background-color: #4aa3fe;	/* bleu clair */
+}
+
+.transparence, .demarcheCitoyenne, .ouvrirDonnees, .gagnerCompetivite, #titreListeEntreprise, #titreLogin, #titreSearch, #titreAPropos, #titreContact{
+	display: none;
+}
+
+
+.span_headerVertical:hover{
+	color: #CDDC39;
+}
+
+
+.boutonListeEntreprise, .boutonSectionGuide{
+	border-top: 1px solid #9E9E9E;
+	/*border: 2px solid rgb(115,115,115);	/* gris foncé des boutons */
+}
+
+.boutonListeEntreprise:hover, .boutonRetour:hover, .boutonSectionGuide:hover{
+	border: 2px solid #CDDC39;
+	/*border: 2px solid #00b0ff;	/* bleu des boutons une fois pointé */
+}
+
+#compteur, .contentListeEntreprise, .contentEntreprise, .contentGuide{
+	border-top: 1px solid #e3e3e3; /* gris clair des lignes entre section */
+}
+
+/*.search-query_span2{
+	border-bottom: 2px solid #AA233E; /* couleur de la barre inferieur de la saisie de recherche 
+}*/
+
+.logoVertical{
+	border-bottom: 2px solid #e3e3e3;
+}
+
+header{
+	border-right: 2px solid #e3e3e3;
+}
+
+nav li:hover{
+	border-right: 5px solid #CDDC39;
+	box-sizing: border-box;
 }

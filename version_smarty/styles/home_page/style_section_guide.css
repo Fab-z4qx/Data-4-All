@@ -1,42 +1,13 @@
 /*        Section Guide 
 ------------------------------*/
 
-/*
-.rubrique {
-	display: inline-block;
-	width: 30%;
-	margin: 5% 0 5% 0;
-}
-
-.rubriqueImage{
-	width: 70%;
-	height: 70%;
-}
-
-*/
-
 .sectionGuide{
 	padding: 5% 0 7% 0;
 }
 
 .titreSectionGuide{
-	color: white;
 	margin-left: 15%;
 	font-size: 300%;
-}
-
-#sectionGuide1{
-	background-color: rgb(234,121,71);	
-}
-
-#sectionGuide2{
-	background-color: rgb(41,71,97);
-}
-#sectionGuide3{
-	background-color: #2A9E87;
-}
-#sectionGuide4{
-	background-color: #6C4B82;
 }
 
 .commentaireSectionGuide{
@@ -49,15 +20,7 @@
 .boutonSectionGuide{
 	display: inline-block;
 	padding: 1%;
-	border: 2px solid rgb(115,115,115);
-	background-color: rgb(115,115,115);
 	margin-left: 35%;
 	text-decoration: none;
-	color: white;
-}
-
-.boutonSectionGuide:hover{
-	background-color: #00b0ff;
-	border: 2px solid #00b0ff;
 }
 

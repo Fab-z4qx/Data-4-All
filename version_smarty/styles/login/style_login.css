@@ -2,8 +2,75 @@
 /*       login 
 -----------------------------------*/
 
-#titreLogin{
-	font-size: 250%;
-	padding: 10% 0 5% 2%;
-	background-color: #b30027;
+.page_rubrique{
+	color: black;
+	display: block;
+	width: 100%;
+}
+
+#titres_rubriques_connexion, #choix_connexion{
+	display: inline-block;
+	width: 100%;
+	padding: 2% 0 2% 0;
+}
+
+#choix_connexion{
+	font-size: 120%;
+}
+
+#titres_rubriques_connexion{
+	font-size: 150%;
+}
+
+.block_0_50{
+	position: relative;
+	display: inline-block;
+	width: 50%;
+}
+
+.block_50_100{
+	position: relative;
+	display: inline-block;
+	width: 49%;
+}
+
+.boutons_connexion{
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	padding: 1% 20px 1% 20px;
+	border-radius: 50px;
+}
+
+#titre_deja_membre{
+	display: inline-block;
+}
+
+#titre_pas_membre{
+	display: inline-block;
+}
+
+#connexion_form_deja_membre{
+	display: inline-block;
+	border: 2px blue solid;
+}
+
+#connexion_form_pas_membre{
+	display: inline-block;
+	border: 2px yellow solid;
+}
+
+form{
+	
+}
+
+.formulaire_creation_compte_entreprise{
+	display: inline-block;
+	color: black;
+	margin-top: 5%;
+	margin-left: 10%;
+}
+
+#w{
+	color:white;
 }

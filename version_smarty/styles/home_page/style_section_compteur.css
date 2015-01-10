@@ -1,14 +1,9 @@
 /*        Section Compteur 
 ------------------------------*/
 
-#compteur{
-	border-top: 1px solid #e3e3e3;
-	color: black;
-}
-
 #titre_compteur{
 	width: 30%;
-	margin: 5% 0 5%;
+	margin: 5% 0 5% 15%;
 	font-size: 300%;
 }
 

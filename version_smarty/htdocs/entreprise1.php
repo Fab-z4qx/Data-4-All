@@ -16,4 +16,6 @@
 	$smarty->assign('footer', 'index');
 
 	$smarty->display('entreprise1.tpl');
+
+
 ?>

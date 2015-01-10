@@ -3,18 +3,21 @@
 
 
 .sectionContact{
-	background-color: #4aa3fe;
 	padding: 5% 0 10% 0;
 }
+
 .titreSectionContact{
-	color: white;
 	font-size: 300%;
 }
 
-#googleMap{
-	display: inline-block;
+
+div #Gmap{
  	width: 100%;
- 	height: 450px;
+}
+
+iframe #googleMap{
+ 	width: 100%;
+ 	height: 200%;
 }
 
 .section_contact{
