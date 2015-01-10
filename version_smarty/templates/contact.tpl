@@ -1,98 +1,28 @@
 {include file='header.tpl'}
 
-<section>
+<section id="page_contact">
 
-<div id="titre_membres">
-	Membres de l'équipe
+<div class="sous_titre">
+	Formulaire de Contact
 </div>
-<div id="equipe">
-	<div class="membre">
-		<div class="photo"><img src=""></div>
-		<div class="nom_prenom">Membre 1</div>
-		<div class="contact">
-			<div class="mail"><a href="mailto:tim.robert@free.fr"> </a></div>
-			<div class="facebook"><a href="https://www.facebook.com/profile.php?id=1282600507"> </a></div>
-			<div class="twitter"></div>
-		</div>
-	</div>
 
-	<div class="membre">
-		<div class="photo"><img src=""></div>
-		<div class="nom_prenom">Membre 2</div>
-		<div class="contact">
-			<div class="mail"><a href="mailto:tim.robert@free.fr"> </a></div>
-			<div class="facebook"><a href="https://www.facebook.com/profile.php?id=1282600507"> </a></div>
-			<div class="twitter"></div>
-		</div>
-	</div>
+<div class="formulaire_contact">
 
-	<div class="membre">
-		<div class="photo"><img src=""></div>
-		<div class="nom_prenom">Membre 3</div>
-		<div class="contact">
-			<div class="mail"><a href="mailto:tim.robert@free.fr"> </a></div>
-			<div class="facebook"><a href="https://www.facebook.com/profile.php?id=1282600507"> </a></div>
-			<div class="twitter"></div>
-		</div>
-	</div>
+<form method="post" action="traitement_contact.php">
 
-	<div class="membre">
-		<div class="photo"><img src=""></div>
-		<div class="nom_prenom">Membre 4</div>
-		<div class="contact">
-			<div class="mail"><a href="mailto:tim.robert@free.fr"> </a></div>
-			<div class="facebook"><a href="https://www.facebook.com/profile.php?id=1282600507"> </a></div>
-			<div class="twitter"></div>
-		</div>
-	</div>
-
-	<div class="membre">
-		<div class="photo"><img src=""></div>
-		<div class="nom_prenom">Membre 5</div>
-		<div class="contact">
-			<div class="mail"><a href="mailto:tim.robert@free.fr"> </a></div>
-			<div class="facebook"><a href="https://www.facebook.com/profile.php?id=1282600507"> </a></div>
-			<div class="twitter"></div>
-		</div>
-	</div>
-
-	<div class="membre">
-		<div class="photo"><img src=""></div>
-		<div class="nom_prenom">Membre 6</div>
-		<div class="contact">
-			<div class="mail"><a href="mailto:tim.robert@free.fr"> </a></div>
-			<div class="facebook"><a href="https://www.facebook.com/profile.php?id=1282600507"> </a></div>
-			<div class="twitter"></div>
-		</div>
-	</div>
-
-	<div class="membre">
-		<div class="photo"><img src=""></div>
-		<div class="nom_prenom">Membre 7</div>
-		<div class="contact">
-			<div class="mail"><a href="mailto:tim.robert@free.fr"> </a></div>
-			<div class="facebook"><a href="https://www.facebook.com/profile.php?id=1282600507"> </a></div>
-			<div class="twitter"></div>
-		</div>
-	</div>
-
-	<div class="membre">
-		<div class="photo"><img src=""></div>
-		<div class="nom_prenom">Membre 8</div>
-		<div class="contact">
-			<div class="mail"><a href="mailto:tim.robert@free.fr"> </a></div>
-			<div class="facebook"><a href="https://www.facebook.com/profile.php?id=1282600507"> </a></div>
-			<div class="twitter"></div>
-		</div>
-	</div>
+<div class="form-left">
+<h3 class="label"><label for="nom">Nom</label> </h3><input type="text" name="nom" id="nom"/>
+<h3 class="label"><label for="email">Email</label> </h3><input type="email" id="email"/>
+<h3 class="label"><label for="sujet">Sujet</label> </h3><input type="text" name="sujet" id="sujet" />
+</div>
 
 
+<div class="form-right">
+<h3 class="label"><label for="messages">Messages</label></h3><textarea name="messages" id="messages"></textarea>
+</div>
 
-
-
-
-
-
+<input type="submit" value="Submit">
+</form>
 </div>
 
 </section>

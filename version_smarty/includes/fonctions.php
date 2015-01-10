@@ -28,6 +28,7 @@
 							ROOT_TO_DIR.STYLE."contact/style_contact.css",
 							ROOT_TO_DIR.STYLE."login/style_login.css",
 							ROOT_TO_DIR.STYLE."guide/style_guide.css",
+							ROOT_TO_DIR.STYLE."offres/style_offres.css",
 							ROOT_TO_DIR.STYLE."search/style_search.css",
 							ROOT_TO_DIR.STYLE."a_propos/style_a_propos.css",
 							ROOT_TO_DIR.STYLE."color.css",

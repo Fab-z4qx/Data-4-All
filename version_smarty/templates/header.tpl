@@ -139,6 +139,14 @@
 		</div>
 		{/if}
 
+		{if ({$header} == 'offres')} 
+		<div class="navHorizontalOffres">
+			<div id="titrePage">
+				Offres 
+			</div>
+		</div>
+		{/if}
+
 		
 
 

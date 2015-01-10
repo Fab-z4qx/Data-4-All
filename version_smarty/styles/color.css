@@ -1,25 +1,24 @@
 /*
-Couleurs google material design
-red : #F44336;
-pink : #E91E63;
-purple : #9C27B0;
-deep purple : #673AB7;
-indigo : #3F51B5;
-blue : #2196F3;
-light blue : #03A9F4;
-cyan : #00BCD4;
-teal : #009688;
-green : #4CAF50;
-light green : #8BC34A;
-lime : #CDDC39;
-yellow : #FFEB3B;
-amber : #FFC107;
-orange : #FF9800;
-deep orange : #FF5722;
-brown : #795548;
-grey : #9E9E9E;
-blue grey : #607D8B;
-*/
+Couleurs google material design*/
+$red : '#F44336';
+$pink : '#E91E63';
+$purple : '#9C27B0';
+$deep purple : '#673AB7';
+$indigo : '#3F51B5';
+$blue : '#2196F3';
+$light blue : '#03A9F4';
+$cyan : '#00BCD4';
+$teal : '#009688';
+$green : '#4CAF50';
+$light green : '#8BC34A';
+$lime : '#CDDC39';
+$yellow : '#FFEB3B';
+$amber : '#FFC107';
+$orange : '#FF9800';
+$deep orange : '#FF5722';
+$brown : '#795548';
+$grey : '#9E9E9E';
+$blue_grey : '#607D8B';
 
 
 
@@ -66,7 +65,7 @@ footer {
 	/*background-color: rgb(30,29,31); 	/* noir clair */
 }
 
-#titrePrincipal, .contentListeEntreprise, #titreEntreprise, .navHorizontal, .navHorizontalNonIndex{
+#titrePrincipal, .contentListeEntreprise, #titreEntreprise, .navHorizontal, .navHorizontalNonIndex, .navHorizontalOffres{
 	background-color: #009688; /* teal */
 	/*background-color: #b30027; /*rouge*/
 }
@@ -94,12 +93,12 @@ footer {
 	background-color: #f2f2f5;
 }
 
-#sectionGuide1, #navHorizontalOuvrirDonnees{
+#sectionGuide1, .navHorizontalOuvrirDonnees{
 	background-color: #FF9800;
 	/*background-color: rgb(234,121,71);	/* orange */
 }
 
-#sectionGuide2, #navHorizontalDemarcheCitoyenne{
+#sectionGuide2, .navHorizontalDemarcheCitoyenne{
 	background-color: #3F51B5;
 	/*background-color: rgb(41,71,97);	/* bleu foncé */
 }
@@ -108,13 +107,13 @@ footer {
 	background-color: #2A9E87;	/* vert */
 }
 
-#sectionGuide4, #navHorizontalGagnerCompetivite{
+#sectionGuide4, .navHorizontalGagnerCompetivite{
 	background-color: #9C27B0;	/* purple */
 	/*background-color: #6C4B82;	/* violet */
 }
 
 .sectionContact, .navHorizontalContact{
-	background-color: #03A9F4;
+	background-color: #00BCD4;
 	/*background-color: #4aa3fe;	/* bleu clair */
 }
 

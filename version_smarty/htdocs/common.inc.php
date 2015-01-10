@@ -1,9 +1,13 @@
 <?php
+<<<<<<< HEAD
 	//define('ROOT_DIR','/Users/Timohee/Desktop/site/version_smarty_8_12_14/');
 	//define('REAL_PATH',realpath('../')); //chemin de l'index sur le serveur
 	//define('ROOT_DIR',$_SERVER['DOCUMENT_ROOT'].'D4A/version_smarty/');
 	//print_r(realpath('./'));
 	//print_r($_SERVER['DOCUMENT_ROOT']);
+=======
+	define('ROOT_DIR',$_SERVER['DOCUMENT_ROOT'].'/');
+>>>>>>> efc3dfc71a397a5a85aeee7b1ddf7264064b0e8c
 	
 	//str_remplace(REAL_PATH, "/", '\\');
 	$str = str_replace('\\','/',realpath('../'));

@@ -11,13 +11,13 @@
 }
 
 
-div #Gmap{
- 	width: 100%;
+#Gmap{
+	display: inline-block;
+	width: 99.5%;
 }
 
-iframe #googleMap{
+#googleMap{
  	width: 100%;
- 	height: 200%;
 }
 
 .section_contact{
