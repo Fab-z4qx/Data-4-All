@@ -1,9 +1,5 @@
 {include file='header.tpl'}
 
-<section id="titreListeEntreprise">
-	Liste Entreprises
-</section>
-
 <section class="contentListeEntreprise">
 	<div class="titreContent">Nom Entreprise 1</div>
 	<a class="boutonListeEntreprise" href="entreprise1.php"> voir plus </a>

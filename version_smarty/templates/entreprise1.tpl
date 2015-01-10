@@ -28,4 +28,4 @@
 </section>
 
 
-{include file='footer.tpl'}
+{include file='./footer.tpl'}

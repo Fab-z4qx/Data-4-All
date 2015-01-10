@@ -1,4 +1,6 @@
+{if ({$header} == 'index')}
 <footer>
+
 		<div>
 			<div class="menu-footer">
 				<h2>Recherche</h2>
@@ -37,12 +39,12 @@
 
 
 		<div class="row_footer">
-			<a class="span_footer" href="contact_about.html">
-				Made with ♥ by Data 4 All
-			</a>
+			
 		</div>
 	</footer>
+	{/if}
 
+</div><!-- div de page -->
 
 </body>
 
