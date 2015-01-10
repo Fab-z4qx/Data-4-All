@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-10 17:25:08
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-10 17:27:20
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/contact.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:75999129654b145448f5849-75146890%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '4ac38b48d8f27ce19cb6001de5a35984cf4d2285' => 
     array (
       0 => '/Users/Timohee/Desktop/Data4All/version_smarty/templates/contact.tpl',
-      1 => 1420907106,
+      1 => 1420907239,
       2 => 'file',
     ),
   ),
@@ -24,7 +24,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <section id="page_contact">
 
-<div id="titre_membres">
+<div class="sous_titre">
 	Membres de l'équipe
 </div>
 
@@ -111,15 +111,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		</div>
 	</div>
 
-	
-
-
-
-
-
-
-
 </div></center>
+
+<div class="sous_titre">
+	Formulaire Contact
+</div>
+
 
 </section>
 

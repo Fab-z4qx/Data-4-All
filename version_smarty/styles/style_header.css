@@ -49,7 +49,7 @@ header {
 	width: 10.5em;
 	height: 100%;
 	z-index: 1;
-	padding: 3% 0 0% 0;
+	padding: 1% 0 0% 0;
 }
 
 aside{
@@ -60,7 +60,7 @@ aside{
 	font-family: 'FuturaKoyu',Arial,sans-serif;
 	display: inline-block;
 	margin-left: 0%;
-	padding-bottom: 25%;
+	padding-bottom: 10%;
 }
 
 #logo_site_header{
@@ -72,7 +72,7 @@ aside{
 nav {
 	display: inline-block; 
 	width: 100%; 
-	margin-top: 10%;
+	margin-top: 15%;
 }
 
 nav ul {
@@ -101,7 +101,7 @@ nav li {
 }
 
 #credit{
-	margin-top: 30%;
+	margin-top: 70%;
 	color: black;
 }
 
@@ -116,8 +116,8 @@ nav li {
 	font-size: 200%;
 }
 
-.navHorizontalTransparence, .navHorizontalNonIndex, .navHorizontalGagnerCompetivite ,.navHorizontalDemarcheCitoyenne, .navHorizontalContact, .navHorizontalOuvrirDonnees{
-	padding: 5.7% 0 5% 5%;
+.navHorizontalTransparence, .navHorizontalNonIndex, .navHorizontalGagnerCompetivite ,.navHorizontalDemarcheCitoyenne, .navHorizontalContact, .navHorizontalOuvrirDonnees, .navHorizontalOffres{
+	padding: 3.7% 0 3% 5%;
 	font-size: 200%;
 	width: 95%;
 }

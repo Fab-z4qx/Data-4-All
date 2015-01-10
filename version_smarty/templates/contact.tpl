@@ -2,7 +2,7 @@
 
 <section id="page_contact">
 
-<div id="titre_membres">
+<div class="sous_titre">
 	Membres de l'équipe
 </div>
 
@@ -89,15 +89,12 @@
 		</div>
 	</div>
 
-	
-
-
-
-
-
-
-
 </div></center>
+
+<div class="sous_titre">
+	Formulaire Contact
+</div>
+
 
 </section>
 
