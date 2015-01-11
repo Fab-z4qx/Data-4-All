@@ -8,17 +8,17 @@ PRIMARY KEY (id_user) ) ENGINE=InnoDB;
 
 DROP TABLE IF EXISTS entreprise ;
 CREATE TABLE entreprise (id_entreprise INT  AUTO_INCREMENT NOT NULL,
-nom VARCHAR(50),
-prenom VARCHAR(15),
-email VARCHAR(255),
-siret VARCHAR(255),
-numero VARCHAR(15),
-fax VARCHAR(15),
-id_bdd VARCHAR(50),
-date_immat_rcs DATETIME,
-forme_juridique VARCHAR(255),
-num_tva VARCHAR(50),
-activite TEXT,
+nom_entreprise VARCHAR(50),
+prenom_entreprise VARCHAR(15),
+email_entreprise VARCHAR(255),
+siret_entreprise VARCHAR(255),
+numero_entreprise VARCHAR(15),
+fax_entreprise VARCHAR(15),
+id_bdd_entreprise VARCHAR(50),
+date_immat_rcs_entreprise DATETIME,
+forme_juridique_entreprise VARCHAR(255),
+num_tva_entreprise VARCHAR(50),
+activite_entreprise TEXT,
 id_adresse INT NOT NULL,
 PRIMARY KEY (id_entreprise) ) ENGINE=InnoDB;
 
@@ -32,6 +32,14 @@ adresse VARCHAR(255),
 adresse_complementaire VARCHAR(255),
 ville VARCHAR(255),
 PRIMARY KEY (id_adresse) ) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS contact ;
+CREATE TABLE contact (id_contact INT  AUTO_INCREMENT NOT NULL,
+nom_contact VARCHAR(50),
+email_contact VARCHAR(255),
+sujet_contact VARCHAR(255),
+message_contact TEXT,
+PRIMARY KEY (id_contact) ) ENGINE=InnoDB;
 
 ALTER TABLE user ADD CONSTRAINT FK_user_id_entreprise FOREIGN KEY (id_entreprise) REFERENCES entreprise (id_entreprise);
 

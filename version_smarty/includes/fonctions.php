@@ -12,7 +12,7 @@
 	}
 	
 	function inser_css(){
-		$CSS_TAB = array(ROOT_TO_DIR.STYLE."style_index.css",
+		$CSS_TAB = array(   ROOT_TO_DIR.STYLE."style_index.css",
 							ROOT_TO_DIR.STYLE."style_header.css",
 							ROOT_TO_DIR.STYLE."style_footer.css",
 							ROOT_TO_DIR.STYLE."style_section_contact.css",
