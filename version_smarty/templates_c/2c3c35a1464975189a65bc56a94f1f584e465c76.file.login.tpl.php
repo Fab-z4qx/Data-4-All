@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-10 19:02:08
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-11 13:19:31
          compiled from "F:\wamp\www\D4A\version_smarty\templates\login.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1289154b17730204305-74596800%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2c3c35a1464975189a65bc56a94f1f584e465c76' => 
     array (
       0 => 'F:\\wamp\\www\\D4A\\version_smarty\\templates\\login.tpl',
-      1 => 1420902592,
+      1 => 1420923587,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
   'unifunc' => 'content_54b1773026c5e2_09849200',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_54b1773026c5e2_09849200')) {function content_54b1773026c5e2_09849200($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
@@ -78,7 +78,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <p><label for="number_siret_siege">Numéro de Siret (Siège) :</label><input type="text" name="number_siret_siege" id="number_siret_siege" size="30" maxlength="10" /> </p>
 <p><label for="former_law">Forme juridique RCS :</label><input type="text" name="former_law" id="former_law" size="30" maxlength="10" /> </p>
 <p><label for="date_immatriculation">Date immatriculation RCS :</label><input type="text" name="date_immatriculation" id="date_immatriculation" size="30" maxlength="10" /> </p>
-<p><label for="description_activity">Description de l'activité de l'entreprise :<textarea name="description_activity" id="description_activity"></textarea> </p>
+<p><label for="description_activity">Description de l'activité de l'entreprise :</label><textarea name="description_activity" id="description_activity"></textarea> </p>
 <p><label for="password">Mot de passe :</label><input type="password" name="pass" id="pass" size="30" maxlength="10" /> </p>
 <p><label for="password_confirmation">Confirmation du mot de passe :</label><input type="password" name="pass" id="pass" size="30" maxlength="10" /> </p>
 <input type="submit" value="Submit">

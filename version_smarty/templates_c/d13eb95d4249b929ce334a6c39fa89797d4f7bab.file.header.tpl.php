@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-10 17:40:36
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-10 21:40:24
          compiled from "F:\wamp\www\D4A\version_smarty\templates\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:803554b16414dd9085-87658556%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd13eb95d4249b929ce334a6c39fa89797d4f7bab' => 
     array (
       0 => 'F:\\wamp\\www\\D4A\\version_smarty\\templates\\header.tpl',
-      1 => 1420902592,
+      1 => 1420923587,
       2 => 'file',
     ),
   ),
@@ -15,13 +15,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_54b16414e95360_21278815',
   'variables' => 
   array (
     'header' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_54b16414e95360_21278815',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_54b16414e95360_21278815')) {function content_54b16414e95360_21278815($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('head.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
@@ -182,6 +182,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div class="navHorizontalContact">
 			<div id="titrePage">
 				Contact 
+			</div>
+		</div>
+		<?php }?>
+
+		<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp22=ob_get_clean();?><?php if (($_tmp22=='offres')){?> 
+		<div class="navHorizontalOffres">
+			<div id="titrePage">
+				Offres 
 			</div>
 		</div>
 		<?php }?>
