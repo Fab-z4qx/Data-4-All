@@ -2,7 +2,10 @@
 
 <?php
 
-	if(dirname($_SERVER['SCRIPT_NAME']) == '/htdocs') // Site directement à la racine du serveur web
+	if(    dirname($_SERVER['SCRIPT_NAME']) == '/htdocs' 
+		|| dirname($_SERVER['SCRIPT_NAME']) == 'htdocs/'
+		|| dirname($_SERVER['SCRIPT_NAME']) == '/htdocs/'	
+		|| dirname($_SERVER['SCRIPT_NAME']) == '/'	) // Site directement à la racine du serveur web
 	{
 		define('BASE_URL',dirname(dirname($_SERVER['SCRIPT_NAME']).'/'));
 	}
