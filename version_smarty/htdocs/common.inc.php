@@ -6,7 +6,6 @@
 		|| dirname($_SERVER['SCRIPT_NAME']) == 'htdocs/'
 		|| dirname($_SERVER['SCRIPT_NAME']) == '/htdocs/'	
 		|| dirname($_SERVER['SCRIPT_NAME']) == '/'	) // Site directement à la racine du serveur web
-	
 	{
 		define('BASE_URL',dirname(dirname($_SERVER['SCRIPT_NAME']).'/'));
 	}
