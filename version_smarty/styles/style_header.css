@@ -45,15 +45,18 @@ nav li {
 /* version vertical */
 
 header {
+	display: block;
 	position: fixed;
 	width: 10.5em;
-	height: 100%;
 	z-index: 1;
 	padding: 1% 0 0% 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
 }
 
 aside{
-	height: 100%;
+	
 }
 
 .logoVertical {
@@ -66,11 +69,10 @@ aside{
 #logo_site_header{
     width: 80%;
     height: auto;
-
 }
 
 nav {
-	display: inline-block; 
+	display: block; 
 	width: 100%; 
 	margin-top: 15%;
 }
@@ -104,7 +106,6 @@ nav li {
 	margin-top: 70%;
 	color: black;
 }
-
 
 #page {
 	margin-left: 10.5em;

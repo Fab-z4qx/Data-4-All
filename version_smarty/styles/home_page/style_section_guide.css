@@ -2,17 +2,17 @@
 ------------------------------*/
 
 .sectionGuide{
-	padding: 5% 0 7% 0;
+	padding: 2% 0 3% 0;
 }
 
 .titreSectionGuide{
-	margin-left: 15%;
-	font-size: 300%;
+	margin-left: 5%;
+	font-size: 250%;
 }
 
 .commentaireSectionGuide{
 	display: inline-block;
-	margin-left: 15%;
+	margin-left: 10%;
 	margin-top: 3%;
 	width: 30%;
 }

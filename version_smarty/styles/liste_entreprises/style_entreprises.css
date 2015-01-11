@@ -3,8 +3,8 @@
 -----------------------------------*/
 
 #titreEntreprise{
-	font-size: 250%;
-	padding: 10% 0 5% 10%;
+	padding: 3.7% 0 3% 5%;
+	font-size: 200%;
 }
 
 
@@ -13,7 +13,7 @@
 }
 
 .titreContentEntreprise{
-	margin-left: 15%;
+	margin-left: 10%;
 	font-size: 200%;
 }
 

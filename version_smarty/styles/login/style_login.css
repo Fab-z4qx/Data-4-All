@@ -37,6 +37,7 @@
 .boutons_connexion{
 	text-decoration: none;
 	color: white;
+	cursor:pointer;
 	display: inline-block;
 	padding: 1% 20px 1% 20px;
 	border-radius: 50px;
@@ -73,4 +74,25 @@ form{
 
 #w{
 	color:white;
+}
+
+
+
+
+.bouton:hover
+{
+    text-decoration:underline;
+}
+.texte
+{
+    border:1px solid #333333;
+    background:#eeeeee;
+    padding:10px;
+    color:#333333;
+}
+.texte:hover
+{
+    border:1px solid #000000;
+    background:#cccccc;
+    color:#000000;
 }
