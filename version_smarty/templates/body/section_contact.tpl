@@ -1,6 +1,6 @@
 <section id="contact">
 	<div class="sectionContact">
-		<center>
+		
 
 			<div class="titreSectionContact">Contact</div>
 
@@ -8,7 +8,7 @@
 				
 			</div>
 
-		</center>
+		
 		
 		<div class="formulaire_contact">
 

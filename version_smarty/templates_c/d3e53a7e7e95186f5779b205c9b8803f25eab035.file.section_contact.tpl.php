@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-10 20:38:23
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-10 23:02:07
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/body/section_contact.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:25124144054b14541c61547-22891455%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd3e53a7e7e95186f5779b205c9b8803f25eab035' => 
     array (
       0 => '/Users/Timohee/Desktop/Data4All/version_smarty/templates/body/section_contact.tpl',
-      1 => 1420918698,
+      1 => 1420927260,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_54b14541c62980_00762446')) {function content_54b14541c62980_00762446($_smarty_tpl) {?><section id="contact">
 	<div class="sectionContact">
-		<center>
+		
 
 			<div class="titreSectionContact">Contact</div>
 
@@ -29,7 +29,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				
 			</div>
 
-		</center>
+		
 		
 		<div class="formulaire_contact">
 
