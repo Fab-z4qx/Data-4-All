@@ -1,4 +1,3 @@
-
 <?php
 	define('ROOT_DIR',dirname(__FILE__).'/');
 	define('BASE_URL',dirname($_SERVER['SCRIPT_NAME']).'/');
@@ -8,6 +7,6 @@
 	define('DOC_DIR','htdocs/');
 	define('JS_DIR','js/');
 	define('INCLUDES','includes/');
-	define('STYLE',BASE_URL.'styles/');
+	define('STYLE','styles/');
 	define('IMAGE','images/');
 ?>
