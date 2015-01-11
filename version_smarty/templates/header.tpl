@@ -1,6 +1,7 @@
 {include file='head.tpl'}
 
 <body>
+	
     <header>
 
     	<!-- Nav horizontal

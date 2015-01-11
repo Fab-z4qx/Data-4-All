@@ -41,6 +41,11 @@
 	display: inline-block;
 	padding: 1% 20px 1% 20px;
 	border-radius: 50px;
+	font-size: 100%;
+}
+
+.boutons_connexion:hover{
+	background-color:#009688; 
 }
 
 #titre_deja_membre{
@@ -61,11 +66,7 @@
 	border: 2px yellow solid;
 }
 
-form{
-	
-}
-
-.formulaire_creation_compte_entreprise{
+.formulaire_creation_compte_entreprise, .formulaire_connexion_compte_entreprise{
 	display: inline-block;
 	color: black;
 	margin-top: 5%;
@@ -76,23 +77,14 @@ form{
 	color:white;
 }
 
-
-
-
-.bouton:hover
-{
-    text-decoration:underline;
-}
-.texte
-{
-    border:1px solid #333333;
-    background:#eeeeee;
-    padding:10px;
-    color:#333333;
-}
-.texte:hover
-{
-    border:1px solid #000000;
-    background:#cccccc;
-    color:#000000;
+.bouton_submit{
+	cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+	padding:5px 25px; /*add some padding to the inside of the button*/
+	background:#009688; /*the colour of the button*/
+	/*give the button curved corners, alter the size as required*/
+	border-radius: 15px;
+	/*style the text*/
+	color:white;
+	font-size:75%;
+	border: none;
 }

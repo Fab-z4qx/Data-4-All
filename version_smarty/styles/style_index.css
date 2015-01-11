@@ -38,4 +38,14 @@ body {
 	font-family: 'Roboto',Arial,sans-serif;
 	text-decoration: none;
 	margin: 0px;
+	width: 100%;
+}
+
+#countainer{
+	position: absolute;
+	top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  overflow:hidden;
 }
