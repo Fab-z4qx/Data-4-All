@@ -86,16 +86,20 @@
 			<div id="titrePage">
 				{if ({$header} == 'index')} Accueil{/if}
 			</div>
+			<div id="navHorizontal_connexion">
+				<a id="con" href="htdocs/login.php">Connexion</a>
+			</div>	
 		</div>
 		{/if}
 
-		{if ({$header} == 'search' || {$header} == 'liste_entreprises' || {$header} == 'a_propos' || {$header} == 'login')}
+		{if ({$header} == 'search' || {$header} == 'liste_entreprises' || {$header} == 'a_propos' || {$header} == 'login' || {$header} == 'administrateur_entreprise')}
 		<div class="navHorizontalNonIndex">
 			<div id="titrePage">
 				{if ({$header} == 'search')} Recherche {/if}
 				{if ({$header} == 'liste_entreprises')} Liste des Entreprises  {/if}
 				{if ({$header} == 'a_propos')} A Propos {/if}
 				{if ({$header} == 'login')} Connexion {/if}
+				{if ({$header} == 'administrateur_entreprise')} Administration {/if}
 			</div>
 		</div>
 		{/if}

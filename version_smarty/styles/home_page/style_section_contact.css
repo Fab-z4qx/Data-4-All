@@ -33,7 +33,14 @@
 	border-radius: 15px;
 	/*style the text*/
 	color:white;
-	font-size:75%;
+	font-size:95%;
 	border: none;
 
+}
+.form-left, .form-right{
+	width: 30%;
+}
+
+.bouton_submit_home_page:hover{
+	background-color: #009688;
 }

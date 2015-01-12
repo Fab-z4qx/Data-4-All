@@ -5,7 +5,7 @@
 	
 		if (!$con) die('Could not connect: ' . mysql_error());
 
-		//mysql_select_db("tim_robert", $con);
+		mysql_select_db("BDD_D4A", $con);
 		//mysql_select_db("tim_web", $con);
 		
 		return $con;
@@ -15,7 +15,6 @@
 		$CSS_TAB = array(   ROOT_TO_DIR.STYLE."style_index.css",
 							ROOT_TO_DIR.STYLE."style_header.css",
 							ROOT_TO_DIR.STYLE."style_footer.css",
-							ROOT_TO_DIR.STYLE."style_section_contact.css",
 							ROOT_TO_DIR.STYLE."home_page/style_section_titre_principale.css",
 							ROOT_TO_DIR.STYLE."home_page/style_section_recherche.css",
 							ROOT_TO_DIR.STYLE."home_page/style_section_carrousel.css",
@@ -32,16 +31,12 @@
 							ROOT_TO_DIR.STYLE."search/style_search.css",
 							ROOT_TO_DIR.STYLE."a_propos/style_a_propos.css",
 							ROOT_TO_DIR.STYLE."color.css",
-							ROOT_TO_DIR.STYLE."jquery.bxslider.css",);
+							ROOT_TO_DIR.STYLE."a_propos/style_admin_entreprise.css",);
 		return $CSS_TAB;
 	}
 	
 	function inser_js(){
 		$JS_TAB = array(ROOT_TO_DIR.JS_DIR."googleMap.js",
-						ROOT_TO_DIR.JS_DIR."carrousel.js",
-						ROOT_TO_DIR.JS_DIR."jquery.bxslider.js",
-						ROOT_TO_DIR.JS_DIR."jquery.bxslider.min.js",
-						ROOT_TO_DIR.JS_DIR."header.js",
 						ROOT_TO_DIR.JS_DIR."rubrique_connexion.js");
 		return $JS_TAB;
 	}

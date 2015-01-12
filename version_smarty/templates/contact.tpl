@@ -18,10 +18,10 @@
 
 
 <div class="form-right">
-<h3 class="label"><label for="messages">Messages</label></h3><textarea name="messages" id="messages"></textarea>
+<h3 class="label"><label for="messages">Messages</label></h3><textarea style="resize:none;" rows="11" cols="25" name="messages" id="messages"></textarea>
 </div>
 <br><br><br>
-<input class="bouton_submit_home_page" type="submit" value="Submit">
+<input class="bouton_submit_home_page" type="submit" value="Envoyer">
 </form>
 </div>
 

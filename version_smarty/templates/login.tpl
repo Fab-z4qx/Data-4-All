@@ -25,7 +25,7 @@
 	</div>
 
 	<div class="formulaire_connexion_compte_entreprise" id="formulaire_connexion_compte_entreprise">
-		{include file='formulaire_connexion_compte_entreprise.tpl'}
+		{include file='formulaires/formulaire_connexion_compte_entreprise.tpl'}
 		<p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p>
 	</div>
 
@@ -48,11 +48,11 @@
 
 <!--
 	<div class="formulaire_creation_compte_particulier" id="formulaire_creation_compte_particulier">
-		{include file='formulaire_creation_compte_particulier.tpl'}
+		{include file='formulaires/formulaire_creation_compte_particulier.tpl'}
 	</div>
 -->
 	<div class="formulaire_creation_compte_entreprise" id="formulaire_creation_compte_entreprise">
-		{include file='formulaire_creation_compte_entreprise.tpl'}
+		{include file='formulaires/formulaire_creation_compte_entreprise.tpl'}
 	</div>
 	
 	<script type="text/javascript">

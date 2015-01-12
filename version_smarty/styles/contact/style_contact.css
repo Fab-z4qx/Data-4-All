@@ -20,5 +20,7 @@
 }
 
 #nom, #email, #sujet, #messages{
-	font-size: 200%;
+	width: 100%;
+	padding: 10px;
+	font-size: 18px;
 }
