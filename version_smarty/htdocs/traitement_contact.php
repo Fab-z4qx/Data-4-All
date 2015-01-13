@@ -9,9 +9,15 @@
 	require(ROOT_DIR.INCLUDES.'fonctions.php');echo "5";
 
 
+	$nom_contact = $_POST[nom_contact];
+	$email_contact = $_POST[email_contact];
+	$sujet_contact = $_POST[sujet_contact];
+	$message_contact = $_POST[message_contact];
+
+
 	$con = connexion_serveur();echo "6";
 	
-	$sql="INSERT INTO contact (nom_contact, email_contact, sujet_contact, message_contact) VALUES('" . $_POST[nom_contact] . "','" . $_POST[email_contact] . "', '" . $_POST[sujet_contact] . "', '" . $_POST[message_contact]"')";
+	$sql="INSERT INTO contact (nom_contact, email_contact, sujet_contact, message_contact) VALUES('$nom_contact', '$email_contact', '$sujet_contact', '$message_contact')";
 echo "7";
 
 	try {

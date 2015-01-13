@@ -1,7 +1,6 @@
 <?php
 	function connexion_serveur(){
 		$con = mysql_connect("localhost","root","root");
-		//$con = mysql_connect("sql.free.fr","tim.robert","trobert1");
 	
 		if (!$con) die('Could not connect: ' . mysql_error());
 
