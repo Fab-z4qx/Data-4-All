@@ -26,7 +26,7 @@
 
 	<div class="formulaire_connexion_compte_entreprise" id="formulaire_connexion_compte_entreprise">
 		{include file='formulaires/formulaire_connexion_compte_entreprise.tpl'}
-		<p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p>
+		<p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">a</p><p id="w">.</p>
 	</div>
 
 	<script type="text/javascript">

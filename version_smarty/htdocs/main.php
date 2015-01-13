@@ -6,11 +6,20 @@
 	$smarty =new Smarty_datat4all();
 	
 	require(ROOT_DIR_INDEX.INCLUDES.'fonctions.php');
+
+	$con = connexion_serveur();
+	
+	$cpt="SELECT * FROM entreprise";
+	$req=mysql_query($cpt);
+	$res=mysql_num_rows($req);
+	
+	
 	$CSS_TAB = inser_css();
 	$JS_TAB = inser_js();
 	
 	$smarty->assign('js_tab', $JS_TAB);
 	$smarty->assign('css_tab', $CSS_TAB);
+	$smarty->assign('nbr_entreprise', $res);
 
 	$smarty->assign('header', 'index');
 	$smarty->assign('footer', 'index');

@@ -26,14 +26,11 @@
 }
 
 .bouton_submit_home_page{
-	cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
-	padding:5px 25px; /*add some padding to the inside of the button*/
-	background:#CDDC39; /*the colour of the button*/
-	/*give the button curved corners, alter the size as required*/
+	color: white;
+	background-color: #FFEB3B;
 	border-radius: 15px;
-	/*style the text*/
-	color:white;
-	font-size:95%;
+	padding:5px 25px;
+	font-size: 150%;
 	border: none;
 
 }

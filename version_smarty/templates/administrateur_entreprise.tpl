@@ -1,11 +1,11 @@
 {include file='header.tpl'}
-<div >
+<div id="page_admin_entreprise">
 <form method="post" action="reception.php" enctype="multipart/form-data">
-4     <label class="black" for="mon_fichier">Fichier (tous formats | max. 1 Mo) :</label><br />
-5     <input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
-6     <input type="file" name="mon_fichier" id="mon_fichier" /><br />
-11     <input type="submit" name="submit" value="Envoyer" />
-12</form>
+     <label for="mon_fichier">Fichier (tous formats | max. 1 Mo) :</label>
+     <input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
+     <input type="file" name="mon_fichier" id="mon_fichier" /><br />
+     <input type="submit" name="submit" value="Envoyer" />
+</form>
 </div>
 
 {include file='footer.tpl'}

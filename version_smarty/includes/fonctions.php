@@ -1,12 +1,12 @@
 <?php
 	function connexion_serveur(){
 		$con = mysql_connect("localhost","root","root");
-		//$con = mysql_connect("sql.free.fr","identifiant","mdp");
+		//$con = mysql_connect("sql.free.fr","tim.robert","trobert1");
 	
 		if (!$con) die('Could not connect: ' . mysql_error());
 
 		mysql_select_db("BDD_D4A", $con);
-		//mysql_select_db("tim_web", $con);
+		
 		
 		return $con;
 	}
@@ -31,7 +31,7 @@
 							ROOT_TO_DIR.STYLE."search/style_search.css",
 							ROOT_TO_DIR.STYLE."a_propos/style_a_propos.css",
 							ROOT_TO_DIR.STYLE."color.css",
-							ROOT_TO_DIR.STYLE."a_propos/style_admin_entreprise.css",);
+							ROOT_TO_DIR.STYLE."administration_entreprise/style_admin_entreprise.css",);
 		return $CSS_TAB;
 	}
 	

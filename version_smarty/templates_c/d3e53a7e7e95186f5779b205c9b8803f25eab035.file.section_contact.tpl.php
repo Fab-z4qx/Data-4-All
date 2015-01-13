@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-12 00:01:03
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-13 22:20:08
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/body/section_contact.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:25124144054b14541c61547-22891455%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd3e53a7e7e95186f5779b205c9b8803f25eab035' => 
     array (
       0 => '/Users/Timohee/Desktop/Data4All/version_smarty/templates/body/section_contact.tpl',
-      1 => 1421017262,
+      1 => 1421183916,
       2 => 'file',
     ),
   ),
@@ -36,14 +36,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <form method="post" action="traitement_contact.php">
 
 <div class="form-left">
-		<h3 class="label"><label for="nom">Nom</label> </h3><input type="text" name="nom" id="nom"/>
-		<h3 class="label"><label for="email">Email</label> </h3><input type="email" id="email"/>
-		<h3 class="label"><label for="sujet">Sujet</label> </h3><input type="text" name="sujet" id="sujet" />
+		<h3 class="label"><label for="nom_contact">Nom</label> </h3><input type="text" name="nom_contact" id="nom_contact"/>
+		<h3 class="label"><label for="email_contact">Email</label> </h3><input type="email_contact" id="email_contact"/>
+		<h3 class="label"><label for="sujet_contact">Sujet</label> </h3><input type="text" name="sujet_contact" id="sujet_contact" />
 </div>
 
 
 <div class="form-right">
-		<h3 class="label"><label for="messages">Messages</label></h3><textarea style="resize:none;" rows="11" cols="25" name="messages" id="messages"></textarea>
+		<h3 class="label"><label for="message_contact">Messages</label></h3><textarea style="resize:none;" rows="11" cols="25" name="message_contact" id="message_contact"></textarea>
 		</div>
 
 <br><br><br>
