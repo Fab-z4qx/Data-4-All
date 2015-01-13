@@ -16,7 +16,7 @@
 
 
 	$con = connexion_serveur();echo "6";
-	
+	/*
 	$sql="INSERT INTO contact (nom_contact, email_contact, sujet_contact, message_contact) VALUES('$nom_contact', '$email_contact', '$sujet_contact', '$message_contact')";
 echo "7";
 
@@ -32,7 +32,7 @@ echo "7";
   	catch (Exception $e){
   		echo 'erreur : ' . $e->getMessage();
   	}
-
+*/
   	$CSS_TAB = inser_css();
 	$JS_TAB = inser_js();
 	
