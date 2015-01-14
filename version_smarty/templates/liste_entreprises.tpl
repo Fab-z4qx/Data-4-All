@@ -1,24 +1,13 @@
 {include file='header.tpl'}
 
-<section class="contentListeEntreprise">
-	<div class="titreContent">Nom Entreprise 1</div>
-	<a class="boutonListeEntreprise" href="entreprise1.php"> voir plus </a>
-</section>
 
-<section class="contentListeEntreprise">
-	<div class="titreContent">Nom Entreprise 2</div>
-	<a class="boutonListeEntreprise" href="entreprise2.php"> voir plus </a>
-</section>
-
-<section class="contentListeEntreprise">
-	<div class="titreContent">Nom Entreprise 3</div>
-	<a class="boutonListeEntreprise" href="entreprise3.php"> voir plus </a>
-</section>
-
-<section class="contentListeEntreprise">
-	<div class="titreContent">Nom Entreprise 4</div>
-	<a class="boutonListeEntreprise" href="entreprise4.php"> voir plus </a>
-</section>
-
+	{if ($req_tab|@count) != 0}
+		{foreach name=nr item=js from=$req}
+			<section class="contentListeEntreprise">
+			<div class="titreContent">{$req[nr].nom_entreprise}</div>
+			<a class="boutonListeEntreprise" href="entreprise1.php"> voir plus </a>
+			</section>
+		{/foreach}
+	{/if}	
 
 {include file='footer.tpl'}

@@ -18,17 +18,18 @@
                         <td>Row 1</td>
                     </tr>
                     <tr>
-                        <td class="titre_tableau_offre">Options</td>
-                        <td>Row 2</td>
-                        <td>Row 2</td>
-                        <td>Row 2</td>
+                        <td class="titre_tableau_offre">Tarifs de base</td>
+                        <td>2700/mois</td>
+                        <td>1600/mois</td>
+                        <td>3500€/mois</td>
                     </tr>
                     <tr>
-                        <td class="titre_tableau_offre">Tarifs</td>
-                        <td>Row 2</td>
-                        <td>Row 2</td>
-                        <td>Row 2</td>
+                        <td class="titre_tableau_offre">Options</td>
+                        <td>10Mo  = 300€/mois</td>
+                        <td>1Mo  = 30€/mois<br>10Mo  = 250€/mois</td>
+                        <td>1Mo  = 30€/mois<br>10Mo  = 250€/mois</td>
                     </tr>
+                    
                 </table>
     </div>
     

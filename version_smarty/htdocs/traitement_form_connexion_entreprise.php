@@ -15,5 +15,5 @@
 	$smarty->assign('header', 'administrateur_entreprise');
 	$smarty->assign('footer', 'index');
 
-	$smarty->display('administrateur_entreprise.tpl');
+	$smarty->display('administrateur_homepage_entreprise.tpl');
 ?>

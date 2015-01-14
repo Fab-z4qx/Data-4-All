@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-13 20:48:09
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-14 16:34:45
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/offres.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:13310209354b1574cef1933-05952436%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1bab1f9d13033735bca308dc16cdff5f9e0f8417' => 
     array (
       0 => '/Users/Timohee/Desktop/Data4All/version_smarty/templates/offres.tpl',
-      1 => 1421178427,
+      1 => 1421249674,
       2 => 'file',
     ),
   ),
@@ -40,17 +40,18 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                         <td>Row 1</td>
                     </tr>
                     <tr>
-                        <td class="titre_tableau_offre">Options</td>
-                        <td>Row 2</td>
-                        <td>Row 2</td>
-                        <td>Row 2</td>
+                        <td class="titre_tableau_offre">Tarifs de base</td>
+                        <td>850€/mois</td>
+                        <td>600€/mois</td>
+                        <td>1200€/mois</td>
                     </tr>
                     <tr>
-                        <td class="titre_tableau_offre">Tarifs</td>
-                        <td>Row 2</td>
-                        <td>Row 2</td>
-                        <td>Row 2</td>
+                        <td class="titre_tableau_offre">Options</td>
+                        <td>10Mo  = 300€/mois</td>
+                        <td>1Mo  = 30€/mois<br>10Mo  = 250€/mois</td>
+                        <td>1Mo  = 30€/mois<br>10Mo  = 250€/mois</td>
                     </tr>
+                    
                 </table>
     </div>
     
