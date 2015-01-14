@@ -137,17 +137,16 @@ nav li {
 }
 
 
-.navHorizontalTransparence, .navHorizontalNonIndex, .navHorizontalGagnerCompetivite ,.navHorizontalDemarcheCitoyenne, .navHorizontalContact, .navHorizontalOuvrirDonnees, .navHorizontalOffres{
+.navHorizontalTransparence, .navHorizontalNonIndex, .navHorizontal_admin_entreprise, .navHorizontalGagnerCompetivite ,.navHorizontalDemarcheCitoyenne, .navHorizontalContact, .navHorizontalOuvrirDonnees, .navHorizontalOffres{
 	padding: 2.2% 0 2.2% 5%;
 	font-size: 200%;
 	width: 95%;
 }
 
 
-.navHorizontalTransparence.fixed, .navHorizontalNonIndex.fixed, .navHorizontalGagnerCompetivite.fixed ,.navHorizontalDemarcheCitoyenne.fixed, .navHorizontalContact.fixed, .navHorizontalOuvrirDonnees.fixed{
-	position: fixed;
-	top: 0;
-	z-index: 1000;
+.navHorizontal_admin_entreprise{
+	background-color: #607D8B;
+	padding: 2.2% 0 2.2% 5%;
+	font-size: 200%;
+	width: 95%;
 }
-
-

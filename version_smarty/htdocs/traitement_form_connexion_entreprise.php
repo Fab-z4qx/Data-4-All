@@ -13,7 +13,7 @@
 	$smarty->assign('css_tab', $CSS_TAB);
 	
 	$smarty->assign('header', 'admin_entreprise');
-	$smarty->assign('admin_entreprise', 'admin_entreprise_home_page');
+	$smarty->assign('admin_entreprise', 'home_page');
 	$smarty->assign('footer', 'index');
 
 	$smarty->display('admin_entreprise/admin_entreprise_home_page.tpl');

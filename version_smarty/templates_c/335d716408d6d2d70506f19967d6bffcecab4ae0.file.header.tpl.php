@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-14 22:31:23
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-14 23:43:00
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:22097866954b14541b82ed4-16191058%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '335d716408d6d2d70506f19967d6bffcecab4ae0' => 
     array (
       0 => '/Users/Timohee/Desktop/Data4All/version_smarty/templates/header.tpl',
-      1 => 1421271071,
+      1 => 1421275376,
       2 => 'file',
     ),
   ),
@@ -133,22 +133,22 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 		<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
 <?php $_tmp19=ob_get_clean();?><?php if (($_tmp19=='admin_entreprise')){?>
-		<div class="navHorizontalNonIndex">
+		<div class="navHorizontal_admin_entreprise">
 			<div id="titrePage">
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
-<?php $_tmp20=ob_get_clean();?><?php if (($_tmp20=='admin_entreprise_home_page')){?> Accueil - Administration - Nom Entreprise <?php }?>
+<?php $_tmp20=ob_get_clean();?><?php if (($_tmp20=='home_page')){?> Accueil - Nom Entreprise <?php }?>
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
-<?php $_tmp21=ob_get_clean();?><?php if (($_tmp21=='changer_offre')){?> Changer d'offre - Administration - Nom Entreprise <?php }?>
+<?php $_tmp21=ob_get_clean();?><?php if (($_tmp21=='changer_offre')){?> Changer d'offre - Nom Entreprise <?php }?>
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
-<?php $_tmp22=ob_get_clean();?><?php if (($_tmp22=='stat_compte')){?> Statistique Compte - Administration - Nom Entreprise <?php }?>
+<?php $_tmp22=ob_get_clean();?><?php if (($_tmp22=='stat_compte')){?> Statistique Compte - Nom Entreprise <?php }?>
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
-<?php $_tmp23=ob_get_clean();?><?php if (($_tmp23=='import_fichier')){?> Importer Fichiers - Administration - Nom Entreprise <?php }?>
+<?php $_tmp23=ob_get_clean();?><?php if (($_tmp23=='import_fichier')){?> Importer Fichiers - Nom Entreprise <?php }?>
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
-<?php $_tmp24=ob_get_clean();?><?php if (($_tmp24=='infos_compte')){?> Informations - Administration - Nom Entreprise <?php }?>
+<?php $_tmp24=ob_get_clean();?><?php if (($_tmp24=='infos_compte')){?> Informations - Nom Entreprise <?php }?>
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
-<?php $_tmp25=ob_get_clean();?><?php if (($_tmp25=='visualisation')){?> Visualisation - Administration - Nom Entreprise <?php }?>
+<?php $_tmp25=ob_get_clean();?><?php if (($_tmp25=='visualisation')){?> Visualisation - Nom Entreprise <?php }?>
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
-<?php $_tmp26=ob_get_clean();?><?php if (($_tmp26=='contact')){?> Contact - Administration - Nom Entreprise <?php }?>
+<?php $_tmp26=ob_get_clean();?><?php if (($_tmp26=='contact')){?> Contact - Nom Entreprise <?php }?>
 			</div>
 <!--
 			<div id="navHorizontal_connexion">

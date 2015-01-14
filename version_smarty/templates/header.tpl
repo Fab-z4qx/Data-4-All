@@ -87,15 +87,15 @@
 		{/if}
 
 		{if ({$header} == 'admin_entreprise')}
-		<div class="navHorizontalNonIndex">
+		<div class="navHorizontal_admin_entreprise">
 			<div id="titrePage">
-				{if ({$admin_entreprise} == 'admin_entreprise_home_page')} Accueil - Administration - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'changer_offre')} Changer d'offre - Administration - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'stat_compte')} Statistique Compte - Administration - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'import_fichier')} Importer Fichiers - Administration - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'infos_compte')} Informations - Administration - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'visualisation')} Visualisation - Administration - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'contact')} Contact - Administration - Nom Entreprise {/if}
+				{if ({$admin_entreprise} == 'home_page')} Accueil - Nom Entreprise {/if}
+				{if ({$admin_entreprise} == 'changer_offre')} Changer d'offre - Nom Entreprise {/if}
+				{if ({$admin_entreprise} == 'stat_compte')} Statistique Compte - Nom Entreprise {/if}
+				{if ({$admin_entreprise} == 'import_fichier')} Importer Fichiers - Nom Entreprise {/if}
+				{if ({$admin_entreprise} == 'infos_compte')} Informations - Nom Entreprise {/if}
+				{if ({$admin_entreprise} == 'visualisation')} Visualisation - Nom Entreprise {/if}
+				{if ({$admin_entreprise} == 'contact')} Contact - Nom Entreprise {/if}
 			</div>
 <!--
 			<div id="navHorizontal_connexion">
