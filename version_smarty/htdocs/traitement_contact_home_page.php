@@ -39,8 +39,8 @@
 	$smarty->assign('css_tab', $CSS_TAB);
 	$smarty->assign('message_success', $MESSAGE_SUCCESS);
 
-	$smarty->assign('header', 'contact');
+	$smarty->assign('header', 'index');
 	$smarty->assign('footer', 'index');
 	
-	$smarty->display('contact.tpl');
+	$smarty->display('index.tpl');
 ?>
