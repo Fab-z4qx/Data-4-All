@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-14 16:34:45
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-14 17:16:10
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/offres.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:13310209354b1574cef1933-05952436%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1bab1f9d13033735bca308dc16cdff5f9e0f8417' => 
     array (
       0 => '/Users/Timohee/Desktop/Data4All/version_smarty/templates/offres.tpl',
-      1 => 1421249674,
+      1 => 1421250751,
       2 => 'file',
     ),
   ),
@@ -41,9 +41,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     </tr>
                     <tr>
                         <td class="titre_tableau_offre">Tarifs de base</td>
-                        <td>850€/mois</td>
-                        <td>600€/mois</td>
-                        <td>1200€/mois</td>
+                        <td>2700/mois</td>
+                        <td>1600/mois</td>
+                        <td>3500€/mois</td>
                     </tr>
                     <tr>
                         <td class="titre_tableau_offre">Options</td>

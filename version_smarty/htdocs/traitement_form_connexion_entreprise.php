@@ -12,8 +12,8 @@
 	$smarty->assign('js_tab', $JS_TAB);
 	$smarty->assign('css_tab', $CSS_TAB);
 	
-	$smarty->assign('header', 'administrateur_entreprise');
+	$smarty->assign('header', 'admin_entreprise');
 	$smarty->assign('footer', 'index');
 
-	$smarty->display('administrateur_homepage_entreprise.tpl');
+	$smarty->display('admin_homepage_entreprise.tpl');
 ?>
