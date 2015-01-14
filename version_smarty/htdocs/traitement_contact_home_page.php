@@ -8,10 +8,10 @@
 	require(ROOT_DIR.INCLUDES.'fonctions.php');
 
 
-	$nom_contact = $_POST[nom_contact];
-	$email_contact = $_POST[email_contact];
-	$sujet_contact = $_POST[sujet_contact];
-	$message_contact = $_POST[message_contact];
+	$nom_contact = $_POST['nom_contact'];
+	$email_contact = $_POST['email_contact'];
+	$sujet_contact = $_POST['sujet_contact'];
+	$message_contact = $_POST['message_contact'];
 
 	$con = connexion_serveur();
 	

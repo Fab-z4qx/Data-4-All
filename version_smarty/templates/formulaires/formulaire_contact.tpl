@@ -2,7 +2,7 @@
 
 <div class="form-left">
 		<h3 class="label"><label for="nom_contact">Nom</label> </h3><input type="text" name="nom_contact" id="nom_contact"/>
-		<h3 class="label"><label for="email_contact">Email</label> </h3><input type="email_contact" id="email_contact"/>
+		<h3 class="label"><label for="email_contact">Emfzfezail</label> </h3><input type="email_contact" name="email_contact"  id="email_contact"/>
 		<h3 class="label"><label for="sujet_contact">Sujet</label> </h3><input type="text" name="sujet_contact" id="sujet_contact" />
 </div>
 
