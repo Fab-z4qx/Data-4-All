@@ -16,8 +16,8 @@
 
 			<nav>
 				<ul>
-					<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
 					{if ({$header} == 'index')}
+						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
 						<a class="span_headerVertical" href="htdocs/search.php"><li>Recherche</li></a>
 						<a class="span_headerVertical" href="htdocs/liste_entreprises.php"><li>Liste des entreprises</li></a>
 						<a class="span_headerVertical" href="htdocs/login.php"><li>Connexion</li></a>
@@ -26,7 +26,8 @@
 						<a class="span_headerVertical" href="htdocs/contact.php"><li>Contact</li></a>
 					{/if}
 
-					{if ({$header} != 'index')}
+					{if ({$header} != 'index' && {$header} != 'admin_entreprise')}
+						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
 						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
 						<a class="span_headerVertical" href="liste_entreprises.php"><li>Liste des entreprises</li></a>
 						<a class="span_headerVertical" href="login.php"><li>Connexion</li></a>
@@ -34,6 +35,16 @@
 						<a class="span_headerVertical" href="a_propos.php"><li>A Propos</li></a>
 						<a class="span_headerVertical" href="contact.php"><li>Contact</li></a>
 					{/if}
+
+					{if ({$header} == 'admin_entreprise')}
+						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li>Infos Compte</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li>Importer Fichiers</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li>Stats Compte</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_changer_offre.php"><li>Changer d'offre</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_contact.php"><li>Contact</li></a>
+					{/if}
+
 				</ul>
 			</nav>
 
@@ -62,15 +73,35 @@
 		</div>
 		{/if}
 
-		{if ({$header} == 'search' || {$header} == 'liste_entreprises' || {$header} == 'a_propos' || {$header} == 'login' || {$header} == 'admin_entreprise')}
+
+		{if ({$header} == 'search' || {$header} == 'liste_entreprises' || {$header} == 'a_propos' || {$header} == 'login' || {$header} == 'offres')}
 		<div class="navHorizontalNonIndex">
 			<div id="titrePage">
 				{if ({$header} == 'search')} Recherche {/if}
 				{if ({$header} == 'liste_entreprises')} Liste des Entreprises  {/if}
 				{if ({$header} == 'a_propos')} A Propos {/if}
 				{if ({$header} == 'login')} Connexion {/if}
-				{if ({$header} == 'admin_entreprise')} Administration {/if}
+				{if ({$header} == 'offres')} Offres {/if}
 			</div>
+		</div>
+		{/if}
+
+		{if ({$header} == 'admin_entreprise')}
+		<div class="navHorizontalNonIndex">
+			<div id="titrePage">
+				{if ({$admin_entreprise} == 'admin_entreprise_home_page')} Accueil - Administration - Nom Entreprise {/if}
+				{if ({$admin_entreprise} == 'changer_offre')} Changer d'offre - Administration - Nom Entreprise {/if}
+				{if ({$admin_entreprise} == 'stat_compte')} Statistique Compte - Administration - Nom Entreprise {/if}
+				{if ({$admin_entreprise} == 'import_fichier')} Importer Fichiers - Administration - Nom Entreprise {/if}
+				{if ({$admin_entreprise} == 'infos_compte')} Informations - Administration - Nom Entreprise {/if}
+				{if ({$admin_entreprise} == 'visualisation')} Visualisation - Administration - Nom Entreprise {/if}
+				{if ({$admin_entreprise} == 'contact')} Contact - Administration - Nom Entreprise {/if}
+			</div>
+<!--
+			<div id="navHorizontal_connexion">
+				<a id="decon" href="htdocs/login.php">Déconnexion</a>
+			</div>
+-->
 		</div>
 		{/if}
 
@@ -113,15 +144,4 @@
 			</div>
 		</div>
 		{/if}
-
-		{if ({$header} == 'offres')} 
-		<div class="navHorizontalOffres">
-			<div id="titrePage">
-				Offres 
-			</div>
-		</div>
-		{/if}
-
-		
-
 

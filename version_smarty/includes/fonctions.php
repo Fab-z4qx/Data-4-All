@@ -30,7 +30,12 @@
 							ROOT_TO_DIR.STYLE."search/style_search.css",
 							ROOT_TO_DIR.STYLE."a_propos/style_a_propos.css",
 							ROOT_TO_DIR.STYLE."color.css",
-							ROOT_TO_DIR.STYLE."administration_entreprise/style_admin_entreprise.css",);
+							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_changer_offre.css",
+							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_contact.css",
+							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_import_fichiers.css",
+							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_infos_compte.css",
+							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_stats_compte.css",
+							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_visualisation.css");
 		return $CSS_TAB;
 	}
 	
