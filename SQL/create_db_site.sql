@@ -9,10 +9,9 @@ PRIMARY KEY (id_user) ) ENGINE=InnoDB;
 DROP TABLE IF EXISTS entreprise ;
 CREATE TABLE entreprise (id_entreprise INT  AUTO_INCREMENT NOT NULL,
 nom_entreprise VARCHAR(50),
-prenom_entreprise VARCHAR(15),
 email_entreprise VARCHAR(255),
 siret_entreprise VARCHAR(255),
-numero_entreprise VARCHAR(15),
+tel_entreprise VARCHAR(15),
 fax_entreprise VARCHAR(15),
 id_bdd_entreprise VARCHAR(50),
 date_immat_rcs_entreprise DATETIME,
