@@ -1,4 +1,3 @@
-
 DROP TABLE IF EXISTS user ;
 CREATE TABLE user (id_user INT  AUTO_INCREMENT NOT NULL,
 password VARCHAR(15),
@@ -24,7 +23,6 @@ PRIMARY KEY (id_entreprise) ) ENGINE=InnoDB;
 
 DROP TABLE IF EXISTS adresse ;
 CREATE TABLE adresse (id_adresse INT  AUTO_INCREMENT NOT NULL,
-type_de_voie_ VARCHAR(255),
 numero_rue INT,
 code_postal INT,
 pays VARCHAR(255),
