@@ -270,6 +270,7 @@ if($valid == true && captcha_valid())
 <script type="text/javascript">
 var RecaptchaOptions = { theme : 'clean' };
 </script>
+
 <section class="subhead">
 		<div class="wrap" id="subhead">
 			<div id="logo">
