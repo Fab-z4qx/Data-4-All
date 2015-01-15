@@ -3,6 +3,11 @@
 <section id="page_a_propos">
 
 <div class="sous_titre">
+	Présentation
+</div>
+
+
+<div class="sous_titre">
 	Membres de l'équipe
 </div>
 

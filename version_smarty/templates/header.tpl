@@ -37,6 +37,7 @@
 					{/if}
 
 					{if ({$header} == 'admin_entreprise')}
+						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li>Accueil</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li>Infos Compte</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li>Importer Fichiers</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
@@ -60,18 +61,7 @@
 
 	<div id="page">
 
-
-
-		{if ({$header} == 'index')}
-		<div id="navHorizontal">
-			<div id="titrePage">
-				{if ({$header} == 'index')} Accueil{/if}
-			</div>
-			<div id="navHorizontal_connexion">
-				<a id="con" href="htdocs/login.php">Connexion</a>
-			</div>	
-		</div>
-		{/if}
+		
 
 
 		{if ({$header} == 'search' || {$header} == 'liste_entreprises' || {$header} == 'a_propos' || {$header} == 'login' || {$header} == 'offres')}
@@ -97,11 +87,12 @@
 				{if ({$admin_entreprise} == 'visualisation')} Visualisation - Nom Entreprise {/if}
 				{if ({$admin_entreprise} == 'contact')} Contact - Nom Entreprise {/if}
 			</div>
-<!--
-			<div id="navHorizontal_connexion">
-				<a id="decon" href="htdocs/login.php">Déconnexion</a>
+			{if ({$admin_entreprise} == 'home_page')}
+			<div id="bouton_deco">
+				<a class="decon" href="htdocs/login.php">Déconnexion</a>
 			</div>
--->
+			{/if}
+
 		</div>
 		{/if}
 

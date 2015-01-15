@@ -3,8 +3,14 @@
 ------------------------------*/
 
 #titrePrincipal{
+	
+	padding: 3% 0 2% 8%;
+	
+}
+
+#titreHome{
 	font-family: 'FuturaKoyu',Arial,sans-serif;
-	padding: 8% 0 2% 8%;
+	display: inline-block;
 	font-size: 500%;
 }
 

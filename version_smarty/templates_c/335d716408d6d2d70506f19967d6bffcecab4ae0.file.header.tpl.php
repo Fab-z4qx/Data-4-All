@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-14 23:43:00
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-15 00:36:23
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:22097866954b14541b82ed4-16191058%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '335d716408d6d2d70506f19967d6bffcecab4ae0' => 
     array (
       0 => '/Users/Timohee/Desktop/Data4All/version_smarty/templates/header.tpl',
-      1 => 1421275376,
+      1 => 1421278581,
       2 => 'file',
     ),
   ),
@@ -70,6 +70,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
 <?php $_tmp6=ob_get_clean();?><?php if (($_tmp6=='admin_entreprise')){?>
+						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li>Accueil</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li>Infos Compte</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li>Importer Fichiers</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
@@ -93,73 +94,62 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 	<div id="page">
 
+		
 
 
 		<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
-<?php $_tmp7=ob_get_clean();?><?php if (($_tmp7=='index')){?>
-		<div id="navHorizontal">
-			<div id="titrePage">
-				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
-<?php $_tmp8=ob_get_clean();?><?php if (($_tmp8=='index')){?> Accueil<?php }?>
-			</div>
-			<div id="navHorizontal_connexion">
-				<a id="con" href="htdocs/login.php">Connexion</a>
-			</div>	
-		</div>
-		<?php }?>
-
-
-		<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp7=ob_get_clean();?><?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp8=ob_get_clean();?><?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
 <?php $_tmp9=ob_get_clean();?><?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
 <?php $_tmp10=ob_get_clean();?><?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
-<?php $_tmp11=ob_get_clean();?><?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
-<?php $_tmp12=ob_get_clean();?><?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
-<?php $_tmp13=ob_get_clean();?><?php if (($_tmp9=='search'||$_tmp10=='liste_entreprises'||$_tmp11=='a_propos'||$_tmp12=='login'||$_tmp13=='offres')){?>
+<?php $_tmp11=ob_get_clean();?><?php if (($_tmp7=='search'||$_tmp8=='liste_entreprises'||$_tmp9=='a_propos'||$_tmp10=='login'||$_tmp11=='offres')){?>
 		<div class="navHorizontalNonIndex">
 			<div id="titrePage">
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
-<?php $_tmp14=ob_get_clean();?><?php if (($_tmp14=='search')){?> Recherche <?php }?>
+<?php $_tmp12=ob_get_clean();?><?php if (($_tmp12=='search')){?> Recherche <?php }?>
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
-<?php $_tmp15=ob_get_clean();?><?php if (($_tmp15=='liste_entreprises')){?> Liste des Entreprises  <?php }?>
+<?php $_tmp13=ob_get_clean();?><?php if (($_tmp13=='liste_entreprises')){?> Liste des Entreprises  <?php }?>
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
-<?php $_tmp16=ob_get_clean();?><?php if (($_tmp16=='a_propos')){?> A Propos <?php }?>
+<?php $_tmp14=ob_get_clean();?><?php if (($_tmp14=='a_propos')){?> A Propos <?php }?>
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
-<?php $_tmp17=ob_get_clean();?><?php if (($_tmp17=='login')){?> Connexion <?php }?>
+<?php $_tmp15=ob_get_clean();?><?php if (($_tmp15=='login')){?> Connexion <?php }?>
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
-<?php $_tmp18=ob_get_clean();?><?php if (($_tmp18=='offres')){?> Offres <?php }?>
+<?php $_tmp16=ob_get_clean();?><?php if (($_tmp16=='offres')){?> Offres <?php }?>
 			</div>
 		</div>
 		<?php }?>
 
 		<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
-<?php $_tmp19=ob_get_clean();?><?php if (($_tmp19=='admin_entreprise')){?>
+<?php $_tmp17=ob_get_clean();?><?php if (($_tmp17=='admin_entreprise')){?>
 		<div class="navHorizontal_admin_entreprise">
 			<div id="titrePage">
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
-<?php $_tmp20=ob_get_clean();?><?php if (($_tmp20=='home_page')){?> Accueil - Nom Entreprise <?php }?>
+<?php $_tmp18=ob_get_clean();?><?php if (($_tmp18=='home_page')){?> Accueil - Nom Entreprise <?php }?>
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
-<?php $_tmp21=ob_get_clean();?><?php if (($_tmp21=='changer_offre')){?> Changer d'offre - Nom Entreprise <?php }?>
+<?php $_tmp19=ob_get_clean();?><?php if (($_tmp19=='changer_offre')){?> Changer d'offre - Nom Entreprise <?php }?>
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
-<?php $_tmp22=ob_get_clean();?><?php if (($_tmp22=='stat_compte')){?> Statistique Compte - Nom Entreprise <?php }?>
+<?php $_tmp20=ob_get_clean();?><?php if (($_tmp20=='stat_compte')){?> Statistique Compte - Nom Entreprise <?php }?>
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
-<?php $_tmp23=ob_get_clean();?><?php if (($_tmp23=='import_fichier')){?> Importer Fichiers - Nom Entreprise <?php }?>
+<?php $_tmp21=ob_get_clean();?><?php if (($_tmp21=='import_fichier')){?> Importer Fichiers - Nom Entreprise <?php }?>
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
-<?php $_tmp24=ob_get_clean();?><?php if (($_tmp24=='infos_compte')){?> Informations - Nom Entreprise <?php }?>
+<?php $_tmp22=ob_get_clean();?><?php if (($_tmp22=='infos_compte')){?> Informations - Nom Entreprise <?php }?>
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
-<?php $_tmp25=ob_get_clean();?><?php if (($_tmp25=='visualisation')){?> Visualisation - Nom Entreprise <?php }?>
+<?php $_tmp23=ob_get_clean();?><?php if (($_tmp23=='visualisation')){?> Visualisation - Nom Entreprise <?php }?>
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
-<?php $_tmp26=ob_get_clean();?><?php if (($_tmp26=='contact')){?> Contact - Nom Entreprise <?php }?>
+<?php $_tmp24=ob_get_clean();?><?php if (($_tmp24=='contact')){?> Contact - Nom Entreprise <?php }?>
 			</div>
-<!--
-			<div id="navHorizontal_connexion">
-				<a id="decon" href="htdocs/login.php">Déconnexion</a>
+			<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp25=ob_get_clean();?><?php if (($_tmp25=='home_page')){?>
+			<div id="bouton_deco">
+				<a class="decon" href="htdocs/login.php">Déconnexion</a>
 			</div>
--->
+			<?php }?>
+
 		</div>
 		<?php }?>
 
 		<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
-<?php $_tmp27=ob_get_clean();?><?php if (($_tmp27=='ouvrirDonnees')){?> 
+<?php $_tmp26=ob_get_clean();?><?php if (($_tmp26=='ouvrirDonnees')){?> 
 		<div class="navHorizontalOuvrirDonnees">
 			<div id="titrePage">
 				Ouvrir ses Données 
@@ -168,7 +158,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<?php }?>
 
 		<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
-<?php $_tmp28=ob_get_clean();?><?php if (($_tmp28=='transparence')){?> 
+<?php $_tmp27=ob_get_clean();?><?php if (($_tmp27=='transparence')){?> 
 		<div class="navHorizontalTransparence">
 			<div id="titrePage">
 				Transparence 
@@ -177,7 +167,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<?php }?>
 
 		<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
-<?php $_tmp29=ob_get_clean();?><?php if (($_tmp29=='gagnerCompetivite')){?> 
+<?php $_tmp28=ob_get_clean();?><?php if (($_tmp28=='gagnerCompetivite')){?> 
 		<div class="navHorizontalGagnerCompetivite">
 			<div id="titrePage">
 				Gagner en Competivité 
@@ -186,7 +176,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<?php }?>
 
 		<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
-<?php $_tmp30=ob_get_clean();?><?php if (($_tmp30=='demarcheCitoyenne')){?> 
+<?php $_tmp29=ob_get_clean();?><?php if (($_tmp29=='demarcheCitoyenne')){?> 
 		<div class="navHorizontalDemarcheCitoyenne">
 			<div id="titrePage">
 				Demarche Citoyenne 
@@ -195,7 +185,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<?php }?>
 
 		<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
-<?php $_tmp31=ob_get_clean();?><?php if (($_tmp31=='contact')){?> 
+<?php $_tmp30=ob_get_clean();?><?php if (($_tmp30=='contact')){?> 
 		<div class="navHorizontalContact">
 			<div id="titrePage">
 				Contact 

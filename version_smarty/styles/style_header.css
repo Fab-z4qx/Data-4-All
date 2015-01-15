@@ -1,49 +1,4 @@
 
-/* version horizontale
-
-header {
-	position: fixed;
-	width: 100%;
-	z-index: 1;
-	padding: 0% 0 0% 0;
-}
-
-.logo {
-	font-family: 'FuturaKoyu',Arial,sans-serif;
-	display: inline-block;
-	margin-left: 10%;
-	width: 15%;
-}
-
-nav {
-	display: inline-block; 
-	width: 70%; 
-	text-align: right;
-}
-
-nav ul {
-	list-style-type: none;
-}
-
-nav li {
-	display: inline-block;
-	font-size: 150%;
-	margin-left: 4%;
-}
-
-.span_header_logo {
-	font-size: 150%;
-	text-decoration: none;
-}
-
-.span_header {
-	text-decoration: none;
-}
-
-*/
-
-/* version vertical */
-
 a{
 	text-decoration: none;
 }
@@ -125,17 +80,30 @@ nav li {
 #navHorizontal_connexion{
 	display: inline-block;
 	margin-left: 75%;
+	
 }
 
-#con{
+.decon, .con{
 	color: white;
 	background-color: #FFEB3B;
 	border-radius: 15px;
 	padding:5px 25px;
-	font-size: 150%;
 	font-weight: bold;
 }
 
+.decon{
+	font-size: 75%;
+}
+
+.con{
+	font-size: 150%;
+}
+
+#bouton_deco{
+	display: inline-block;
+	margin-left: 30%;
+
+}
 
 .navHorizontalTransparence, .navHorizontalNonIndex, .navHorizontal_admin_entreprise, .navHorizontalGagnerCompetivite ,.navHorizontalDemarcheCitoyenne, .navHorizontalContact, .navHorizontalOuvrirDonnees, .navHorizontalOffres{
 	padding: 2.2% 0 2.2% 5%;
