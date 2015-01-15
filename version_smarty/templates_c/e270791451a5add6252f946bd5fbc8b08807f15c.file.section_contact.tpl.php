@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-11 17:39:05
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-11 18:47:51
          compiled from "F:\wamp\www\D4A\version_smarty\templates\body\section_contact.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:610754b1641504dde8-92915101%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e270791451a5add6252f946bd5fbc8b08807f15c' => 
     array (
       0 => 'F:\\wamp\\www\\D4A\\version_smarty\\templates\\body\\section_contact.tpl',
-      1 => 1420996643,
+      1 => 1421002058,
       2 => 'file',
     ),
   ),
@@ -45,8 +45,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <div class="form-right">
 <h3 class="label"><label for="messages">Messages</label></h3><textarea name="messages" id="messages"></textarea>
 </div>
-
-<input type="submit" value="Submit">
+<br><br><br>
+<input class="bouton_submit_home_page" type="submit" value="Submit">
 
 </form>
 </div>

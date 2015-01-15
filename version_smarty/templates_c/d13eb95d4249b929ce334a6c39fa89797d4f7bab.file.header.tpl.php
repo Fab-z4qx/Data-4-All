@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-10 21:40:24
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-11 19:12:33
          compiled from "F:\wamp\www\D4A\version_smarty\templates\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:803554b16414dd9085-87658556%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd13eb95d4249b929ce334a6c39fa89797d4f7bab' => 
     array (
       0 => 'F:\\wamp\\www\\D4A\\version_smarty\\templates\\header.tpl',
-      1 => 1420923587,
+      1 => 1421003551,
       2 => 'file',
     ),
   ),
@@ -26,18 +26,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_54b16414e95360_21278815')) {function content_54b16414e95360_21278815($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('head.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
 
+<<?php ?>?php require("common.inc.php"); ?<?php ?>>
 <body>
+	
     <header>
 
     	<!-- Nav horizontal
 
 		<div class="logo">
-				<a  class="span_header_logo" href="../index.php"> Data 4 All (logo) </a>
+				<a  class="span_header_logo" href="<<?php ?>?echo(BASE_URL)?<?php ?>>"> Data 4 All (logo) </a>
 		</div>
 
 		<nav>
 			<ul>
-				<li><a class="span_header" href="../index.php"> Accueil </a></li>
+				<li><a class="span_header" href="<<?php ?>?php echo(BASE_URL);?<?php ?>>"> Accueil </a></li>
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
 <?php $_tmp1=ob_get_clean();?><?php if (($_tmp1=='index')){?>
 					<li><a class="span_header" href="htdocs/search.php"> Recherche </a></li>
@@ -65,7 +67,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 			<center>
 				<div class="logoVertical">
-					<a  class="span_header_logoVertical" href="../index.php">
+					<a  class="span_header_logoVertical" href="<<?php ?>?php echo(BASE_URL);?<?php ?>>">
 						<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
 <?php $_tmp3=ob_get_clean();?><?php if (($_tmp3=='index')){?><img id="logo_site_header" src="images/logo_site.png"> </a><?php }?>
 						<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
@@ -75,7 +77,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 			<nav>
 				<ul>
-					<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
+					<a class="span_headerVertical" href="<<?php ?>?php echo(BASE_URL);?<?php ?>>"> <li>Accueil</li></a>
 					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
 <?php $_tmp5=ob_get_clean();?><?php if (($_tmp5=='index')){?>
 						<a class="span_headerVertical" href="htdocs/search.php"><li>Recherche</li></a>

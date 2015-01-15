@@ -1,5 +1,6 @@
 {include file='head.tpl'}
 
+<?php require("common.inc.php"); ?>
 <body>
 	
     <header>
@@ -7,12 +8,12 @@
     	<!-- Nav horizontal
 
 		<div class="logo">
-				<a  class="span_header_logo" href="../index.php"> Data 4 All (logo) </a>
+				<a  class="span_header_logo" href="<?echo(BASE_URL)?>"> Data 4 All (logo) </a>
 		</div>
 
 		<nav>
 			<ul>
-				<li><a class="span_header" href="../index.php"> Accueil </a></li>
+				<li><a class="span_header" href="<?php echo(BASE_URL);?>"> Accueil </a></li>
 				{if ({$header} == 'index')}
 					<li><a class="span_header" href="htdocs/search.php"> Recherche </a></li>
 					<li><a class="span_header" href="htdocs/liste_entreprises.php"> Liste des entreprises </a></li>
@@ -38,7 +39,7 @@
 
 			<center>
 				<div class="logoVertical">
-					<a  class="span_header_logoVertical" href="../index.php">
+					<a  class="span_header_logoVertical" href="<?php echo(BASE_URL);?>">
 						{if ({$header} == 'index')}<img id="logo_site_header" src="images/logo_site.png"> </a>{/if}
 						{if ({$header} != 'index')}<img id="logo_site_header" src="../images/logo_site.png"> </a>{/if}
 				</div>
@@ -46,7 +47,7 @@
 
 			<nav>
 				<ul>
-					<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
+					<a class="span_headerVertical" href="<?php echo(BASE_URL);?>"> <li>Accueil</li></a>
 					{if ({$header} == 'index')}
 						<a class="span_headerVertical" href="htdocs/search.php"><li>Recherche</li></a>
 						<a class="span_headerVertical" href="htdocs/liste_entreprises.php"><li>Liste des entreprises</li></a>
