@@ -9,8 +9,8 @@
 			<center>
 				<div class="logoVertical">
 					<a  class="span_header_logoVertical" href="../index.php">
-						{if ({$header} == 'index')}<img id="logo_site_header" src="images/logo_site.png"> </a>{/if}
-						{if ({$header} != 'index')}<img id="logo_site_header" src="../images/logo_site.png"> </a>{/if}
+						{if ({$header} == 'index')}<img id="logo_site_header" src="images/logo_site_bord_gris.png"> </a>{/if}
+						{if ({$header} != 'index')}<img id="logo_site_header" src="../images/logo_site_bord_gris.png"> </a>{/if}
 				</div>
 			</center>
 
@@ -61,7 +61,11 @@
 
 	<div id="page">
 
-		
+		{if ({$header} == 'index')}
+			<div id="navHorizontal_connexion">
+				{include file='formulaires/formulaire_connexion.tpl'}
+			</div>	
+		{/if}
 
 
 		{if ({$header} == 'search' || {$header} == 'liste_entreprises' || {$header} == 'a_propos' || {$header} == 'login' || {$header} == 'offres')}

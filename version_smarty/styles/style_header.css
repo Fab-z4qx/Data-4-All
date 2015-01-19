@@ -77,12 +77,6 @@ nav li {
 	font-size: 200%;
 }
 
-#navHorizontal_connexion{
-	display: inline-block;
-	margin-left: 75%;
-	
-}
-
 .decon, .con{
 	color: white;
 	background-color: #FFEB3B;
@@ -93,10 +87,6 @@ nav li {
 
 .decon{
 	font-size: 75%;
-}
-
-.con{
-	font-size: 150%;
 }
 
 #bouton_deco{
@@ -118,3 +108,18 @@ nav li {
 	font-size: 200%;
 	width: 95%;
 }
+
+.con{
+	font-size: 100%;
+	border: none;
+	cursor: pointer;
+}
+
+#navHorizontal_connexion{
+	background-color: #009688;
+	padding: 1% 0 0% 55%;
+	top: 2%;
+	
+}
+
+

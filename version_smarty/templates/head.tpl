@@ -6,7 +6,7 @@
 	  	<meta charset="utf-8" />
 	    <title>Data 4 All</title>
 
-	    <link rel="icon" type="image/png" href="images/logo_site.png" />
+	    <link rel="icon" type="image/png" href="images/logo_site_TEAL.png" />
 		<link rel="apple-touch-icon-precomposed" href="images/logo_site.png" />
 
 		{if ($js_tab|@count) != 0}
