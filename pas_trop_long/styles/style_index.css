@@ -1,0 +1,43 @@
+/*        Section générale 
+------------------------------*/
+
+@font-face
+{
+	font-family: 'FuturaKoyu';
+	src: url('polices/Futura_Koyu.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face
+{
+	font-family: 'Titillium';
+	src: url('polices/titillium/TitilliumText22L001.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face
+{
+	font-family: 'Roboto';
+	src: url('polices/RobotoTTF/Roboto-Thin.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face
+{
+	font-family: 'AlwaysForever';
+	src: url('polices/Always Forever.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body {	
+	font-family: 'Roboto',Arial,sans-serif;
+	text-decoration: none;
+	margin: 0px;
+	width: 100%;
+}
+
