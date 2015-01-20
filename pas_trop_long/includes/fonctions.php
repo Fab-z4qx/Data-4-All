@@ -17,7 +17,7 @@
 	}
 	
 	function inser_js(){
-		$JS_TAB = array(ROOT_TO_DIR.JS_DIR."googleMap.js";
+		$JS_TAB = array(ROOT_TO_DIR.JS_DIR."googleMap.js");
 		return $JS_TAB;
 	}
 	
