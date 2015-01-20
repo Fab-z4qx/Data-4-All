@@ -21,7 +21,4 @@
 		{/foreach}
 		{/if}	
 
-		<p>
-			head
-		</p>
   	</head>
