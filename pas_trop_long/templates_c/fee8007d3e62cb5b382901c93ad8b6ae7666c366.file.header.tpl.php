@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-20 19:45:03
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-20 20:17:22
          compiled from "/Users/Timohee/Desktop/Data4All/pas_trop_long/templates/index/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:5462450054be914d571132-29573470%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fee8007d3e62cb5b382901c93ad8b6ae7666c366' => 
     array (
       0 => '/Users/Timohee/Desktop/Data4All/pas_trop_long/templates/index/header.tpl',
-      1 => 1421779500,
+      1 => 1421781379,
       2 => 'file',
     ),
   ),
@@ -22,12 +22,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_54be914d571823_98066382')) {function content_54be914d571823_98066382($_smarty_tpl) {?>
 <body>
 
-	<header>
-		<span>
-			<a href=""><img src="images/logo_site_bord_gris.png"></a>
+	<header id="header_vertical_left">
+		<span id="logo_D4A">
+			<a href=""><img id="img_logo_D4A" src="images/logo_site_bord_gris.png"></a>
 		</span>
 		
-		<nav>
+		<nav id="nav_header_left">
 			<ul>
 				<li><a href=""></a>Home</li>
 				<li><a href=""></a>Recherche</li>
