@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-20 19:07:56
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-20 19:27:08
          compiled from "/Users/Timohee/Desktop/Data4All/pas_trop_long/templates/index/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:5462450054be914d571132-29573470%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fee8007d3e62cb5b382901c93ad8b6ae7666c366' => 
     array (
       0 => '/Users/Timohee/Desktop/Data4All/pas_trop_long/templates/index/header.tpl',
-      1 => 1421777033,
+      1 => 1421778423,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,23 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <body>
 
 	<header>
+		<span>
 
+		</span>
 		
-
+		<nav>
+			<ul>
+				<li><a href=""></a>Home</li>
+				<li><a href=""></a>Recherche</li>
+				<li><a href=""></a>Liste Entreprise</li>
+				<li><a href=""></a>Sign In</li>
+				<li><a href=""></a>Offres</li>
+				<li><a href=""></a>A propos</li>
+				<li><a href=""></a>Contact</li>
+			</ul>
+		</nav>
+		
+		<aside>
+			©2015_Data4All 
+		</aside>
 	</header><?php }} ?>
