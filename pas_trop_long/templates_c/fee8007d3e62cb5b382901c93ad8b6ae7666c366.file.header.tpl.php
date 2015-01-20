@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-20 20:17:22
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-20 21:14:43
          compiled from "/Users/Timohee/Desktop/Data4All/pas_trop_long/templates/index/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:5462450054be914d571132-29573470%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fee8007d3e62cb5b382901c93ad8b6ae7666c366' => 
     array (
       0 => '/Users/Timohee/Desktop/Data4All/pas_trop_long/templates/index/header.tpl',
-      1 => 1421781379,
+      1 => 1421784861,
       2 => 'file',
     ),
   ),
@@ -23,23 +23,24 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <body>
 
 	<header id="header_vertical_left">
-		<span id="logo_D4A">
+		<center id="logo_D4A">
 			<a href=""><img id="img_logo_D4A" src="images/logo_site_bord_gris.png"></a>
-		</span>
+		</center>
 		
 		<nav id="nav_header_left">
 			<ul>
-				<li><a href=""></a>Home</li>
-				<li><a href=""></a>Recherche</li>
-				<li><a href=""></a>Liste Entreprise</li>
-				<li><a href=""></a>Sign In</li>
-				<li><a href=""></a>Offres</li>
-				<li><a href=""></a>A propos</li>
-				<li><a href=""></a>Contact</li>
+				<li class="lien_header_left"><a href=""><div class="content_lien">Home</div></a></li>
+				<li class="lien_header_left"><a href=""><div class="content_lien">Recherche</div></a></li>
+				<li class="lien_header_left"><a href=""><div class="content_lien">Liste Entreprise</div></a></li>
+				<li class="lien_header_left"><a href=""><div class="content_lien">Sign In</div></a></li>
+				<li class="lien_header_left"><a href=""><div class="content_lien">Offres</div></a></li>
+				<li class="lien_header_left"><a href=""><div class="content_lien">A propos</div></a></li>
+				<li class="lien_header_left"><a href=""><div class="content_lien">Contact</div></a></li>
 			</ul>
 		</nav>
 		
-		<aside>
+		<aside id="copyright">
 			©2015_Data4All 
 		</aside>
-	</header><?php }} ?>
+	</header>
+<?php }} ?>

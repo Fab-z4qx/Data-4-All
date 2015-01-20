@@ -1,7 +1,7 @@
 <?php
 	function connexion_serveur(){
-		//$con = mysql_connect("localhost","root","root");
-		$con = mysql_connect("localhost","root","");
+		$con = mysql_connect("localhost","root","root");
+		//$con = mysql_connect("localhost","root","");
 	
 		if (!$con) die('Could not connect: ' . mysql_error());
 
@@ -27,7 +27,7 @@
 				ROOT_TO_DIR.STYLE."index/style_header_con.css",
 				ROOT_TO_DIR.STYLE."index/style_logo_enterprise.css",
 				ROOT_TO_DIR.STYLE."index/style_search.css",
-				ROOT_TO_DIR.STYLE."index/style_title.css",			
+				ROOT_TO_DIR.STYLE."index/style_title.css"			
 				);
 		return $CSS_TAB;
 	}
