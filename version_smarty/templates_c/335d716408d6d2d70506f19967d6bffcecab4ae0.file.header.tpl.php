@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-19 22:01:18
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-20 13:51:49
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:22097866954b14541b82ed4-16191058%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '335d716408d6d2d70506f19967d6bffcecab4ae0' => 
     array (
       0 => '/Users/Timohee/Desktop/Data4All/version_smarty/templates/header.tpl',
-      1 => 1421701277,
+      1 => 1421758307,
       2 => 'file',
     ),
   ),
@@ -50,7 +50,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
 						<a class="span_headerVertical" href="htdocs/search.php"><li>Recherche</li></a>
 						<a class="span_headerVertical" href="htdocs/liste_entreprises.php"><li>Liste des entreprises</li></a>
-						<a class="span_headerVertical" href="htdocs/login.php"><li>Connexion</li></a>
+						<a class="span_headerVertical" href="htdocs/login.php"><li>Sign Up</li></a>
 						<a class="span_headerVertical" href="htdocs/offres.php"><li>Offres</li></a>
 						<a class="span_headerVertical" href="htdocs/a_propos.php"><li>A Propos</li></a>
 						<a class="span_headerVertical" href="htdocs/contact.php"><li>Contact</li></a>
@@ -62,7 +62,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
 						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
 						<a class="span_headerVertical" href="liste_entreprises.php"><li>Liste des entreprises</li></a>
-						<a class="span_headerVertical" href="login.php"><li>Connexion</li></a>
+						<a class="span_headerVertical" href="login.php"><li>Sign Up</li></a>
 						<a class="span_headerVertical" href="offres.php"><li>Offres</li></a>
 						<a class="span_headerVertical" href="a_propos.php"><li>A Propos</li></a>
 						<a class="span_headerVertical" href="contact.php"><li>Contact</li></a>
@@ -118,7 +118,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
 <?php $_tmp15=ob_get_clean();?><?php if (($_tmp15=='a_propos')){?> A Propos <?php }?>
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
-<?php $_tmp16=ob_get_clean();?><?php if (($_tmp16=='login')){?> Connexion <?php }?>
+<?php $_tmp16=ob_get_clean();?><?php if (($_tmp16=='login')){?> Création de compte <?php }?>
 				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
 <?php $_tmp17=ob_get_clean();?><?php if (($_tmp17=='offres')){?> Offres <?php }?>
 			</div>
@@ -147,7 +147,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
 <?php $_tmp26=ob_get_clean();?><?php if (($_tmp26=='home_page')){?>
 			<div id="bouton_deco">
-				<a class="decon" href="htdocs/login.php">Déconnexion</a>
+				<a class="decon" href="htdocs/login.php">Log Out</a>
 			</div>
 			<?php }?>
 

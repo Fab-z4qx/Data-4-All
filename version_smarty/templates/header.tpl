@@ -20,7 +20,7 @@
 						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
 						<a class="span_headerVertical" href="htdocs/search.php"><li>Recherche</li></a>
 						<a class="span_headerVertical" href="htdocs/liste_entreprises.php"><li>Liste des entreprises</li></a>
-						<a class="span_headerVertical" href="htdocs/login.php"><li>Connexion</li></a>
+						<a class="span_headerVertical" href="htdocs/login.php"><li>Sign Up</li></a>
 						<a class="span_headerVertical" href="htdocs/offres.php"><li>Offres</li></a>
 						<a class="span_headerVertical" href="htdocs/a_propos.php"><li>A Propos</li></a>
 						<a class="span_headerVertical" href="htdocs/contact.php"><li>Contact</li></a>
@@ -30,7 +30,7 @@
 						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
 						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
 						<a class="span_headerVertical" href="liste_entreprises.php"><li>Liste des entreprises</li></a>
-						<a class="span_headerVertical" href="login.php"><li>Connexion</li></a>
+						<a class="span_headerVertical" href="login.php"><li>Sign Up</li></a>
 						<a class="span_headerVertical" href="offres.php"><li>Offres</li></a>
 						<a class="span_headerVertical" href="a_propos.php"><li>A Propos</li></a>
 						<a class="span_headerVertical" href="contact.php"><li>Contact</li></a>
@@ -74,7 +74,7 @@
 				{if ({$header} == 'search')} Recherche {/if}
 				{if ({$header} == 'liste_entreprises')} Liste des Entreprises  {/if}
 				{if ({$header} == 'a_propos')} A Propos {/if}
-				{if ({$header} == 'login')} Connexion {/if}
+				{if ({$header} == 'login')} Création de compte {/if}
 				{if ({$header} == 'offres')} Offres {/if}
 			</div>
 		</div>
@@ -93,7 +93,7 @@
 			</div>
 			{if ({$admin_entreprise} == 'home_page')}
 			<div id="bouton_deco">
-				<a class="decon" href="htdocs/login.php">Déconnexion</a>
+				<a class="decon" href="htdocs/login.php">Log Out</a>
 			</div>
 			{/if}
 
