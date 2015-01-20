@@ -12,7 +12,8 @@
 	}
 	
 	function inser_css(){
-		$CSS_TAB = array(   ROOT_TO_DIR.STYLE."style_index.css");
+		$CSS_TAB = array(ROOT_TO_DIR.STYLE."style_index.css",
+			);
 		return $CSS_TAB;
 	}
 	

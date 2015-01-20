@@ -1,0 +1,22 @@
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-20 18:57:13
+         compiled from "/Users/Timohee/Desktop/Data4All/pas_trop_long/templates/index/contact.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:161658370454be96f9a044f6-84988147%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'c03c53842b603941766b5916dad975c2a97da24d' => 
+    array (
+      0 => '/Users/Timohee/Desktop/Data4All/pas_trop_long/templates/index/contact.tpl',
+      1 => 1421773743,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '161658370454be96f9a044f6-84988147',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_54be96f9a04b07_72841662',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_54be96f9a04b07_72841662')) {function content_54be96f9a04b07_72841662($_smarty_tpl) {?><?php }} ?>

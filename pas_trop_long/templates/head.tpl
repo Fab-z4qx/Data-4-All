@@ -20,4 +20,8 @@
 			<link rel="stylesheet" href="{$css}"/>
 		{/foreach}
 		{/if}	
+
+		<p>
+			head
+		</p>
   	</head>

@@ -1,0 +1,22 @@
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-20 18:57:13
+         compiled from "/Users/Timohee/Desktop/Data4All/pas_trop_long/templates/index/arg_transparence.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:62356374254be96f99faf92-44298327%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'd39d87a6f087140521532a7f2f242da44fa9d596' => 
+    array (
+      0 => '/Users/Timohee/Desktop/Data4All/pas_trop_long/templates/index/arg_transparence.tpl',
+      1 => 1421773743,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '62356374254be96f99faf92-44298327',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_54be96f99fb952_37288637',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_54be96f99fb952_37288637')) {function content_54be96f99fb952_37288637($_smarty_tpl) {?><?php }} ?>
