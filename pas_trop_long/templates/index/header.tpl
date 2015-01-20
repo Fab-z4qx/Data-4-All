@@ -3,7 +3,7 @@
 
 	<header>
 		<span>
-			<a href=""></a>
+			<a href=""><img src="images/logo_site_bord_gris.png"></a>
 		</span>
 		
 		<nav>
