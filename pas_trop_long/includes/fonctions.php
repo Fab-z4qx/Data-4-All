@@ -1,7 +1,7 @@
 <?php
 	function connexion_serveur(){
-		$con = mysql_connect("localhost","root","root");
-		//$con = mysql_connect("localhost","root","");
+		//$con = mysql_connect("localhost","root","root");
+		$con = mysql_connect("localhost","root","");
 	
 		if (!$con) die('Could not connect: ' . mysql_error());
 
@@ -25,17 +25,18 @@
 				ROOT_TO_DIR.STYLE."index/style_google_maps.css",
 				ROOT_TO_DIR.STYLE."index/style_header.css",
 				ROOT_TO_DIR.STYLE."index/style_header_con.css",
-				ROOT_TO_DIR.STYLE."index/style_logo_enterprise.css",
+				ROOT_TO_DIR.STYLE."index/style_logo_entreprise.css",
 				ROOT_TO_DIR.STYLE."index/style_search.css",
-				ROOT_TO_DIR.STYLE."index/style_title.css"			
+				ROOT_TO_DIR.STYLE."index/style_title.css"		
 				);
 		return $CSS_TAB;
 	}
 	
 	function inser_js(){
-		$JS_TAB = array(ROOT_TO_DIR.JS_DIR."googleMap.js");
+		$JS_TAB = array("https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js",
+				ROOT_TO_DIR.JS_DIR."js/jquery-1.8.3.min.js",
+				ROOT_TO_DIR.JS_DIR."js/simple.carousel.js");
 		return $JS_TAB;
 	}
 	
 ?>
-
