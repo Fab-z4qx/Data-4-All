@@ -36,7 +36,8 @@
 							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_import_fichiers.css",
 							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_infos_compte.css",
 							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_stats_compte.css",
-							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_visualisation.css");
+							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_visualisation.css",
+							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_home_page.css");
 		return $CSS_TAB;
 	}
 	

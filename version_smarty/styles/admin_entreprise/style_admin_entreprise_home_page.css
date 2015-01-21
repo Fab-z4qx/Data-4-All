@@ -1,0 +1,51 @@
+
+/*      home page
+-----------------------------------*/
+
+#home_left{
+	margin-top: 5%;
+	margin-left: 5%;
+	color: black;
+	display: inline-block;
+	float: left;
+}
+
+#logo_enteprise{
+	display: inline-block;
+}
+
+#logo{
+	width: 50%;
+	height: auto;
+}
+
+#nom_entreprise{
+	display: inline-block;
+}
+
+#siret_entreprise{
+	display: inline-block;
+}
+
+#compteurs_entreprise{
+	margin-top: 30%;
+}
+
+#nombre_fichier{
+	margin-top: 10%;
+}
+
+#nombre_graphe{
+	margin-top: 10%;
+}
+
+#derniere_maj{
+	margin-top: 10%;
+}
+
+#meilleur_offre{
+	display: inline-block;
+	color: black;
+	border: 2px solid red;
+
+}
