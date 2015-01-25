@@ -43,7 +43,8 @@
 	
 	function inser_js(){
 		$JS_TAB = array(ROOT_TO_DIR.JS_DIR."googleMap.js",
-						ROOT_TO_DIR.JS_DIR."rubrique_connexion.js");
+						ROOT_TO_DIR.JS_DIR."rubrique_connexion.js",
+						ROOT_TO_DIR.JS_DIR."progressbar.js");
 		return $JS_TAB;
 	}
 	

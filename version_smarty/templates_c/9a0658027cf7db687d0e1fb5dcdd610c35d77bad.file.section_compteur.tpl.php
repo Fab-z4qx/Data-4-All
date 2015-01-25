@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-12 11:48:08
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-23 18:33:05
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/body/section_compteur.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:35408778954b14541c558b8-16722244%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9a0658027cf7db687d0e1fb5dcdd610c35d77bad' => 
     array (
       0 => '/Users/Timohee/Desktop/Data4All/version_smarty/templates/body/section_compteur.tpl',
-      1 => 1421059494,
+      1 => 1422034348,
       2 => 'file',
     ),
   ),
@@ -24,10 +24,31 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_54b14541c57056_90566660')) {function content_54b14541c57056_90566660($_smarty_tpl) {?><section id="compteur">
+	
+		<div class="count">
+			<center>
+			<div class="titre_count">Nombre d'entreprise</div>
+			<div class="nombre_count"><?php echo $_smarty_tpl->tpl_vars['nbr_entreprise']->value;?>
+</div>
+			</center>
+		</div>
 
-	
-		<div id="titre_compteur">Compteurs</div>
-	
+		<div class="count">
+			<center>
+			<div class="titre_count">Nombre d'entreprise</div>
+			<div class="nombre_count"><?php echo $_smarty_tpl->tpl_vars['nbr_entreprise']->value;?>
+</div>
+			</center>
+		</div>
+
+		<div class="count">
+			<center>
+			<div class="titre_count">Nombre d'entreprise</div>
+			<div class="nombre_count"><?php echo $_smarty_tpl->tpl_vars['nbr_entreprise']->value;?>
+</div>
+			</center>
+		</div>
+
 		<div class="count">
 			<center>
 			<div class="titre_count">Nombre d'entreprise</div>

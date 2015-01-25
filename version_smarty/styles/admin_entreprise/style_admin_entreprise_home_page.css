@@ -2,12 +2,11 @@
 /*      home page
 -----------------------------------*/
 
-#home_left{
+#head_entreprise{
 	margin-top: 5%;
 	margin-left: 5%;
 	color: black;
-	display: inline-block;
-	float: left;
+	font-size: 250%;
 }
 
 #logo_enteprise{
@@ -27,25 +26,25 @@
 	display: inline-block;
 }
 
-#compteurs_entreprise{
-	margin-top: 30%;
-}
-
-#nombre_fichier{
-	margin-top: 10%;
-}
-
-#nombre_graphe{
-	margin-top: 10%;
-}
-
-#derniere_maj{
-	margin-top: 10%;
-}
 
 #meilleur_offre{
 	display: inline-block;
 	color: black;
 	border: 2px solid red;
+	float: right;
+}
 
+#compteur_entreprise{
+	padding-left: 6%;
+	margin-top: 15%;
+	color: black;
+	margin-left: 8%;
+}
+
+.count_entreprise{
+	padding: 2% 3% 2% 3%;
+	display: inline-block;
+	font-size: 150%;
+	margin-right: 3%;
+	background-color: #00BCD4;
 }

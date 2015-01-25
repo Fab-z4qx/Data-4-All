@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-20 13:51:49
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-23 11:45:00
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:22097866954b14541b82ed4-16191058%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '335d716408d6d2d70506f19967d6bffcecab4ae0' => 
     array (
       0 => '/Users/Timohee/Desktop/Data4All/version_smarty/templates/header.tpl',
-      1 => 1421758307,
+      1 => 1422009899,
       2 => 'file',
     ),
   ),
@@ -47,8 +47,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<ul>
 					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
 <?php $_tmp3=ob_get_clean();?><?php if (($_tmp3=='index')){?>
-						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
-						<a class="span_headerVertical" href="htdocs/search.php"><li>Recherche</li></a>
+						<a class="span_headerVertical" href="../index.php"> <li>Home</li></a>
+						<a class="span_headerVertical" href="htdocs/search.php"><li>Search</li></a>
 						<a class="span_headerVertical" href="htdocs/liste_entreprises.php"><li>Liste des entreprises</li></a>
 						<a class="span_headerVertical" href="htdocs/login.php"><li>Sign Up</li></a>
 						<a class="span_headerVertical" href="htdocs/offres.php"><li>Offres</li></a>
@@ -59,8 +59,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
 <?php $_tmp4=ob_get_clean();?><?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
 <?php $_tmp5=ob_get_clean();?><?php if (($_tmp4!='index'&&$_tmp5!='admin_entreprise')){?>
-						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
-						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
+						<a class="span_headerVertical" href="../index.php"> <li>Home</li></a>
+						<a class="span_headerVertical" href="search.php"><li>Search</li></a>
 						<a class="span_headerVertical" href="liste_entreprises.php"><li>Liste des entreprises</li></a>
 						<a class="span_headerVertical" href="login.php"><li>Sign Up</li></a>
 						<a class="span_headerVertical" href="offres.php"><li>Offres</li></a>
@@ -70,7 +70,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
 <?php $_tmp6=ob_get_clean();?><?php if (($_tmp6=='admin_entreprise')){?>
-						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li>Accueil</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li>Home</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li>Infos Compte</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li>Importer Fichiers</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
@@ -84,7 +84,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 			<center>
 				<div id="credit">
-					Data4All ©
+					©2015_Data4All
 				</div>
 			</center>
 

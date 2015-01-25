@@ -85,7 +85,7 @@ footer {
 	/*background-color: #00b0ff;	/* bleu des boutons une fois pointé */
 }
 
-#compteur{
+.count{
 	background-color: #E91E63; /* pink */
 }
 
@@ -137,7 +137,7 @@ footer {
 	/*border: 2px solid #00b0ff;	/* bleu des boutons une fois pointé */
 }
 
-#compteur, .contentListeEntreprise, .contentEntreprise, .contentGuide{
+.contentListeEntreprise, .contentEntreprise, .contentGuide{
 	border-top: 1px solid #e3e3e3; /* gris clair des lignes entre section */
 }
 

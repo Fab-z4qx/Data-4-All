@@ -1,25 +1,13 @@
 /*        Section Compteur 
 ------------------------------*/
 #compteur{
-	padding: 2% 0 3% 0;
-}
-
-#titre_compteur{
-	margin-left: 5%;
-	font-size: 250%;
+	padding-left: 6%;
+	margin-bottom: 3%;
 }
 
 .count{
+	padding: 2% 3% 2% 3%;
 	display: inline-block;
 	font-size: 150%;
-	margin-left: 10%;
-	margin-top: 3%;
-}
-
-.titre_nombre_entreprise{
-	margin-bottom: 2%;
-}
-
-.nombre_count{
-
+	margin-right: 3%;
 }

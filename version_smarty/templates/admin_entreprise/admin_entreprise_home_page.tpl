@@ -1,18 +1,9 @@
 {include file='header.tpl'}
-<div id="home_left">
+<div id="head_entreprise">
 		<div id="header_entreprise">
 			<div id="logo_enteprise"><img id="logo" src="../images/logoefrei.png"></div>
 			<div id="nom_entreprise">nom - </div>
 			<div id="siret_entreprise">siret</div>
-		</div>
-
-		<div id="compteurs_entreprise">
-			<div id="nombre_fichier">Nombre de Fichiers chargés: </div>
-			<div id="nombre_graphe">Nombre de Graphes: </div>
-		</div>
-
-		<div id="derniere_maj">
-			Dernière mise à jour: 
 		</div>
 </div>
 
@@ -20,8 +11,33 @@
 	go best offre
 </div>
 
-<div id="nombre_data">
 
-</div>
+		<section id="compteur_entreprise">
+
+			<div class="count_entreprise">
+				<center>
+				<div class="titre_count_entreprise">Nombre de Fichiers chargés</div>
+				<div class="nombre_count_entreprise">{$nbr_entreprise}10</div>
+				</center>
+			</div>
+
+			<div class="count_entreprise">
+				<center>
+				<div class="titre_count_entreprise">Nombre de Graphes</div>
+				<div class="nombre_count_entreprise">{$nbr_entreprise}10</div>
+				</center>
+			</div>
+
+			<div class="count_entreprise">
+				<center>
+				<div class="titre_count_entreprise">Dernière mise à jour</div>
+				<div class="nombre_count_entreprise">{$nbr_entreprise}10</div>
+				</center>
+			</div>
+
+		</section>
+
+
+<div id="progressbar"></div>
 
 {include file='footer.tpl'}

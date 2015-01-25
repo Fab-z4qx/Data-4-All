@@ -17,8 +17,8 @@
 			<nav>
 				<ul>
 					{if ({$header} == 'index')}
-						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
-						<a class="span_headerVertical" href="htdocs/search.php"><li>Recherche</li></a>
+						<a class="span_headerVertical" href="../index.php"> <li>Home</li></a>
+						<a class="span_headerVertical" href="htdocs/search.php"><li>Search</li></a>
 						<a class="span_headerVertical" href="htdocs/liste_entreprises.php"><li>Liste des entreprises</li></a>
 						<a class="span_headerVertical" href="htdocs/login.php"><li>Sign Up</li></a>
 						<a class="span_headerVertical" href="htdocs/offres.php"><li>Offres</li></a>
@@ -27,8 +27,8 @@
 					{/if}
 
 					{if ({$header} != 'index' && {$header} != 'admin_entreprise')}
-						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
-						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
+						<a class="span_headerVertical" href="../index.php"> <li>Home</li></a>
+						<a class="span_headerVertical" href="search.php"><li>Search</li></a>
 						<a class="span_headerVertical" href="liste_entreprises.php"><li>Liste des entreprises</li></a>
 						<a class="span_headerVertical" href="login.php"><li>Sign Up</li></a>
 						<a class="span_headerVertical" href="offres.php"><li>Offres</li></a>
@@ -37,7 +37,7 @@
 					{/if}
 
 					{if ({$header} == 'admin_entreprise')}
-						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li>Accueil</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li>Home</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li>Infos Compte</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li>Importer Fichiers</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
@@ -51,7 +51,7 @@
 
 			<center>
 				<div id="credit">
-					Data4All ©
+					©2015_Data4All
 				</div>
 			</center>
 
