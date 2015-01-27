@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-23 11:18:10
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-27 22:04:32
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/body/section_search.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:190175388254b14541c4e242-93859719%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '42582be0fbfa7a1faa96d09294d9e5d533f0ff3e' => 
     array (
       0 => '/Users/Timohee/Desktop/Data4All/version_smarty/templates/body/section_search.tpl',
-      1 => 1422008136,
+      1 => 1422392670,
       2 => 'file',
     ),
   ),
@@ -25,7 +25,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			<div id="row_search">
 				<form class="form-wrapper cf">
        				<input type="text" placeholder="Nom, Siret" required>
-        			<button type="submit">Search</button>
+        			<button type="submit">Recherche</button>
     			</form>
 			</div>
 

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-10 16:29:05
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-27 22:06:57
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:44519068054b14541b34ab0-31634787%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b0fe0136bb8cce660042e89b1514068b92863e7b' => 
     array (
       0 => '/Users/Timohee/Desktop/Data4All/version_smarty/templates/index.tpl',
-      1 => 1416999462,
+      1 => 1422392815,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
   'unifunc' => 'content_54b14541b7f431_95138095',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_54b14541b7f431_95138095')) {function content_54b14541b7f431_95138095($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
@@ -35,9 +35,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
 <?php echo $_smarty_tpl->getSubTemplate ('body/section_guide.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
-
-
-<?php echo $_smarty_tpl->getSubTemplate ('body/section_entreprise_partenaire.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
 
 <?php echo $_smarty_tpl->getSubTemplate ('body/section_contact.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
