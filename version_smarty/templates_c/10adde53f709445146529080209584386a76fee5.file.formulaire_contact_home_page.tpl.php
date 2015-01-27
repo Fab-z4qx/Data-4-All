@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-25 19:31:45
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-26 23:27:17
          compiled from "/opt/lampp/htdocs/Data4All/version_smarty/templates/formulaires/formulaire_contact_home_page.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:53377522954c53691d771a0-28891082%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '10adde53f709445146529080209584386a76fee5' => 
     array (
       0 => '/opt/lampp/htdocs/Data4All/version_smarty/templates/formulaires/formulaire_contact_home_page.tpl',
-      1 => 1421777328,
+      1 => 1422311120,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
   'unifunc' => 'content_54c53691d782a0_68896367',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_54c53691d782a0_68896367')) {function content_54c53691d782a0_68896367($_smarty_tpl) {?><form method="post" action="htdocs/traitement_contact_home_page.php">
 

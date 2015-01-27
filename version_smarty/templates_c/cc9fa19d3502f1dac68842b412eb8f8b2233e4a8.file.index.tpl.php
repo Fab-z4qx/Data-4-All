@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-25 22:14:19
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-26 23:27:17
          compiled from "/opt/lampp/htdocs/Data4All/version_smarty/templates/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:70021827054c53691ca3e51-07249904%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'cc9fa19d3502f1dac68842b412eb8f8b2233e4a8' => 
     array (
       0 => '/opt/lampp/htdocs/Data4All/version_smarty/templates/index.tpl',
-      1 => 1422220457,
+      1 => 1422311120,
       2 => 'file',
     ),
   ),
@@ -25,10 +25,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php echo $_smarty_tpl->getSubTemplate ('body/section_titre_principal.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
 
-<?php echo $_smarty_tpl->getSubTemplate ('body/section_carrousel.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
-
-
 <?php echo $_smarty_tpl->getSubTemplate ('body/section_search.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
+
+
+<?php echo $_smarty_tpl->getSubTemplate ('body/section_carrousel.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
 	
 <?php echo $_smarty_tpl->getSubTemplate ('body/section_compteur.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>

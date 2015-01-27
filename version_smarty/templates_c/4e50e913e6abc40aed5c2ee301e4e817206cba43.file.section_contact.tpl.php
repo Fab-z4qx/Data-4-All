@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-25 19:31:45
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-26 23:27:17
          compiled from "/opt/lampp/htdocs/Data4All/version_smarty/templates/body/section_contact.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:55647083654c53691d71a96-49835771%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '4e50e913e6abc40aed5c2ee301e4e817206cba43' => 
     array (
       0 => '/opt/lampp/htdocs/Data4All/version_smarty/templates/body/section_contact.tpl',
-      1 => 1421777328,
+      1 => 1422311120,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
   'unifunc' => 'content_54c53691d74bc5_82445576',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_54c53691d74bc5_82445576')) {function content_54c53691d74bc5_82445576($_smarty_tpl) {?><section id="contact">
 	<div class="sectionContact">
