@@ -2,7 +2,7 @@
 ------------------------------*/
 
 
-	.example1 {
+	.caroussel1 {
 margin:0;
 padding:0;
 list-style:none;
@@ -23,7 +23,7 @@ background:red;
 cursor:pointer;
 }
         
-.example2 {
+. {
 margin:0;
 padding:0;
 list-style:none;
@@ -32,7 +32,7 @@ height:400px;
 overflow:hidden;
 }
         
-.example2 li {
+.caroussel1 li {
 text-align:left;
 display:block;
 width:697px;
