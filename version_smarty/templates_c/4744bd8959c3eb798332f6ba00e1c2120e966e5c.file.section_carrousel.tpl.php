@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-28 01:07:40
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-28 19:14:56
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/body/section_carrousel.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:47999933454b14541c51e19-09494912%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '4744bd8959c3eb798332f6ba00e1c2120e966e5c' => 
     array (
       0 => '/Users/Timohee/Desktop/Data4All/version_smarty/templates/body/section_carrousel.tpl',
-      1 => 1422403657,
+      1 => 1422467475,
       2 => 'file',
     ),
   ),
@@ -19,24 +19,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_54b14541c53381_38257073',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54b14541c53381_38257073')) {function content_54b14541c53381_38257073($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_54b14541c53381_38257073')) {function content_54b14541c53381_38257073($_smarty_tpl) {?><!--
   <head>
 
 
-
-    <!-- Bootstrap 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
--->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]
 
   </head>
 
   <body>
 
-	<div id="myCarousel" class="carousel slide" data-interval="1000">
+	<div id="myCarousel" class="carousel slide" data-interval="2000">
 		<div class="carousel-inner">
 			<div class="item active">
 				<img src="images/guillaume.jpg" />
@@ -48,21 +40,29 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<img src="images/tim.png" />
 			</div>
 		</div>
-	</div>-->
+
+	</div>
+
+		<div class="carousel-caption">
+			<div id="row_search">
+				<form class="form-wrapper cf">
+       				<input type="text" placeholder="Nom, Siret" required>
+        			<button type="submit">Search</button>
+    			</form>
+			</div>
+		</div>
+	</div>
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
-    <!-- Include all compiled plugins (below), or include individual files as needed 
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
+	 script pour gérer le carousel 
   <script type="text/javascript">
     $(document).ready(function(){
         $('.carousel').carousel();
     });
-  </script>-->
+  </script>
 
   </body>
 
-
+-->
 <?php }} ?>

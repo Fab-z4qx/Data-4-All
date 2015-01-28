@@ -1,9 +1,10 @@
 <?php
-	require('/lib/recaptchalib.php');
+	//require('lib/recaptchalib.php');
+
 	function connexion_serveur(){
 
-		//$con = mysql_connect("localhost","root","root");
-		$con = mysql_connect("localhost","root","");
+		$con = mysql_connect("localhost","root","root");
+		//$con = mysql_connect("localhost","root","");
 	
 		if (!$con) die('Could not connect: ' . mysql_error());
 
@@ -53,12 +54,12 @@
 		return $JS_TAB;
 	}
 
-
+/*
 	function echo_captcha()
 	{
 	
 		return recaptcha_get_html('6LeGG-sSAAAAAMMefaLjooNSBcBEqg61a6IhhpTE'); 
 	}
-	
+*/	
 ?>
 

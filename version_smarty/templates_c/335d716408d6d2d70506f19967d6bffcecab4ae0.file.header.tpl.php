@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-28 01:10:44
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-28 19:14:56
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:22097866954b14541b82ed4-16191058%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '335d716408d6d2d70506f19967d6bffcecab4ae0' => 
     array (
       0 => '/Users/Timohee/Desktop/Data4All/version_smarty/templates/header.tpl',
-      1 => 1422403842,
+      1 => 1422467056,
       2 => 'file',
     ),
   ),
@@ -27,10 +27,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_54b14541c11489_00426216')) {function content_54b14541c11489_00426216($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('head.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
 
+<<?php ?>?php require("common.inc.php"); ?<?php ?>>
 <body>
 	
     <header>
-
 		<aside>
 
 			<center>
@@ -45,6 +45,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 			<nav>
 				<ul>
+
 					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
 <?php $_tmp3=ob_get_clean();?><?php if (($_tmp3=='index')){?>
 						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
@@ -221,7 +222,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 			</div>	
 		<?php }?>
-
 
 		<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
 <?php $_tmp18=ob_get_clean();?><?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
