@@ -5,8 +5,9 @@ require(ROOT_DIR.INCLUDES.'fonctions.php');
 
 $con = connexion_serveur();
 
-require('lib/lib.php');
-require('lib/recaptchalib.php');
+require(ROOT_DIR.INCLUDES.'lib/lib.php');
+//require(ROOT_DIR.INCLUDES.'lib/recaptchalib.php');
+
 $valid=true;
 
 if(isset($_POST) && !empty($_POST))

@@ -1,4 +1,25 @@
-
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-28 11:23:58
+         compiled from "F:\wamp\www\D4A\version_smarty\templates\formulaires\formulaire_creation_compte_entreprise.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:713054c8af631aee58-87223142%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'c356b3feeb6affc0851a83f42f2565c7df5e7c42' => 
+    array (
+      0 => 'F:\\wamp\\www\\D4A\\version_smarty\\templates\\formulaires\\formulaire_creation_compte_entreprise.tpl',
+      1 => 1422444159,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '713054c8af631aee58-87223142',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_54c8af631f6be8_58463912',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_54c8af631f6be8_58463912')) {function content_54c8af631f6be8_58463912($_smarty_tpl) {?>
 
 <form method="post" action="traitement_form_creation_compte_entreprise.php">
 		<label class="form_entreprise" for="nom_entreprise">Nom entreprise :</label><input type="text" name="nom_entreprise" id="nom_entreprise"/><br><br>
@@ -42,6 +63,7 @@
 			var RecaptchaOptions = { theme : 'clean' };
 		</script>
 		
-		{echo_captcha}
+		<?php echo echo_captcha(array(),$_smarty_tpl);?>
+
 		<input class="bouton_submit" type="submit" value="Continuer">
-</form>
+</form><?php }} ?>

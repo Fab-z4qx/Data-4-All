@@ -1,9 +1,9 @@
 {include file='head.tpl'}
 
+<?php require("common.inc.php"); ?>
 <body>
 	
     <header>
-
 		<aside>
 
 			<center>
@@ -16,6 +16,7 @@
 
 			<nav>
 				<ul>
+
 					{if ({$header} == 'index')}
 						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
 						<a class="span_headerVertical" href="htdocs/search.php"><li>Recherche</li></a>
@@ -176,7 +177,6 @@
 				{include file='formulaires/formulaire_connexion.tpl'}
 			</div>	
 		{/if}
-
 
 		{if ({$header} == 'search' || {$header} == 'liste_entreprises' || {$header} == 'a_propos' || {$header} == 'login' || {$header} == 'offres')}
 		<div class="navHorizontalNonIndex">
