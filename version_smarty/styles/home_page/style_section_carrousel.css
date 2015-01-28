@@ -1,3 +1,4 @@
+
 /*        Section Carrousel 
 ------------------------------*/
 
@@ -48,4 +49,10 @@ background:#333;
         
 .carousel-pagination .carousel-pagination-active {
 background:#ff0000;
+}
+
+.item{
+    background: #333;
+    text-align: center;
+    height: 500px ;
 }
