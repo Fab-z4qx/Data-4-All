@@ -87,7 +87,7 @@
 					{/if}
 
 					{if ({$admin_entreprise} == 'home_page')}
-						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li  class="li_select">Home</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li  class="li_select_entreprise">Home</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li>Infos Compte</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li>Upload Fichiers</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
@@ -98,7 +98,7 @@
 
 					{if ({$admin_entreprise} == 'infos_compte')}
 						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li>Home</li></a>
-						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li  class="li_select">Infos Compte</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li  class="li_select_entreprise">Infos Compte</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li>Upload Fichiers</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li>Stats Compte</li></a>
@@ -109,7 +109,7 @@
 					{if ({$admin_entreprise} == 'import_fichier')}
 						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li>Home</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li>Infos Compte</li></a>
-						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li  class="li_select">Upload Fichiers</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li  class="li_select_entreprise">Upload Fichiers</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li>Stats Compte</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_changer_offre.php"><li>Changer d'offre</li></a>
@@ -120,7 +120,7 @@
 						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li>Home</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li>Infos Compte</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li>Upload Fichiers</li></a>
-						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li  class="li_select">Visualisation</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li  class="li_select_entreprise">Visualisation</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li>Stats Compte</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_changer_offre.php"><li>Changer d'offre</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_contact.php"><li>Contact</li></a>
@@ -131,7 +131,7 @@
 						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li>Infos Compte</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li>Upload Fichiers</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
-						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li  class="li_select">Stats Compte</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li  class="li_select_entreprise">Stats Compte</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_changer_offre.php"><li>Changer d'offre</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_contact.php"><li>Contact</li></a>
 					{/if}
@@ -142,7 +142,7 @@
 						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li>Upload Fichiers</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li>Stats Compte</li></a>
-						<a class="span_headerVertical" href="admin_entreprise_changer_offre.php"><li  class="li_select">Changer d'offre</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_changer_offre.php"><li  class="li_select_entreprise">Changer d'offre</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_contact.php"><li>Contact</li></a>
 					{/if}
 
@@ -153,7 +153,7 @@
 						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li>Stats Compte</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_changer_offre.php"><li>Changer d'offre</li></a>
-						<a class="span_headerVertical" href="admin_entreprise_contact.php"><li  class="li_select">Contact</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_contact.php"><li  class="li_select_entreprise">Contact</li></a>
 					{/if}
 
 				</ul>

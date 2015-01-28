@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-28 00:46:49
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-28 01:10:44
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:22097866954b14541b82ed4-16191058%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '335d716408d6d2d70506f19967d6bffcecab4ae0' => 
     array (
       0 => '/Users/Timohee/Desktop/Data4All/version_smarty/templates/header.tpl',
-      1 => 1422402408,
+      1 => 1422403842,
       2 => 'file',
     ),
   ),
@@ -124,7 +124,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
 <?php $_tmp10=ob_get_clean();?><?php if (($_tmp10=='home_page')){?>
-						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li  class="li_select">Home</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li  class="li_select_entreprise">Home</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li>Infos Compte</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li>Upload Fichiers</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
@@ -136,7 +136,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
 <?php $_tmp11=ob_get_clean();?><?php if (($_tmp11=='infos_compte')){?>
 						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li>Home</li></a>
-						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li  class="li_select">Infos Compte</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li  class="li_select_entreprise">Infos Compte</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li>Upload Fichiers</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li>Stats Compte</li></a>
@@ -148,7 +148,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php $_tmp12=ob_get_clean();?><?php if (($_tmp12=='import_fichier')){?>
 						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li>Home</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li>Infos Compte</li></a>
-						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li  class="li_select">Upload Fichiers</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li  class="li_select_entreprise">Upload Fichiers</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li>Stats Compte</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_changer_offre.php"><li>Changer d'offre</li></a>
@@ -160,7 +160,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li>Home</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li>Infos Compte</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li>Upload Fichiers</li></a>
-						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li  class="li_select">Visualisation</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li  class="li_select_entreprise">Visualisation</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li>Stats Compte</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_changer_offre.php"><li>Changer d'offre</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_contact.php"><li>Contact</li></a>
@@ -172,7 +172,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li>Infos Compte</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li>Upload Fichiers</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
-						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li  class="li_select">Stats Compte</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li  class="li_select_entreprise">Stats Compte</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_changer_offre.php"><li>Changer d'offre</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_contact.php"><li>Contact</li></a>
 					<?php }?>
@@ -184,7 +184,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li>Upload Fichiers</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li>Stats Compte</li></a>
-						<a class="span_headerVertical" href="admin_entreprise_changer_offre.php"><li  class="li_select">Changer d'offre</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_changer_offre.php"><li  class="li_select_entreprise">Changer d'offre</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_contact.php"><li>Contact</li></a>
 					<?php }?>
 
@@ -196,7 +196,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li>Stats Compte</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_changer_offre.php"><li>Changer d'offre</li></a>
-						<a class="span_headerVertical" href="admin_entreprise_contact.php"><li  class="li_select">Contact</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_contact.php"><li  class="li_select_entreprise">Contact</li></a>
 					<?php }?>
 
 				</ul>
