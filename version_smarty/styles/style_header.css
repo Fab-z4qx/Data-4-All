@@ -1,49 +1,7 @@
 
-/* version horizontale
-
-header {
-	position: fixed;
-	width: 100%;
-	z-index: 1;
-	padding: 0% 0 0% 0;
-}
-
-.logo {
-	font-family: 'FuturaKoyu',Arial,sans-serif;
-	display: inline-block;
-	margin-left: 10%;
-	width: 15%;
-}
-
-nav {
-	display: inline-block; 
-	width: 70%; 
-	text-align: right;
-}
-
-nav ul {
-	list-style-type: none;
-}
-
-nav li {
-	display: inline-block;
-	font-size: 150%;
-	margin-left: 4%;
-}
-
-.span_header_logo {
-	font-size: 150%;
+a{
 	text-decoration: none;
 }
-
-.span_header {
-	text-decoration: none;
-}
-
-*/
-
-/* version vertical */
-
 header {
 	display: block;
 	position: fixed;
@@ -92,12 +50,8 @@ nav li {
 
 .span_header_logoVertical {
 	font-size: 150%;
-	text-decoration: none;
 }
 
-.span_headerVertical {
-	text-decoration: none;
-}
 
 .span_headerVertical:hover{
 }
@@ -113,21 +67,54 @@ nav li {
 
 #navHorizontal{
 	position: absolute;
+	width: 80%;
 	padding: 1% 0 1% 5%;
+	
+}
+
+#titrePage{
+	display: inline-block;
 	font-size: 200%;
 }
 
-.navHorizontalTransparence, .navHorizontalNonIndex, .navHorizontalGagnerCompetivite ,.navHorizontalDemarcheCitoyenne, .navHorizontalContact, .navHorizontalOuvrirDonnees, .navHorizontalOffres{
-	padding: 3.7% 0 3% 5%;
+#navHorizontal_connexion{
+	display: inline-block;
+	margin-left: 75%;
+	
+}
+
+.decon, .con{
+	color: white;
+	background-color: #FFEB3B;
+	border-radius: 15px;
+	padding:5px 25px;
+	font-weight: bold;
+}
+
+.decon{
+	font-size: 75%;
+}
+
+.con{
+	font-size: 150%;
+}
+
+#bouton_deco{
+	display: inline-block;
+	margin-left: 30%;
+
+}
+
+.navHorizontalTransparence, .navHorizontalNonIndex, .navHorizontal_admin_entreprise, .navHorizontalGagnerCompetivite ,.navHorizontalDemarcheCitoyenne, .navHorizontalContact, .navHorizontalOuvrirDonnees, .navHorizontalOffres{
+	padding: 2.2% 0 2.2% 5%;
 	font-size: 200%;
 	width: 95%;
 }
 
 
-.navHorizontalTransparence.fixed, .navHorizontalNonIndex.fixed, .navHorizontalGagnerCompetivite.fixed ,.navHorizontalDemarcheCitoyenne.fixed, .navHorizontalContact.fixed, .navHorizontalOuvrirDonnees.fixed{
-	position: fixed;
-	top: 0;
-	z-index: 1000;
+.navHorizontal_admin_entreprise{
+	background-color: #607D8B;
+	padding: 2.2% 0 2.2% 5%;
+	font-size: 200%;
+	width: 95%;
 }
-
-

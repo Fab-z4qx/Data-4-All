@@ -2,7 +2,7 @@
 ------------------------------*/
 
 #search {
-	padding: 6.1% 0 16.2% 0;
+	padding: 8% 0 18% 0;
 }
 
 
@@ -125,12 +125,12 @@
 }   
    
 .form-wrapper button:hover{     
-    background: #03A9F4;
+    background: #CDDC39;
 }   
    
 .form-wrapper button:active,
 .form-wrapper button:focus{   
-    background: #03A9F4;
+    background: #CDDC39;
     outline: 0;   
 }
  
@@ -145,12 +145,12 @@
 }
  
 .form-wrapper button:hover:before{
-    border-right-color: #03A9F4;
+    border-right-color: #CDDC39;
 }
  
 .form-wrapper button:focus:before,
 .form-wrapper button:active:before{
-        border-right-color: #03A9F4;
+        border-right-color: #CDDC39;
 }      
  
 .form-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */

@@ -4,31 +4,17 @@
 
 			<div class="titreSectionContact">Contact</div>
 
-			<div class="section_contact" id="membres">
-				
-			</div>
-
-		
 		
 		<div class="formulaire_contact">
-
-<form method="post" action="traitement_contact.php">
-
-<div class="form-left">
-<h3 class="label"><label for="nom">Nom</label> </h3><input type="text" name="nom" id="nom"/>
-<h3 class="label"><label for="email">Email</label> </h3><input type="email" id="email"/>
-<h3 class="label"><label for="sujet">Sujet</label> </h3><input type="text" name="sujet" id="sujet" />
-</div>
+			{include file='formulaires/formulaire_contact_home_page.tpl'}
+		</div>
 
 
-<div class="form-right">
-<h3 class="label"><label for="messages">Messages</label></h3><textarea name="messages" id="messages"></textarea>
-</div>
-<br><br><br>
-<input class="bouton_submit_home_page" type="submit" value="Submit">
 
-</form>
-</div>
+
+
+
+
 
 	</div>
 

@@ -2,6 +2,7 @@
 <?php
 	include("common.inc.php");
 	//Nouvelle objet smarty
+	
 	require(ROOT_DIR.INCLUDES.'data4all.inc.php');
 	$smarty =new Smarty_datat4all();
 	

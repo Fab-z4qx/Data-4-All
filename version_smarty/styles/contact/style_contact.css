@@ -19,6 +19,8 @@
 	margin-left: 20%;
 }
 
-#nom, #email, #sujet, #messages{
-	font-size: 200%;
+#nom_contact, #email_contact, #sujet_contact, #message_contact{
+	width: 100%;
+	padding: 10px;
+	font-size: 18px;
 }

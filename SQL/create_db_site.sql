@@ -9,10 +9,9 @@ PRIMARY KEY (id_user) ) ENGINE=InnoDB;
 DROP TABLE IF EXISTS entreprise ;
 CREATE TABLE entreprise (id_entreprise INT  AUTO_INCREMENT NOT NULL,
 nom_entreprise VARCHAR(50),
-prenom_entreprise VARCHAR(15),
 email_entreprise VARCHAR(255),
 siret_entreprise VARCHAR(255),
-numero_entreprise VARCHAR(15),
+tel_entreprise VARCHAR(15),
 fax_entreprise VARCHAR(15),
 id_bdd_entreprise VARCHAR(50),
 date_immat_rcs_entreprise DATETIME,
@@ -24,7 +23,6 @@ PRIMARY KEY (id_entreprise) ) ENGINE=InnoDB;
 
 DROP TABLE IF EXISTS adresse ;
 CREATE TABLE adresse (id_adresse INT  AUTO_INCREMENT NOT NULL,
-type_de_voie_ VARCHAR(255),
 numero_rue INT,
 code_postal INT,
 pays VARCHAR(255),
@@ -44,3 +42,4 @@ PRIMARY KEY (id_contact) ) ENGINE=InnoDB;
 ALTER TABLE user ADD CONSTRAINT FK_user_id_entreprise FOREIGN KEY (id_entreprise) REFERENCES entreprise (id_entreprise);
 
 ALTER TABLE entreprise ADD CONSTRAINT FK_entreprise_id_adresse FOREIGN KEY (id_adresse) REFERENCES adresse (id_adresse);
+

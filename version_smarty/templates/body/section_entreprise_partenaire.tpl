@@ -1,4 +1,4 @@
-<center>
+<!--<center>
 	<section id="entreprisePartenaire">
 		<h1>Les Entreprises présentes sur le site:</h1>
 		<img class="logoEntreprise" src="images/logoefrei.png"/>
@@ -10,4 +10,91 @@
 		<img class="logoEntreprise" src="images/logoefrei.png"/>
 		<img class="logoEntreprise" src="images/logoefrei.png"/>
 	</section>
-</center>
+</center>-->
+
+<section>
+		<img class="logoEntreprise" src="images/logoefrei.png"/>
+		<img class="logoEntreprise" src="images/logoSG.png"/>
+		<img class="logoEntreprise" src="images/logoRolex.png"/>
+		<img class="logoEntreprise" src="images/logoBosch.png"/>
+		<img class="logoEntreprise" src="images/logoValeo.png"/>
+		<img class="logoEntreprise" src="images/logoSomfy.png"/>
+		<img class="logoEntreprise" src="images/logoTefal.png"/>
+		<img class="logoEntreprise" src="images/logoefrei.png"/>
+		<img class="logoEntreprise" src="images/logoSG.png"/>
+		<img class="logoEntreprise" src="images/logoRolex.png"/>
+		<img class="logoEntreprise" src="images/logoBosch.png"/>
+		<img class="logoEntreprise" src="images/logoValeo.png"/>
+		<img class="logoEntreprise" src="images/logoSomfy.png"/>
+		<img class="logoEntreprise" src="images/logoTefal.png"/>
+		<img class="logoEntreprise" src="images/logoefrei.png"/>
+		<img class="logoEntreprise" src="images/logoSG.png"/>
+		<img class="logoEntreprise" src="images/logoRolex.png"/>
+		<img class="logoEntreprise" src="images/logoBosch.png"/>
+		<img class="logoEntreprise" src="images/logoValeo.png"/>
+		<img class="logoEntreprise" src="images/logoSomfy.png"/>
+		<img class="logoEntreprise" src="images/logoTefal.png"/>
+		<img class="logoEntreprise" src="images/logoefrei.png"/>
+		<img class="logoEntreprise" src="images/logoSG.png"/>
+		<img class="logoEntreprise" src="images/logoRolex.png"/>
+		<img class="logoEntreprise" src="images/logoBosch.png"/>
+		<img class="logoEntreprise" src="images/logoValeo.png"/>
+		<img class="logoEntreprise" src="images/logoSomfy.png"/>
+		<img class="logoEntreprise" src="images/logoTefal.png"/>
+		<img class="logoEntreprise" src="images/logoefrei.png"/>
+		<img class="logoEntreprise" src="images/logoSG.png"/>
+		<img class="logoEntreprise" src="images/logoRolex.png"/>
+		<img class="logoEntreprise" src="images/logoBosch.png"/>
+		<img class="logoEntreprise" src="images/logoValeo.png"/>
+		<img class="logoEntreprise" src="images/logoSomfy.png"/>
+		<img class="logoEntreprise" src="images/logoTefal.png"/>
+		<img class="logoEntreprise" src="images/logoefrei.png"/>
+		<img class="logoEntreprise" src="images/logoSG.png"/>
+		<img class="logoEntreprise" src="images/logoRolex.png"/>
+		<img class="logoEntreprise" src="images/logoBosch.png"/>
+		<img class="logoEntreprise" src="images/logoValeo.png"/>
+		<img class="logoEntreprise" src="images/logoSomfy.png"/>
+		<img class="logoEntreprise" src="images/logoTefal.png"/>
+		<img class="logoEntreprise" src="images/logoefrei.png"/>
+		<img class="logoEntreprise" src="images/logoSG.png"/>
+		<img class="logoEntreprise" src="images/logoRolex.png"/>
+		<img class="logoEntreprise" src="images/logoBosch.png"/>
+		<img class="logoEntreprise" src="images/logoValeo.png"/>
+		<img class="logoEntreprise" src="images/logoSomfy.png"/>
+		<img class="logoEntreprise" src="images/logoTefal.png"/>
+		<img class="logoEntreprise" src="images/logoefrei.png"/>
+		<img class="logoEntreprise" src="images/logoSG.png"/>
+		<img class="logoEntreprise" src="images/logoRolex.png"/>
+		<img class="logoEntreprise" src="images/logoBosch.png"/>
+		<img class="logoEntreprise" src="images/logoValeo.png"/>
+		<img class="logoEntreprise" src="images/logoSomfy.png"/>
+		<img class="logoEntreprise" src="images/logoTefal.png"/>
+		<img class="logoEntreprise" src="images/logoefrei.png"/>
+		<img class="logoEntreprise" src="images/logoSG.png"/>
+		<img class="logoEntreprise" src="images/logoRolex.png"/>
+		<img class="logoEntreprise" src="images/logoBosch.png"/>
+		<img class="logoEntreprise" src="images/logoValeo.png"/>
+		<img class="logoEntreprise" src="images/logoSomfy.png"/>
+		<img class="logoEntreprise" src="images/logoTefal.png"/>
+		<img class="logoEntreprise" src="images/logoefrei.png"/>
+		<img class="logoEntreprise" src="images/logoSG.png"/>
+		<img class="logoEntreprise" src="images/logoRolex.png"/>
+		<img class="logoEntreprise" src="images/logoBosch.png"/>
+		<img class="logoEntreprise" src="images/logoValeo.png"/>
+		<img class="logoEntreprise" src="images/logoSomfy.png"/>
+		<img class="logoEntreprise" src="images/logoTefal.png"/>
+		<img class="logoEntreprise" src="images/logoefrei.png"/>
+		<img class="logoEntreprise" src="images/logoSG.png"/>
+		<img class="logoEntreprise" src="images/logoRolex.png"/>
+		<img class="logoEntreprise" src="images/logoBosch.png"/>
+		<img class="logoEntreprise" src="images/logoValeo.png"/>
+		<img class="logoEntreprise" src="images/logoSomfy.png"/>
+		<img class="logoEntreprise" src="images/logoTefal.png"/>
+		<img class="logoEntreprise" src="images/logoefrei.png"/>
+		<img class="logoEntreprise" src="images/logoSG.png"/>
+		<img class="logoEntreprise" src="images/logoRolex.png"/>
+		<img class="logoEntreprise" src="images/logoBosch.png"/>
+		<img class="logoEntreprise" src="images/logoValeo.png"/>
+		<img class="logoEntreprise" src="images/logoSomfy.png"/>
+		<img class="logoEntreprise" src="images/logoTefal.png"/>
+</section>

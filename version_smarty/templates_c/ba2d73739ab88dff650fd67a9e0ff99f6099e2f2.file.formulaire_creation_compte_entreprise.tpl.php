@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-11 19:09:49
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-12 00:03:36
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/formulaire_creation_compte_entreprise.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:132388330454b2a052bb4fb6-35498449%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ba2d73739ab88dff650fd67a9e0ff99f6099e2f2' => 
     array (
       0 => '/Users/Timohee/Desktop/Data4All/version_smarty/templates/formulaire_creation_compte_entreprise.tpl',
-      1 => 1420999775,
+      1 => 1421017415,
       2 => 'file',
     ),
   ),
@@ -33,8 +33,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<p><label for="number_siret_siege">Numéro de Siret (Siège) :</label><input type="text" name="number_siret_siege" id="number_siret_siege" size="30" maxlength="10" /> </p>
 		<p><label for="former_law">Forme juridique RCS :</label><input type="text" name="former_law" id="former_law" size="30" maxlength="10" /> </p>
 		<p><label for="date_immatriculation">Date immatriculation RCS :</label><input type="text" name="date_immatriculation" id="date_immatriculation" size="30" maxlength="10" /> </p>
-		<p><label for="description_activity">Description de l'activité de l'entreprise :</label><textarea name="description_activity" id="description_activity"></textarea> </p>
+		<p><label for="description_activity">Description de l'activité de l'entreprise :</label><textarea style="resize:none;" rows="1" cols="25" name="description_activity" id="description_activity"></textarea> </p>
 		<p><label for="password">Mot de passe :</label><input type="password" name="pass" id="pass" size="30" maxlength="10" /> </p>
 		<p><label for="password_confirmation">Confirmation du mot de passe :</label><input type="password" name="pass" id="pass" size="30" maxlength="10" /> </p>
-		<input class="bouton_submit" type="submit" value="Submit">
+		<input class="bouton_submit" type="submit" value="Continuer">
 </form><?php }} ?>

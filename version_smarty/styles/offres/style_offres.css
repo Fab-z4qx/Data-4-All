@@ -5,3 +5,47 @@
 .contentOffres{
 	padding: 10% 0 5% 2%;
 }
+
+
+.TableOffres{
+	color: black;
+	font-size: 200%;
+}
+
+table{
+	border-collapse:collapse;
+	margin-left: 4%;
+	text-align: center;
+}
+
+td{
+	padding: 2%;
+	width: 20%;
+	border-bottom:2px solid #009688;
+	border-right:2px solid #009688;
+
+}
+
+.titre_tableau_offre{
+	font-weight: bold;
+	border-left:2px solid #009688;
+	border-top:2px solid #009688;
+}
+
+#offres_bouton_contact{
+	color: white;
+	background-color: #FFEB3B;
+	border-radius: 15px;
+	padding:5px 25px;
+	font-size: 150%;
+	font-weight: bold;
+}
+
+#offres_bouton_contact:hover{
+	background-color: #009688;
+}
+
+#offres_contact{
+	margin-top: 5%;
+	margin-left: 80%;
+}

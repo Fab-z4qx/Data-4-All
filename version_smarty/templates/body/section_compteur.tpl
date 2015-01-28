@@ -5,40 +5,9 @@
 	
 		<div class="count">
 			<center>
-			<div class="titre_count"> Compteur 1</div>
-			<div class="nombre_count">100</div>
+			<div class="titre_count">Nombre d'entreprise</div>
+			<div class="nombre_count">{$nbr_entreprise}</div>
 			</center>
 		</div>
-
-		<div class="count">
-			<center>
-			<div class="titre_count"> Compteur 2</div>
-			<div class="nombre_count">100</div>
-			</center>
-		</div>
-
-		<div class="count">
-			<center>
-			<div class="titre_count"> Compteur 3</div>
-			<div class="nombre_count">100</div>
-			</center>
-		</div>
-
-		<div class="count">
-			<center>
-			<div class="titre_count"> Compteur 4</div>
-			<div class="nombre_count">100</div>
-			</center>
-		</div>
-
-		<div class="count">
-			<center>
-			<div class="titre_count"> Compteur 5</div>
-			<div class="nombre_count">100</div>
-			</center>
-		</div>
-
-
-	
 
 </section>

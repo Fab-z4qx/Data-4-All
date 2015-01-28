@@ -4,37 +4,6 @@
 <body>
 	
     <header>
-
-    	<!-- Nav horizontal
-
-		<div class="logo">
-				<a  class="span_header_logo" href="<?echo(BASE_URL)?>"> Data 4 All (logo) </a>
-		</div>
-
-		<nav>
-			<ul>
-				<li><a class="span_header" href="<?php echo(BASE_URL);?>"> Accueil </a></li>
-				{if ({$header} == 'index')}
-					<li><a class="span_header" href="htdocs/search.php"> Recherche </a></li>
-					<li><a class="span_header" href="htdocs/liste_entreprises.php"> Liste des entreprises </a></li>
-					<li><a class="span_header" href="htdocs/login.php"> Se Connecter </a></li>
-					<li><a class="span_header" href="htdocs/a_propos.php"> A Propos </a></li>
-					<li><a class="span_header" href="htdocs/contact.php"> Contact </a></li>
-				{/if}
-
-				{if ({$header} != 'index')}
-					<li><a class="span_header" href="search.php"> Recherche </a></li>
-					<li><a class="span_header" href="liste_entreprises.php"> Liste des entreprises </a></li>
-					<li><a class="span_header" href="login.php"> Se Connecter </a></li>
-					<li><a class="span_header" href="a_propos.php"> A Propos </a></li>
-					<li><a class="span_header" href="contact.php"> Contact </a></li>
-				{/if}
-			</ul>
-		</nav>
-		-->
-
-		<!-- Nav vertical -->
-
 		<aside>
 
 			<center>
@@ -47,8 +16,9 @@
 
 			<nav>
 				<ul>
-					<a class="span_headerVertical" href="<?php echo(BASE_URL);?>"> <li>Accueil</li></a>
+
 					{if ({$header} == 'index')}
+						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
 						<a class="span_headerVertical" href="htdocs/search.php"><li>Recherche</li></a>
 						<a class="span_headerVertical" href="htdocs/liste_entreprises.php"><li>Liste des entreprises</li></a>
 						<a class="span_headerVertical" href="htdocs/login.php"><li>Connexion</li></a>
@@ -57,7 +27,8 @@
 						<a class="span_headerVertical" href="htdocs/contact.php"><li>Contact</li></a>
 					{/if}
 
-					{if ({$header} != 'index')}
+					{if ({$header} != 'index' && {$header} != 'admin_entreprise')}
+						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
 						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
 						<a class="span_headerVertical" href="liste_entreprises.php"><li>Liste des entreprises</li></a>
 						<a class="span_headerVertical" href="login.php"><li>Connexion</li></a>
@@ -65,6 +36,17 @@
 						<a class="span_headerVertical" href="a_propos.php"><li>A Propos</li></a>
 						<a class="span_headerVertical" href="contact.php"><li>Contact</li></a>
 					{/if}
+
+					{if ({$header} == 'admin_entreprise')}
+						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li>Accueil</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li>Infos Compte</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li>Importer Fichiers</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li>Stats Compte</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_changer_offre.php"><li>Changer d'offre</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_contact.php"><li>Contact</li></a>
+					{/if}
+
 				</ul>
 			</nav>
 
@@ -80,24 +62,35 @@
 
 	<div id="page">
 
-
-
-		{if ({$header} == 'index')}
-		<div id="navHorizontal">
-			<div id="titrePage">
-				{if ({$header} == 'index')} Accueil{/if}
-			</div>
-		</div>
-		{/if}
-
-		{if ({$header} == 'search' || {$header} == 'liste_entreprises' || {$header} == 'a_propos' || {$header} == 'login')}
+		{if ({$header} == 'search' || {$header} == 'liste_entreprises' || {$header} == 'a_propos' || {$header} == 'login' || {$header} == 'offres')}
 		<div class="navHorizontalNonIndex">
 			<div id="titrePage">
 				{if ({$header} == 'search')} Recherche {/if}
 				{if ({$header} == 'liste_entreprises')} Liste des Entreprises  {/if}
 				{if ({$header} == 'a_propos')} A Propos {/if}
 				{if ({$header} == 'login')} Connexion {/if}
+				{if ({$header} == 'offres')} Offres {/if}
 			</div>
+		</div>
+		{/if}
+
+		{if ({$header} == 'admin_entreprise')}
+		<div class="navHorizontal_admin_entreprise">
+			<div id="titrePage">
+				{if ({$admin_entreprise} == 'home_page')} Accueil - Nom Entreprise {/if}
+				{if ({$admin_entreprise} == 'changer_offre')} Changer d'offre - Nom Entreprise {/if}
+				{if ({$admin_entreprise} == 'stat_compte')} Statistique Compte - Nom Entreprise {/if}
+				{if ({$admin_entreprise} == 'import_fichier')} Importer Fichiers - Nom Entreprise {/if}
+				{if ({$admin_entreprise} == 'infos_compte')} Informations - Nom Entreprise {/if}
+				{if ({$admin_entreprise} == 'visualisation')} Visualisation - Nom Entreprise {/if}
+				{if ({$admin_entreprise} == 'contact')} Contact - Nom Entreprise {/if}
+			</div>
+			{if ({$admin_entreprise} == 'home_page')}
+			<div id="bouton_deco">
+				<a class="decon" href="htdocs/login.php">Déconnexion</a>
+			</div>
+			{/if}
+
 		</div>
 		{/if}
 
@@ -140,15 +133,4 @@
 			</div>
 		</div>
 		{/if}
-
-		{if ({$header} == 'offres')} 
-		<div class="navHorizontalOffres">
-			<div id="titrePage">
-				Offres 
-			</div>
-		</div>
-		{/if}
-
-		
-
 

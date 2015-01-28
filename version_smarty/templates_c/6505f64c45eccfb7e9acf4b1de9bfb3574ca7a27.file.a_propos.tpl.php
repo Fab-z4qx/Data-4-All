@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-10 19:57:54
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-15 00:46:10
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/a_propos.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:210213767054b15649cde5e4-64607313%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6505f64c45eccfb7e9acf4b1de9bfb3574ca7a27' => 
     array (
       0 => '/Users/Timohee/Desktop/Data4All/version_smarty/templates/a_propos.tpl',
-      1 => 1420915750,
+      1 => 1421279169,
       2 => 'file',
     ),
   ),
@@ -25,6 +25,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <section id="page_a_propos">
 
 <div class="sous_titre">
+	Présentation
+</div>
+
+
+<div class="sous_titre">
 	Membres de l'équipe
 </div>
 
@@ -36,8 +41,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div class="nom_prenom">BOURGEAUX Benjamin</div><br>
 		<div class="contact">
 			<div class="reseau_social"><a href="mailto:bourgeaux.benj@gmail.com"><img class="taille_icon_mail" src="../images/icon_mail.png"></a></div>
-			<div class="reseau_social"><a href="https://www.facebook.com/bbourgeaux?fref=ts"><img class="taille_icon_facebook" src="../images/icon_facebook.png"></a></div>
-			<div class="reseau_social"><a href="https://twitter.com/Timothee_R"><img class="taille_icon_twitter" src="../images/icon_twitter.png"></a></div>
+			<div class="reseau_social"><a href="https://www.facebook.com/bbourgeaux?fref=ts" target="_blank"><img class="taille_icon_facebook" src="../images/icon_facebook.png"></a></div>
+			<div class="reseau_social"><a href="https://twitter.com/Timothee_R" target="_blank"><img class="taille_icon_twitter" src="../images/icon_twitter.png"></a></div>
 		</div>
 	</div>
 
@@ -46,8 +51,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div class="nom_prenom">De CHAMPS Thomas</div><br>
 		<div class="contact">
 			<div class="reseau_social"><a href="mailto:dechamps.th@gmail.com"><img class="taille_icon_mail" src="../images/icon_mail.png"></a></div>
-			<div class="reseau_social"><a href="https://www.facebook.com/Thomas.de.Champs?fref=ts"><img class="taille_icon_facebook" src="../images/icon_facebook.png"></a></div>
-			<div class="reseau_social"><a href="https://twitter.com/Timothee_R"><img class="taille_icon_twitter" src="../images/icon_twitter.png"></a></div>
+			<div class="reseau_social"><a href="https://www.facebook.com/Thomas.de.Champs?fref=ts" target="_blank"><img class="taille_icon_facebook" src="../images/icon_facebook.png"></a></div>
+			<div class="reseau_social"><a href="https://twitter.com/Timothee_R" target="_blank"><img class="taille_icon_twitter" src="../images/icon_twitter.png"></a></div>
 		</div>
 	</div>
 
@@ -56,8 +61,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div class="nom_prenom">DERBISE Etienne</div><br>
 		<div class="contact">
 			<div class="reseau_social"><a href="mailto:etienne.derbise@efrei.net"><img class="taille_icon_mail" src="../images/icon_mail.png"></a></div>
-			<div class="reseau_social"><a href="hhttps://www.facebook.com/etienne.hrtbrkr?fref=ts"><img class="taille_icon_facebook" src="../images/icon_facebook.png"></a></div>
-			<div class="reseau_social"><a href="https://twitter.com/Timothee_R"><img class="taille_icon_twitter" src="../images/icon_twitter.png"></a></div>
+			<div class="reseau_social"><a href="hhttps://www.facebook.com/etienne.hrtbrkr?fref=ts" target="_blank"><img class="taille_icon_facebook" src="../images/icon_facebook.png"></a></div>
+			<div class="reseau_social"><a href="https://twitter.com/Timothee_R" target="_blank"><img class="taille_icon_twitter" src="../images/icon_twitter.png"></a></div>
 		</div>
 	</div>
 
@@ -66,8 +71,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div class="nom_prenom">COSTA Alexis</div><br>
 		<div class="contact">
 			<div class="reseau_social"><a href="mailto:alexis.costa@efrei.net"><img class="taille_icon_mail" src="../images/icon_mail.png"></a></div>
-			<div class="reseau_social"><a href="https://www.facebook.com/alexis.costa.5?fref=ts"><img class="taille_icon_facebook" src="../images/icon_facebook.png"></a></div>
-			<div class="reseau_social"><a href="https://twitter.com/Timothee_R"><img class="taille_icon_twitter" src="../images/icon_twitter.png"></a></div>
+			<div class="reseau_social"><a href="https://www.facebook.com/alexis.costa.5?fref=ts" target="_blank"><img class="taille_icon_facebook" src="../images/icon_facebook.png"></a></div>
+			<div class="reseau_social"><a href="https://twitter.com/Timothee_R" target="_blank"><img class="taille_icon_twitter" src="../images/icon_twitter.png"></a></div>
 		</div>
 	</div>
 
@@ -76,8 +81,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div class="nom_prenom">GENET Fabien</div><br>
 		<div class="contact">
 			<div class="reseau_social"><a href="mailto:contact.f37@gmail.com"><img class="taille_icon_mail" src="../images/icon_mail.png"></a></div>
-			<div class="reseau_social"><a href="https://www.facebook.com/fgenet?fref=ts"><img class="taille_icon_facebook" src="../images/icon_facebook.png"></a></div>
-			<div class="reseau_social"><a href="https://twitter.com/Timothee_R"><img class="taille_icon_twitter" src="../images/icon_twitter.png"></a></div>
+			<div class="reseau_social"><a href="https://www.facebook.com/fgenet?fref=ts" target="_blank"><img class="taille_icon_facebook" src="../images/icon_facebook.png"></a></div>
+			<div class="reseau_social"><a href="https://twitter.com/Timothee_R" target="_blank"><img class="taille_icon_twitter" src="../images/icon_twitter.png"></a></div>
 		</div>
 	</div>
 
@@ -86,8 +91,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div class="nom_prenom">PIGAUX Guillaume</div><br>
 		<div class="contact">
 			<div class="reseau_social"><a href="mailto:guillaume.pigaux@gmail.com"><img class="taille_icon_mail" src="../images/icon_mail.png"></a></div>
-			<div class="reseau_social"><a href="https://www.facebook.com/isocold?fref=ts"><img class="taille_icon_facebook" src="../images/icon_facebook.png"></a></div>
-			<div class="reseau_social"><a href="https://twitter.com/Timothee_R"><img class="taille_icon_twitter" src="../images/icon_twitter.png"></a></div>
+			<div class="reseau_social"><a href="https://www.facebook.com/isocold?fref=ts" target="_blank"><img class="taille_icon_facebook" src="../images/icon_facebook.png"></a></div>
+			<div class="reseau_social"><a href="https://twitter.com/Timothee_R" target="_blank"><img class="taille_icon_twitter" src="../images/icon_twitter.png"></a></div>
 		</div>
 	</div>
 
@@ -96,8 +101,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div class="nom_prenom">ROBERT Timothée</div><br>
 		<div class="contact">
 			<div class="reseau_social"><a href="mailto:tim.robert@free.fr"><img class="taille_icon_mail" src="../images/icon_mail.png"></a></div>
-			<div class="reseau_social"><a href="https://www.facebook.com/profile.php?id=1282600507"><img class="taille_icon_facebook" src="../images/icon_facebook.png"></a></div>
-			<div class="reseau_social"><a href="https://twitter.com/Timothee_R"><img class="taille_icon_twitter" src="../images/icon_twitter.png"></a></div>
+			<div class="reseau_social"><a href="https://www.facebook.com/profile.php?id=1282600507" target="_blank"><img class="taille_icon_facebook" src="../images/icon_facebook.png"></a></div>
+			<div class="reseau_social"><a href="https://twitter.com/Timothee_R" target="_blank"><img class="taille_icon_twitter" src="../images/icon_twitter.png"></a></div>
 		</div>
 	</div>
 
@@ -106,8 +111,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div class="nom_prenom">SRIPATHMANATHAN Alain</div><br>
 		<div class="contact">
 			<div class="reseau_social"><a href="mailto:alain.sp93@gmail.com"><img class="taille_icon_mail" src="../images/icon_mail.png"></a></div>
-			<div class="reseau_social"><a href="https://www.facebook.com/alain.sripathmanathan?fref=ts"><img class="taille_icon_facebook" src="../images/icon_facebook.png"></a></div>
-			<div class="reseau_social"><a href="https://twitter.com/Timothee_R"><img class="taille_icon_twitter" src="../images/icon_twitter.png"></a></div>
+			<div class="reseau_social"><a href="https://www.facebook.com/alain.sripathmanathan?fref=ts" target="_blank"><img class="taille_icon_facebook" src="../images/icon_facebook.png"></a></div>
+			<div class="reseau_social"><a href="https://twitter.com/Timothee_R" target="_blank"><img class="taille_icon_twitter" src="../images/icon_twitter.png"></a></div>
 		</div>
 	</div>
 
