@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-12 13:54:25
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-19 14:24:59
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/head.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:140280814054b14541c162a7-07050574%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '797d9d73071b2242b71402faf2c53cf762939095' => 
     array (
       0 => '/Users/Timohee/Desktop/Data4All/version_smarty/templates/head.tpl',
-      1 => 1421067158,
+      1 => 1421673876,
       2 => 'file',
     ),
   ),
@@ -34,7 +34,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	  	<meta charset="utf-8" />
 	    <title>Data 4 All</title>
 
-	    <link rel="icon" type="image/png" href="images/logo_site.png" />
+	    <link rel="icon" type="image/png" href="images/logo_site_TEAL.png" />
 		<link rel="apple-touch-icon-precomposed" href="images/logo_site.png" />
 
 		<?php if ((count($_smarty_tpl->tpl_vars['js_tab']->value))!=0){?>

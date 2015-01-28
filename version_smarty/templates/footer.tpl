@@ -3,7 +3,7 @@
 
 		<div>
 			<div class="menu-footer">
-				<h2>Recherche</h2>
+				<h2>Search</h2>
 				<a class="li-footer" href="#">rubrique 1</a><br>
 				<a class="li-footer" href="#">rubrique 2</a><br>
 				<a class="li-footer" href="#">rubrique 3</a><br>
@@ -15,7 +15,7 @@
 				<a class="li-footer" href="#">rubrique 3</a><br>
 			</div>
 			<div class="menu-footer">
-				<h2>Se Connecter</h2>
+				<h2>Sign Up</h2>
 				<a class="li-footer" href="#">rubrique 1</a><br>
 				<a class="li-footer" href="#">rubrique 2</a><br>
 				<a class="li-footer" href="#">rubrique 3</a><br>

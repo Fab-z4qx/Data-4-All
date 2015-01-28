@@ -31,12 +31,13 @@ aside{
 
 nav {
 	display: block; 
-	width: 100%; 
-	margin-top: 15%;
+	width: 100%;
+	padding: 0;
 }
 
 nav ul {
 	list-style-type: none;
+	padding: 0;
 }
 
 nav li {
@@ -53,11 +54,8 @@ nav li {
 }
 
 
-.span_headerVertical:hover{
-}
-
 #credit{
-	margin-top: 70%;
+	margin-top: 20%;
 	color: black;
 }
 
@@ -77,12 +75,6 @@ nav li {
 	font-size: 200%;
 }
 
-#navHorizontal_connexion{
-	display: inline-block;
-	margin-left: 75%;
-	
-}
-
 .decon, .con{
 	color: white;
 	background-color: #FFEB3B;
@@ -93,10 +85,6 @@ nav li {
 
 .decon{
 	font-size: 75%;
-}
-
-.con{
-	font-size: 150%;
 }
 
 #bouton_deco{
@@ -118,3 +106,18 @@ nav li {
 	font-size: 200%;
 	width: 95%;
 }
+
+.con{
+	font-size: 100%;
+	border: none;
+	cursor: pointer;
+}
+
+#navHorizontal_connexion{
+	background-color: #009688;
+	padding: 1% 0 0% 70%;
+	top: 2%;
+	
+}
+
+
