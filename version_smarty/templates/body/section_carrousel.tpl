@@ -1,12 +1,9 @@
-
-  <head>
+<!-- section_carrousel -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
 
-  <body>
 
 	<div id="myCarousel" class="carousel slide" data-interval="2000">
 		<div class="carousel-inner">
@@ -42,7 +39,7 @@
         $('.carousel').carousel();
     });
   </script>
+<!-- section_carrousel -->
 
-  </body>
 
 

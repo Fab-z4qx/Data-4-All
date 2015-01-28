@@ -1,5 +1,5 @@
 <?php
-	require('/lib/recaptchalib.php');
+	require('lib/recaptchalib.php');
 	function connexion_serveur(){
 
 		//$con = mysql_connect("localhost","root","root");
