@@ -1,11 +1,5 @@
-<!--
-  <head>
 
 
-
-  </head>
-
-  <body>
 
 	<div id="myCarousel" class="carousel slide" data-interval="2000">
 		<div class="carousel-inner">
@@ -40,7 +34,3 @@
         $('.carousel').carousel();
     });
   </script>
-
-  </body>
-
--->
