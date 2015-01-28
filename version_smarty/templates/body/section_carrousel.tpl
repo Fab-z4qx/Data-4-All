@@ -28,7 +28,7 @@
 
 
 
-	 script pour gérer le carousel 
+	 
   <script type="text/javascript">
     $(document).ready(function(){
         $('.carousel').carousel();
