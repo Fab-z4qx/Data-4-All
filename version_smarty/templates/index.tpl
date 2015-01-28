@@ -2,9 +2,9 @@
 
 {include file='body/section_titre_principal.tpl'}
 
-{include file='body/section_search.tpl'}
-
 {include file='body/section_carrousel.tpl'}
+
+{include file='body/section_search.tpl'}
 	
 {include file='body/section_compteur.tpl'}
 
