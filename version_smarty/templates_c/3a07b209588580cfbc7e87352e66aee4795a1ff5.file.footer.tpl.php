@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-11 18:47:48
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-28 11:23:58
          compiled from "F:\wamp\www\D4A\version_smarty\templates\footer.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:472854b16415056587-27883988%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3a07b209588580cfbc7e87352e66aee4795a1ff5' => 
     array (
       0 => 'F:\\wamp\\www\\D4A\\version_smarty\\templates\\footer.tpl',
-      1 => 1421002058,
+      1 => 1422443974,
       2 => 'file',
     ),
   ),
@@ -29,7 +29,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 		<div>
 			<div class="menu-footer">
-				<h2>Recherche</h2>
+				<h2>Search</h2>
 				<a class="li-footer" href="#">rubrique 1</a><br>
 				<a class="li-footer" href="#">rubrique 2</a><br>
 				<a class="li-footer" href="#">rubrique 3</a><br>
@@ -41,7 +41,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<a class="li-footer" href="#">rubrique 3</a><br>
 			</div>
 			<div class="menu-footer">
-				<h2>Se Connecter</h2>
+				<h2>Sign Up</h2>
 				<a class="li-footer" href="#">rubrique 1</a><br>
 				<a class="li-footer" href="#">rubrique 2</a><br>
 				<a class="li-footer" href="#">rubrique 3</a><br>

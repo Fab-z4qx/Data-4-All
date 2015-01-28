@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-10 17:40:36
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-28 11:29:17
          compiled from "F:\wamp\www\D4A\version_smarty\templates\head.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1417654b16414e9f8d3-04608800%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '282511ea5d73113f67648a0d3f05d4f27f97e822' => 
     array (
       0 => 'F:\\wamp\\www\\D4A\\version_smarty\\templates\\head.tpl',
-      1 => 1420902592,
+      1 => 1422443974,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_54b16414ed4384_57224467',
   'variables' => 
   array (
     'js_tab' => 0,
@@ -23,8 +25,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'css' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_54b16414ed4384_57224467',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_54b16414ed4384_57224467')) {function content_54b16414ed4384_57224467($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="fr">
@@ -34,7 +34,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	  	<meta charset="utf-8" />
 	    <title>Data 4 All</title>
 
-	    <link rel="icon" type="image/png" href="images/logo_site.png" />
+	    <link rel="icon" type="image/png" href="images/logo_site_TEAL.png" />
 		<link rel="apple-touch-icon-precomposed" href="images/logo_site.png" />
 
 		<?php if ((count($_smarty_tpl->tpl_vars['js_tab']->value))!=0){?>
