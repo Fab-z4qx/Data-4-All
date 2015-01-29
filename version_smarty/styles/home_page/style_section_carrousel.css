@@ -3,7 +3,7 @@
 ------------------------------*/
 
 
-	.caroussel1 {
+.caroussel1 {
 margin:0;
 padding:0;
 list-style:none;
@@ -20,15 +20,7 @@ background:red;
 .prev {
 cursor:pointer;
 }
-        
-. {
-margin:0;
-padding:0;
-list-style:none;
-width:697px;
-height:400px;
-overflow:hidden;
-}
+
         
 .caroussel1 li {
 text-align:left;
@@ -52,12 +44,13 @@ background:#ff0000;
 }
 
 .item{
-    background: #333;
-    text-align: center;
-    height: 500px ;
+background: #333;
+text-align: center;
+height: 400px ;
 }
 
 img {
-        margin: 0 auto;
-    }
+margin: 0 auto;
+max-height: 400px;
+}
 
