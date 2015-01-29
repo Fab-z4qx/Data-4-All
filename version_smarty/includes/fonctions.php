@@ -1,7 +1,10 @@
 <?php
+error_reporting(E_ERROR | E_PARSE);
 
-	//require('lib/recaptchalib.php');
+
+	
 	function connexion_serveur(){
+
 
 		$con = mysql_connect("localhost","root","");
 /*
@@ -12,6 +15,7 @@
 		catch(Exception $e)
 		{   // En cas d'erreur, on affiche un message et on arrête tout
 		    die('Erreur : '.$e->getMessage());
+
 		}
 	*/
 		if (!$con) die('Could not connect: ' . mysql_error());
@@ -61,12 +65,10 @@
 		return $JS_TAB;
 	}
 
-/*
+
 	function echo_captcha()
 	{
-	
 		return recaptcha_get_html('6LeGG-sSAAAAAMMefaLjooNSBcBEqg61a6IhhpTE'); 
 	}
-*/	
 ?>
 
