@@ -12,7 +12,9 @@
 	$smarty->assign('js_tab', $JS_TAB);
 	$smarty->assign('css_tab', $CSS_TAB);
 	
-	$smarty->assign('header', 'demarcheCitoyenne');
+
+	$smarty->assign('header', 'arguments');
+	$smarty->assign('page', 'demarcheCitoyenne');
 	$smarty->assign('footer', 'index');
 
 	$smarty->display('demarcheCitoyenne.tpl');

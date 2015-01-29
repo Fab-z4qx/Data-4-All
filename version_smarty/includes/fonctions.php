@@ -3,8 +3,8 @@
 	//require('lib/recaptchalib.php');
 	function connexion_serveur(){
 
-		//$con = mysql_connect("localhost","root","");
-
+		$con = mysql_connect("localhost","root","");
+/*
 		try
 		{   // On se connecte à MySQL
 		    $pdo = new PDO('mysql:host=127.0.0.1;dbname=BDD_D4A', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8')); 
@@ -13,10 +13,10 @@
 		{   // En cas d'erreur, on affiche un message et on arrête tout
 		    die('Erreur : '.$e->getMessage());
 		}
-	
-		//if (!$con) die('Could not connect: ' . mysql_error());
+	*/
+		if (!$con) die('Could not connect: ' . mysql_error());
 
-		//mysql_select_db("BDD_D4A", $con);
+		mysql_select_db("BDD_D4A", $con);
 		
 		
 		return $con;

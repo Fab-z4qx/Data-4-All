@@ -87,6 +87,16 @@
 						<a class="span_headerVertical" href="contact.php"><li  class="li_select">Contact</li></a>
 					{/if}
 
+					{if ({$header} == 'arguments')}
+						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
+						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
+						<a class="span_headerVertical" href="liste_entreprises.php"><li>Entreprises</li></a>
+						<a class="span_headerVertical" href="offres.php"><li>Offres</li></a>
+						<a class="span_headerVertical" href="login.php"><li>Inscription</li></a>
+						<a class="span_headerVertical" href="a_propos.php"><li>A Propos</li></a>
+						<a class="span_headerVertical" href="contact.php"><li>Contact</li></a>
+					{/if}
+
 					{if ({$admin_entreprise} == 'home_page')}
 						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li  class="li_select_entreprise">Home</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li>Infos Compte</li></a>
@@ -210,7 +220,7 @@
 		</div>
 		{/if}
 
-		{if ({$header} == 'ouvrirDonnees')} 
+		{if ({$page} == 'ouvrirDonnees')} 
 		<div class="navHorizontalOuvrirDonnees">
 			<div id="titrePage">
 				Ouvrir ses Données 
@@ -218,7 +228,7 @@
 		</div>
 		{/if}
 
-		{if ({$header} == 'transparence')} 
+		{if ({$page} == 'transparence')} 
 		<div class="navHorizontalTransparence">
 			<div id="titrePage">
 				Transparence 
@@ -226,7 +236,7 @@
 		</div>
 		{/if}
 
-		{if ({$header} == 'gagnerCompetivite')} 
+		{if ({$page} == 'gagnerCompetivite')} 
 		<div class="navHorizontalGagnerCompetivite">
 			<div id="titrePage">
 				Gagner en Competivité 
@@ -234,7 +244,7 @@
 		</div>
 		{/if}
 
-		{if ({$header} == 'demarcheCitoyenne')} 
+		{if ({$page} == 'demarcheCitoyenne')} 
 		<div class="navHorizontalDemarcheCitoyenne">
 			<div id="titrePage">
 				Demarche Citoyenne 
