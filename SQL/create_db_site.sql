@@ -42,3 +42,4 @@ PRIMARY KEY (id_contact) ) ENGINE=InnoDB;
 ALTER TABLE user ADD CONSTRAINT FK_user_id_entreprise FOREIGN KEY (id_entreprise) REFERENCES entreprise (id_entreprise);
 
 ALTER TABLE entreprise ADD CONSTRAINT FK_entreprise_id_adresse FOREIGN KEY (id_adresse) REFERENCES adresse (id_adresse);
+

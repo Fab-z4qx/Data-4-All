@@ -1,6 +1,9 @@
 <?php
+	require('lib/recaptchalib.php');
 	function connexion_serveur(){
-		$con = mysql_connect("localhost","root","root");
+
+		//$con = mysql_connect("localhost","root","root");
+		$con = mysql_connect("localhost","root","");
 	
 		if (!$con) die('Could not connect: ' . mysql_error());
 
@@ -21,6 +24,7 @@
 							ROOT_TO_DIR.STYLE."home_page/style_section_guide.css",
 							ROOT_TO_DIR.STYLE."home_page/style_section_entreprise_partenaire.css",
 							ROOT_TO_DIR.STYLE."home_page/style_section_contact.css",
+							ROOT_TO_DIR.STYLE."home_page/bootstrap.min.css",
 							ROOT_TO_DIR.STYLE."liste_entreprises/style_liste_entreprises.css",
 							ROOT_TO_DIR.STYLE."liste_entreprises/style_entreprises.css",
 							ROOT_TO_DIR.STYLE."contact/style_contact.css",
@@ -30,14 +34,30 @@
 							ROOT_TO_DIR.STYLE."search/style_search.css",
 							ROOT_TO_DIR.STYLE."a_propos/style_a_propos.css",
 							ROOT_TO_DIR.STYLE."color.css",
-							ROOT_TO_DIR.STYLE."administration_entreprise/style_admin_entreprise.css",);
+							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_changer_offre.css",
+							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_contact.css",
+							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_import_fichiers.css",
+							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_infos_compte.css",
+							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_stats_compte.css",
+							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_visualisation.css",
+							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_home_page.css"
+							);
 		return $CSS_TAB;
 	}
 	
 	function inser_js(){
 		$JS_TAB = array(ROOT_TO_DIR.JS_DIR."googleMap.js",
-						ROOT_TO_DIR.JS_DIR."rubrique_connexion.js");
+						ROOT_TO_DIR.JS_DIR."rubrique_connexion.js",
+						ROOT_TO_DIR.JS_DIR."progressbar.js",
+						ROOT_TO_DIR.JS_DIR."bootstrap.min.js");
 		return $JS_TAB;
+	}
+
+
+	function echo_captcha()
+	{
+	
+		return recaptcha_get_html('6LeGG-sSAAAAAMMefaLjooNSBcBEqg61a6IhhpTE'); 
 	}
 	
 ?>

@@ -1,49 +1,4 @@
 
-/* version horizontale
-
-header {
-	position: fixed;
-	width: 100%;
-	z-index: 1;
-	padding: 0% 0 0% 0;
-}
-
-.logo {
-	font-family: 'FuturaKoyu',Arial,sans-serif;
-	display: inline-block;
-	margin-left: 10%;
-	width: 15%;
-}
-
-nav {
-	display: inline-block; 
-	width: 70%; 
-	text-align: right;
-}
-
-nav ul {
-	list-style-type: none;
-}
-
-nav li {
-	display: inline-block;
-	font-size: 150%;
-	margin-left: 4%;
-}
-
-.span_header_logo {
-	font-size: 150%;
-	text-decoration: none;
-}
-
-.span_header {
-	text-decoration: none;
-}
-
-*/
-
-/* version vertical */
-
 a{
 	text-decoration: none;
 }
@@ -76,12 +31,13 @@ aside{
 
 nav {
 	display: block; 
-	width: 100%; 
-	margin-top: 15%;
+	width: 100%;
+	padding: 0;
 }
 
 nav ul {
 	list-style-type: none;
+	padding: 0;
 }
 
 nav li {
@@ -98,11 +54,8 @@ nav li {
 }
 
 
-.span_headerVertical:hover{
-}
-
 #credit{
-	margin-top: 70%;
+	margin-top: 20%;
 	color: black;
 }
 
@@ -122,32 +75,49 @@ nav li {
 	font-size: 200%;
 }
 
-#navHorizontal_connexion{
-	display: inline-block;
-	margin-left: 75%;
-}
-
-#con{
+.decon, .con{
 	color: white;
 	background-color: #FFEB3B;
 	border-radius: 15px;
 	padding:5px 25px;
-	font-size: 150%;
 	font-weight: bold;
 }
 
+.decon{
+	font-size: 75%;
+}
 
-.navHorizontalTransparence, .navHorizontalNonIndex, .navHorizontalGagnerCompetivite ,.navHorizontalDemarcheCitoyenne, .navHorizontalContact, .navHorizontalOuvrirDonnees, .navHorizontalOffres{
+#bouton_deco{
+	display: inline-block;
+	margin-left: 30%;
+
+}
+
+.navHorizontalTransparence, .navHorizontalNonIndex, .navHorizontal_admin_entreprise, .navHorizontalGagnerCompetivite ,.navHorizontalDemarcheCitoyenne, .navHorizontalContact, .navHorizontalOuvrirDonnees, .navHorizontalOffres{
 	padding: 2.2% 0 2.2% 5%;
 	font-size: 200%;
 	width: 95%;
 }
 
 
-.navHorizontalTransparence.fixed, .navHorizontalNonIndex.fixed, .navHorizontalGagnerCompetivite.fixed ,.navHorizontalDemarcheCitoyenne.fixed, .navHorizontalContact.fixed, .navHorizontalOuvrirDonnees.fixed{
-	position: fixed;
-	top: 0;
-	z-index: 1000;
+.navHorizontal_admin_entreprise{
+	background-color: #607D8B;
+	padding: 2.2% 0 2.2% 5%;
+	font-size: 200%;
+	width: 95%;
+}
+
+.con{
+	font-size: 100%;
+	border: none;
+	cursor: pointer;
+}
+
+#navHorizontal_connexion{
+	background-color: #009688;
+	padding: 1% 0 0% 70%;
+	top: 2%;
+	
 }
 
 

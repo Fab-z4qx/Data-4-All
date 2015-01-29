@@ -19,9 +19,16 @@
 }
 
 .membre{
+	color: white;
 	display: inline-block;
 	width: 10%;
-	margin: 1%;
+	width: 25%;
+	background-color: #607D8B;
+	padding-left: 1%;
+	padding-top: 1%;
+	margin-left: 5%;
+	margin-bottom: 5%;
+	padding-right: 1%;
 }
 
 .photo{
@@ -29,13 +36,20 @@
 }
 
 .taille_photo{
-	width: 100%;
+	width: 30%;
 	height: auto;
+	margin-bottom: 5%;
 }
 
 .nom_prenom{
 	display: inline-block;
 	position: relative;
+	margin-bottom: 3%;
+}
+
+.presentation{
+	overflow: hidden;
+	margin-bottom: 5%;
 }
 
 .contact{
@@ -49,16 +63,17 @@
 }
 
 .taille_icon_mail{
-	width: 100%;
+	width: 50%;
 	height: auto;
 }
 
 .taille_icon_facebook{
-	width: 100%;
+	width: 50%;
 	height: auto;
 }
 
 .taille_icon_twitter{
-	width: 100%;
+	width: 50%;
 	height: auto;
 }
+

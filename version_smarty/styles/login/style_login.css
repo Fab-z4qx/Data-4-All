@@ -2,93 +2,59 @@
 /*       login 
 -----------------------------------*/
 
-.page_rubrique{
+.page_creation_compte{
 	color: black;
 	display: block;
 	width: 100%;
+	padding-bottom: 3%;
 }
 
-#titres_rubriques_connexion, #choix_connexion{
+#titre_creation_compte{
+	margin-top: 2%;
+	margin-bottom: 2%;
+	font-size: 200%;
+}
+
+.titre_left, .titre_right{
 	display: inline-block;
-	width: 100%;
-	padding: 2% 0 2% 0;
+	margin-left: 25%;
 }
 
-#choix_connexion{
-	font-size: 120%;
+#row{
+	 display: table;
+	margin-left: 20%;
 }
 
-#titres_rubriques_connexion{
-	font-size: 150%;
+.block_left, .block_right{
+	display: table-cell; 
+	width: 52%;
 }
 
-.block_0_50{
-	position: relative;
-	display: inline-block;
-	width: 49.5%;
-}
-
-.block_50_100{
-	position: relative;
-	display: inline-block;
-	width: 49.5%;
-}
-
-.boutons_connexion{
-	text-decoration: none;
-	color: white;
-	cursor:pointer;
-	display: inline-block;
-	padding: 1% 20px 1% 20px;
-	border-radius: 50px;
-	font-size: 100%;
-}
-
-.boutons_connexion:hover{
-	background-color:#009688; 
-}
-
-#titre_deja_membre{
-	display: inline-block;
-}
-
-#titre_pas_membre{
-	display: inline-block;
-}
-
-#connexion_form_deja_membre{
-	display: inline-block;
-	border: 2px blue solid;
-}
-
-#connexion_form_pas_membre{
-	display: inline-block;
-	border: 2px yellow solid;
-}
-
-.formulaire_creation_compte_entreprise, .formulaire_connexion_compte_entreprise{
-	display: inline-block;
-	color: black;
-	margin-top: 5%;
-	margin-left: 10%;
-}
-
-#w{
-	color:white;
-}
 
 .bouton_submit{
-	cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
-	padding:5px 25px; /*add some padding to the inside of the button*/
-	background:#009688; /*the colour of the button*/
-	/*give the button curved corners, alter the size as required*/
+	cursor:pointer;
+	padding:5px 25px;
+	background-color: #CDDC39;
 	border-radius: 15px;
-	/*style the text*/
 	color:white;
 	font-size:75%;
 	border: none;
 }
 
 .bouton_submit:hover{
-	background-color: #CDDC39;
+	background-color:#009688;
+}
+
+.form_entreprise, .form_particulier{
+    display: block;
+    float: left;
+
+}
+
+.form_entreprise{
+    width: 267px;
+}
+
+.form_particulier{
+    width: 150px;
 }

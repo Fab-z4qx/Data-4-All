@@ -3,13 +3,18 @@
 ------------------------------*/
 
 #titrePrincipal{
+	
+	padding: 1.2% 0 2% 8%;
+	
+}
+
+#titreHome{
 	font-family: 'FuturaKoyu',Arial,sans-serif;
-	padding: 8% 0 2% 8%;
+	display: inline-block;
 	font-size: 500%;
 }
 
 span{
 	font-size: 80%;
 }
-
 
