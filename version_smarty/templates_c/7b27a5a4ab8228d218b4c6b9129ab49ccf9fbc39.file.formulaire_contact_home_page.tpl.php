@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-15 01:04:12
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-29 16:14:33
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/formulaires/formulaire_contact_home_page.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1656837054b626095d1e36-46047182%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:197712061454ca4e59c7b8d4-86508948%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,15 +11,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1656837054b626095d1e36-46047182',
+  'nocache_hash' => '197712061454ca4e59c7b8d4-86508948',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_54b626095d3452_36214451',
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_54ca4e59c7cf07_36053933',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54b626095d3452_36214451')) {function content_54b626095d3452_36214451($_smarty_tpl) {?><form method="post" action="htdocs/traitement_contact_home_page.php">
+<?php if ($_valid && !is_callable('content_54ca4e59c7cf07_36053933')) {function content_54ca4e59c7cf07_36053933($_smarty_tpl) {?><form method="post" action="htdocs/traitement_contact_home_page.php">
 
 <div class="form-left">
 		<h3 class="label"><label for="nom_contact">Nom</label> </h3><input type="text" name="nom_contact" id="nom_contact"/>

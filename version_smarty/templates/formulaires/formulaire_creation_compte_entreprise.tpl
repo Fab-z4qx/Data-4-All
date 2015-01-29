@@ -38,10 +38,5 @@
 
 		<p><label for="password_confirmation">Confirmation du mot de passe :</label><input type="password" name="pass" id="pass" size="30" maxlength="10" /> </p>
 
-		<script type="text/javascript">
-			var RecaptchaOptions = { theme : 'clean' };
-		</script>
-		
-		{echo_captcha}
 		<input class="bouton_submit" type="submit" value="Continuer">
 </form>

@@ -17,7 +17,8 @@
 	$smarty->assign('header', 'login');
 	$smarty->assign('footer', 'index');
 	
-	$smarty->registerPlugin('function', 'echo_captcha','echo_captcha');
+	//$smarty->registerPlugin('function', 'echo_captcha','echo_captcha');
+	
 	$smarty->display('login.tpl');
 
 ?>

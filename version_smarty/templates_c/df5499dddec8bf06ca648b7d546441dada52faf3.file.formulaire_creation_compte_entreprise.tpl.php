@@ -1,25 +1,27 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-19 23:31:16
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-29 16:14:19
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/formulaires/formulaire_creation_compte_entreprise.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:194718486954b377e3220f40-90515759%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:40653655954ca4e280ea430-25170518%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'df5499dddec8bf06ca648b7d546441dada52faf3' => 
     array (
       0 => '/Users/Timohee/Desktop/Data4All/version_smarty/templates/formulaires/formulaire_creation_compte_entreprise.tpl',
-      1 => 1421706673,
+      1 => 1422544457,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '194718486954b377e3220f40-90515759',
+  'nocache_hash' => '40653655954ca4e280ea430-25170518',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_54b377e3223628_72794874',
+  'unifunc' => 'content_54ca4e28136cb5_62672895',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54b377e3223628_72794874')) {function content_54b377e3223628_72794874($_smarty_tpl) {?><form method="post" action="traitement_form_creation_compte_entreprise.php">
+<?php if ($_valid && !is_callable('content_54ca4e28136cb5_62672895')) {function content_54ca4e28136cb5_62672895($_smarty_tpl) {?>
+
+<form method="post" action="traitement_form_creation_compte_entreprise.php">
 		<label class="form_entreprise" for="nom_entreprise">Nom entreprise :</label><input type="text" name="nom_entreprise" id="nom_entreprise"/><br><br>
 		
 		<label class="form_entreprise" for="email_entreprise">Email :</label><input type="email_entreprise" /><br><br>
@@ -54,5 +56,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		
 		<label class="form_entreprise" for="password_confirmation">Confirmation du mot de passe :</label><input type="password" name="pass" id="pass"/><br><br>
 		
+
+		<p><label for="password_confirmation">Confirmation du mot de passe :</label><input type="password" name="pass" id="pass" size="30" maxlength="10" /> </p>
+
 		<input class="bouton_submit" type="submit" value="Continuer">
 </form><?php }} ?>

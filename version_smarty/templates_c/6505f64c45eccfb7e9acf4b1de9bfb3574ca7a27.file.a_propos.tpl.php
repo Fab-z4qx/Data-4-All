@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-27 21:00:01
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-29 16:15:17
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/a_propos.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:210213767054b15649cde5e4-64607313%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:130855742054ca4e85028930-83252907%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,15 +11,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '210213767054b15649cde5e4-64607313',
+  'nocache_hash' => '130855742054ca4e85028930-83252907',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_54b15649d21374_74226849',
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_54ca4e85069337_53330703',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54b15649d21374_74226849')) {function content_54b15649d21374_74226849($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
+<?php if ($_valid && !is_callable('content_54ca4e85069337_53330703')) {function content_54ca4e85069337_53330703($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
 
 <section id="page_a_propos">

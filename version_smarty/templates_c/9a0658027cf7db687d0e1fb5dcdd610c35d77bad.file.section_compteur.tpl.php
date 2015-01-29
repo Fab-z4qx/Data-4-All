@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-23 18:33:05
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-29 16:14:33
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/body/section_compteur.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:35408778954b14541c558b8-16722244%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:142820612054ca4e59c54e87-18981365%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,19 +11,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '35408778954b14541c558b8-16722244',
+  'nocache_hash' => '142820612054ca4e59c54e87-18981365',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_54b14541c57056_90566660',
   'variables' => 
   array (
     'nbr_entreprise' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_54ca4e59c65e94_05157755',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54b14541c57056_90566660')) {function content_54b14541c57056_90566660($_smarty_tpl) {?><section id="compteur">
+<?php if ($_valid && !is_callable('content_54ca4e59c65e94_05157755')) {function content_54ca4e59c65e94_05157755($_smarty_tpl) {?><section id="compteur">
 	
 		<div class="count">
 			<center>

@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-01-19 21:34:38
+<?php /* Smarty version Smarty-3.1.13, created on 2015-01-29 16:14:33
          compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/body/section_titre_principal.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:144993407054b14541c4af80-11112342%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:181448694054ca4e59c44504-17667105%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,15 +11,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '144993407054b14541c4af80-11112342',
+  'nocache_hash' => '181448694054ca4e59c44504-17667105',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_54b14541c4c1e2_04563518',
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_54ca4e59c46880_89608336',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54b14541c4c1e2_04563518')) {function content_54b14541c4c1e2_04563518($_smarty_tpl) {?><section id="titrePrincipal">
+<?php if ($_valid && !is_callable('content_54ca4e59c46880_89608336')) {function content_54ca4e59c46880_89608336($_smarty_tpl) {?><section id="titrePrincipal">
 	<div id="titreHome">
 		Data 4 All 
 		<br>
