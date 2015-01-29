@@ -1,19 +1,14 @@
 <?php
-<<<<<<< HEAD
 error_reporting(E_ERROR | E_PARSE);
 
-	require('lib/recaptchalib.php');
+
+	
 	function connexion_serveur(){
 
-		//$con = mysql_connect("localhost","root","root");
-		$con = mysql_connect("localhost","root","root");
-=======
 
-	//require('lib/recaptchalib.php');
-	function connexion_serveur(){
+		$con = mysql_connect("localhost","root","");
 
-		//$con = mysql_connect("localhost","root","");
-
+/*
 		try
 		{   // On se connecte à MySQL
 		    $pdo = new PDO('mysql:host=127.0.0.1;dbname=BDD_D4A', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8')); 
@@ -21,8 +16,7 @@ error_reporting(E_ERROR | E_PARSE);
 		catch(Exception $e)
 		{   // En cas d'erreur, on affiche un message et on arrête tout
 		    die('Erreur : '.$e->getMessage());
-		}
->>>>>>> edfe924021ae68699438c1b785edb3fa868cf93f
+		}*/
 	
 		//if (!$con) die('Could not connect: ' . mysql_error());
 
@@ -43,10 +37,6 @@ error_reporting(E_ERROR | E_PARSE);
 							ROOT_TO_DIR.STYLE."home_page/style_section_guide.css",
 							ROOT_TO_DIR.STYLE."home_page/style_section_entreprise_partenaire.css",
 							ROOT_TO_DIR.STYLE."home_page/style_section_contact.css",
-<<<<<<< HEAD
-							//ROOT_TO_DIR.STYLE."home_page/bootstrap.min.css",
-=======
->>>>>>> edfe924021ae68699438c1b785edb3fa868cf93f
 							ROOT_TO_DIR.STYLE."liste_entreprises/style_liste_entreprises.css",
 							ROOT_TO_DIR.STYLE."liste_entreprises/style_entreprises.css",
 							ROOT_TO_DIR.STYLE."contact/style_contact.css",
@@ -75,12 +65,10 @@ error_reporting(E_ERROR | E_PARSE);
 		return $JS_TAB;
 	}
 
-/*
+
 	function echo_captcha()
 	{
-	
 		return recaptcha_get_html('6LeGG-sSAAAAAMMefaLjooNSBcBEqg61a6IhhpTE'); 
 	}
-*/	
 ?>
 
