@@ -11,94 +11,23 @@ $valid=true;
 
 if(isset($_POST) && !empty($_POST))
 {
+	?><pre><?php echo print_r($_POST); ?></pre><?php
 	extract($_POST);
-	if( isset($email) && isset($confemail) && !empty($email) && !empty($confemail)) //Si les emails ne sont pas egaux
-	{
-		if(  $email != $confemail ){
-			echo('<div class="information_invalide">Les emails ne correspondent pas</div>');
-			$valid = false;		
-		}
-	}
-	else{
-		echo('<div class="information_invalide">Les emails ne sont pas present!</div>');
-		$valid = false;
-	}
-
-	if( !verifierAdresseMail($email) && !verifierAdresseMail($confemail) ) //Si les emails sont invalides
+	if( !verifierAdresseMail($email_entreprise) && !verifierAdresseMail($confemail_entreprise) ) //Si les emails sont invalides
 	{
 		echo('<div class="information_invalide">Les emails ne sont pas des mail!</div>');
 		$valid = false;
 	}
 
-	if( isset($civilite) && !empty($civilite) )
+	if( isset($nom_entreprise) && !empty($nom_entreprise) ) // Si le nom ou le prenom n'est pas valide != ^([a-zA-Z'àâéèêôùûçÀÂÉÈÔÙÛÇ[:blank:]-]{1,30})$
 	{
-		if(!($civilite =='M' || $civilite =='MMle' || $civilite=='Mme')) {//Si les civilités ne correspondent pas
-			echo('<div class="information_invalide">Votre civilite n\'est pas valide!</div>');
-			$valid = false;
-		}
-	}
-	else{
-		echo('<div class="information_invalide">Votre civilite n\'existe pas</div>');
-		$valid = false;
-	}
-
-	if( isset($prenom) && !empty($prenom ) ) // Si le nom ou le prenom n'est pas valide != ^([a-zA-Z'àâéèêôùûçÀÂÉÈÔÙÛÇ[:blank:]-]{1,30})$
-	{
-		if(!VerifierName($prenom)){
-			echo('<div class="information_invalide">Votre prenom nest pas valide!</div>');
-			$valid = false;
-		}
-	}
-	else {
-		 echo('<div class="information_invalide">Pas de Prenom fournis!</div>');
-		 $valid = false;
-	}
-
-	if( isset($nom) && !empty($nom) ) // Si le nom ou le prenom n'est pas valide != ^([a-zA-Z'àâéèêôùûçÀÂÉÈÔÙÛÇ[:blank:]-]{1,30})$
-	{
-		if(!verifierName($nom)){
+		if(!verifierName($nom_entreprise)){
 			echo('<div class="information_invalide">Nom invalide!</div>');
 			$valid = false;
 		}
 	}
 	else{
 		echo('<div class="information_invalide">Pas de nom donné!</div>');
-		$valid = false;
-	}
-
-	if( isset($jour) && !empty($jour) )
-	{
-		if( !verifierJour($jour) ){
-			echo('<div class="information_invalide">Jour invalide</div>');
-			$valid = false;
-		}
-	}
-	else{
-		echo('<div class="information_invalide">Le jour de naissance n\'est pas renseigné!</div>');
-		$valid = false;
-	}
-
-	if(isset($mois) && !empty($mois))
-	{
-		if( !verifierMois($mois) ){
-			echo('<div class="information_invalide">Mois invalide</div>');
-			$valid = false;
-		}
-	}
-	else{
-		echo('<div class="information_invalide">Mois de naissance non renseigné!</div>');
-		$valid = false;
-	} 
-
-	if(isset($annee) && !empty($annee))
-	{
-		if( !verifierAnnee($annee) ){
-			echo('<div class="information_invalide">Annee invalide</div>');
-			$valid = false;
-		}
-	}
-	else {
-		echo('<div class="information_invalide">Annee non renseigné!</div>');
 		$valid = false;
 	}
 
@@ -115,14 +44,15 @@ if(isset($_POST) && !empty($_POST))
 		$valid = false;
 	}
 
-	if(isset($comadresse) && !empty($comadresse) && !verifierAdresse($comadresse) ){
+
+	if(isset($adresse_complementaire) && !empty($adresse_complementaire) && !verifierAdresse($adresse_complementaire) ){
 			echo('<div class="information_invalide">Complement d\'adresse invalide</div>');
 			$valid = false;
 	}
 
-	if(isset($codepostal) && !empty($codepostal))
+	if(isset($code_postal) && !empty($code_postal))
 	{
-		if( !verifierCodePostal($codepostal) ){
+		if( !verifierCodePostal($code_postal) ){
 			echo('<div class="information_invalide">Code postal invalide</div>');
 			$valid = false;
 		}
@@ -156,26 +86,14 @@ if(isset($_POST) && !empty($_POST))
 		$valid = false;
 	}
 
-	if(isset($telfix) && !empty($telfix) && !verifierMobile($telfix) ){
+	if(isset($tel_entreprise) && !empty($tel_entreprise) && !verifierMobile($tel_entreprise) ){
 			echo('<div class="information_invalide">Numero de fix invalide</div>');
 			$valid = false;
 	}
 
-	if(isset($mobile) && !empty($mobile))
+	if( isset($password) && !empty($password) && isset($password_confirmation) && !empty($password_confirmation))
 	{
-		if( !verifierMobile($mobile) ){
-			echo('<div class="information_invalide">Numero de mobile invalide</div>');
-			$valid = false;
-		}
-	}
-	else {
-		echo('<div class="information_invalide">Mobile non Renseigné</div>');
-		$valid = false;
-	}
-
-	if( isset($password) && !empty($password) && isset($verifpassword) && !empty($verifpassword))
-	{
-		if( $password != $verifpassword )
+		if( $password != $password_confirmation )
 		{
 			echo('<div class="information_invalide">La verification du password est incorrecte</div>');
 			$valid = false;
@@ -194,7 +112,6 @@ if($valid == true && captcha_valid())
 	// Check if addresse exist !
 	$adresse_sql_req = "INSERT INTO `adresse` 
 	(`id_adresse`, 
-	`type_de_voie_`, 
 	`numero_rue`, 
 	`code_postal`, 
 	`pays`, 
@@ -202,7 +119,6 @@ if($valid == true && captcha_valid())
 	`adresse_complementaire`, 
 	`ville`) 
 	VALUES (NULL, 
-	".$pdo->quote($type_de_voie).", 
 	".$pdo->quote($numero_rue).", 
 	".$pdo->quote($code_postal).", 
 	".$pdo->quote($pays).", 
@@ -216,30 +132,28 @@ if($valid == true && captcha_valid())
 		$id = $pdo->lastInsertId();
 		$entreprise_sql_req = "INSERT INTO `entreprise` (
 		`id_entreprise`, 
-		`nom`, 
-		`prenom`, 
-		`email`, 
-		`siret`, 
-		`numero`, 
-		`fax`, 
-		`id_bdd`, 
-		`date_immat_rcs`, 
-		`forme_juridique`, 
-		`num_tva`, 
-		`activitee`, 
+		`nom_entreprise`, 
+		`email_entreprise`, 
+		`siret_entreprise`, 
+		`tel_entreprise`, 
+		`fax_entreprise`, 
+		`id_bdd_entreprise`, 
+		`date_immat_rcs_entreprise`, 
+		`forme_juridique_entreprise`, 
+		`num_tva_entreprise`, 
+		`activite_entreprise`, 
 		`id_adresse`) 
 		VALUES (NULL, 
-		".$pdo->quote($nom).", 
-		".$pdo->quote($prenom).", 
-		".$pdo->quote($email).", 
-		".$pdo->quote($siret).",  
-		".$pdo->quote($numero).", 
-		".$pdo->quote($fax).", 
+		".$pdo->quote($nom_entreprise).",  
+		".$pdo->quote($email_entreprise).", 
+		".$pdo->quote($siret_entreprise).",  
+		".$pdo->quote($tel_entreprise).", 
+		".$pdo->quote($fax_entreprise).", 
 		".$pdo->quote(null).", 
-		".$pdo->quote($date_immat_rcs).", 
-		".$pdo->quote($forme_juridique).", 
-		".$pdo->quote($num_tva).", 
-		".$pdo->quote($activitee).", 
+		".$pdo->quote($date_immat_rcs_entreprise).", 
+		".$pdo->quote($forme_juridique_entreprise).", 
+		".$pdo->quote($num_tva_entreprise).", 
+		".$pdo->quote($activite_entreprise).", 
 		".$id.");";
 	}
 	
@@ -254,7 +168,7 @@ if($valid == true && captcha_valid())
 	VALUES 
 	(NULL, 
 	".$pdo->quote(sha1($password)).",
-	".$pdo->quote($email).", 
+	".$pdo->quote($email_entreprise).", 
 	".$pdo->quote($role).", 
 	".$id.");";
 	
@@ -270,16 +184,6 @@ if($valid == true && captcha_valid())
 <script type="text/javascript">
 var RecaptchaOptions = { theme : 'clean' };
 </script>
-<section class="subhead">
-		<div class="wrap" id="subhead">
-			<div id="logo">
-				<a href="http://www.wefixit.fr">
-						<img class="logo" src="images/logo.png" alt="logo wefixit.fr"/>
-				</a>
-			</div>
-			<h1>Nouveau compte</h1>
-		</div>
-	</section>
 	<div class="content">
 		<div class ="principal" style="height:auto;">
 			</br>
