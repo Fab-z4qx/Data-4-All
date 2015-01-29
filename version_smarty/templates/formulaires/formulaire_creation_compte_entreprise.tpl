@@ -86,11 +86,14 @@ var RecaptchaOptions = { theme : 'clean' };
 
 		<p><label for="password_confirmation">Confirmation du mot de passe :</label><input type="password" name="pass" id="pass" size="30" maxlength="10" /> </p>
 
+<<<<<<< HEAD
 		<script type="text/javascript">
 			var RecaptchaOptions = { theme : 'clean' };
 		</script>
 		
 		{echo_captcha}
 >>>>>>> 9952cd1bd0e30f1088acbc0a094e31f4e28872a7
+=======
+>>>>>>> edfe924021ae68699438c1b785edb3fa868cf93f
 		<input class="bouton_submit" type="submit" value="Continuer">
 </form>

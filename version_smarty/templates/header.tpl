@@ -18,33 +18,143 @@
 				<ul>
 
 					{if ({$header} == 'index')}
-						<a class="span_headerVertical" href="../index.php"> <li>Home</li></a>
-						<a class="span_headerVertical" href="htdocs/search.php"><li>Search</li></a>
-						<a class="span_headerVertical" href="htdocs/liste_entreprises.php"><li>Liste des entreprises</li></a>
-						<a class="span_headerVertical" href="htdocs/login.php"><li>Sign Up</li></a>
+						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
+						<a class="span_headerVertical" href="htdocs/search.php"><li>Recherche</li></a>
+						<a class="span_headerVertical" href="htdocs/liste_entreprises.php"><li>Entreprises</li></a>
 						<a class="span_headerVertical" href="htdocs/offres.php"><li>Offres</li></a>
+						<a class="span_headerVertical" href="htdocs/login.php"><li>Inscription</li></a>
 						<a class="span_headerVertical" href="htdocs/a_propos.php"><li>A Propos</li></a>
 						<a class="span_headerVertical" href="htdocs/contact.php"><li>Contact</li></a>
 					{/if}
 
-					{if ({$header} != 'index' && {$header} != 'admin_entreprise')}
-						<a class="span_headerVertical" href="../index.php"> <li>Home</li></a>
-						<a class="span_headerVertical" href="search.php"><li>Search</li></a>
-						<a class="span_headerVertical" href="liste_entreprises.php"><li>Liste des entreprises</li></a>
-						<a class="span_headerVertical" href="login.php"><li>Sign Up</li></a>
+					{if ({$header} == 'search')}
+						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
+						<a class="span_headerVertical" href="search.php"><li class="li_select">Recherche</li></a>
+						<a class="span_headerVertical" href="liste_entreprises.php"><li>Entreprises</li></a>
 						<a class="span_headerVertical" href="offres.php"><li>Offres</li></a>
+						<a class="span_headerVertical" href="login.php"><li>Inscription</li></a>
 						<a class="span_headerVertical" href="a_propos.php"><li>A Propos</li></a>
 						<a class="span_headerVertical" href="contact.php"><li>Contact</li></a>
 					{/if}
 
-					{if ({$header} == 'admin_entreprise')}
-						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li>Home</li></a>
+					{if ({$header} == 'liste_entreprises')}
+						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
+						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
+						<a class="span_headerVertical" href="liste_entreprises.php"><li class="li_select">Entreprises</li></a>
+						<a class="span_headerVertical" href="offres.php"><li>Offres</li></a>
+						<a class="span_headerVertical" href="login.php"><li>Inscription</li></a>
+						<a class="span_headerVertical" href="a_propos.php"><li>A Propos</li></a>
+						<a class="span_headerVertical" href="contact.php"><li>Contact</li></a>
+					{/if}
+
+					{if ({$header} == 'offres')}
+						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
+						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
+						<a class="span_headerVertical" href="liste_entreprises.php"><li>Entreprises</li></a>
+						<a class="span_headerVertical" href="offres.php"><li class="li_select">Offres</li></a>
+						<a class="span_headerVertical" href="login.php"><li>Inscription</li></a>
+						<a class="span_headerVertical" href="a_propos.php"><li>A Propos</li></a>
+						<a class="span_headerVertical" href="contact.php"><li>Contact</li></a>
+					{/if}
+
+					{if ({$header} == 'login')}
+						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
+						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
+						<a class="span_headerVertical" href="liste_entreprises.php"><li>Entreprises</li></a>
+						<a class="span_headerVertical" href="offres.php"><li>Offres</li></a>
+						<a class="span_headerVertical" href="login.php"><li class="li_select">Inscription</li></a>
+						<a class="span_headerVertical" href="a_propos.php"><li>A Propos</li></a>
+						<a class="span_headerVertical" href="contact.php"><li>Contact</li></a>
+					{/if}
+
+					{if ({$header} == 'a_propos')}
+						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
+						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
+						<a class="span_headerVertical" href="liste_entreprises.php"><li>Entreprises</li></a>
+						<a class="span_headerVertical" href="offres.php"><li>Offres</li></a>
+						<a class="span_headerVertical" href="login.php"><li>Inscription</li></a>
+						<a class="span_headerVertical" href="a_propos.php"><li class="li_select">A Propos</li></a>
+						<a class="span_headerVertical" href="contact.php"><li>Contact</li></a>
+					{/if}
+
+					{if ({$header} == 'contact')}
+						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
+						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
+						<a class="span_headerVertical" href="liste_entreprises.php"><li>Entreprises</li></a>
+						<a class="span_headerVertical" href="offres.php"><li>Offres</li></a>
+						<a class="span_headerVertical" href="login.php"><li>Inscription</li></a>
+						<a class="span_headerVertical" href="a_propos.php"><li>A Propos</li></a>
+						<a class="span_headerVertical" href="contact.php"><li  class="li_select">Contact</li></a>
+					{/if}
+
+					{if ({$admin_entreprise} == 'home_page')}
+						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li  class="li_select_entreprise">Home</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li>Infos Compte</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li>Upload Fichiers</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li>Stats Compte</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_changer_offre.php"><li>Changer d'offre</li></a>
 						<a class="span_headerVertical" href="admin_entreprise_contact.php"><li>Contact</li></a>
+					{/if}
+
+					{if ({$admin_entreprise} == 'infos_compte')}
+						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li>Home</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li  class="li_select_entreprise">Infos Compte</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li>Upload Fichiers</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li>Stats Compte</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_changer_offre.php"><li>Changer d'offre</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_contact.php"><li>Contact</li></a>
+					{/if}
+
+					{if ({$admin_entreprise} == 'import_fichier')}
+						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li>Home</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li>Infos Compte</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li  class="li_select_entreprise">Upload Fichiers</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li>Stats Compte</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_changer_offre.php"><li>Changer d'offre</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_contact.php"><li>Contact</li></a>
+					{/if}
+
+					{if ({$admin_entreprise} == 'visualisation')}
+						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li>Home</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li>Infos Compte</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li>Upload Fichiers</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li  class="li_select_entreprise">Visualisation</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li>Stats Compte</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_changer_offre.php"><li>Changer d'offre</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_contact.php"><li>Contact</li></a>
+					{/if}
+
+					{if ({$admin_entreprise} == 'stat_compte')}
+						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li>Home</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li>Infos Compte</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li>Upload Fichiers</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li  class="li_select_entreprise">Stats Compte</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_changer_offre.php"><li>Changer d'offre</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_contact.php"><li>Contact</li></a>
+					{/if}
+
+					{if ({$admin_entreprise} == 'changer_offre')}
+						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li>Home</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li>Infos Compte</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li>Upload Fichiers</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li>Stats Compte</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_changer_offre.php"><li  class="li_select_entreprise">Changer d'offre</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_contact.php"><li>Contact</li></a>
+					{/if}
+
+					{if ({$admin_entreprise} == 'contact')}
+						<a class="span_headerVertical" href="admin_entreprise_home_page.php"><li>Home</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_infos_compte.php"><li>Infos Compte</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_import_fichiers.php"><li>Upload Fichiers</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_visualisation.php"><li>Visualisation</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_stats_compte.php"><li>Stats Compte</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_changer_offre.php"><li>Changer d'offre</li></a>
+						<a class="span_headerVertical" href="admin_entreprise_contact.php"><li  class="li_select_entreprise">Contact</li></a>
 					{/if}
 
 				</ul>
@@ -74,7 +184,7 @@
 				{if ({$header} == 'search')} Recherche {/if}
 				{if ({$header} == 'liste_entreprises')} Liste des Entreprises  {/if}
 				{if ({$header} == 'a_propos')} A Propos {/if}
-				{if ({$header} == 'login')} Création de compte {/if}
+				{if ({$header} == 'login')} Inscription {/if}
 				{if ({$header} == 'offres')} Offres {/if}
 			</div>
 		</div>
