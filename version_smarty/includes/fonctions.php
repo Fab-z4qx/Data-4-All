@@ -1,9 +1,11 @@
 <?php
+error_reporting(E_ERROR | E_PARSE);
+
 	require('lib/recaptchalib.php');
 	function connexion_serveur(){
 
 		//$con = mysql_connect("localhost","root","root");
-		$con = mysql_connect("localhost","root","");
+		$con = mysql_connect("localhost","root","root");
 	
 		if (!$con) die('Could not connect: ' . mysql_error());
 
@@ -24,7 +26,7 @@
 							ROOT_TO_DIR.STYLE."home_page/style_section_guide.css",
 							ROOT_TO_DIR.STYLE."home_page/style_section_entreprise_partenaire.css",
 							ROOT_TO_DIR.STYLE."home_page/style_section_contact.css",
-							ROOT_TO_DIR.STYLE."home_page/bootstrap.min.css",
+							//ROOT_TO_DIR.STYLE."home_page/bootstrap.min.css",
 							ROOT_TO_DIR.STYLE."liste_entreprises/style_liste_entreprises.css",
 							ROOT_TO_DIR.STYLE."liste_entreprises/style_entreprises.css",
 							ROOT_TO_DIR.STYLE."contact/style_contact.css",
