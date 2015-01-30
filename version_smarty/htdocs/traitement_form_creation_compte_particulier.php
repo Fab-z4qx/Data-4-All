@@ -34,9 +34,26 @@ if(isset($_POST) && !empty($_POST))
 		$valid = false;
 	}
 
-if($valid == true && captcha_valid())
+
+
+
+// Verif if user exist or not 
+$user_exist = false;
+$pdo = getPDOConnection();
+$sql_check_user = "SELECT login FROM user WHERE login=".$pdo->quote($email).";";
+
+$pdo->prepare($sql_check_user);
+$req = $pdo->query($sql_check_user);
+if($req->rowcount() > 0)
+{
+	echo "USER EXIST USER EXIST <br/>";
+	//$Smarty->display("login.tpl");
+	$user_exist = true;
+}
+
+if($valid == true  && $user_exist == false) //&& captcha_valid()
 {   //On ajoute l'user puis on recupere son id pour l'ajouter dans la bdd client
-	$pdo = getPDOConnection();
+
 
 	/* Ajout dans la table user */
 	$sql_user = "INSERT INTO `user` 
@@ -50,15 +67,13 @@ if($valid == true && captcha_valid())
 	".$pdo->quote($email).", 
 	".$pdo->quote(ROLE_PARTICULIER).");";
 	
-	echo $sql_user;
 	if($pdo->exec($sql_user))
 	{ //On à bien cree le compte du nouvelle utilisateur!
-		echo "OK";
-		header('Location:login.php?acc=ok');
+		echo "OK - COMPTE CREE ! ";
+		//$Smarty->display("login.tpl");
 	}
 	else
 	{
-		echo $sql_user;
 		debug($sql_user);
 	}
 }
