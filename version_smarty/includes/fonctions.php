@@ -1,8 +1,6 @@
 <?php
 error_reporting(E_ERROR | E_PARSE);
 
-
-	
 	function connexion_serveur(){
 
 
