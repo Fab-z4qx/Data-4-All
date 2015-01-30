@@ -12,7 +12,8 @@
 	$smarty->assign('js_tab', $JS_TAB);
 	$smarty->assign('css_tab', $CSS_TAB);
 	
-	$smarty->assign('header', 'gagnerCompetivite');
+	$smarty->assign('header', 'arguments');
+	$smarty->assign('page', 'gagnerCompetivite');
 	$smarty->assign('footer', 'index');
 
 	$smarty->display('gagnerCompetivite.tpl');

@@ -1,10 +1,23 @@
 <?php
-	require('lib/recaptchalib.php');
+error_reporting(E_ERROR | E_PARSE);
+
+
+	
 	function connexion_serveur(){
 
-		//$con = mysql_connect("localhost","root","root");
+
 		$con = mysql_connect("localhost","root","");
-	
+/*
+		try
+		{   // On se connecte à MySQL
+		    $pdo = new PDO('mysql:host=127.0.0.1;dbname=BDD_D4A', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8')); 
+		}
+		catch(Exception $e)
+		{   // En cas d'erreur, on affiche un message et on arrête tout
+		    die('Erreur : '.$e->getMessage());
+
+		}
+	*/
 		if (!$con) die('Could not connect: ' . mysql_error());
 
 		mysql_select_db("BDD_D4A", $con);
@@ -24,7 +37,6 @@
 							ROOT_TO_DIR.STYLE."home_page/style_section_guide.css",
 							ROOT_TO_DIR.STYLE."home_page/style_section_entreprise_partenaire.css",
 							ROOT_TO_DIR.STYLE."home_page/style_section_contact.css",
-							ROOT_TO_DIR.STYLE."home_page/bootstrap.min.css",
 							ROOT_TO_DIR.STYLE."liste_entreprises/style_liste_entreprises.css",
 							ROOT_TO_DIR.STYLE."liste_entreprises/style_entreprises.css",
 							ROOT_TO_DIR.STYLE."contact/style_contact.css",
@@ -56,9 +68,7 @@
 
 	function echo_captcha()
 	{
-	
 		return recaptcha_get_html('6LeGG-sSAAAAAMMefaLjooNSBcBEqg61a6IhhpTE'); 
 	}
-	
 ?>
 

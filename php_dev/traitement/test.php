@@ -27,33 +27,37 @@ foreach($sheet->getRowIterator() as $row) {
 	foreach ($row->getCellIterator() as $cell) {
 		if($cptFirstDim ==0){
 			$array[$cptFirstDim][$cptSecDim] = changeToNoPoint(preg_replace('/\s+/', '_',trim(changeToNoAccent(utf8_decode($cell->getValue())))));
-		}else{
-			$cellde = gettype($cell->getValue());
+		}else{			
+			$value = $cell->getFormattedValue();
+			
+					if(PHPExcel_Shared_Date::isDateTime($cell)) {
+		$value =  (new DateTime(date('d-M-Y',PHPExcel_Shared_Date::ExcelToPHP($cell->getValue()))))->format('d-m-Y');	
+		}
+			$cellde = gettype($value);
 			if(strcmp($cellde, "string") == 0 ){
-				$array[$cptFirstDim][$cptSecDim] = '"'.$cell->getValue().'"';
+				$array[$cptFirstDim][$cptSecDim] = '"'.$value.'"';
 			}elseif(strcmp($cellde, "NULL")  == 0){
 				$array[$cptFirstDim][$cptSecDim] = '"'.'"';
 			}else{
-				$array[$cptFirstDim][$cptSecDim] = $cell->getValue();
+				$array[$cptFirstDim][$cptSecDim] = $value;
 			}
-			
-			
 		}
 		$cptSecDim++;
-		//echo '<td>';
-		//print_r($cell->getValue());
-	//	echo '</td>';	
 	}
+	if($cptFirstDim == 1){
+	 echo "<pre>";
+	 print_r($array);
+	 echo "<pre>";
+	 }
 	$cptFirstDim++;
-	//echo '</tr>';
 }
 
 echo "</br></br></br>";
 
-//echo '</table>';
-
 /*------------------Database creation -------------------------------*/
+
 //Requête pour créer la table
+	mysql_query("DROP TABLE test");
 	$tableCreate = "CREATE TABLE IF NOT EXISTS test (";
 for($i = 0; $i < count($array[1]); $i++){
 	if($i > 0){

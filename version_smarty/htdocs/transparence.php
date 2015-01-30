@@ -12,7 +12,8 @@
 	$smarty->assign('js_tab', $JS_TAB);
 	$smarty->assign('css_tab', $CSS_TAB);
 	
-	$smarty->assign('header', 'transparence');
+	$smarty->assign('header', 'arguments');
+	$smarty->assign('page', 'transparence');
 	$smarty->assign('footer', 'index');
 
 	$smarty->display('transparence.tpl');
