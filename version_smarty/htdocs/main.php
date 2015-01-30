@@ -15,7 +15,6 @@
 	$res=mysql_num_rows($req);
 	
 	mysql_close($con);	
-
 	
 	$CSS_TAB = inser_css();
 	$JS_TAB = inser_js();

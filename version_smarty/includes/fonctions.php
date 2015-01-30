@@ -6,7 +6,7 @@
 		if(DEBUG_MODE == 1)
 		{
 			echo PRE;
-			echo $var;
+			print_r($var);
 			echo PREC;
 		}
 	}
