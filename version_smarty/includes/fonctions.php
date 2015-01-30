@@ -37,10 +37,12 @@ error_reporting(E_ERROR | E_PARSE);
 							ROOT_TO_DIR.STYLE."home_page/style_section_guide.css",
 							ROOT_TO_DIR.STYLE."home_page/style_section_entreprise_partenaire.css",
 							ROOT_TO_DIR.STYLE."home_page/style_section_contact.css",
+							ROOT_TO_DIR.STYLE."home_page/jauge-circulaire.css",
 							ROOT_TO_DIR.STYLE."liste_entreprises/style_liste_entreprises.css",
 							ROOT_TO_DIR.STYLE."liste_entreprises/style_entreprises.css",
 							ROOT_TO_DIR.STYLE."contact/style_contact.css",
 							ROOT_TO_DIR.STYLE."login/style_login.css",
+							ROOT_TO_DIR.STYLE."home_page/bootstrap.min.css",
 							ROOT_TO_DIR.STYLE."guide/style_guide.css",
 							ROOT_TO_DIR.STYLE."offres/style_offres.css",
 							ROOT_TO_DIR.STYLE."search/style_search.css",
@@ -61,6 +63,7 @@ error_reporting(E_ERROR | E_PARSE);
 		$JS_TAB = array(ROOT_TO_DIR.JS_DIR."googleMap.js",
 						ROOT_TO_DIR.JS_DIR."rubrique_connexion.js",
 						ROOT_TO_DIR.JS_DIR."progressbar.js",
+						ROOT_TO_DIR.JS_DIR."jquery.js",
 						ROOT_TO_DIR.JS_DIR."bootstrap.min.js");
 		return $JS_TAB;
 	}
