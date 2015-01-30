@@ -13,14 +13,19 @@
 
 	function getPDOConnection()
 	{
+		$host = '127.0.0.1';
+		$dbname = 'bdd_d4a';
+		$port = '8889';
+		$user = 'root';
+		$password = 'root';
+
 		try
 		{   // On se connecte à MySQL
-		    $pdo = new PDO('mysql:host=127.0.0.1;dbname=BDD_D4A', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8')); 
+		    $pdo = new PDO('mysql:host='.$host.';dbname='.$dbname.';port='.$port.'',''.$user.'', ''.$password.'', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8')); 
 		}
 		catch(Exception $e)
 		{   // En cas d'erreur, on affiche un message et on arrête tout
 		    die('Erreur : '.$e->getMessage());
-
 		}
 		return $pdo;
 	}
@@ -28,7 +33,7 @@
 	function connexion_serveur()
 	{
 		//echo "****  THIS FUNCION IS DEPRECIATED !!! ***** ";
-		$con = mysql_connect("localhost","root","");
+		$con = mysql_connect("localhost","root","root");
 
 		if (!$con) die('Could not connect: ' . mysql_error());
 			mysql_select_db("BDD_D4A", $con);

@@ -50,14 +50,20 @@ if($valid == true && captcha_valid())
 	".$pdo->quote($email).", 
 	".$pdo->quote(ROLE_PARTICULIER).");";
 	
+	echo $sql_user;
 	if($pdo->exec($sql_user))
 	{ //On à bien cree le compte du nouvelle utilisateur!
+		echo "OK";
 		header('Location:login.php?acc=ok');
 	}
 	else
 	{
+		echo $sql_user;
 		debug($sql_user);
 	}
+}
+else{
+	echo "Saisie invalide";
 }
 
 }
