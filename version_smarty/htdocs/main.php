@@ -1,5 +1,6 @@
 
 <?php
+	error_reporting(E_ERROR | E_PARSE);
 	include("common.inc.php");
 	//Nouvelle objet smarty
 	require(ROOT_DIR_INDEX.INCLUDES.'data4all.inc.php');

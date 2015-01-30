@@ -3,7 +3,7 @@ CREATE TABLE user (id_user INT  AUTO_INCREMENT NOT NULL,
 password VARCHAR(15),
 login VARCHAR(25),
 role INT,
-id_entreprise INT NOT NULL,
+entreprise_id_entreprise INT,
 PRIMARY KEY (id_user) ) ENGINE=InnoDB;
 
 DROP TABLE IF EXISTS entreprise ;
@@ -39,7 +39,6 @@ sujet_contact VARCHAR(255),
 message_contact TEXT,
 PRIMARY KEY (id_contact) ) ENGINE=InnoDB;
 
-ALTER TABLE user ADD CONSTRAINT FK_user_id_entreprise FOREIGN KEY (id_entreprise) REFERENCES entreprise (id_entreprise);
+ALTER TABLE user ADD CONSTRAINT FK_user_entreprise_id_entreprise FOREIGN KEY (entreprise_id_entreprise) REFERENCES entreprise (id_entreprise);
 
 ALTER TABLE entreprise ADD CONSTRAINT FK_entreprise_id_adresse FOREIGN KEY (id_adresse) REFERENCES adresse (id_adresse);
-

@@ -21,6 +21,17 @@
 	define('INCLUDES','includes/');
 	define('STYLE',BASE_URL.'styles/');
 	define('IMAGE','images/');
+
+  	define('ROLE_PARTICULIER',1); //public
+	define('ROLE_ENTREPRISE',2);
+	define('ROLE_ADMIN',3);
+
+
+	/* DEGUB CONST */
+	define('DEBUG_MODE', 1); //SET TO 0 FOR PRODUCT MODE
+	define('PRE','<pre>');
+	define('PREC','</pre>');
+
 ?>
 
 

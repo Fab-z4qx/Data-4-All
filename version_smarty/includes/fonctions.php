@@ -1,11 +1,18 @@
 <?php
-error_reporting(E_ERROR | E_PARSE);
+//error_reporting(E_ERROR | E_PARSE);
 
-	function connexion_serveur(){
+	function debug($var) //display var
+	{
+		if(DEBUG_MODE == 1)
+		{
+			echo PRE;
+			echo $var;
+			echo PREC;
+		}
+	}
 
-
-		$con = mysql_connect("localhost","root","");
-/*
+	function getPDOConnection()
+	{
 		try
 		{   // On se connecte à MySQL
 		    $pdo = new PDO('mysql:host=127.0.0.1;dbname=BDD_D4A', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8')); 
@@ -15,12 +22,17 @@ error_reporting(E_ERROR | E_PARSE);
 		    die('Erreur : '.$e->getMessage());
 
 		}
-	*/
-		if (!$con) die('Could not connect: ' . mysql_error());
+		return $pdo;
+	}
 
-		mysql_select_db("BDD_D4A", $con);
-		
-		
+	function connexion_serveur()
+	{
+		//echo "****  THIS FUNCION IS DEPRECIATED !!! ***** ";
+		$con = mysql_connect("localhost","root","");
+
+		if (!$con) die('Could not connect: ' . mysql_error());
+			mysql_select_db("BDD_D4A", $con);
+		//echo "****  THIS FUNCION IS DEPRECIATED !!! ***** ";
 		return $con;
 	}
 	

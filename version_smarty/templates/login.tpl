@@ -2,6 +2,10 @@
 
 <div class="page_creation_compte">
 
+<script type="text/javascript">
+	var RecaptchaOptions = { theme : 'clean' };
+</script>	
+
 <div id="titre_creation_compte">
 		<div class="titre_left">
 				Particulier
