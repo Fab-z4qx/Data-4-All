@@ -41,7 +41,8 @@
 		return $con;
 	}
 	
-	function inser_css(){
+	function inser_css()
+	{
 		$CSS_TAB = array(   ROOT_TO_DIR.STYLE."style_index.css",
 							ROOT_TO_DIR.STYLE."style_header.css",
 							ROOT_TO_DIR.STYLE."style_footer.css",
