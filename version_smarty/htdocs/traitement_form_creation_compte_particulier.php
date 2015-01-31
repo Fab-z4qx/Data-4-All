@@ -65,6 +65,7 @@ if($req->rowcount() > 0)
 if($valid == true  && $user_exist == false) //&& captcha_valid()
 {   //On ajoute l'user puis on recupere son id pour l'ajouter dans la bdd client
 	/* Ajout dans la table user */
+	debug($_POST);
 	$sql_user = "INSERT INTO `user` 
 	(`id_user`, 
 	`password`, 
@@ -79,13 +80,14 @@ if($valid == true  && $user_exist == false) //&& captcha_valid()
 	if($pdo->exec($sql_user))
 	{ //On à bien cree le compte du nouvelle utilisateur!
 		echo "OK - COMPTE CREE ! ";
-		sleep(5);
-		$smarty->assign('header', 'compte_cree');
-		$smarty->display('login.tpl');
+		debug($sql_user);
+		//sleep(5);
+		//$smarty->assign('header', 'compte_cree');
+		//$smarty->display('login.tpl');
 	}
 	else
 	{
-		$smarty->assign('header', 'error');
+		//$smarty->assign('header', 'error');
 		debug($sql_user);
 	}
 }

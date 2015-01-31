@@ -5,7 +5,13 @@
 <script type="text/javascript">
 	var RecaptchaOptions = { theme : 'clean' };
 </script>	
+<script type="text/javascript">
 
+	$(document).ready(function() {
+    $('#captcha2').html($('#captcha').clone(true,true));   
+	});
+</script>
+		
 
 {if ({$header} == 'index')}
 <div id="titre_creation_compte">
@@ -89,5 +95,10 @@
 	</div>
 {/if}
 
+<script type="text/javascript">
+	$(document).ready(function() {
+    $('#captcha2').html($('#captcha').clone(true,true));   
+	});
+</script>
 </div>
 {include file='footer.tpl'}

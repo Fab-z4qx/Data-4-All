@@ -1,13 +1,12 @@
 <!-- Page login -->
 
 <?php
-	include("common.inc.php");
-	//Nouvelle objet smarty
+	require('common.inc.php');
 	require(ROOT_DIR.INCLUDES.'data4all.inc.php');
-	$smarty =new Smarty_datat4all();
-
-
+	require(ROOT_DIR.INCLUDES.'lib/recaptchalib.php');
 	require(ROOT_DIR.INCLUDES.'fonctions.php');
+
+	$smarty =new Smarty_datat4all();
 	$CSS_TAB = inser_css();
 	$JS_TAB = inser_js();
 
@@ -16,9 +15,9 @@
 
 	$smarty->assign('header', 'login');
 	$smarty->assign('footer', 'index');
-	
-	require(ROOT_DIR.INCLUDES.'lib/recaptchalib.php');
+
 	$smarty->registerPlugin('function', 'echo_captcha','echo_captcha');
 	
 	$smarty->display('login.tpl');
 ?>
+

@@ -1,5 +1,4 @@
 
-
 <form method="post" action="traitement_form_creation_compte_entreprise.php">
 
 		<label class="form_entreprise" for="nom_entreprise">Nom entreprise :</label>
@@ -52,12 +51,7 @@
 		
 		<label class="form_entreprise" for="password_confirmation">Confirmation du mot de passe :</label>
 		<input type="password" name="password_confirmation" id="password_confirmation" require /><br><br>
-		
-		<script type="text/javascript">
-			$(document).ready(function() {
-		    $('#captcha2').html($('#captcha').clone(true,true));   
-			});
-		</script>
+	
 		<div id="captcha2"></div>
 		<input class="bouton_submit" type="submit" value="Continuer">
 </form>

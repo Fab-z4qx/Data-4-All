@@ -22,11 +22,14 @@ $smarty->assign('header', 'admin_entreprise');
 $smarty->assign('admin_entreprise', 'home_page');
 $smarty->assign('footer', 'index');
 
+$pdo = getPDOConnection();
+debug($_POST);
 if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) ) 
 {
 	extract($_POST);
 	$pass = sha1($pass);
 	$sql = "SELECT id_user,role FROM user WHERE login='$login' AND password ='$pass'"; ////// INJECTION SQL ICI //// LOLOOLOL === ==== ===== $$$$$*****
+	debug($sql);
 	$req = $pdo->query($sql);
 
 	if($req->rowCount()> 0) // Si l'utilisateur existe
@@ -51,18 +54,24 @@ if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) )
 			
 		}
 	} 
-	else{
+	else
+	{
 		echo '<div class="information_invalide">Erreur : Mauvais idendifiants</div>';
 	}
 	$req->closeCursor();
 }//Si il est deja log on le redirige direct vers la page mon compte
-else if(Auth::isLogged('admin')|| Auth::isLogged('client') ){ 
-	$smarty->display('admin_entreprise/admin_entreprise_home_page.tpl');
+else if(Auth::isLogged('client'))
+{
+
+	//$smarty->display('particulier/home_page.tpl');
+}
+else if( Auth::isLogged('admin') ){ 
+	//$smarty->display('admin_entreprise/admin_entreprise_home_page.tpl');
 }
 else
 {
-	$smarty->assign('error', 'information invalide');
-	$smarty->display('login.tpl'); // I NEED TO DISPLAY THE LAST PAGE BUT I DON'T KNOW HOW 
+	//$smarty->assign('error', 'information invalide');
+	//$smarty->display('login.tpl'); // I NEED TO DISPLAY THE LAST PAGE BUT I DON'T KNOW HOW 
 }
 
 ?>

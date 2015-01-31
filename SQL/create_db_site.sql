@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS user ;
 CREATE TABLE user (id_user INT  AUTO_INCREMENT NOT NULL,
-password VARCHAR(15),
+password VARCHAR(255),
 login VARCHAR(25),
 role INT,
 entreprise_id_entreprise INT,
