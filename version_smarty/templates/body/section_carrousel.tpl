@@ -25,6 +25,8 @@
 				</div>
 			</form>
 			<a class="span_headerVertical " href=#><font color = "white"><B>Se connecter</B></font></a>
+			ou
+			<a class="span_headerVertical " href=#><font color = "white"><B>S'inscrire</B></font></a>
 		</div>
 
 	</div>
