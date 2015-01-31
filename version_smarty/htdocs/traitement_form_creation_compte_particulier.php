@@ -1,11 +1,21 @@
 <?php 
-include("common.inc.php");
+require('common.inc.php');
 require(ROOT_DIR.INCLUDES.'data4all.inc.php');
 require(ROOT_DIR.INCLUDES.'fonctions.php');
 require(ROOT_DIR.INCLUDES.'lib/lib.php');
 require(ROOT_DIR.INCLUDES.'lib/recaptchalib.php');
 
 $smarty =new Smarty_datat4all();
+
+$CSS_TAB = inser_css();
+$JS_TAB = inser_js();
+$smarty->assign('js_tab', $JS_TAB);
+$smarty->assign('css_tab', $CSS_TAB);
+
+$smarty->assign('header', 'admin_entreprise');
+$smarty->assign('admin_entreprise', 'home_page');
+$smarty->assign('footer', 'index');
+
 
 $valid=true;
 if(isset($_POST) && !empty($_POST))
@@ -69,6 +79,7 @@ if($valid == true  && $user_exist == false) //&& captcha_valid()
 	if($pdo->exec($sql_user))
 	{ //On à bien cree le compte du nouvelle utilisateur!
 		echo "OK - COMPTE CREE ! ";
+		sleep(5);
 		$smarty->assign('header', 'compte_cree');
 		$smarty->display('login.tpl');
 	}

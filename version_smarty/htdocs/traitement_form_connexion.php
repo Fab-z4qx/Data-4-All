@@ -13,17 +13,16 @@ require(ROOT_DIR.INCLUDES.'lib/auth.php');
 
 $smarty = new Smarty_datat4all();
 
-	
-	$CSS_TAB = inser_css();
-	$JS_TAB = inser_js();
-	$smarty->assign('js_tab', $JS_TAB);
-	$smarty->assign('css_tab', $CSS_TAB);
-	
-	$smarty->assign('header', 'admin_entreprise');
-	$smarty->assign('admin_entreprise', 'home_page');
-	$smarty->assign('footer', 'index');
+$CSS_TAB = inser_css();
+$JS_TAB = inser_js();
+$smarty->assign('js_tab', $JS_TAB);
+$smarty->assign('css_tab', $CSS_TAB);
 
-if(isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) ) 
+$smarty->assign('header', 'admin_entreprise');
+$smarty->assign('admin_entreprise', 'home_page');
+$smarty->assign('footer', 'index');
+
+if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) ) 
 {
 	extract($_POST);
 	$pass = sha1($pass);
@@ -49,7 +48,7 @@ if(isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) )
 		}
 		else if($data['role'] == ROLE_ADMIN)
 		{
-
+			
 		}
 	} 
 	else{
