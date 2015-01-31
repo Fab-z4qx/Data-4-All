@@ -55,7 +55,7 @@ if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) )
 		else if($data['role'] == ROLE_ADMIN)
 		{
 			echo('log as Admin');
-			
+			$smarty->display('admin/home_page.tpl');
 		}
 	} 
 	else
