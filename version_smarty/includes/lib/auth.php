@@ -1,10 +1,16 @@
 <?php
 
+require('common.inc.php');
+require(ROOT_DIR.INCLUDES.'data4all.inc.php');
+require(ROOT_DIR.INCLUDES.'fonctions.php');
+require(ROOT_DIR.INCLUDES.'lib/lib.php');
+
 class Auth{
 
 	static function isAdmin()
 	{
-		if(isset($_SESSION['Auth']) && isset($_SESSION['Auth']['role'])){
+		if(isset($_SESSION['Auth']) && isset($_SESSION['Auth']['role']))
+		{
 			extract($_SESSION['Auth']);
 			require('lib/sql_connect.php');
 			$sql = "SELECT id_user,role FROM user WHERE login='$login' AND password ='$pass'";
