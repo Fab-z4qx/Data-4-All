@@ -21,5 +21,4 @@
 	$smarty->registerPlugin('function', 'echo_captcha','echo_captcha');
 	
 	$smarty->display('login.tpl');
-
 ?>

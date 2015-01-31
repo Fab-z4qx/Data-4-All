@@ -2,19 +2,22 @@
 include("common.inc.php");
 
 require(ROOT_DIR.INCLUDES.'fonctions.php');
-
-$con = connexion_serveur();
-
 require(ROOT_DIR.INCLUDES.'lib/lib.php');
-//require(ROOT_DIR.INCLUDES.'lib/recaptchalib.php');
+require(ROOT_DIR.INCLUDES.'lib/recaptchalib.php');
 
 $valid=true;
 
 if(isset($_POST) && !empty($_POST))
-{
-	?><pre><?php echo print_r($_POST); ?></pre><?php
+{	
+	if(DEBUG_MODE == 1)
+	{
+		echo PRE;
+	 	echo print_r($_POST); 
+	 	echo PREC;
+	}
+
 	extract($_POST);
-	if( !verifierAdresseMail($email_entreprise) && !verifierAdresseMail($confemail_entreprise) ) //Si les emails sont invalides
+	if( !verifierAdresseMail($email_entreprise) ) //Si les emails sont invalides
 	{
 		echo('<div class="information_invalide">Les emails ne sont pas des mail!</div>');
 		$valid = false;
@@ -107,8 +110,8 @@ if(isset($_POST) && !empty($_POST))
 
 if($valid == true && captcha_valid())
 {   //On ajoute l'user puis on recupere son id pour l'ajouter dans la bdd client
-    require('lib/sql_connect.php');
-	
+	$pdo = getPDOConnection();
+
 	/* Ajout de l'adresse */
 	// Check if addresse exist !
 	$adresse_sql_req = "INSERT INTO `adresse` 
@@ -156,7 +159,22 @@ if($valid == true && captcha_valid())
 		".$pdo->quote($num_tva_entreprise).", 
 		".$pdo->quote($activite_entreprise).", 
 		".$id.");";
+
+		if($pdo->exec($entreprise_sql_req))
+		{
+
+		}
+		else
+		{
+			echo "Probleme avec l'insetion de l'entreprise";
+			echo $entreprise_sql_req;
+		}	
 	}
+	else {
+		echo $adresse_sql_req;
+		echo "Probleme avec l'insetion de l'adresse";
+	}
+		
 	
 	/* Ajout dans la table user */
 	$id = $pdo->lastInsertId();
@@ -170,7 +188,7 @@ if($valid == true && captcha_valid())
 	(NULL, 
 	".$pdo->quote(sha1($password)).",
 	".$pdo->quote($email_entreprise).", 
-	".$pdo->quote($role).", 
+	".$pdo->quote(ROLE_ENTREPRISE).", 
 	".$id.");";
 	
 	if($pdo->exec($sql_user))
