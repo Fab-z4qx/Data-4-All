@@ -36,8 +36,6 @@
 		
 		<label class="form_entreprise" for="password_confirmation">Confirmation du mot de passe :</label><input type="password" name="pass" id="pass"/><br><br>
 		
-
-		<p><label for="password_confirmation">Confirmation du mot de passe :</label><input type="password" name="pass" id="pass" size="30" maxlength="10" /> </p>
 		<script type="text/javascript">
 			var RecaptchaOptions = { theme : 'clean' };
 		</script>	

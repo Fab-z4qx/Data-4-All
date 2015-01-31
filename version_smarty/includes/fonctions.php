@@ -1,12 +1,12 @@
 <?php
-error_reporting(E_ERROR | E_PARSE);
+//error_reporting(E_ERROR | E_PARSE);
 
 
 	
 	function connexion_serveur(){
 
 
-		$con = mysql_connect("localhost","root","");
+		$con = mysql_connect("localhost","root","root");
 /*
 		try
 		{   // On se connecte à MySQL
@@ -52,7 +52,8 @@ error_reporting(E_ERROR | E_PARSE);
 							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_infos_compte.css",
 							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_stats_compte.css",
 							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_visualisation.css",
-							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_home_page.css"
+							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_home_page.css",
+							//ROOT_TO_DIR.STYLE."home_page/bootstrap.min.css"
 							);
 		return $CSS_TAB;
 	}

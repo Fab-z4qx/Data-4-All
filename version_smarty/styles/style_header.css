@@ -39,6 +39,8 @@ nav {
 nav ul {
 	list-style-type: none;
 	padding: 0;
+	float: left;
+
 }
 
 nav li {
@@ -132,3 +134,15 @@ nav li {
 	color: white;
 }
 
+.span_headerVertical, .span_header_logoVertical, .contentListeEntreprise, .boutonListeEntreprise, #research, .contentEntreprise, .contentGuide{
+color: black;
+float: left;
+width: 100%;
+text-align: center;}
+
+
+.span_headerVertical, .span_header_logoVertical, .contentListeEntreprise, .boutonListeEntreprise, #research, .contentEntreprise, .contentGuide li{
+
+float: left;
+padding: 0 !important;
+}
