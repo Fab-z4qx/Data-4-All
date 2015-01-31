@@ -23,13 +23,14 @@ $smarty->assign('admin_entreprise', 'home_page');
 $smarty->assign('footer', 'index');
 
 $pdo = getPDOConnection();
+if(DEBUG_MODE == 1)
 debug($_POST);
+
 if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) ) 
 {
 	extract($_POST);
-	$pass = sha1($pass);
+	$pass = sha1($password);
 	$sql = "SELECT id_user,role FROM user WHERE login='$login' AND password ='$pass'"; ////// INJECTION SQL ICI //// LOLOOLOL === ==== ===== $$$$$*****
-	debug($sql);
 	$req = $pdo->query($sql);
 
 	if($req->rowCount()> 0) // Si l'utilisateur existe
@@ -43,14 +44,17 @@ if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) )
 
 		if($data['role'] == ROLE_ENTREPRISE)
 		{
+			echo('log as entreprise');
 			$smarty->display('admin_entreprise/admin_entreprise_home_page.tpl');
 		}
 		else if($data['role'] == ROLE_PARTICULIER)
 		{
+			echo('log as client');
 			$smarty->display('particulier/home_page.tpl');
 		}
 		else if($data['role'] == ROLE_ADMIN)
 		{
+			echo('log as Admin');
 			
 		}
 	} 
@@ -62,8 +66,7 @@ if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) )
 }//Si il est deja log on le redirige direct vers la page mon compte
 else if(Auth::isLogged('client'))
 {
-
-	//$smarty->display('particulier/home_page.tpl');
+	$smarty->display('particulier/home_page.tpl');
 }
 else if( Auth::isLogged('admin') ){ 
 	//$smarty->display('admin_entreprise/admin_entreprise_home_page.tpl');

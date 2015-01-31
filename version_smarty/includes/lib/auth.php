@@ -12,7 +12,6 @@ class Auth
 		if(isset($_SESSION['Auth']) && isset($_SESSION['Auth']['role']))
 		{
 			extract($_SESSION['Auth']);
-			//require('lib/sql_connect.php');
 			$pdo = getPDOConnection();
 			$sql = "SELECT id_user,role FROM user WHERE login='$login' AND password ='$pass'";
 			$req = $pdo->query($sql);
@@ -40,7 +39,6 @@ class Auth
 	{
 		if(isset($_SESSION['Auth']) && isset($_SESSION['Auth']['role'])){
 			extract($_SESSION['Auth']);
-			//require('lib/sql_connect.php');
 			$pdo = getPDOConnection();
 			$sql = "SELECT id_user,role FROM user WHERE login='$login' AND password ='$pass'";
 			$req = $pdo->query($sql);
@@ -67,7 +65,6 @@ class Auth
 	{
 		if(isset($_SESSION['Auth']) && isset($_SESSION['Auth']['role'])){
 			extract($_SESSION['Auth']);
-			//require('lib/sql_connect.php');
 			$pdo = getPDOConnection();
 			$sql = "SELECT id_user,role FROM user WHERE login='$login' AND password ='$pass'";
 			$req = $pdo->query($sql);
@@ -96,7 +93,6 @@ class Auth
 		if( isset($_SESSION['Auth']) && isset($_SESSION['Auth']['login']) && isset($_SESSION['Auth']['pass']))
 		{
 			extract($_SESSION['Auth']);
-			//require('lib/sql_connect.php');
 			$pdo = getPDOConnection();
 			$sql = "SELECT id_user,role FROM user WHERE login='$login' AND password ='$pass'";
 			$req = $pdo->query($sql);
