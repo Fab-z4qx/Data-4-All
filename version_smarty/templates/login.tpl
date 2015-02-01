@@ -5,54 +5,8 @@
 <script type="text/javascript">
 	var RecaptchaOptions = { theme : 'clean' };
 </script>	
-<script type="text/javascript">
-
-	$(document).ready(function() {
-    $('#captcha2').html($('#captcha').clone(true,true));   
-	});
-</script>
-		
-
 {if ({$header} == 'index')}
-<div id="titre_creation_compte">
-		<div class="titre_left">
-				Particulier
-		</div>
 
-		<div class="titre_right">
-				Entreprise
-			</div>
-	</div>
-
-	<div id="row">
-			<div class="block_left">
-					{include file='formulaires/formulaire_creation_compte_particulier.tpl'}
-			</div>
-
-			<div class="block_right">
-					{include file='formulaires/formulaire_creation_compte_entreprise.tpl'}
-			</div>
-	</div>
-
-	<div id="titre_creation_compte">
-		<div class="titre_left">
-				Particulier
-		</div>
-
-		<div class="titre_right">
-				Entreprise
-			</div>
-	</div>
-
-	<div id="row">
-			<div class="block_left">
-					{include file='formulaires/formulaire_creation_compte_particulier.tpl'}
-			</div>
-
-			<div class="block_right">
-					{include file='formulaires/formulaire_creation_compte_entreprise.tpl'}
-			</div>
-	</div>
 {elseif ({$header} == 'compte_cree')}
 	<div id="titre_creation_compte">
 		<div class="validation">
@@ -81,7 +35,7 @@
 
 		<div class="titre_right">
 				Entreprise
-			</div>
+		</div>
 	</div>
 
 	<div id="row">
@@ -90,16 +44,11 @@
 			</div>
 
 			<div class="block_right">
-					{include file='formulaires/formulaire_creation_compte_entreprise.tpl'}
+				<div id="offres_entreprise">
+			       <a id="offres_bouton_contact" href="register_entreprise.php">Entreprise</a>
+			   </div>
 			</div>
 	</div>
 {/if}
-
-<script type="text/javascript">
-	$(document).ready(function() {
-    // Duplicate our reCapcha 
-    $('#2ndcaptcha').html($('#captcha').clone(true));
-});
-</script>
 </div>
 {include file='footer.tpl'}
