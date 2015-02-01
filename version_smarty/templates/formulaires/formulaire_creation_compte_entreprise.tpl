@@ -48,7 +48,7 @@
 		
 		<label class="form_entreprise" for="password_confirmation">Confirmation du mot de passe :</label>
 		<input type="password" name="password_confirmation" id="password_confirmation" require /><br><br>
-	
-		<div id="captcha2"></div>
+		<div id="captcha2">
+		</div>
 		<input class="bouton_submit" type="submit" value="Continuer">
 </form>

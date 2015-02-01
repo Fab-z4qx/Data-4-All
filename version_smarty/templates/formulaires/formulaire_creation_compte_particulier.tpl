@@ -7,10 +7,9 @@
 		
 		<label class="form_particulier" for="password_confirmation">Confirmation :</label>
 		<input type="password" name="password_confirmation" id="password_confirmation" require/><br><br>
-			<div id="captcha">
-		<p></p>
-			{echo_captcha}
-		<p></p>
+
+		<div id="captcha">
+				{echo_captcha}
 		</div>
 		<input class="bouton_submit" type="submit" value="Continuer">
 </form>

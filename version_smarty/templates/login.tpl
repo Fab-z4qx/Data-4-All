@@ -97,8 +97,9 @@
 
 <script type="text/javascript">
 	$(document).ready(function() {
-    $('#captcha2').html($('#captcha').clone(true,true));   
-	});
+    // Duplicate our reCapcha 
+    $('#2ndcaptcha').html($('#captcha').clone(true));
+});
 </script>
 </div>
 {include file='footer.tpl'}

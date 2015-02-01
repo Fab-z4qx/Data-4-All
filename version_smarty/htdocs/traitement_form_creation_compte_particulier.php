@@ -12,10 +12,10 @@ $JS_TAB = inser_js();
 $smarty->assign('js_tab', $JS_TAB);
 $smarty->assign('css_tab', $CSS_TAB);
 
+/* IL FAUT CHANGER LES VALEURS JE PENSE */
 $smarty->assign('header', 'admin_entreprise');
 $smarty->assign('admin_entreprise', 'home_page');
 $smarty->assign('footer', 'index');
-
 
 $valid=true;
 if(isset($_POST) && !empty($_POST))
@@ -56,7 +56,7 @@ $pdo->prepare($sql_check_user);
 $req = $pdo->query($sql_check_user);
 if($req->rowcount() > 0)
 {
-	echo "USER EXIST USER EXIST <br/>";
+	//echo "USER EXIST USER EXIST <br/>";
 	$smarty->assign('header', 'compte_exist');
 	$smarty->display('login.tpl');
 	$user_exist = true;
@@ -80,15 +80,12 @@ if($valid == true  && $user_exist == false) //&& captcha_valid()
 	if($pdo->exec($sql_user))
 	{ //On à bien cree le compte du nouvelle utilisateur!
 		echo "OK - COMPTE CREE ! ";
-		debug($sql_user);
-		//sleep(5);
-		//$smarty->assign('header', 'compte_cree');
-		//$smarty->display('login.tpl');
+		$smarty->assign('header', 'compte_cree');
+		$smarty->display('login.tpl');
 	}
 	else
 	{
-		//$smarty->assign('header', 'error');
-		debug($sql_user);
+		$smarty->assign('header', 'error');
 	}
 }
 else{
