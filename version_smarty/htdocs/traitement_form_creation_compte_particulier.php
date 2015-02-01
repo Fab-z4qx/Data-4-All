@@ -1,11 +1,21 @@
 <?php 
-include("common.inc.php");
+require('common.inc.php');
 require(ROOT_DIR.INCLUDES.'data4all.inc.php');
 require(ROOT_DIR.INCLUDES.'fonctions.php');
 require(ROOT_DIR.INCLUDES.'lib/lib.php');
 require(ROOT_DIR.INCLUDES.'lib/recaptchalib.php');
 
 $smarty =new Smarty_datat4all();
+
+$CSS_TAB = inser_css();
+$JS_TAB = inser_js();
+$smarty->assign('js_tab', $JS_TAB);
+$smarty->assign('css_tab', $CSS_TAB);
+
+/* IL FAUT CHANGER LES VALEURS JE PENSE */
+$smarty->assign('header', 'admin_entreprise');
+$smarty->assign('admin_entreprise', 'home_page');
+$smarty->assign('footer', 'index');
 
 $valid=true;
 if(isset($_POST) && !empty($_POST))
@@ -46,7 +56,7 @@ $pdo->prepare($sql_check_user);
 $req = $pdo->query($sql_check_user);
 if($req->rowcount() > 0)
 {
-	echo "USER EXIST USER EXIST <br/>";
+	//echo "USER EXIST USER EXIST <br/>";
 	$smarty->assign('header', 'compte_exist');
 	$smarty->display('login.tpl');
 	$user_exist = true;
@@ -55,6 +65,7 @@ if($req->rowcount() > 0)
 if($valid == true  && $user_exist == false) //&& captcha_valid()
 {   //On ajoute l'user puis on recupere son id pour l'ajouter dans la bdd client
 	/* Ajout dans la table user */
+	debug($_POST);
 	$sql_user = "INSERT INTO `user` 
 	(`id_user`, 
 	`password`, 
@@ -75,7 +86,6 @@ if($valid == true  && $user_exist == false) //&& captcha_valid()
 	else
 	{
 		$smarty->assign('header', 'error');
-		debug($sql_user);
 	}
 }
 else{

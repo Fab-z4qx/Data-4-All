@@ -13,20 +13,24 @@ require(ROOT_DIR.INCLUDES.'lib/auth.php');
 
 $smarty = new Smarty_datat4all();
 
-	
-	$CSS_TAB = inser_css();
-	$JS_TAB = inser_js();
-	$smarty->assign('js_tab', $JS_TAB);
-	$smarty->assign('css_tab', $CSS_TAB);
-	
-	$smarty->assign('header', 'admin_entreprise');
-	$smarty->assign('admin_entreprise', 'home_page');
-	$smarty->assign('footer', 'index');
+$CSS_TAB = inser_css();
+$JS_TAB = inser_js();
+$smarty->assign('js_tab', $JS_TAB);
+$smarty->assign('css_tab', $CSS_TAB);
 
-if(isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) ) 
+
+$smarty->assign('header', 'admin_entreprise');
+$smarty->assign('admin_entreprise', 'home_page');
+$smarty->assign('footer', 'index');
+
+$pdo = getPDOConnection();
+if(DEBUG_MODE == 1)
+debug($_POST);
+
+if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) ) 
 {
 	extract($_POST);
-	$pass = sha1($pass);
+	$pass = sha1($password);
 	$sql = "SELECT id_user,role FROM user WHERE login='$login' AND password ='$pass'"; ////// INJECTION SQL ICI //// LOLOOLOL === ==== ===== $$$$$*****
 	$req = $pdo->query($sql);
 
@@ -41,29 +45,48 @@ if(isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) )
 
 		if($data['role'] == ROLE_ENTREPRISE)
 		{
+			echo('log as entreprise');
 			$smarty->display('admin_entreprise/admin_entreprise_home_page.tpl');
 		}
 		else if($data['role'] == ROLE_PARTICULIER)
 		{
+			echo('log as client');
 			$smarty->display('particulier/home_page.tpl');
 		}
 		else if($data['role'] == ROLE_ADMIN)
 		{
-
+			echo('log as Admin');
+			$smarty->display('admin/home_page.tpl');
 		}
+		debug($_SESSION);
 	} 
-	else{
+	else
+	{
 		echo '<div class="information_invalide">Erreur : Mauvais idendifiants</div>';
 	}
 	$req->closeCursor();
 }//Si il est deja log on le redirige direct vers la page mon compte
-else if(Auth::isLogged('admin')|| Auth::isLogged('client') ){ 
+else if(Auth::isLogged('client'))
+{
+	echo('log as client');
+	$smarty->display('particulier/home_page.tpl');
+}
+else if( Auth::isLogged('admin') )
+{ 
+	echo('log as Admin');
+	$smarty->display('admin/home_page.tpl');
+}
+else if( Auth::isEntreprise())
+{
+	echo('log as Admin');
 	$smarty->display('admin_entreprise/admin_entreprise_home_page.tpl');
 }
 else
 {
-	$smarty->assign('error', 'information invalide');
-	$smarty->display('login.tpl'); // I NEED TO DISPLAY THE LAST PAGE BUT I DON'T KNOW HOW 
+	debug($_SESSION);
+	echo "no session";
+	//$smarty->assign('error', 'information invalide');
+	//$smarty->display('login.tpl'); // I NEED TO DISPLAY THE LAST PAGE BUT I DON'T KNOW HOW 
 }
 
 ?>
