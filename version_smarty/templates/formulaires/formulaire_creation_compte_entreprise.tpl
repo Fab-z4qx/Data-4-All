@@ -6,9 +6,6 @@
 		
 		<label class="form_entreprise" for="email_entreprise">Email :</label>
 		<input type="email_entreprise" name="email_entreprise" id="email_entreprise" require /><br><br>
-		
-		<label class="form_entreprise" for="numero_rue">Numéro de rue :</label>
-		<input type="text" name="numero_rue" id="numero_rue" require/><br><br>
 
 		<label class="form_entreprise" for="adresse">Adresse :</label>
 		<input type="text" name="adresse" id="adresse" require/><br><br>

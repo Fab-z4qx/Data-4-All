@@ -57,6 +57,7 @@ if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) )
 			echo('log as Admin');
 			$smarty->display('admin/home_page.tpl');
 		}
+		debug($_SESSION);
 	} 
 	else
 	{
@@ -66,13 +67,23 @@ if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) )
 }//Si il est deja log on le redirige direct vers la page mon compte
 else if(Auth::isLogged('client'))
 {
+	echo('log as client');
 	$smarty->display('particulier/home_page.tpl');
 }
-else if( Auth::isLogged('admin') ){ 
-	//$smarty->display('admin_entreprise/admin_entreprise_home_page.tpl');
+else if( Auth::isLogged('admin') )
+{ 
+	echo('log as Admin');
+	$smarty->display('admin/home_page.tpl');
+}
+else if( Auth::isEntreprise())
+{
+	echo('log as Admin');
+	$smarty->display('admin_entreprise/admin_entreprise_home_page.tpl');
 }
 else
 {
+	debug($_SESSION);
+	echo "no session";
 	//$smarty->assign('error', 'information invalide');
 	//$smarty->display('login.tpl'); // I NEED TO DISPLAY THE LAST PAGE BUT I DON'T KNOW HOW 
 }

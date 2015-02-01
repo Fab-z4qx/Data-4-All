@@ -23,12 +23,11 @@ PRIMARY KEY (id_entreprise) ) ENGINE=InnoDB;
 
 DROP TABLE IF EXISTS adresse ;
 CREATE TABLE adresse (id_adresse INT  AUTO_INCREMENT NOT NULL,
-numero_rue INT,
-code_postal INT,
-pays VARCHAR(255),
 adresse VARCHAR(255),
 adresse_complementaire VARCHAR(255),
+code_postal INT,
 ville VARCHAR(255),
+pays VARCHAR(255),
 PRIMARY KEY (id_adresse) ) ENGINE=InnoDB;
 
 DROP TABLE IF EXISTS contact ;
