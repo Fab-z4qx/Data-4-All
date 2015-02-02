@@ -1,9 +1,11 @@
 
 <?php
+//error_reporting(E_ERROR | E_PARSE);
+
 if(!isset($_SESSION)){
 		session_start();
 }
-
+	
 require('common.inc.php');
 require(ROOT_DIR.INCLUDES.'data4all.inc.php');
 require(ROOT_DIR.INCLUDES.'fonctions.php');
@@ -18,14 +20,9 @@ $JS_TAB = inser_js();
 $smarty->assign('js_tab', $JS_TAB);
 $smarty->assign('css_tab', $CSS_TAB);
 
-
-$smarty->assign('header', 'admin_entreprise');
-$smarty->assign('admin_entreprise', 'home_page');
 $smarty->assign('footer', 'index');
 
 $pdo = getPDOConnection();
-if(DEBUG_MODE == 1)
-debug($_POST);
 
 if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) ) 
 {
@@ -46,23 +43,33 @@ if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) )
 		if($data['role'] == ROLE_ENTREPRISE)
 		{
 			echo('log as entreprise');
+			$smarty->assign('header', 'admin_entreprise');
+			$smarty->assign('admin_entreprise', 'home_page');
 			$smarty->display('admin_entreprise/admin_entreprise_home_page.tpl');
 		}
 		else if($data['role'] == ROLE_PARTICULIER)
 		{
 			echo('log as client');
-			$smarty->display('particulier/home_page.tpl');
+			header('Location:compte_particulier/home.php');
+			exit();
+
+			/*
+			$smarty->assign('header', 'admin_particulier');
+			$smarty->assign('admin_particulier', 'home_page');
+			$smarty->display('particulier/home_page.tpl');*/
 		}
 		else if($data['role'] == ROLE_ADMIN)
 		{
 			echo('log as Admin');
+			$smarty->assign('header', 'admin_admin');
+			$smarty->assign('admin_admin', 'home_page');
 			$smarty->display('admin/home_page.tpl');
 		}
-		debug($_SESSION);
 	} 
 	else
 	{
 		echo '<div class="information_invalide">Erreur : Mauvais idendifiants</div>';
+		$smarty->display('login.tpl');
 	}
 	$req->closeCursor();
 }//Si il est deja log on le redirige direct vers la page mon compte
@@ -83,10 +90,9 @@ else if( Auth::isEntreprise())
 }
 else
 {
-	debug($_SESSION);
 	echo "no session";
-	//$smarty->assign('error', 'information invalide');
-	//$smarty->display('login.tpl'); // I NEED TO DISPLAY THE LAST PAGE BUT I DON'T KNOW HOW 
+	$smarty->assign('error', 'information invalide');
+	$smarty->display('login.tpl'); // I NEED TO DISPLAY THE LAST PAGE BUT I DON'T KNOW HOW 
 }
 
 ?>

@@ -1,4 +1,4 @@
-<!-- Page login -->
+<!-- Page REGISTER -->
 
 <?php
 	require('common.inc.php');
@@ -18,6 +18,6 @@
 
 	$smarty->registerPlugin('function', 'echo_captcha','echo_captcha');
 	
-	$smarty->display('login.tpl');
+	$smarty->display('register.tpl');
 ?>
 

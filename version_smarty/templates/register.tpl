@@ -1,8 +1,13 @@
 {include file='header.tpl'}
 
+<div class="page_creation_compte">
 
+<script type="text/javascript">
+	var RecaptchaOptions = { theme : 'clean' };
+</script>	
+{if ({$header} == 'index')}
 
-{if ({$header} == 'compte_cree')}
+{elseif ({$header} == 'compte_cree')}
 	<div id="titre_creation_compte">
 		<div class="validation">
 				Le compte à été crée avec success
@@ -22,23 +27,28 @@
 				Le compte n'as pas été créer car il existe déja !
 		</div>
 	</div>
-{/if}
+{else}
+<div id="titre_creation_compte">
+		<div class="titre_left">
+				Particulier
+		</div>
 
-<div class="page_creation_compte">
+		<div class="titre_right">
+				Entreprise
+		</div>
+	</div>
 
 	<div id="row">
 			<div class="block_left">
-					<form method="post" action="htdocs/traitement_form_connexion.php">
-							<input type="text" placeholder="adresse email" name="login" id="login"/>&nbsp;&nbsp;
-							<input type="password" placeholder="mot de passe" name="password"  id="password"/>&nbsp;&nbsp;&nbsp;&nbsp;
-							<input class="con" type="submit" value="Connexion">
-					</form>
+					{include file='formulaires/formulaire_creation_compte_particulier.tpl'}
 			</div>
+
 			<div class="block_right">
 				<div id="offres_entreprise">
-			       <a id="offres_bouton_contact" href="register.php">S'enregister</a>
+			       <a id="offres_bouton_contact" href="register_entreprise.php">Entreprise</a>
 			   </div>
 			</div>
 	</div>
+{/if}
 </div>
 {include file='footer.tpl'}
