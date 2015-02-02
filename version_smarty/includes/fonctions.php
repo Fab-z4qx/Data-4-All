@@ -80,7 +80,8 @@
 						ROOT_TO_DIR.JS_DIR."rubrique_connexion.js",
 						ROOT_TO_DIR.JS_DIR."progressbar.js",
 						ROOT_TO_DIR.JS_DIR."jquery.js",
-						ROOT_TO_DIR.JS_DIR."bootstrap.min.js");
+						ROOT_TO_DIR.JS_DIR."bootstrap.min.js",
+						ROOT_TO_DIR.JS_DIR."upload_file.js");
 		return $JS_TAB;
 	}
 
