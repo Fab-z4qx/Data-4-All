@@ -34,7 +34,6 @@
                         <div id="upload_response"></div>
                     </div>
                 </form>
-
                 <img id="preview" />
             </div>
         </div>

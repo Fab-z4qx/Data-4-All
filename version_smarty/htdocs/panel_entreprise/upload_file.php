@@ -10,7 +10,7 @@ $sFileType = $_FILES['image_file']['type'];
 $sFileSize = bytesToSize1024($_FILES['image_file']['size'], 1);
 
 
-$target_dir = "uploads/";
+$target_dir = "file_uploaded/";
 $target_dir = $target_dir . basename( $_FILES["image_file"]["name"]);
 $uploadOk=1;
 

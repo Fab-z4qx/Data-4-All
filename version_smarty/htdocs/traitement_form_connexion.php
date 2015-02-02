@@ -50,7 +50,7 @@ if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) )
 		}
 		else if($data['role'] == ROLE_PARTICULIER)
 		{
-			//echo('log as client');
+			echo('log as client');
 			header('Location:compte_particulier/home.php');
 			exit();
 
@@ -69,8 +69,8 @@ if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) )
 	} 
 	else
 	{
-		$smarty->display('login.tpl');
 		echo '<div class="information_invalide">Erreur : Mauvais idendifiants</div>';
+		$smarty->display('login.tpl');
 	}
 	$req->closeCursor();
 }//Si il est deja log on le redirige direct vers la page mon compte
