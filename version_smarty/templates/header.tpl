@@ -22,7 +22,7 @@
 						<a class="span_headerVertical" href="htdocs/search.php"><li>Recherche</li></a>
 						<a class="span_headerVertical" href="htdocs/liste_entreprises.php"><li>Entreprises</li></a>
 						<a class="span_headerVertical" href="htdocs/offres.php"><li>Offres</li></a>
-						<a class="span_headerVertical" href="htdocs/register.php"><li>Inscription</li></a>
+						<a class="span_headerVertical" href="htdocs/login.php"><li>Inscription</li></a>
 						<a class="span_headerVertical" href="htdocs/a_propos.php"><li>A Propos</li></a>
 						<a class="span_headerVertical" href="htdocs/contact.php"><li>Contact</li></a>
 					{/if}
@@ -32,7 +32,7 @@
 						<a class="span_headerVertical" href="search.php"><li class="li_select">Recherche</li></a>
 						<a class="span_headerVertical" href="liste_entreprises.php"><li>Entreprises</li></a>
 						<a class="span_headerVertical" href="offres.php"><li>Offres</li></a>
-						<a class="span_headerVertical" href="register.php"><li>Inscription</li></a>
+						<a class="span_headerVertical" href="login.php"><li>Inscription</li></a>
 						<a class="span_headerVertical" href="a_propos.php"><li>A Propos</li></a>
 						<a class="span_headerVertical" href="contact.php"><li>Contact</li></a>
 					{/if}
@@ -42,7 +42,7 @@
 						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
 						<a class="span_headerVertical" href="liste_entreprises.php"><li class="li_select">Entreprises</li></a>
 						<a class="span_headerVertical" href="offres.php"><li>Offres</li></a>
-						<a class="span_headerVertical" href="register.php"><li>Inscription</li></a>
+						<a class="span_headerVertical" href="login.php"><li>Inscription</li></a>
 						<a class="span_headerVertical" href="a_propos.php"><li>A Propos</li></a>
 						<a class="span_headerVertical" href="contact.php"><li>Contact</li></a>
 					{/if}
@@ -52,7 +52,7 @@
 						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
 						<a class="span_headerVertical" href="liste_entreprises.php"><li>Entreprises</li></a>
 						<a class="span_headerVertical" href="offres.php"><li class="li_select">Offres</li></a>
-						<a class="span_headerVertical" href="register.php"><li>Inscription</li></a>
+						<a class="span_headerVertical" href="login.php"><li>Inscription</li></a>
 						<a class="span_headerVertical" href="a_propos.php"><li>A Propos</li></a>
 						<a class="span_headerVertical" href="contact.php"><li>Contact</li></a>
 					{/if}
@@ -62,7 +62,7 @@
 						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
 						<a class="span_headerVertical" href="liste_entreprises.php"><li>Entreprises</li></a>
 						<a class="span_headerVertical" href="offres.php"><li>Offres</li></a>
-						<a class="span_headerVertical" href="register.php"><li class="li_select">Inscription</li></a>
+						<a class="span_headerVertical" href="login.php"><li class="li_select">Inscription</li></a>
 						<a class="span_headerVertical" href="a_propos.php"><li>A Propos</li></a>
 						<a class="span_headerVertical" href="contact.php"><li>Contact</li></a>
 					{/if}
@@ -72,7 +72,7 @@
 						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
 						<a class="span_headerVertical" href="liste_entreprises.php"><li>Entreprises</li></a>
 						<a class="span_headerVertical" href="offres.php"><li>Offres</li></a>
-						<a class="span_headerVertical" href="register.php"><li>Inscription</li></a>
+						<a class="span_headerVertical" href="login.php"><li>Inscription</li></a>
 						<a class="span_headerVertical" href="a_propos.php"><li class="li_select">A Propos</li></a>
 						<a class="span_headerVertical" href="contact.php"><li>Contact</li></a>
 					{/if}
@@ -82,7 +82,7 @@
 						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
 						<a class="span_headerVertical" href="liste_entreprises.php"><li>Entreprises</li></a>
 						<a class="span_headerVertical" href="offres.php"><li>Offres</li></a>
-						<a class="span_headerVertical" href="register.php"><li>Inscription</li></a>
+						<a class="span_headerVertical" href="login.php"><li>Inscription</li></a>
 						<a class="span_headerVertical" href="a_propos.php"><li>A Propos</li></a>
 						<a class="span_headerVertical" href="contact.php"><li  class="li_select">Contact</li></a>
 					{/if}
@@ -92,7 +92,7 @@
 						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
 						<a class="span_headerVertical" href="liste_entreprises.php"><li>Entreprises</li></a>
 						<a class="span_headerVertical" href="offres.php"><li>Offres</li></a>
-						<a class="span_headerVertical" href="register.php"><li>Inscription</li></a>
+						<a class="span_headerVertical" href="login.php"><li>Inscription</li></a>
 						<a class="span_headerVertical" href="a_propos.php"><li>A Propos</li></a>
 						<a class="span_headerVertical" href="contact.php"><li>Contact</li></a>
 					{/if}
@@ -204,26 +204,6 @@
 		<div class="navHorizontal_admin_entreprise">
 			<div id="titrePage">
 				{if ({$admin_entreprise} == 'home_page')} Accueil - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'changer_offre')} Changer d'offre - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'stat_compte')} Statistique Compte - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'import_fichier')} Importer Fichiers - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'infos_compte')} Informations - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'visualisation')} Visualisation - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'contact')} Contact - Nom Entreprise {/if}
-			</div>
-			{if ({$admin_entreprise} == 'home_page')}
-			<div id="bouton_deco">
-				<a class="decon" href="htdocs/login.php">Log Out</a>
-			</div>
-			{/if}
-
-		</div>
-		{/if}
-
-		{if ({$header} == 'admin_particulier')}
-		<div class="navHorizontal_admin_entreprise">
-			<div id="titrePage">
-				{if ({$admin_particulier} == 'home_page')} Bienvenue sur votre compte {/if}
 				{if ({$admin_entreprise} == 'changer_offre')} Changer d'offre - Nom Entreprise {/if}
 				{if ({$admin_entreprise} == 'stat_compte')} Statistique Compte - Nom Entreprise {/if}
 				{if ({$admin_entreprise} == 'import_fichier')} Importer Fichiers - Nom Entreprise {/if}

@@ -116,12 +116,14 @@ if($valid == true && captcha_valid())
 	// Check if addresse exist !
 	$adresse_sql_req = "INSERT INTO `adresse` 
 	(`id_adresse`, 
+	`numero_rue`, 
 	`code_postal`, 
 	`pays`, 
 	`adresse`, 
 	`adresse_complementaire`, 
 	`ville`) 
 	VALUES (NULL, 
+	".$pdo->quote($numero_rue).", 
 	".$pdo->quote($code_postal).", 
 	".$pdo->quote($pays).", 
 	".$pdo->quote($adresse).",
@@ -518,7 +520,7 @@ var RecaptchaOptions = { theme : 'clean' };
 					
 					<label for="password">Votre mot de passe : </label> <input type="password" name="password" value="" required>
 					<label for="verifpassword">Confirmation du mot de passe : </label> <input type="password" name="verifpassword" value="" required/> </br></br></p>
-					<div style="margin-left:auto; margin-right:auto; width:425px;"><?php //echo recaptcha_get_html('6LeGG-sSAAAAAMMefaLjooNSBcBEqg61a6IhhpTE'); ?> </div></br>
+					<div style="margin-left:auto; margin-right:auto; width:425px;"><?php echo recaptcha_get_html('6LeGG-sSAAAAAMMefaLjooNSBcBEqg61a6IhhpTE'); ?> </div></br>
 					<input type ="submit" value="S'enregister" />
 			</form>
 		</div>
