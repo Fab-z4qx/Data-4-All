@@ -2,7 +2,7 @@
 
 <section class="contentOffres">
 
-<div class="well">
+
 	<div class="TableOffres">
                 <table>
                     <tr>
@@ -32,8 +32,6 @@
                     
                 </table>
     </div>
-</div>
-
     
     <div id="offres_contact">
         <a id="offres_bouton_contact" href="contact.php">Contact</a>

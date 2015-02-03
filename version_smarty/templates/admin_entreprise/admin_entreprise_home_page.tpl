@@ -10,6 +10,8 @@
 <div id="meilleur_offre">
 	go best offre
 </div>
+
+
 		<section id="compteur_entreprise">
 
 			<div class="count_entreprise">

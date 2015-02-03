@@ -6,21 +6,26 @@
 		if(DEBUG_MODE == 1)
 		{
 			echo PRE;
-			echo $var;
+			print_r($var);
 			echo PREC;
 		}
 	}
 
 	function getPDOConnection()
 	{
+		$host = '127.0.0.1';
+		$dbname = 'bdd_d4a';
+		$port = '8889';
+		$user = 'root';
+		$password = 'root';
+
 		try
 		{   // On se connecte à MySQL
-		    $pdo = new PDO('mysql:host=127.0.0.1;dbname=BDD_D4A', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8')); 
+		    $pdo = new PDO('mysql:host='.$host.';dbname='.$dbname.';port='.$port.'',''.$user.'', ''.$password.'', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8')); 
 		}
 		catch(Exception $e)
 		{   // En cas d'erreur, on affiche un message et on arrête tout
 		    die('Erreur : '.$e->getMessage());
-
 		}
 		return $pdo;
 	}
@@ -28,7 +33,7 @@
 	function connexion_serveur()
 	{
 		//echo "****  THIS FUNCION IS DEPRECIATED !!! ***** ";
-		$con = mysql_connect("localhost","root","");
+		$con = mysql_connect("localhost","root","root");
 
 		if (!$con) die('Could not connect: ' . mysql_error());
 			mysql_select_db("BDD_D4A", $con);
@@ -36,19 +41,24 @@
 		return $con;
 	}
 	
-	function inser_css(){
+	function inser_css()
+	{
 		$CSS_TAB = array(   ROOT_TO_DIR.STYLE."style_index.css",
 							ROOT_TO_DIR.STYLE."style_header.css",
 							ROOT_TO_DIR.STYLE."style_footer.css",
 							ROOT_TO_DIR.STYLE."home_page/style_section_titre_principale.css",
 							ROOT_TO_DIR.STYLE."home_page/style_section_recherche.css",
+							ROOT_TO_DIR.STYLE."home_page/style_section_carrousel.css",
+							ROOT_TO_DIR.STYLE."home_page/style_section_compteur.css",
 							ROOT_TO_DIR.STYLE."home_page/style_section_guide.css",
 							ROOT_TO_DIR.STYLE."home_page/style_section_entreprise_partenaire.css",
 							ROOT_TO_DIR.STYLE."home_page/style_section_contact.css",
+							ROOT_TO_DIR.STYLE."home_page/jauge-circulaire.css",
 							ROOT_TO_DIR.STYLE."liste_entreprises/style_liste_entreprises.css",
 							ROOT_TO_DIR.STYLE."liste_entreprises/style_entreprises.css",
 							ROOT_TO_DIR.STYLE."contact/style_contact.css",
 							ROOT_TO_DIR.STYLE."login/style_login.css",
+							ROOT_TO_DIR.STYLE."home_page/bootstrap.min.css",
 							ROOT_TO_DIR.STYLE."guide/style_guide.css",
 							ROOT_TO_DIR.STYLE."offres/style_offres.css",
 							ROOT_TO_DIR.STYLE."search/style_search.css",
@@ -60,23 +70,18 @@
 							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_infos_compte.css",
 							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_stats_compte.css",
 							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_visualisation.css",
-							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_home_page.css");
+							ROOT_TO_DIR.STYLE."admin_entreprise/style_admin_entreprise_home_page.css"
+							);
 		return $CSS_TAB;
 	}
 	
 	function inser_js(){
 		$JS_TAB = array(ROOT_TO_DIR.JS_DIR."googleMap.js",
 						ROOT_TO_DIR.JS_DIR."rubrique_connexion.js",
-						ROOT_TO_DIR.JS_DIR."agency.js",
-						ROOT_TO_DIR.JS_DIR."bootstrap.js",
+						ROOT_TO_DIR.JS_DIR."progressbar.js",
+						ROOT_TO_DIR.JS_DIR."jquery.js",
 						ROOT_TO_DIR.JS_DIR."bootstrap.min.js",
-						ROOT_TO_DIR.JS_DIR."cbpAnimatedHeader.js",
-						ROOT_TO_DIR.JS_DIR."cbpAnimatedHeader.min.js",
-						ROOT_TO_DIR.JS_DIR."classie.js",
-						ROOT_TO_DIR.JS_DIR."contact_me.js",
-						ROOT_TO_DIR.JS_DIR."jqBoostrapValidation.js",
-						ROOT_TO_DIR.JS_DIR."jquery.js"
-		);
+						ROOT_TO_DIR.JS_DIR."upload_file.js");
 		return $JS_TAB;
 	}
 
