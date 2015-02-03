@@ -77,6 +77,9 @@ function fileSelected() {
 }
 
 function startUploading() {
+
+  
+
     // cleanup all temp states
     iPreviousBytesLoaded = 0;
     document.getElementById('upload_response').style.display = 'none';
