@@ -44,11 +44,18 @@ if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) )
 		'role' => $data['role']
 		);
 
+
 		//debug($_SESSION);
 		//exit();
 
 		if($data['role'] == ROLE_ENTREPRISE)
 		{
+			$sql = 'SELECT * FROM entreprise WHERE id_entreprise ='.$_SESSION['Auth']['id_entreprise'].';';
+			$pdo = getPDOConnection();
+			$req = $pdo->query($sql);
+			$data = $req->fetch(PDO::FETCH_ASSOC);
+			$_SESSION['info'] = $data;
+			
 			echo('log as entreprise');
 			header('Location:admin_entreprise_home_page.php');
 			//sleep(3);

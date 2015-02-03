@@ -203,7 +203,7 @@
 		{if ({$header} == 'admin_entreprise')}
 		<div class="navHorizontal_admin_entreprise">
 			<div id="titrePage">
-				{if ({$admin_entreprise} == 'home_page')} Accueil - Nom Entreprise {/if}
+				{if ({$admin_entreprise} == 'home_page')} Accueil - {$nom_entreprise} {/if}
 				{if ({$admin_entreprise} == 'changer_offre')} Changer d'offre - Nom Entreprise {/if}
 				{if ({$admin_entreprise} == 'stat_compte')} Statistique Compte - Nom Entreprise {/if}
 				{if ({$admin_entreprise} == 'import_fichier')} Importer Fichiers - Nom Entreprise {/if}

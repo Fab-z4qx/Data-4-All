@@ -15,12 +15,28 @@ if( !Auth::isLogged('entreprise'))
 	exit();
 }
 
-debug($_SESSION);
-	
+/*
+function getInfoEntreprise()
+{
+	$sql = 'SELECT * FROM entreprise WHERE id_entreprise ='.$_SESSION['Auth']['id_entreprise'].';';
+	$pdo = getPDOConnection();
+	$req = $pdo->query($sql);
+	$data = $req->fetch(PDO::FETCH_ASSOC);
+	//debug($data);
+	return $data;
+}
+*/
+
+
 	$smarty = new Smarty_datat4all();
 	$CSS_TAB = inser_css();
 	$JS_TAB = inser_js();
-	$nbr_entreprise = 5;
+
+
+debug($_SESSION);
+//$data = getInfoEntreprise();
+//debug($data);
+	
 
 	$smarty->assign('js_tab', $JS_TAB);
 	$smarty->assign('css_tab', $CSS_TAB);
@@ -28,6 +44,9 @@ debug($_SESSION);
 	$smarty->assign('header', 'admin_entreprise');
 	$smarty->assign('admin_entreprise', 'home_page');
 	$smarty->assign('footer', 'index');
+
+	$smarty->assign('nbr_entreprise', '10');
+	$smarty->assign('nom_entreprise', $_SESSION['info']['nom_entreprise']);
 
 	$smarty->display('admin_entreprise/admin_entreprise_home_page.tpl');
 
