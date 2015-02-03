@@ -35,10 +35,10 @@ function fileSelected() {
     document.getElementById('warnsize').style.display = 'none';
 
     // get selected file element
-    var oFile = document.getElementById('image_file').files[0];
+    var oFile = document.getElementById('file').files[0];
 
     // filter for image files
-    var rFilter = /^(image\/bmp|image\/gif|image\/jpeg|image\/png|image\/tiff|video\/mp4|video\/avi|avi|mp4)$/i;
+    var rFilter = /^(image\/bmp|image\/gif|image\/jpeg|image\/png|image\/tiff|video\/mp4|video\/avi|application\/vnd.ms-excel|application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet|application\/x-xls|application\/xls|application\/x-dos_ms_excel|application\/x-excel|application\/x-ms-excel|application\/x-msexcel|application\/msexcel|application\/vnd.ms-excel)$/i;
     if (! rFilter.test(oFile.type)) {
         document.getElementById('error').style.display = 'block';
         return;
@@ -51,7 +51,7 @@ function fileSelected() {
     }
 
     // get preview element
-    var oImage = document.getElementById('preview');
+   // var oImage = document.getElementById('preview');
 
     // prepare HTML5 FileReader
     var oReader = new FileReader();
@@ -77,7 +77,19 @@ function fileSelected() {
 }
 
 function startUploading() {
-    // cleanup all temp states
+   
+    var oFile = document.getElementById('file').files[0];
+    // filter for image files
+    alert(oFile.type);
+    var rFilter = /^(image\/bmp|image\/gif|image\/jpeg|image\/png|image\/tiff|video\/mp4|video\/avi|application\/vnd.ms-excel|application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet|application\/x-xls|application\/xls|application\/x-dos_ms_excel|application\/x-excel|application\/x-ms-excel|application\/x-msexcel|application\/msexcel|application\/vnd.ms-excel)$/i;
+
+    if (! rFilter.test(oFile.type)) {
+        document.getElementById('error').style.display = 'block';
+        alert('file incorrect');
+        return;
+    }
+
+     // cleanup all temp states
     iPreviousBytesLoaded = 0;
     document.getElementById('upload_response').style.display = 'none';
     document.getElementById('error').style.display = 'none';
@@ -94,6 +106,8 @@ function startUploading() {
     var vFD = new FormData(document.getElementById('upload_form')); 
 
     // create XMLHttpRequest object, adding few event listeners, and POSTing our data
+
+
     var oXHR = new XMLHttpRequest();        
     oXHR.upload.addEventListener('progress', uploadProgress, false);
     oXHR.addEventListener('load', uploadFinish, false);
