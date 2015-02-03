@@ -5,9 +5,11 @@
 	{
 		if(DEBUG_MODE == 1)
 		{
+			echo ('<div id="debug">');
 			echo PRE;
 			print_r($var);
 			echo PREC;
+			echo ('</div>');
 		}
 	}
 
