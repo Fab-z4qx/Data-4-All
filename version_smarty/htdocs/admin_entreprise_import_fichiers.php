@@ -4,6 +4,7 @@ require('common.inc.php');
 require(ROOT_DIR.INCLUDES.'data4all.inc.php');
 require(ROOT_DIR.INCLUDES.'fonctions.php');
 require(ROOT_DIR.INCLUDES.'lib/auth.php');
+
 if(!isset($_SESSION)){
 		session_start();
 }

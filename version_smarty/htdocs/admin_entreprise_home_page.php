@@ -20,8 +20,7 @@ debug($_SESSION);
 	$smarty = new Smarty_datat4all();
 	$CSS_TAB = inser_css();
 	$JS_TAB = inser_js();
-
-	
+	$nbr_entreprise = 5;
 
 	$smarty->assign('js_tab', $JS_TAB);
 	$smarty->assign('css_tab', $CSS_TAB);

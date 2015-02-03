@@ -27,12 +27,11 @@ $smarty->assign('footer', 'index');
 
 $pdo = getPDOConnection();
 
-debug($_POST);
 if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) ) 
 {
 	extract($_POST);
 	$pass = sha1($password);
-	$sql = "SELECT id_user,role FROM user WHERE login='$login' AND password ='$pass'"; ////// INJECTION SQL ICI //// LOLOOLOL === ==== ===== $$$$$*****
+	$sql = "SELECT id_user,entreprise_id_entreprise,role FROM user WHERE login='$login' AND password ='$pass'"; ////// INJECTION SQL ICI //// LOLOOLOL === ==== ===== $$$$$*****
 	$req = $pdo->query($sql);
 
 	if($req->rowCount()> 0) // Si l'utilisateur existe
@@ -41,8 +40,12 @@ if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) )
 		$_SESSION['Auth'] = array( //On créer la session ! 
 		'login' => $login,
 		'pass' => $pass,
+		'id_entreprise' => $data['entreprise_id_entreprise'],
 		'role' => $data['role']
 		);
+
+		//debug($_SESSION);
+		//exit();
 
 		if($data['role'] == ROLE_ENTREPRISE)
 		{
