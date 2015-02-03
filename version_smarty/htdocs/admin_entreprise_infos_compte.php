@@ -26,7 +26,15 @@ debug($_SESSION);
 	
 	$smarty->assign('header', 'admin_entreprise');
 	$smarty->assign('admin_entreprise', 'infos_compte');
+	$smarty->assign('nom_entreprise', $_SESSION['info']['nom_entreprise']);
+	$smarty->assign('email_entreprise', $_SESSION['info']['email_entreprise']);
+	$smarty->assign('siret_entreprise', $_SESSION['info']['siret_entreprise']);
+	$smarty->assign('tel_entreprise', $_SESSION['info']['tel_entreprise']);
+	$smarty->assign('fax_entreprise', $_SESSION['info']['fax_entreprise']);
+	$smarty->assign('activite_entreprise', $_SESSION['info']['activite_entreprise']);
+
 	$smarty->assign('footer', 'index');
+
 
 	$smarty->display('admin_entreprise/admin_entreprise_infos_compte.tpl');
 ?>
