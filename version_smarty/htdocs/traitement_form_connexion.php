@@ -25,6 +25,7 @@ $smarty->assign('footer', 'index');
 
 $pdo = getPDOConnection();
 
+debug($_POST);
 if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) ) 
 {
 	extract($_POST);
@@ -44,6 +45,7 @@ if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) )
 		if($data['role'] == ROLE_ENTREPRISE)
 		{
 			echo('log as entreprise');
+			//sleep(3);
 			$smarty->assign('header', 'admin_entreprise');
 			$smarty->assign('admin_entreprise', 'home_page');
 			$smarty->display('admin_entreprise/admin_entreprise_home_page.tpl');
@@ -70,7 +72,7 @@ if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) )
 	else
 	{
 		echo '<div class="information_invalide">Erreur : Mauvais idendifiants</div>';
-		$smarty->display('login.tpl');
+		//$smarty->display('login.tpl');
 	}
 	$req->closeCursor();
 }//Si il est deja log on le redirige direct vers la page mon compte

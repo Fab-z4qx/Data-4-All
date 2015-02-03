@@ -15,7 +15,7 @@
 	{
 		$host = '127.0.0.1';
 		$dbname = 'bdd_d4a';
-		$port = '8889';
+		$port = '3306'; // 3306 for windows && 8889 for mac 
 		$user = 'root';
 		$password = 'root';
 
