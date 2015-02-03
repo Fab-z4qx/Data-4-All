@@ -1,11 +1,23 @@
 
 <?php
-	include("common.inc.php");
-	//Nouvelle objet smarty
-	require(ROOT_DIR.INCLUDES.'data4all.inc.php');
+require('common.inc.php');
+require(ROOT_DIR.INCLUDES.'data4all.inc.php');
+require(ROOT_DIR.INCLUDES.'fonctions.php');
+require(ROOT_DIR.INCLUDES.'lib/auth.php');
+if(!isset($_SESSION)){
+		session_start();
+}
+if( !Auth::isLogged('entreprise'))
+{
+	debug("you are not logged");
+	header('Location:../index.php');
+	exit();
+}
+
+debug($_SESSION);
+
 	$smarty = new Smarty_datat4all();
 	
-	require(ROOT_DIR.INCLUDES.'fonctions.php');
 	$CSS_TAB = inser_css();
 	$JS_TAB = inser_js();
 	

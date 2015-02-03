@@ -13,6 +13,7 @@ require(ROOT_DIR.INCLUDES.'lib/lib.php');
 require(ROOT_DIR.INCLUDES.'lib/recaptchalib.php');
 require(ROOT_DIR.INCLUDES.'lib/auth.php');
 
+/*
 $smarty = new Smarty_datat4all();
 
 $CSS_TAB = inser_css();
@@ -22,6 +23,7 @@ $smarty->assign('css_tab', $CSS_TAB);
 
 
 $smarty->assign('footer', 'index');
+*/
 
 $pdo = getPDOConnection();
 
@@ -45,10 +47,11 @@ if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) )
 		if($data['role'] == ROLE_ENTREPRISE)
 		{
 			echo('log as entreprise');
+			header('Location:admin_entreprise_home_page.php');
 			//sleep(3);
-			$smarty->assign('header', 'admin_entreprise');
-			$smarty->assign('admin_entreprise', 'home_page');
-			$smarty->display('admin_entreprise/admin_entreprise_home_page.tpl');
+			//$smarty->assign('header', 'admin_entreprise');
+			//$smarty->assign('admin_entreprise', 'home_page');
+			//$smarty->display('admin_entreprise/admin_entreprise_home_page.tpl');
 		}
 		else if($data['role'] == ROLE_PARTICULIER)
 		{
@@ -64,9 +67,9 @@ if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) )
 		else if($data['role'] == ROLE_ADMIN)
 		{
 			echo('log as Admin');
-			$smarty->assign('header', 'admin_admin');
-			$smarty->assign('admin_admin', 'home_page');
-			$smarty->display('admin/home_page.tpl');
+			//$smarty->assign('header', 'admin_admin');
+			//$smarty->assign('admin_admin', 'home_page');
+			//$smarty->display('admin/home_page.tpl');
 		}
 	} 
 	else
@@ -79,23 +82,23 @@ if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) )
 else if(Auth::isLogged('client'))
 {
 	echo('log as client');
-	$smarty->display('particulier/home_page.tpl');
+	//$smarty->display('particulier/home_page.tpl');
 }
 else if( Auth::isLogged('admin') )
 { 
 	echo('log as Admin');
-	$smarty->display('admin/home_page.tpl');
+	//$smarty->display('admin/home_page.tpl');
 }
 else if( Auth::isEntreprise())
 {
 	echo('log as Admin');
-	$smarty->display('admin_entreprise/admin_entreprise_home_page.tpl');
+	//$smarty->display('admin_entreprise/admin_entreprise_home_page.tpl');
 }
 else
 {
 	echo "no session";
-	$smarty->assign('error', 'information invalide');
-	$smarty->display('login.tpl'); // I NEED TO DISPLAY THE LAST PAGE BUT I DON'T KNOW HOW 
+	//$smarty->assign('error', 'information invalide');
+	//$smarty->display('login.tpl'); // I NEED TO DISPLAY THE LAST PAGE BUT I DON'T KNOW HOW 
 }
 
 ?>

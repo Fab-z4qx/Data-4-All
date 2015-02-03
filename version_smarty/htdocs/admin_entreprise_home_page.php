@@ -10,15 +10,18 @@ if(!isset($_SESSION)){
 }
 if( !Auth::isLogged('entreprise'))
 {
-	//retour à la page login
 	debug("you are not logged");
+	header('Location:../index.php');
+	exit();
 }
+
+debug($_SESSION);
 	
 	$smarty = new Smarty_datat4all();
 	$CSS_TAB = inser_css();
 	$JS_TAB = inser_js();
 
-	debug($_SESSION);
+	
 
 	$smarty->assign('js_tab', $JS_TAB);
 	$smarty->assign('css_tab', $CSS_TAB);

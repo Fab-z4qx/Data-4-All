@@ -213,7 +213,7 @@
 			</div>
 			{if ({$admin_entreprise} == 'home_page')}
 			<div id="bouton_deco">
-				<a class="decon" href="htdocs/login.php">Log Out</a>
+				<a class="decon" href="logout.php">Log Out</a>
 			</div>
 			{/if}
 
@@ -233,7 +233,7 @@
 			</div>
 			{if ({$admin_entreprise} == 'home_page')}
 			<div id="bouton_deco">
-				<a class="decon" href="htdocs/login.php">Log Out</a>
+				<a class="decon" href="logout.php">Log Out</a>
 			</div>
 			{/if}
 
