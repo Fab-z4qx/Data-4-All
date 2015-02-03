@@ -22,8 +22,6 @@
 	define('STYLE',BASE_URL.'styles/');
 	define('IMAGE','images/');
 
-
-	/* ROLE DEFINE */
   	define('ROLE_PARTICULIER',1); //public
 	define('ROLE_ENTREPRISE',2);
 	define('ROLE_ADMIN',3);

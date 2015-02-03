@@ -1,11 +1,4 @@
 
-{include file='header.tpl'}
-
-<script type="text/javascript">
-	var RecaptchaOptions = { theme : 'clean' };
-</script>	
-
-<div id="offres_entreprise">		   
 
 <form method="post" action="traitement_form_creation_compte_entreprise.php">
 
@@ -14,6 +7,9 @@
 		
 		<label class="form_entreprise" for="email_entreprise">Email :</label>
 		<input type="email_entreprise" name="email_entreprise" id="email_entreprise" require /><br><br>
+		
+		<label class="form_entreprise" for="numero_rue">Numéro de rue :</label>
+		<input type="text" name="numero_rue" id="numero_rue" require/><br><br>
 
 		<label class="form_entreprise" for="adresse">Adresse :</label>
 		<input type="text" name="adresse" id="adresse" require/><br><br>
@@ -56,11 +52,12 @@
 		
 		<label class="form_entreprise" for="password_confirmation">Confirmation du mot de passe :</label>
 		<input type="password" name="password_confirmation" id="password_confirmation" require /><br><br>
-		<div id="captcha">
-			{echo_captcha}
-		</div>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+		    $('#captcha2').html($('#captcha').clone(true,true));   
+			});
+		</script>
+		<div id="captcha2"></div>
 		<input class="bouton_submit" type="submit" value="Continuer">
 </form>
-</div>
-
-{include file='footer.tpl'}
