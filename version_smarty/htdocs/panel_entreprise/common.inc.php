@@ -1,7 +1,6 @@
 
 
 <?php
-
 	if(    dirname($_SERVER['SCRIPT_NAME']) == '/htdocs' 
 		|| dirname($_SERVER['SCRIPT_NAME']) == 'htdocs/'
 		|| dirname($_SERVER['SCRIPT_NAME']) == '/htdocs/'	
@@ -13,14 +12,14 @@
 		define('BASE_URL',dirname(dirname($_SERVER['SCRIPT_NAME']).'/').'/');
 	}
 	
-	define('ROOT_DIR',dirname(dirname(__FILE__).'/').'/');
+	define('ROOT_DIR',dirname(dirname(dirname(__FILE__).'/').'/').'/');
 	define('SMARTY_DIR',ROOT_DIR.'smarty/');
 	define('ROOT_TO_DIR','');
 	define('DOC_DIR','htdocs/');
-	define('JS_DIR',BASE_URL.'js/');
+	define('JS_DIR','/js/');
 	define('INCLUDES','includes/');
-	define('STYLE',BASE_URL.'styles/');
-	define('IMAGE','images/');
+	define('STYLE','/styles/');
+	define('IMAGE','/images/');
 
 
 	/* ROLE DEFINE */
@@ -33,6 +32,7 @@
 	define('DEBUG_MODE', 1); //SET TO 0 FOR PRODUCT MODE
 	define('PRE','<pre>');
 	define('PREC','</pre>');
+
 ?>
 
 

@@ -1,6 +1,35 @@
-{include file='head.tpl'}
+<?php /* Smarty version Smarty-3.1.13, created on 2015-02-02 16:31:49
+         compiled from "/Users/Timohee/Desktop/Data4All/version_smarty/templates/header.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:19372529154cca5c038abc1-14238739%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '335d716408d6d2d70506f19967d6bffcecab4ae0' => 
+    array (
+      0 => '/Users/Timohee/Desktop/Data4All/version_smarty/templates/header.tpl',
+      1 => 1422891106,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '19372529154cca5c038abc1-14238739',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_54cca5c04b74b6_01728381',
+  'variables' => 
+  array (
+    'header' => 0,
+    'admin_entreprise' => 0,
+    'admin_particulier' => 0,
+    'page' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_54cca5c04b74b6_01728381')) {function content_54cca5c04b74b6_01728381($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('head.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
-<?php require("common.inc.php"); ?>
+
+<<?php ?>?php require("common.inc.php"); ?<?php ?>>
 <body>
 	
     <header>
@@ -9,15 +38,18 @@
 			<center>
 				<div class="logoVertical">
 					<a  class="span_header_logoVertical" href="../index.php">
-						{if ({$header} == 'index')}<img id="logo_site_header" src="images/logo_site_bord_gris.png"> </a>{/if}
-						{if ({$header} != 'index')}<img id="logo_site_header" src="../images/logo_site_bord_gris.png"> </a>{/if}
+						<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp1=ob_get_clean();?><?php if (($_tmp1=='index')){?><img id="logo_site_header" src="images/logo_site_bord_gris.png"> </a><?php }?>
+						<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp2=ob_get_clean();?><?php if (($_tmp2!='index')){?><img id="logo_site_header" src="../images/logo_site_bord_gris.png"> </a><?php }?>
 				</div>
 			</center>
 
 			<nav>
 				<ul>
 
-					{if ({$header} == 'index')}
+					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp3=ob_get_clean();?><?php if (($_tmp3=='index')){?>
 					<a class="span_headerVertical" href="htdocs/panel_entreprise/home_page.php"> <li>panel entreprise</li></a>
 						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
 						<a class="span_headerVertical" href="htdocs/search.php"><li>Recherche</li></a>
@@ -26,9 +58,10 @@
 						<a class="span_headerVertical" href="htdocs/register.php"><li>Inscription</li></a>
 						<a class="span_headerVertical" href="htdocs/a_propos.php"><li>A Propos</li></a>
 						<a class="span_headerVertical" href="htdocs/contact.php"><li>Contact</li></a>
-					{/if}
+					<?php }?>
 
-					{if ({$header} == 'search')}
+					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp4=ob_get_clean();?><?php if (($_tmp4=='search')){?>
 						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
 						<a class="span_headerVertical" href="search.php"><li class="li_select">Recherche</li></a>
 						<a class="span_headerVertical" href="liste_entreprises.php"><li>Entreprises</li></a>
@@ -36,9 +69,10 @@
 						<a class="span_headerVertical" href="register.php"><li>Inscription</li></a>
 						<a class="span_headerVertical" href="a_propos.php"><li>A Propos</li></a>
 						<a class="span_headerVertical" href="contact.php"><li>Contact</li></a>
-					{/if}
+					<?php }?>
 
-					{if ({$header} == 'liste_entreprises')}
+					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp5=ob_get_clean();?><?php if (($_tmp5=='liste_entreprises')){?>
 						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
 						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
 						<a class="span_headerVertical" href="liste_entreprises.php"><li class="li_select">Entreprises</li></a>
@@ -46,9 +80,10 @@
 						<a class="span_headerVertical" href="register.php"><li>Inscription</li></a>
 						<a class="span_headerVertical" href="a_propos.php"><li>A Propos</li></a>
 						<a class="span_headerVertical" href="contact.php"><li>Contact</li></a>
-					{/if}
+					<?php }?>
 
-					{if ({$header} == 'offres')}
+					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp6=ob_get_clean();?><?php if (($_tmp6=='offres')){?>
 						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
 						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
 						<a class="span_headerVertical" href="liste_entreprises.php"><li>Entreprises</li></a>
@@ -56,9 +91,10 @@
 						<a class="span_headerVertical" href="register.php"><li>Inscription</li></a>
 						<a class="span_headerVertical" href="a_propos.php"><li>A Propos</li></a>
 						<a class="span_headerVertical" href="contact.php"><li>Contact</li></a>
-					{/if}
+					<?php }?>
 
-					{if ({$header} == 'login')}
+					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp7=ob_get_clean();?><?php if (($_tmp7=='login')){?>
 						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
 						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
 						<a class="span_headerVertical" href="liste_entreprises.php"><li>Entreprises</li></a>
@@ -66,9 +102,10 @@
 						<a class="span_headerVertical" href="register.php"><li class="li_select">Inscription</li></a>
 						<a class="span_headerVertical" href="a_propos.php"><li>A Propos</li></a>
 						<a class="span_headerVertical" href="contact.php"><li>Contact</li></a>
-					{/if}
+					<?php }?>
 
-					{if ({$header} == 'a_propos')}
+					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp8=ob_get_clean();?><?php if (($_tmp8=='a_propos')){?>
 						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
 						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
 						<a class="span_headerVertical" href="liste_entreprises.php"><li>Entreprises</li></a>
@@ -76,9 +113,10 @@
 						<a class="span_headerVertical" href="register.php"><li>Inscription</li></a>
 						<a class="span_headerVertical" href="a_propos.php"><li class="li_select">A Propos</li></a>
 						<a class="span_headerVertical" href="contact.php"><li>Contact</li></a>
-					{/if}
+					<?php }?>
 
-					{if ({$header} == 'contact')}
+					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp9=ob_get_clean();?><?php if (($_tmp9=='contact')){?>
 						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
 						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
 						<a class="span_headerVertical" href="liste_entreprises.php"><li>Entreprises</li></a>
@@ -86,9 +124,10 @@
 						<a class="span_headerVertical" href="register.php"><li>Inscription</li></a>
 						<a class="span_headerVertical" href="a_propos.php"><li>A Propos</li></a>
 						<a class="span_headerVertical" href="contact.php"><li  class="li_select">Contact</li></a>
-					{/if}
+					<?php }?>
 
-					{if ({$header} == 'arguments')}
+					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp10=ob_get_clean();?><?php if (($_tmp10=='arguments')){?>
 						<a class="span_headerVertical" href="../index.php"> <li>Accueil</li></a>
 						<a class="span_headerVertical" href="search.php"><li>Recherche</li></a>
 						<a class="span_headerVertical" href="liste_entreprises.php"><li>Entreprises</li></a>
@@ -96,9 +135,10 @@
 						<a class="span_headerVertical" href="register.php"><li>Inscription</li></a>
 						<a class="span_headerVertical" href="a_propos.php"><li>A Propos</li></a>
 						<a class="span_headerVertical" href="contact.php"><li>Contact</li></a>
-					{/if}
+					<?php }?>
 
-					{if ({$admin_entreprise} == 'home_page')}
+					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp11=ob_get_clean();?><?php if (($_tmp11=='home_page')){?>
 						<a class="span_headerVertical" href="panel_entreprise/_home_page.php"><li  class="li_select_entreprise">Home</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_infos_compte.php"><li>Infos Compte</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_import_fichiers.php"><li>Upload Fichiers</li></a>
@@ -106,9 +146,10 @@
 						<a class="span_headerVertical" href="panel_entreprise/_stats_compte.php"><li>Stats Compte</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_changer_offre.php"><li>Changer d'offre</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_contact.php"><li>Contact</li></a>
-					{/if}
+					<?php }?>
 
-					{if ({$admin_entreprise} == 'infos_compte')}
+					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp12=ob_get_clean();?><?php if (($_tmp12=='infos_compte')){?>
 						<a class="span_headerVertical" href="panel_entreprise/home_page.php"><li>Home</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/infos_compte.php"><li  class="li_select_entreprise">Infos Compte</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/import_fichiers.php"><li>Upload Fichiers</li></a>
@@ -116,9 +157,10 @@
 						<a class="span_headerVertical" href="panel_entreprise/stats_compte.php"><li>Stats Compte</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/changer_offre.php"><li>Changer d'offre</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/contact.php"><li>Contact</li></a>
-					{/if}
+					<?php }?>
 
-					{if ({$admin_entreprise} == 'import_fichier')}
+					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp13=ob_get_clean();?><?php if (($_tmp13=='import_fichier')){?>
 						<a class="span_headerVertical" href="panel_entreprise/_home_page.php"><li>Home</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_infos_compte.php"><li>Infos Compte</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_import_fichiers.php"><li  class="li_select_entreprise">Upload Fichiers</li></a>
@@ -126,9 +168,10 @@
 						<a class="span_headerVertical" href="panel_entreprise/_stats_compte.php"><li>Stats Compte</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_changer_offre.php"><li>Changer d'offre</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_contact.php"><li>Contact</li></a>
-					{/if}
+					<?php }?>
 
-					{if ({$admin_entreprise} == 'visualisation')}
+					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp14=ob_get_clean();?><?php if (($_tmp14=='visualisation')){?>
 						<a class="span_headerVertical" href="panel_entreprise/_home_page.php"><li>Home</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_infos_compte.php"><li>Infos Compte</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_import_fichiers.php"><li>Upload Fichiers</li></a>
@@ -136,9 +179,10 @@
 						<a class="span_headerVertical" href="panel_entreprise/_stats_compte.php"><li>Stats Compte</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_changer_offre.php"><li>Changer d'offre</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_contact.php"><li>Contact</li></a>
-					{/if}
+					<?php }?>
 
-					{if ({$admin_entreprise} == 'stat_compte')}
+					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp15=ob_get_clean();?><?php if (($_tmp15=='stat_compte')){?>
 						<a class="span_headerVertical" href="panel_entreprise/_home_page.php"><li>Home</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_infos_compte.php"><li>Infos Compte</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_import_fichiers.php"><li>Upload Fichiers</li></a>
@@ -146,9 +190,10 @@
 						<a class="span_headerVertical" href="panel_entreprise/_stats_compte.php"><li  class="li_select_entreprise">Stats Compte</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_changer_offre.php"><li>Changer d'offre</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_contact.php"><li>Contact</li></a>
-					{/if}
+					<?php }?>
 
-					{if ({$admin_entreprise} == 'changer_offre')}
+					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp16=ob_get_clean();?><?php if (($_tmp16=='changer_offre')){?>
 						<a class="span_headerVertical" href="panel_entreprise/_home_page.php"><li>Home</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_infos_compte.php"><li>Infos Compte</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_import_fichiers.php"><li>Upload Fichiers</li></a>
@@ -156,9 +201,10 @@
 						<a class="span_headerVertical" href="panel_entreprise/_stats_compte.php"><li>Stats Compte</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_changer_offre.php"><li  class="li_select_entreprise">Changer d'offre</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_contact.php"><li>Contact</li></a>
-					{/if}
+					<?php }?>
 
-					{if ({$admin_entreprise} == 'contact')}
+					<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp17=ob_get_clean();?><?php if (($_tmp17=='contact')){?>
 						<a class="span_headerVertical" href="panel_entreprise/_home_page.php"><li>Home</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_infos_compte.php"><li>Infos Compte</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_import_fichiers.php"><li>Upload Fichiers</li></a>
@@ -166,7 +212,7 @@
 						<a class="span_headerVertical" href="panel_entreprise/_stats_compte.php"><li>Stats Compte</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_changer_offre.php"><li>Changer d'offre</li></a>
 						<a class="span_headerVertical" href="panel_entreprise/_contact.php"><li  class="li_select_entreprise">Contact</li></a>
-					{/if}
+					<?php }?>
 
 				</ul>
 			</nav>
@@ -183,101 +229,137 @@
 
 	<div id="page">
 
-		{if ({$header} == 'index')}
+		<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp18=ob_get_clean();?><?php if (($_tmp18=='index')){?>
 			<div id="navHorizontal_connexion">
-				{include file='formulaires/formulaire_connexion.tpl'}
-			</div>	
-		{/if}
+				<?php echo $_smarty_tpl->getSubTemplate ('formulaires/formulaire_connexion.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
-		{if ({$header} == 'search' || {$header} == 'liste_entreprises' || {$header} == 'a_propos' || {$header} == 'login' || {$header} == 'offres')}
+			</div>	
+		<?php }?>
+
+		<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp19=ob_get_clean();?><?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp20=ob_get_clean();?><?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp21=ob_get_clean();?><?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp22=ob_get_clean();?><?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp23=ob_get_clean();?><?php if (($_tmp19=='search'||$_tmp20=='liste_entreprises'||$_tmp21=='a_propos'||$_tmp22=='login'||$_tmp23=='offres')){?>
 		<div class="navHorizontalNonIndex">
 			<div id="titrePage">
-				{if ({$header} == 'search')} Recherche {/if}
-				{if ({$header} == 'liste_entreprises')} Liste des Entreprises  {/if}
-				{if ({$header} == 'a_propos')} A Propos {/if}
-				{if ({$header} == 'login')} Inscription {/if}
-				{if ({$header} == 'offres')} Offres {/if}
+				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp24=ob_get_clean();?><?php if (($_tmp24=='search')){?> Recherche <?php }?>
+				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp25=ob_get_clean();?><?php if (($_tmp25=='liste_entreprises')){?> Liste des Entreprises  <?php }?>
+				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp26=ob_get_clean();?><?php if (($_tmp26=='a_propos')){?> A Propos <?php }?>
+				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp27=ob_get_clean();?><?php if (($_tmp27=='login')){?> Inscription <?php }?>
+				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp28=ob_get_clean();?><?php if (($_tmp28=='offres')){?> Offres <?php }?>
 			</div>
 		</div>
-		{/if}
+		<?php }?>
 
-		{if ({$header} == 'admin_entreprise')}
+		<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp29=ob_get_clean();?><?php if (($_tmp29=='admin_entreprise')){?>
 		<div class="navHorizontal_admin_entreprise/">
 			<div id="titrePage">
-				{if ({$admin_entreprise} == 'home_page')} Accueil - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'changer_offre')} Changer d'offre - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'stat_compte')} Statistique Compte - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'import_fichier')} Importer Fichiers - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'infos_compte')} Informations - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'visualisation')} Visualisation - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'contact')} Contact - Nom Entreprise {/if}
+				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp30=ob_get_clean();?><?php if (($_tmp30=='home_page')){?> Accueil - Nom Entreprise <?php }?>
+				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp31=ob_get_clean();?><?php if (($_tmp31=='changer_offre')){?> Changer d'offre - Nom Entreprise <?php }?>
+				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp32=ob_get_clean();?><?php if (($_tmp32=='stat_compte')){?> Statistique Compte - Nom Entreprise <?php }?>
+				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp33=ob_get_clean();?><?php if (($_tmp33=='import_fichier')){?> Importer Fichiers - Nom Entreprise <?php }?>
+				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp34=ob_get_clean();?><?php if (($_tmp34=='infos_compte')){?> Informations - Nom Entreprise <?php }?>
+				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp35=ob_get_clean();?><?php if (($_tmp35=='visualisation')){?> Visualisation - Nom Entreprise <?php }?>
+				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp36=ob_get_clean();?><?php if (($_tmp36=='contact')){?> Contact - Nom Entreprise <?php }?>
 			</div>
-			{if ({$admin_entreprise} == 'home_page')}
+			<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp37=ob_get_clean();?><?php if (($_tmp37=='home_page')){?>
 			<div id="bouton_deco">
 				<a class="decon" href="htdocs/login.php">Log Out</a>
 			</div>
-			{/if}
+			<?php }?>
 
 		</div>
-		{/if}
+		<?php }?>
 
-		{if ({$header} == 'admin_particulier')}
+		<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp38=ob_get_clean();?><?php if (($_tmp38=='admin_particulier')){?>
 		<div class="navHorizontal_admin_entreprise">
 			<div id="titrePage">
-				{if ({$admin_particulier} == 'home_page')} Bienvenue sur votre compte {/if}
-				{if ({$admin_entreprise} == 'changer_offre')} Changer d'offre - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'stat_compte')} Statistique Compte - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'import_fichier')} Importer Fichiers - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'infos_compte')} Informations - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'visualisation')} Visualisation - Nom Entreprise {/if}
-				{if ({$admin_entreprise} == 'contact')} Contact - Nom Entreprise {/if}
+				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_particulier']->value;?>
+<?php $_tmp39=ob_get_clean();?><?php if (($_tmp39=='home_page')){?> Bienvenue sur votre compte <?php }?>
+				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp40=ob_get_clean();?><?php if (($_tmp40=='changer_offre')){?> Changer d'offre - Nom Entreprise <?php }?>
+				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp41=ob_get_clean();?><?php if (($_tmp41=='stat_compte')){?> Statistique Compte - Nom Entreprise <?php }?>
+				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp42=ob_get_clean();?><?php if (($_tmp42=='import_fichier')){?> Importer Fichiers - Nom Entreprise <?php }?>
+				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp43=ob_get_clean();?><?php if (($_tmp43=='infos_compte')){?> Informations - Nom Entreprise <?php }?>
+				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp44=ob_get_clean();?><?php if (($_tmp44=='visualisation')){?> Visualisation - Nom Entreprise <?php }?>
+				<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp45=ob_get_clean();?><?php if (($_tmp45=='contact')){?> Contact - Nom Entreprise <?php }?>
 			</div>
-			{if ({$admin_entreprise} == 'home_page')}
+			<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['admin_entreprise']->value;?>
+<?php $_tmp46=ob_get_clean();?><?php if (($_tmp46=='home_page')){?>
 			<div id="bouton_deco">
 				<a class="decon" href="htdocs/login.php">Log Out</a>
 			</div>
-			{/if}
+			<?php }?>
 
 		</div>
-		{/if}
+		<?php }?>
 
-		{if ({$page} == 'ouvrirDonnees')} 
+		<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['page']->value;?>
+<?php $_tmp47=ob_get_clean();?><?php if (($_tmp47=='ouvrirDonnees')){?> 
 		<div class="navHorizontalOuvrirDonnees">
 			<div id="titrePage">
 				Ouvrir ses Données 
 			</div>
 		</div>
-		{/if}
+		<?php }?>
 
-		{if ({$page} == 'transparence')} 
+		<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['page']->value;?>
+<?php $_tmp48=ob_get_clean();?><?php if (($_tmp48=='transparence')){?> 
 		<div class="navHorizontalTransparence">
 			<div id="titrePage">
 				Transparence 
 			</div>
 		</div>
-		{/if}
+		<?php }?>
 
-		{if ({$page} == 'gagnerCompetivite')} 
+		<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['page']->value;?>
+<?php $_tmp49=ob_get_clean();?><?php if (($_tmp49=='gagnerCompetivite')){?> 
 		<div class="navHorizontalGagnerCompetivite">
 			<div id="titrePage">
 				Gagner en Competivité 
 			</div>
 		</div>
-		{/if}
+		<?php }?>
 
-		{if ({$page} == 'demarcheCitoyenne')} 
+		<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['page']->value;?>
+<?php $_tmp50=ob_get_clean();?><?php if (($_tmp50=='demarcheCitoyenne')){?> 
 		<div class="navHorizontalDemarcheCitoyenne">
 			<div id="titrePage">
 				Demarche Citoyenne 
 			</div>
 		</div>
-		{/if}
+		<?php }?>
 
-		{if ({$header} == 'contact')} 
+		<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+<?php $_tmp51=ob_get_clean();?><?php if (($_tmp51=='contact')){?> 
 		<div class="navHorizontalContact">
 			<div id="titrePage">
 				Contact 
 			</div>
 		</div>
-		{/if}
+		<?php }?>
 
+<?php }} ?>
