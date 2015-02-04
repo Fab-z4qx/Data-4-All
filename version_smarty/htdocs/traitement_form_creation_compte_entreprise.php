@@ -180,8 +180,8 @@ if($valid == true && captcha_valid())
 	(`id_user`, 
 	`password`, 
 	`login`, 
-	`role`, 
-	`id_entreprise`) 
+	`role`,
+	`entreprise_id_entreprise`) 
 	VALUES 
 	(NULL, 
 	".$pdo->quote(sha1($password)).",
@@ -191,7 +191,12 @@ if($valid == true && captcha_valid())
 	
 	if($pdo->exec($sql_user))
 	{ //On à bien cree le compte du nouvelle utilisateur!
-		header('Location:login.php?acc=ok');
+		//header('Location:login.php?acc=ok');
+		echo "compte utilisateurs crée";
+	}
+	else{
+		echo "probleme ";
+		echo $sql_user;
 	}
 }
 

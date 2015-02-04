@@ -5,9 +5,11 @@ error_reporting(E_ERROR | E_PARSE);
 	{
 		if(DEBUG_MODE == 1)
 		{
+			echo ('<div id="debug">');
 			echo PRE;
 			print_r($var);
 			echo PREC;
+			echo ('</div>');
 		}
 	}
 
@@ -15,7 +17,7 @@ error_reporting(E_ERROR | E_PARSE);
 	{
 		$host = '127.0.0.1';
 		$dbname = 'bdd_d4a';
-		$port = '8889';
+		$port = '3306'; // 3306 for windows && 8889 for mac 
 		$user = 'root';
 		$password = 'root';
 
