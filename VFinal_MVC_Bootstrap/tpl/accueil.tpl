@@ -29,7 +29,7 @@
                     <li><a href="#">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </div><!--/.nav-collapse -->
+            </div>
         </div>
     </div>
 </div>
@@ -37,4 +37,6 @@
 
 
 <script src="web/js/jquery.js"></script>
+<script src="web/js/bootstrap.min.js"></script>
+<script src="web/js/bootstrap.js"></script>
 <script src="web/js/bootstrap-transition.js"></script>
