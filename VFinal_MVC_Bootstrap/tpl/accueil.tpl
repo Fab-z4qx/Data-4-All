@@ -26,22 +26,20 @@
             <a class="brand " href="#">DATTA 4 ALL</a>
             <div class="nav-collapse pull-right">
                 <ul class="nav">
-                    <li><a class="page-scroll" href="#entreprise">Liste Entreprises</a></li>
-                    <li><a class="page-scroll" href="#service">Services & Offres</a></li>
-                    <li><a class="page-scroll" href="#team">Team</a></li>
-                    <li><a class="page-scroll" href="#contact">Contact</a></li>
+                    <li><a href="#">Liste Entreprises</a></li>
+                    <li><a href="#service">Services & Offres</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <fieldset class='textbox' style="padding:10px">
 		                 <input style="margin-top: " type="text" placeholder="Username" />
 		                 <input style="margin-top: " type="password" placeholder="Passsword" />
 		                 <input style="margin-bottom: 10px"class="btn-primary" name="commit" type="submit" value="Log In" />
 		            </fieldset>
+                </ul>
             </div>
-
         </div>
     </div>
 </div>
-
-
 
 
 
