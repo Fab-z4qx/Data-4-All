@@ -21,13 +21,20 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="#">DATTA 4 ALL</a>
-            <div class="nav-collapse">
+            <img src="web/img/logos/logo_site_sans_bord_teal.png" class="img-responsive img-centered" alt="">
+            <li class="divider pull-right"></li>
+            <a class="brand " href="#">DATTA 4 ALL</a>
+            <div class="nav-collapse pull-right">
                 <ul class="nav">
                     <li><a href="#">Liste Entreprises</a></li>
                     <li><a href="#service">Services & Offres</a></li>
                     <li><a href="#">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <fieldset class='textbox' style="padding:10px">
+		                 <input style="margin-top: " type="text" placeholder="Username" />
+		                 <input style="margin-top: " type="password" placeholder="Passsword" />
+		                 <input style="margin-bottom: 10px"class="btn-primary" name="commit" type="submit" value="Log In" />
+		            </fieldset>
                 </ul>
             </div>
         </div>
