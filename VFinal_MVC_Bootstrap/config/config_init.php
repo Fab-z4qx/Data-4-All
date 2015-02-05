@@ -17,8 +17,13 @@ foreach ($files as $filename)
 
 // Connexion Database
 try {
-	$bdd = new PDO("mysql:host=localhost;dbname=d4a", "root", "root");/*
-	if(strpos(php_uname("s"),"mac") !== false || strpos(php_uname("s"),"Mac") !== false)
+	$bdd = new PDO("mysql:host=localhost;", "root", "");
+	$sql = "CREATE DATABASE IF NOT EXISTS d4a";
+	
+    // use exec() because no results are returned
+    $bdd->exec($sql);
+	$bdd = new PDO("mysql:host=localhost;dbname=d4a", "root", "");
+	/*if(strpos(php_uname("s"),"mac") !== false || strpos(php_uname("s"),"Mac") !== false)
 		$bdd = new PDO("mysql:host=localhost;dbname=d4a", "root", "root");
 	else{
 		$bdd = new PDO("mysql:host=localhost;dbname=d4a", "root", "");
