@@ -14,7 +14,7 @@ else
 {
         include 'controllers/accueil.php';
 }
-echo php_uname("s");
+//echo php_uname("s");
 
 //On inclut le pied de page
 include 'controllers/footer.php';

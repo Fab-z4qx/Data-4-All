@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CV - Timothée ROBERT</title>
+    <title>D4A</title>
     <link href="web/Bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="web/Bootstrap/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
 
@@ -33,7 +33,7 @@
                 </a>
                 <img src="web/img/logos/logo_site_sans_bord_teal.png" class="img-responsive img-centered" alt="">
                 <li class="divider pull-right"></li>
-                <a class="brand " href="#">DATTA 4 ALL</a>
+                <a class="brand " href="#">DATA 4 ALL</a>
                 <div class="nav-collapse pull-right">
                     <ul class="nav">
                         <li><a class="page-scroll" href="#entreprise">Liste Entreprises</a></li>
