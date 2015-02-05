@@ -17,7 +17,7 @@ else
 echo php_uname("s");
 
 //On inclut le pied de page
-//include 'vues/pied.php';
+include 'controllers/footer.php';
  
 //On ferme la connexion à MySQL
 

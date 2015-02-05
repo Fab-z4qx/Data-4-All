@@ -17,11 +17,12 @@ foreach ($files as $filename)
 
 // Connexion Database
 try {
+	$bdd = new PDO("mysql:host=localhost;dbname=d4a", "root", "root");/*
 	if(strpos(php_uname("s"),"mac") !== false || strpos(php_uname("s"),"Mac") !== false)
 		$bdd = new PDO("mysql:host=localhost;dbname=d4a", "root", "root");
 	else{
 		$bdd = new PDO("mysql:host=localhost;dbname=d4a", "root", "");
-	}
+	}*/
 	
 $bdd->query("SET NAMES UTF8");
 } catch (Exception $e) {
