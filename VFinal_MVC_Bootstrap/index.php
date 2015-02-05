@@ -1,11 +1,6 @@
 <?php
 //On démarre la session
-session_start();
- 
-//On se connecte à MySQL
-mysql_connect();
-//mysql_select_db('tests');
- 
+include('config/config_init.php');
 //On inclut le logo du site et le menu
 //include 'vues/logo.php';
 //include 'vues/menu.php';  
@@ -19,11 +14,12 @@ else
 {
         include 'controllers/accueil.php';
 }
- 
+echo php_uname("s");
+
 //On inclut le pied de page
 //include 'vues/pied.php';
  
 //On ferme la connexion à MySQL
-mysql_close();
+
 
 ?>
