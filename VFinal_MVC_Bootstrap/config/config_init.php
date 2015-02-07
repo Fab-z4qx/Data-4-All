@@ -18,12 +18,6 @@ foreach ($files as $filename)
 // Connexion Database
 try {
 	
-	$bdd = new PDO("mysql:host=localhost;", "root", "");
-	$sql = "CREATE DATABASE IF NOT EXISTS d4a";
-	
-    // use exec() because no results are returned
-    $bdd->exec($sql);
-
 	if(strpos(php_uname("s"),"Darwin") !== false)
 		$bdd = new PDO("mysql:host=localhost;dbname=d4a", "root", "root");
 	else{
