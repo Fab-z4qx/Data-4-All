@@ -4,8 +4,9 @@ session_start();
 header("Cache-Control: no-cache");
 
 // Chargement Smarty et Defines
-require('defines.inc.php');
-require('web/tools/smarty/Smarty.class.php');
+require_once('defines.inc.php');
+require_once('database.php');
+require_once('web/tools/smarty/Smarty.class.php');
 
 // Chargement du coeur
 $files = scandir(_CORE_);
@@ -15,7 +16,9 @@ foreach ($files as $filename)
         require_once(_CORE_.$filename);
 }
 
+// $db = Database::getInstance();
 // Connexion Database
+/*
 try {
 	
 	if(strpos(php_uname("s"),"Darwin") !== false)
@@ -28,7 +31,7 @@ $bdd->query("SET NAMES UTF8");
 } catch (Exception $e) {
     echo "Problème de connexion à la base de donnée D4A...";
     die();
-}
+}*/
 
 // Initialisation Smarty
 $smarty = new Smarty();

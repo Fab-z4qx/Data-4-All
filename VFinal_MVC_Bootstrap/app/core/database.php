@@ -11,12 +11,22 @@ class Database {
    }
 
    protected function __construct() {
-      // A faire : fichier de config
-      $this->_db = new PDO(
+
+      if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') 
+      {
+         $this->_db = new PDO(
          "mysql:host=localhost;dbname=bdd_d4a;charset=utf8",
          "root",
-         "root"
-      );
+         "root");
+      } 
+      else 
+      { //mac 
+         $this->_db = new PDO(
+         "mysql:host=localhost;dbname=bdd_d4a;charset=utf8",
+         "root",
+         "");
+      }
+     
    }
 
    public function __call($method, array $arg) {
@@ -24,10 +34,4 @@ class Database {
       // delegue cet appel à l'objet PDO $this->_db
       return call_user_func_array(array($this->_db, $method), $arg);
    }
-
-
-
 }
-
-
-
