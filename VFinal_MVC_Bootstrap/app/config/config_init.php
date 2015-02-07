@@ -5,7 +5,6 @@ header("Cache-Control: no-cache");
 
 // Chargement Smarty et Defines
 require_once('defines.inc.php');
-require_once('database.php');
 require_once('web/tools/smarty/Smarty.class.php');
 
 // Chargement du coeur
