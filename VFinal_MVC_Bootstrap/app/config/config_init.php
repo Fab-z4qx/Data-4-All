@@ -32,6 +32,5 @@ $bdd->query("SET NAMES UTF8");
     die();
 }*/
 
-// Initialisation Smarty
-$smarty = new Smarty();
+
 ?>

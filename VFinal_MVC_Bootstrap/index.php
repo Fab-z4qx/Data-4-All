@@ -9,10 +9,13 @@ include('app/config/config_init.php');
 if (!empty($_GET['page']) && is_file(_CTRL_.$_GET['page'].'.php'))
 {
         include _CTRL_.$_GET['page'].'.php';
+        
 }
 else
 {
         include _CTRL_.'accueil.php';
+        $index = new IndexController();
+        $index->display();
 }
 //echo php_uname("s");
 

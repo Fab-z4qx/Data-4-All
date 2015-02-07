@@ -1,3 +1,11 @@
 <?php
-include("app/tpl/accueil.tpl");
+  
+class IndexController extends Controller 
+{
+   public function display() 
+   {
+   	 $this->smarty->display(_TPL_.'accueil.tpl');
+   }
+}
+
 ?>
