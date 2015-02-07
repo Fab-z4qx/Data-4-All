@@ -6,14 +6,16 @@ include('app/config/config_init.php');
 //include 'vues/menu.php';  
  
 //On inclut le contrôleur s'il existe et s'il est spécifié
-if (!empty($_GET['page']) && is_file(_CTRL_.$_GET['page'].'.php'))
+if (!empty($_GET['page']) && is_file(_CTRL_.ucfirst($_GET['page']).'Controller.php'))
 {
-        include _CTRL_.$_GET['page'].'.php';
-        
+        include (_CTRL_.ucfirst($_GET['page']).'Controller.php');
+        $className = ucfirst($_GET['page']).'Controller';
+        $controleur = new $className; //ucfirst met la 1er lettre en majuscule pour respecter la convention objet 
+        $controleur->display();
 }
 else
 {
-        include _CTRL_.'accueil.php';
+        include _CTRL_.'IndexController.php';
         $index = new IndexController();
         $index->display();
 }
