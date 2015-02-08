@@ -34,12 +34,10 @@ CAROUSEL
 .carousel {
   margin-bottom: 60px;
 }
-
 .carousel .container {
   position: relative;
   z-index: 9;
 }
-
 .carousel-control {
   height: 80px;
   margin-top: 0;
@@ -49,7 +47,6 @@ CAROUSEL
   border: 0;
   z-index: 10;
 }
-
 .carousel .item {
   height: 500px;
 }
@@ -60,7 +57,6 @@ CAROUSEL
   min-width: 100%;
   height: 500px;
 }
-
 .carousel-caption {
   background-color: transparent;
   position: static;
@@ -99,7 +95,6 @@ Featurette
 .featurette-image.pull-right {
   margin-left: 40px;
 }
-
 /* Thin out the marketing headings */
 .featurette-heading {
   font-size: 50px;
@@ -146,6 +141,10 @@ TEAM
 
 /*******************************************
 CONTACT
+*******************************************/
+
+/*******************************************
+carou entreprise
 *******************************************/
 
 

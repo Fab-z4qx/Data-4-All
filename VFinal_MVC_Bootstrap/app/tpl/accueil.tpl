@@ -1,31 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    
-    <title>D4A</title>
-
-    <!-- LES STYLES -->
-    <link href="web/Bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="web/Bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="web/Bootstrap/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
-    <link href="web/Bootstrap/bootstrap-responsive.css" rel="stylesheet">
-    <link href="web/css/accueil.css" rel="stylesheet" type="text/css">
-    
-     <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- LES JS -->
-
-</head>
-
-<body>
     <!-- MENU -->
     <div class="navbar navbar-fixed-top navbar-inverse">
         <div class="navbar-inner">
@@ -83,16 +55,6 @@
                   <h1>description</h1>
                   <p class="lead">description</p>
                   <a class="btn btn-large btn-primary" href="#">Learn more</a>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-                <img  src="web/img/test.jpg">
-              <div class="container">
-                <div class="carousel-caption">
-                  <h1>description</h1>
-                  <p class="lead">description</p>
-                  <a class="btn btn-large btn-primary" href="#">description</a>
                 </div>
               </div>
             </div>
@@ -174,4 +136,3 @@
         <!-- /CONTACT -->
     </div> 
     <!-- /CONTAINER FULL-->
-</body>
