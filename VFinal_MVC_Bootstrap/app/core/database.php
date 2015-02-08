@@ -10,21 +10,33 @@ class Database {
       return self::$_instance;
    }
 
-   protected function __construct() {
+   protected function __construct() 
+   {
+      try
+      {   // On se connecte à MySQL
+         if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') 
+         {
+            $host = '127.0.0.1';
+            $dbname = 'bdd_d4a';
+            $port = '3306'; // 3306 for windows && 8889 for mac 
+            $user = 'root';
+            $password = '';
+            $this->_db = new PDO('mysql:host='.$host.';dbname='.$dbname.';port='.$port.'',''.$user.'', ''.$password.'', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8')); 
+         } 
+         else 
+         { //mac 
+            $host = '127.0.0.1';
+            $dbname = 'bdd_d4a';
+            $port = '8889'; // 3306 for windows && 8889 for mac 
+            $user = 'root';
+            $password = 'root';
+            $this->_db = new PDO('mysql:host='.$host.';dbname='.$dbname.';port='.$port.'',''.$user.'', ''.$password.'', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8')); 
+         }
 
-      if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') 
-      {
-         $this->_db = new PDO(
-         "mysql:host=localhost;dbname=bdd_d4a;charset=utf8",
-         "root",
-         "root");
-      } 
-      else 
-      { //mac 
-         $this->_db = new PDO(
-         "mysql:host=localhost;dbname=bdd_d4a;charset=utf8",
-         "root",
-         "");
+      }
+      catch(Exception $e)
+      {   // En cas d'erreur, on affiche un message et on arrête tout
+          die('Erreur : '.$e->getMessage());
       }
      
    }
