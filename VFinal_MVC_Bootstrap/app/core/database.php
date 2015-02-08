@@ -13,12 +13,13 @@ class Database {
    protected function __construct() 
    {
          $host = '127.0.0.1';
-            $dbname = 'bdd_d4dadd';
+            $dbname = 'bdd_d4a';
 			$user = 'root';
 
       try
       {
-         if (strtoupper(substr(PHP_OS, 0, 3)) === 'DAR') 
+	  
+         if (strtoupper(substr(php_uname("s"), 0, 3)) === 'DAR') 
          {
             $port = '8889'; // 3306 for windows && 8889 for mac 
             $password = 'root';
