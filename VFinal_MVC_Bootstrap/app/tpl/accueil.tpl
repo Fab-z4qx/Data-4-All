@@ -33,8 +33,6 @@
         </div>
     </div>
     <!-- /MENU -->
-
-    <a href="index.php?page=HomeEntreprise">home</a>
     <!-- CONTAINER FULL -->
     <div class="container-full">
         <!-- CAROUSEL -->
