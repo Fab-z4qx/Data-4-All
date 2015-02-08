@@ -12,26 +12,24 @@ class Database {
 
    protected function __construct() 
    {
+         $host = '127.0.0.1';
+            $dbname = 'bdd_d4dadd';
+			$user = 'root';
+
       try
-      {   // On se connecte à MySQL
-         if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') 
+      {
+         if (strtoupper(substr(PHP_OS, 0, 3)) === 'DAR') 
          {
-            $host = '127.0.0.1';
-            $dbname = 'bdd_d4a';
-            $port = '3306'; // 3306 for windows && 8889 for mac 
-            $user = 'root';
-            $password = '';
-            $this->_db = new PDO('mysql:host='.$host.';dbname='.$dbname.';port='.$port.'',''.$user.'', ''.$password.'', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8')); 
+            $port = '8889'; // 3306 for windows && 8889 for mac 
+            $password = 'root';
          } 
          else 
-         { //mac 
-            $host = '127.0.0.1';
-            $dbname = 'bdd_d4a';
-            $port = '8889'; // 3306 for windows && 8889 for mac 
-            $user = 'root';
-            $password = 'root';
-            $this->_db = new PDO('mysql:host='.$host.';dbname='.$dbname.';port='.$port.'',''.$user.'', ''.$password.'', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8')); 
+         {
+            $port = '3306'; // 3306 for windows && 8889 for mac 
+            $password = '';
          }
+		$this->createDB($dbname);
+		$this->_db = new PDO('mysql:host='.$host.';dbname='.$dbname.';port='.$port.'',''.$user.'', ''.$password.'', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8')); 
 
       }
       catch(Exception $e)
@@ -45,5 +43,11 @@ class Database {
       // Si on appelle une méthode qui n'existe pas, on 
       // delegue cet appel à l'objet PDO $this->_db
       return call_user_func_array(array($this->_db, $method), $arg);
+   }
+   
+   protected function createDB($dbName){
+   		$bdd = new PDO("mysql:host=localhost;", "root", "");
+		$sql = "CREATE DATABASE IF NOT EXISTS ".$dbName;
+		$bdd->exec($sql);
    }
 }
