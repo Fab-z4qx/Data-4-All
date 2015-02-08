@@ -53,7 +53,6 @@
         </div>
     </div>
     <!-- /MENU -->
-
     <div class="container-full">
         <!-- BARRE DE RECHERCHE -->
         <div class="box">
