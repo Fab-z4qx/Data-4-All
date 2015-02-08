@@ -14,6 +14,7 @@
     <link href="web/Bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="web/Bootstrap/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
     <link href="web/Bootstrap/bootstrap-responsive.css" rel="stylesheet">
+    <link href="web/Bootstrap/simple-sidebar.css" rel="stylesheet">
     <link href="web/css/accueil.css" rel="stylesheet" type="text/css">
     
      <!--[if lt IE 9]>
