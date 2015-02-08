@@ -51,7 +51,7 @@
                 </div>
             </div>
         </div>
-    </div>  
+    </div>
     <!-- /MENU -->
 
     <div class="container-full">
