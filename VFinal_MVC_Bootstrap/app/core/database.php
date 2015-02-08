@@ -12,7 +12,7 @@ class Database {
 
    protected function __construct() 
    {
-			$_OS = strtoupper(substr(php_uname("s"), 0, 3));
+			$this->_OS = strtoupper(substr(php_uname("s"), 0, 3));
          $host = '127.0.0.1';
             $dbname = 'bdd_d4a';
 			$user = 'root';
@@ -20,7 +20,7 @@ class Database {
       try
       {
 	  
-         if ($_OS === 'DAR') 
+         if ($this->_OS === 'DAR') 
          {
             $port = '8889'; // 3306 for windows && 8889 for mac 
             $password = 'root';
@@ -48,6 +48,7 @@ class Database {
    }
    
    protected function createDB($dbName){
+   
 		if($this->_OS === 'DAR')
 			$bdd = new PDO("mysql:host=localhost;", "root", "root");
 		else
