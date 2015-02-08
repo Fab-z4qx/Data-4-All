@@ -15,6 +15,7 @@ if( !Auth::isLogged('entreprise'))
 	header('Location:../index.php');
 	exit();
 }
+
 debug($_SESSION);
 	
 	$smarty = new Smarty_datat4all();

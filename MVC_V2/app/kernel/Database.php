@@ -13,7 +13,7 @@ class Database {
    protected function __construct() {
       // A faire : fichier de config
       $this->_db = new PDO(
-         "mysql:host=localhost;dbname=todolist;charset=utf8",
+         "mysql:host=localhost;dbname=bdd_d4a;charset=utf8",
          "root",
          "root"
       );
