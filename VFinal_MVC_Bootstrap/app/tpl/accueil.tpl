@@ -72,10 +72,11 @@
         </div>
         <!-- /BARRE DE RECHERCHE -->
 
+<hr class="featurette-divider">
+
         <!-- SERVICES & OFFRES -->
 
-            <!-- Carousel
-    ================================================== -->
+            <!-- Carousel -->
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
@@ -178,8 +179,10 @@
                                     </tbody>
                                 </table>
                             </div>
-
+    <!-- ./SERVICES & OFFRES -->
+        
         <hr class="featurette-divider">
+
 
         <!-- A PROPOS -->
         
