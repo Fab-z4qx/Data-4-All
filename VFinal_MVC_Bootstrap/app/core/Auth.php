@@ -5,7 +5,7 @@
 //require(ROOT_DIR.INCLUDES.'fonctions.php');
 //require(ROOT_DIR.INCLUDES.'lib/lib.php');
 
-require_once(_MODEL_.'users.php');
+require_once(_MODEL_.'Users.php');
 
 class Auth
 {
