@@ -19,7 +19,7 @@
                         <fieldset class='textbox'>
     		                 <input class="input" type="text" placeholder="Username" />
     		                 <input class="input" type="password" placeholder="Passsword" />
-    		               <a href="app/tpl/home.tpl"> <input class="btn-primary" name="commit" type="submit" value="Log In" /> </a>
+    		               <a href="index.php?page=HomeEntreprise"> <input class="btn-primary" name="commit" type="submit" value="Log In" /> </a>
                         <li><a class="pull-right" href="#">mot de passe oublié</a></li>
                         <div class="checkbox">
                             <label>
