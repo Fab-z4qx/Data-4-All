@@ -8,9 +8,9 @@ include('app/config/config_init.php');
 //On inclut le contrôleur s'il existe et s'il est spécifié
 if (!empty($_GET['page']) && is_file(_CTRL_.ucfirst($_GET['page']).'Controller.php'))
 {
-        include (_CTRL_.ucfirst($_GET['page']).'Controller.php');
+        include (_CTRL_.ucfirst($_GET['page']).'Controller.php'); //ucfirst met la 1er lettre en majuscule pour respecter la convention objet 
         $className = ucfirst($_GET['page']).'Controller';
-        $controleur = new $className; //ucfirst met la 1er lettre en majuscule pour respecter la convention objet 
+        $controleur = new $className; 
         $controleur->display();
 }
 else

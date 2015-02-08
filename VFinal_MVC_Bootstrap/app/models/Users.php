@@ -6,7 +6,13 @@ define('ROLE_ENTREPRISE',2);
 define('ROLE_ADMIN',3);
 
 class Users {
-	$pdo = Database::getInstance();
+
+	private $pdo;
+
+	public function __construct()
+	{
+		$pdo = Database::getInstance();
+	} 
 
 	public function isExist($login,$password)
 	{
@@ -44,7 +50,6 @@ class Users {
 			case ROLE_ADMIN:
 				return 'admin';
 			break;
-
 		}
 		//return $data['role'];	
 	}
