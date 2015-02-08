@@ -3,7 +3,7 @@
 class Database {
    static protected $_instance = null;
    protected $_db;
-
+   private $_OS;
    static public function getInstance() {
       if( is_null(self::$_instance) )
          self::$_instance = new Database();
@@ -12,6 +12,7 @@ class Database {
 
    protected function __construct() 
    {
+			$_OS = strtoupper(substr(php_uname("s"), 0, 3));
          $host = '127.0.0.1';
             $dbname = 'bdd_d4a';
 			$user = 'root';
@@ -19,7 +20,7 @@ class Database {
       try
       {
 	  
-         if (strtoupper(substr(php_uname("s"), 0, 3)) === 'DAR') 
+         if ($_OS === 'DAR') 
          {
             $port = '8889'; // 3306 for windows && 8889 for mac 
             $password = 'root';
@@ -47,7 +48,11 @@ class Database {
    }
    
    protected function createDB($dbName){
-   		$bdd = new PDO("mysql:host=localhost;", "root", "");
+		if($this->_OS === 'DAR')
+			$bdd = new PDO("mysql:host=localhost;", "root", "root");
+		else
+			$bdd = new PDO("mysql:host=localhost;", "root", "");
+
 		$sql = "CREATE DATABASE IF NOT EXISTS ".$dbName;
 		$bdd->exec($sql);
    }
