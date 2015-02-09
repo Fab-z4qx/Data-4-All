@@ -15,7 +15,9 @@ if (!empty($_GET['page']) && is_file(_CTRL_.ucfirst($_GET['page']).'Controller.p
         $className = ucfirst($_GET['page']).'Controller';
         $controleur = new $className; 
 
-		$actionName = $_GET['action'];
+        if(isset($_GET['action']))
+        	$actionName = $_GET['action'];
+        
         if(empty($_GET['action']))
         {
         	$controleur->display();
