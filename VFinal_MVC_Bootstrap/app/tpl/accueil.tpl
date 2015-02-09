@@ -43,33 +43,44 @@
     <!-- CONTAINER FULL -->
     <div class="container-full">
         <!-- CAROUSEL -->
-        <div id="myCarousel" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="item active">
-              <img  src="web/img/test.jpg">
-              <div class="container">
-                <div class="carousel-caption">
-                  <h1>description</h1>
-                  <p class="lead">description</p>
-                  <a class="btn btn-large btn-primary" href="#">Sign up today</a>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="container">
-                  <img  src="web/img/test.jpg">
-                <div class="carousel-caption">
-                  <h1>description</h1>
-                  <p class="lead">description</p>
-                  <a class="btn btn-large btn-primary" href="#">Learn more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a class="left carousel-control" href="#myCarousel" slide="prev">‹</a>
-          <a class="right carousel-control" href="#myCarousel" slide="next">›</a>
-        </div>
+         <div id="myCarousel" class="carousel slide">
+	      <div class="carousel-inner">
+	        <div class="item active">
+	          <img  src="web/img/test.jpg">
+	          <div class="container">
+	            <div class="carousel-caption">
+	              <h1>description</h1>
+	              <p class="lead">description</p>
+	              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="item">
+	          <div class="container">
+	              <img  src="web/img/test.jpg">
+	            <div class="carousel-caption">
+	              <h1>description</h1>
+	              <p class="lead">description</p>
+	              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="item">
+	            <img  src="web/img/test.jpg">
+	          <div class="container">
+	            <div class="carousel-caption">
+	              <h1>description</h1>
+	              <p class="lead">description</p>
+	              <a class="btn btn-large btn-primary" href="#">description</a>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+	      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+	    </div>
         <!-- /CAROUSEL -->
+
         <!-- SERVICES & OFFRES -->
         <div class="container marketing">
             <!-- SERVICES -->
@@ -97,9 +108,9 @@
                 <tbody>
                     <tr>
                         <th></th>
-                        <th><h2>D4A BI</h2></th>
-                        <th><h2>D4A Open Data</h2></th>
-                        <th><h2>D4A Prenium</h2></th>
+                        <th><h2>BI</h2></th>
+                        <th><h2>Open Data</h2></th>
+                        <th><h2>Prenium</h2></th>
                     </tr>
                     <tr>
                         <td><B>Prix de base</B></td>
@@ -142,8 +153,10 @@
             <div class="row">
                 <div class="span3">
                     <img class="img-circle" src="web/img/team/benjamin.jpg">
-                    <h2>BOURGEAUX Benjamin</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                    <h2>BOURGEAUX</h2><h2> Benjamin</h2>
+                    <p>Leader</p>
+                    <p>Heureux de vivre !</p>
+                    <p>Heureux de vivre !</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
@@ -160,8 +173,10 @@
                 </div>
                 <div class="span3">
                     <img class="img-circle" src="web/img/team/thomas.jpg">
-                    <h2>De CHAMPS Thomas</h2>
-                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <h2>De CHAMPS</h2><h2>Thomas</h2>
+                    <p>Designer</p>
+                    <p>Heureux de vivre !</p>
+                    <p>Heureux de vivre !</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
@@ -178,8 +193,10 @@
                 </div>
                 <div class="span3">
                     <img class="img-circle" src="web/img/team/etienne.jpg">
-                    <h2>DERBISE Etienne</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <h2>DERBISE</h2><h2>Etienne</h2>
+                    <p>Marketing</p>
+                    <p>Heureux de vivre !</p>
+                    <p>Heureux de vivre !</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
@@ -196,8 +213,10 @@
                 </div>
                 <div class="span3">
                     <img class="img-circle" src="web/img/team/alexis.jpg">
-                    <h2>COSTA Alexis</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <h2>COSTA</h2><h2>Alexis</h2>
+                    <p>Marketing</p>
+                    <p>Heureux de vivre !</p>
+                    <p>Heureux de vivre !</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
@@ -212,12 +231,14 @@
                         <i class="fa fa-envelope"></i>
                     </div>
                 </div>
-            </div>
+            </div></br>
             <div class="row">
                 <div class="span3">
                     <img class="img-circle" src="web/img/team/fabien.jpg">
-                    <h2>GENET Fabien</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                    <h2>GENET</h2><h2>Fabien</h2>
+                    <p>Developer</p>
+                    <p>Heureux de vivre !</p>
+                    <p>Heureux de vivre !</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
@@ -234,8 +255,10 @@
                 </div>
                 <div class="span3">
                     <img class="img-circle" src="web/img/team/guillaume.jpg">
-                    <h2>PIGAUX Guillaume</h2>
-                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <h2>PIGAUX</h2><h2>Guillaume</h2>
+                    <p>Developer</p>
+                    <p>Heureux de vivre !</p>
+                    <p>Heureux de vivre !</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
@@ -252,8 +275,10 @@
                 </div>
                 <div class="span3">
                     <img class="img-circle" src="web/img/team/tim.png">
-                    <h2>ROBERT Timothée</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <h2>ROBERT</h2><h2>Timothée</h2>
+                    <p>Developer</p>
+                    <p>Heureux de vivre !</p>
+                    <p>Heureux de vivre !</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
@@ -270,8 +295,10 @@
                 </div>
                 <div class="span3">
                     <img class="img-circle" src="web/img/team/alain.jpg">
-                    <h2>SRIPATHMANATHAN Alain</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <h2>SRIPATHMANATHAN</h2><h2>Alain</h2>
+                    <p>Developer</p>
+                    <p>Heureux de vivre !</p>
+                    <p>Heureux de vivre !</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
@@ -293,5 +320,15 @@
         <!-- /CONTACT -->
     </div> 
     <!-- /CONTAINER FULL-->
+    <!-- FOOTER -->
+    <hr class="featurette-divider">
+
+      <footer><center>
+        <a href="#">Back to top</a>
+        <p>© 2013 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+              </center>
+      </footer>
+
+    </div>
 </div>
 <!-- /ACCUEIL -->
