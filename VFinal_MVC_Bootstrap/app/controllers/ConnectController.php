@@ -22,6 +22,7 @@ class ConnectController extends Controller
    public function logout()
    {
    	 $_SESSION['Auth'] = array();
+   	 $_SESSION['info'] = array();
 	 header('Location:index.php');
    }
 
