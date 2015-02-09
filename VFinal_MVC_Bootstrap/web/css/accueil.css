@@ -172,6 +172,17 @@ TEAM
 /*******************************************
 CONTACT
 *******************************************/
+.contact .span8 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.contact  {
+  font-weight: normal;
+}
+.contact  {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 /*******************************************
 carou entreprise

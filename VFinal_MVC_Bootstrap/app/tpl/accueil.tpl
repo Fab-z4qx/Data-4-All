@@ -89,7 +89,7 @@
             <hr class="featurette-divider">
 
           <div class="featurette">
-            <img class="featurette-image pull-right" src="web/img/offre.png">
+            <img class="featurette-image pull-right" src="web/img/">
             <h2 class="featurette-heading">Une plue-value pour l'entreprise<span class="muted">Description</span></h2>
             <p class="lead">explication</p>
           </div>
@@ -97,7 +97,7 @@
           <hr class="featurette-divider">
 
           <div class="featurette">
-            <img class="featurette-image pull-left" src="web/img/offre.png">
+            <img class="featurette-image pull-left" src="web/img/">
             <h2 class="featurette-heading">Une transparence pour vous<span class="muted">See for yourself.</span></h2>
             <p class="lead">explication</p>
           </div>
@@ -105,7 +105,7 @@
           <hr class="featurette-divider">
 
           <div class="featurette">
-            <img class="featurette-image pull-right" src="web/img/offre.png">
+            <img class="featurette-image pull-right" src="web/img/">
             <h2 class="featurette-heading ">Une bdd de folie<span class="muted">Checkmate.</span></h2>
             <p class="lead">explication</p>
           </div>
@@ -350,7 +350,37 @@
             </div>
         </div>
         <!-- /TEAM -->
+
+        <hr class="featurette-divider">
+
         <!-- CONTACT -->
+<div class="container contact">
+    <form class=" span8">
+      <div class="row offset6">
+            <div class="span3">
+                <label>First Name</label>
+                <input type="text" class="span3" placeholder="Your First Name">
+                <label>Last Name</label>
+                <input type="text" class="span3" placeholder="Your Last Name">
+                <label>Email Address</label>
+                <input type="text" class="span3" placeholder="Your email address">
+                <label>Subject
+                <select id="subject" name="subject" class="span3">
+                    <option value="na" selected="">Choose One:</option>
+                    <option value="service">General Customer Service</option>
+                    <option value="suggestions">Suggestions</option>
+                    <option value="product">Product Support</option>
+                </select>
+                </label>
+            </div>
+            <div class="span6">
+                <label>Message</label>
+                <textarea name="message" id="message" class="input-xlarge span5" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary pull-right">Send</button>
+        </div>
+    </form>
+</div>
         <!-- /CONTACT -->
 
     <!-- /CONTAINER FULL-->
@@ -359,7 +389,7 @@
 
       <footer><center>
         <a href="#">Back to top</a>
-        <p>© 2015 Data4All, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p>© 2015 Data4All <a href="#">Privacy</a> · <a href="#">Terms</a></p>
               </center>
       </footer>
 
