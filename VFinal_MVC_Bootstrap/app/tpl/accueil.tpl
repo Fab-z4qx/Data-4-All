@@ -83,17 +83,50 @@
 
         <!-- SERVICES & OFFRES -->
         <div class="container marketing">
+
+<!-- marketing -->
+
+    <div class="container marketing">
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="web/img/offre.png">
+        <h2 class="featurette-heading">Une plue-value pour l'entreprise<span class="muted">Description</span></h2>
+        <p class="lead">explication</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-left" src="web/img/offre.png">
+        <h2 class="featurette-heading">Une transparence pour vous<span class="muted">See for yourself.</span></h2>
+        <p class="lead">explication</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="web/img/offre.png">
+        <h2 class="featurette-heading ">Une bdd de folie<span class="muted">Checkmate.</span></h2>
+        <p class="lead">explication</p>
+      </div>
+
+      <hr class="featurette-divider">
+
             <!-- SERVICES -->
             <div class="row">
                 <div class="span4">
                     <img class="img-circle" src="web/img/team/alain.jpg">
                     <h2>BI</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                    <p>Nous récoltons, organisons et hébergeons vos données et nous vous les rendons accessibles de sorte à vous offrir un recul sur votre activité et
+                        à vous aider à prendre vos décisions. Nous offrons également un service d’assistance sur toutes question technique que vous pourriez avoir.</p>
                 </div>
                 <div class="span4">
                     <img class="img-circle" src="web/img/team/alain.jpg">
                     <h2>Open Data</h2>
-                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <p>Nous vous propulsons au-devant de la scène de l’Open Data ! Nous publions vos données sur notre plate-forme pour en permettre la réutilisation : vous
+                        affichez ainsi votre transparence et avez une vision d’ensemble de voter activité mise en forme de manière lisible et intuitive.</p>
                 </div>
                 <div class="span4">
                     <img class="img-circle" src="web/img/team/alain.jpg">
@@ -102,7 +135,9 @@
                 </div>
             </div>
             <!-- /SERVICES -->
-            <hr class="featurette-divider">
+
+        <hr class="featurette-divider">
+
             <!-- OFFRES -->
             <table class="table table-striped ">
                 <tbody>
@@ -318,7 +353,7 @@
         <!-- /TEAM -->
         <!-- CONTACT -->
         <!-- /CONTACT -->
-    </div> 
+    </div>
     <!-- /CONTAINER FULL-->
     <!-- FOOTER -->
     <hr class="featurette-divider">
