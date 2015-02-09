@@ -6,6 +6,7 @@
 //require(ROOT_DIR.INCLUDES.'lib/lib.php');
 
 require_once(_MODEL_.'Users.php');
+require_once(_MODEL_.'Entreprise.php');
 
 class Auth
 {
@@ -14,11 +15,15 @@ class Auth
 		if(isset($_SESSION['Auth']) && isset($_SESSION['Auth']['role']))
 		{
 			extract($_SESSION['Auth']);
-			if(Users::isExist($login,$pass))
+			$user = new Users();
+			if($user->isExist($login,$pass))
 			{
-				$role = Users::getRole(Users::getId($login,$pass));
-				if($_SESSION['Auth']['role'] == $role)
-				{
+				$role = Users::getRoleByUserName($login,$password);
+				if($role != $_SESSION['Auth']['role']){ // Si le role n'est pas le meme dans la session et la bdd
+					return false;
+				}
+
+				if($role == ROLE_ADMIN){
 					return true;
 				}
 			}
@@ -27,116 +32,77 @@ class Auth
 		}
 		return false;
 	}
-}
 
-	/*
-	static function isAdmin()
+    static function isParticulier()
 	{
 		if(isset($_SESSION['Auth']) && isset($_SESSION['Auth']['role']))
 		{
 			extract($_SESSION['Auth']);
-			$pdo = getPDOConnection();
-			$sql = "SELECT id_user,role FROM user WHERE login='$login' AND password ='$pass'";
-			$req = $pdo->query($sql);
-			if($req->rowCount()> 0)
+			if(Users::isExist($login,$pass))
 			{
-				$data = $req->fetch();
-				if($data['role'] == ROLE_ADMIN) //On test si l'utilisateur est bien un admin (ID 1 dans la table Usertype)
-				{
-					return true;
-				}
-				else
-				{
+				$user = new Users();
+				$role = $user->getRoleByUserName($login,$password);
+				if($role != $_SESSION['Auth']['role']){
 					return false;
+				}
+
+				if($role == ROLE_PARTICULIER){
+					return true;
 				}
 			}
 			else
-			{
 				return false;
-			}
 		}
+		return false;
 	}
 
-
-	static function isClient()
+	static function isEntreprise()
 	{
-		if(isset($_SESSION['Auth']) && isset($_SESSION['Auth']['role'])){
+		if(isset($_SESSION['Auth']) && isset($_SESSION['Auth']['role']))
+		{
 			extract($_SESSION['Auth']);
-			$pdo = getPDOConnection();
-			$sql = "SELECT id_user,role FROM user WHERE login='$login' AND password ='$pass'";
-			$req = $pdo->query($sql);
-			if($req->rowCount()> 0)
+			$user = new Users();
+			if($user->isExist($login,$password))
 			{
-				$data = $req->fetch();
-				if($data['role'] == ROLE_PARTICULIER) //On test si l'utilisateur est bien un client (ID 2 dans la tabe usertype)
-				{
-					return true;
-				}
-				else
-				{
+				$role = $user->getRoleByUserName($login,$password);
+				if($role != $_SESSION['Auth']['role']) {
 					return false;
+				}
+
+				if($role == ROLE_ENTREPRISE){
+					return true;
 				}
 			}
 			else
-			{
 				return false;
-			}
 		}
-	}
-
-		static function isEntreprise()
-	{
-		if(isset($_SESSION['Auth']) && isset($_SESSION['Auth']['role'])){
-			extract($_SESSION['Auth']);
-			$pdo = getPDOConnection();
-			$sql = "SELECT id_user,role FROM user WHERE login='$login' AND password ='$pass'";
-			$req = $pdo->query($sql);
-			if($req->rowCount()> 0)
-			{
-				$data = $req->fetch();
-				if($data['role'] == ROLE_ENTREPRISE) //On test si l'utilisateur est bien un client (ID 2 dans la tabe usertype)
-				{
-					return true;
-				}
-				else
-				{
-					return false;
-				}
-			}
-			else
-			{
-				return false;
-			}
-		}
+		return false;
 	}
 
 
 	static function isLogged($role)
 	{
-		if( isset($_SESSION['Auth']) && isset($_SESSION['Auth']['login']) && isset($_SESSION['Auth']['pass']))
+		if( isset($_SESSION['Auth']) && isset($_SESSION['Auth']['login']) && isset($_SESSION['Auth']['password']))
 		{
-			extract($_SESSION['Auth']);
-			$pdo = getPDOConnection();
-			$sql = "SELECT id_user,role FROM user WHERE login='$login' AND password ='$pass'";
-			$req = $pdo->query($sql);
-			if($req->rowCount()> 0) //Si l'utilisateur existe
+			$user = new Users();
+			if($user->isExist($_SESSION['Auth']['login'],$_SESSION['Auth']['password'])) //Si l'utilisateur existe
 			{
-
-				if($role == ROLE_ADMIN)
+			
+				if($role == 'admin')
 				{
-					if(Auth::isAdmin()) // On verrifi dans la bdd 
+					if(Auth::isAdmin()) // On check dans la bdd 
 						return true;
 					else
 						return false;
 				}
-				else if($role == ROLE_PARTICULIER)
+				else if($role == 'particulier')
 				{
-					if(Auth::isClient())
+					if(Auth::isParticulier())
 						return true;
 					else
 						return false;
 				}
-				else if($role == ROLE_ENTREPRISE)
+				else if($role == 'entreprise')
 				{
 					if(Auth::isEntreprise())
 						return true;
@@ -144,7 +110,7 @@ class Auth
 						return false;
 				}				
 			}
-			else
+			else //User existe pas
 			{
 				return false;
 			}
@@ -154,4 +120,4 @@ class Auth
 			return false;
 		}
 	}
-	*/
+}
