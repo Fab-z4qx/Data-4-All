@@ -34,6 +34,8 @@
         </div>
     </div>
     <!-- /MENU -->
+    {if ({$error} == 'index')}
+    {/if}
     <!-- CONTAINER FULL -->
     <div class="container-full">
         <!-- CAROUSEL -->
