@@ -18,27 +18,20 @@ if (!empty($_GET['page']) && is_file(_CTRL_.ucfirst($_GET['page']).'Controller.p
         if(isset($_GET['action']))
         	$actionName = $_GET['action'];
         
-        if(empty($_GET['action']))
-        {
+        if(empty($_GET['action'])){
         	$controleur->display();
         }
-        else
-        {
+        else{
         	$controleur->$actionName();
         }
-        
-}
+}// Redirection vers la partie privé entreprise
 else
 {
         include _CTRL_.'IndexController.php';
         $index = new IndexController();
         $index->display();
 }
-//echo php_uname("s");
-
 //On inclut le pied de page
 include _TPL_.'footer.tpl';
- 
-//On ferme la connexion à MySQL
 
 ?>
