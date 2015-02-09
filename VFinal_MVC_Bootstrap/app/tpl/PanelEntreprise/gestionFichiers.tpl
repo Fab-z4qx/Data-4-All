@@ -4,21 +4,21 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="#">
+                    <a href="entreprise.php?page=HomeEntreprise">
                         D4A
                     </a>
                 </li>
-                <li>
-                    <a href="index.php?page=gestionFichiers">Gestion des fichiers</a>
+                <li class="page_active">
+                    <a href="entreprise.php?page=gestionFichiers">Gestion des fichiers</a>
                 </li>
                 <li>
-                    <a href="index.php?page=visualisation">Visualisation</a>
+                    <a href="entreprise.php?page=visualisation">Visualisation</a>
                 </li>
                 <li>
-                    <a href="index.php?page=Compte">Compte</a>
+                    <a href="entreprise.php?page=Compte">Compte</a>
                 </li>
                 <li>
-                    <a href="index.php?page=services">Services</a>
+                    <a href="entreprise.php?page=services">Services</a>
                 </li>
             </ul>
         </div>

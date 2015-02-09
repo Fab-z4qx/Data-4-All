@@ -36,7 +36,7 @@
         </div>
     </div>
     <!-- /MENU -->
-    <a href="index.php?page=HomeEntreprise">entreprise</a>
+    <a href="entreprise.php?page=HomeEntreprise">entreprise</a>
     {if ({$error} == 'login_invalide')}
         <div class="error_login">error de login </div>
     {/if}

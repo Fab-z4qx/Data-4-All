@@ -9,4 +9,9 @@ SIDEBAR
 #sidebar-wrapper{
 	width: 180px;
 }
-
+/*******************************************
+MENU
+*******************************************/
+.page_active{
+	background-color: #34495E;
+}

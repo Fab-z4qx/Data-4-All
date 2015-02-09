@@ -1,28 +1,29 @@
+
 <!-- MENU -->
     <div id="wrapper">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="#">
+                    <a href="entreprise.php?page=HomeEntreprise">
                         D4A
                     </a>
                 </li>
                 <li>
-                    <a href="index.php?page=gestionFichiers">Gestion des fichiers</a>
+                    <a href="entreprise.php?page=gestionFichiers">Gestion des fichiers</a>
                 </li>
                 <li>
-                    <a href="index.php?page=visualisation">Visualisation</a>
+                    <a href="entreprise.php?page=visualisation">Visualisation</a>
+                </li>
+                <li class="page_active">
+                    <a href="entreprise.php?page=compte">Compte</a>
                 </li>
                 <li>
-                    <a href="index.php?page=compte">Compte</a>
-                </li>
-                <li>
-                    <a href="index.php?page=services">Services</a>
+                    <a href="entreprise.php?page=services">Services</a>
                 </li>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
 <!-- /MENU -->
 
-<p>page compte</p>
+<p>compte</p>
