@@ -9,13 +9,11 @@ class ConnectController extends Controller
    {
    	 //$pdo = Database::getInstance();
    	 //$this->smarty->display(_TPL_.'HomeEntreprise.tpl');
-   	 echo 'display';
    	 $this->login();
    }
 
    public function login()
    {
-   	    echo 'login';
    		if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) ) 
 		{
 			extract($_POST);
@@ -24,7 +22,8 @@ class ConnectController extends Controller
 				createSession();
 			}
 		}
-
+		$smarty->assign('error', 'login_invalide');
+		$smarty->display('accueil.tpl');
    }
 
    private function createSession()
