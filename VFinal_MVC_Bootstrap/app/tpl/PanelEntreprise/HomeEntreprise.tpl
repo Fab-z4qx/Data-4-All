@@ -40,7 +40,7 @@
                     <li><a data-toggle="tab" href="#nb_fichiers">Nombres de fichiers</a></li>
                     <li><a data-toggle="tab" href="#espace_dispo">Espace disponible</a></li>
                     <li><a data-toggle="tab" href="#dernier_graph">Dernier Graphique</a></li>
-                    <li><a data-toggle="tab" href="#log_out"><i class="fa fa-sign-out"></i> log out</a></li>
+                    <li><a data-toggle="tab" href="index.php?page=connect&action=logout"><i class="fa fa-sign-out"></i> log out</a></li>
                 </ul>
             </div>
         </div>
