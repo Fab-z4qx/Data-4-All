@@ -27,7 +27,7 @@ class Auth
 		}
 		return false;
 	}
-
+}
 
 	/*
 	static function isAdmin()
@@ -155,4 +155,3 @@ class Auth
 		}
 	}
 	*/
-}
