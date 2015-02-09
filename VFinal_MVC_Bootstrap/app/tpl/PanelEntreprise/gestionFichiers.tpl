@@ -4,7 +4,7 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="entreprise.php?page=HomeEntreprise">
+                    <a href="index.php?">
                         D4A
                     </a>
                 </li>
