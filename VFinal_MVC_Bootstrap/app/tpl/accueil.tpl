@@ -34,7 +34,8 @@
         </div>
     </div>
     <!-- /MENU -->
-    {if ({$error} == 'index')}
+    {if ({$error} == 'login_invalide')}
+        <div class="error_login"></div>
     {/if}
     <!-- CONTAINER FULL -->
     <div class="container-full">
