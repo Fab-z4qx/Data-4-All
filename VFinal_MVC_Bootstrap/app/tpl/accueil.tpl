@@ -10,7 +10,7 @@
                 </a>
                 <!--<img src="web/img/logos/logo_site_sans_bord_teal.png" class="img-responsive img-centered" alt="">-->
                 <li class="divider pull-right"></li>
-                <a class="brand " href="#">DATA 4 ALL</a>
+                <a class="brand " href="index.php?">DATA 4 ALL</a>
                 <div class="nav-collapse pull-right">
                     <ul class="nav">
                         <li><a class="page-scroll" href="#entreprise">Liste Entreprises</a></li>
@@ -34,6 +34,7 @@
         </div>
     </div>
     <!-- /MENU -->
+    <a href="index.php?page=HomeEntreprise">entreprise</a>
     {if ({$error} == 'login_invalide')}
         <div class="error_login">error</div>
     {/if}
@@ -141,21 +142,73 @@
                     <img class="img-circle" src="web/img/team/benjamin.jpg">
                     <h2>BOURGEAUX Benjamin</h2>
                     <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                    <div class="span 3">
+                        <a class="btn btn-social-icon btn-twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="span 3">
+                        <a class="btn btn-social-icon btn-facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="span 3">
+                        <i class="fa fa-envelope"></i>
+                    </div>
                 </div>
                 <div class="span3">
                     <img class="img-circle" src="web/img/team/thomas.jpg">
                     <h2>De CHAMPS Thomas</h2>
                     <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <div class="span 3">
+                        <a class="btn btn-social-icon btn-twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="span 3">
+                        <a class="btn btn-social-icon btn-facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="span 3">
+                        <i class="fa fa-envelope"></i>
+                    </div>
                 </div>
                 <div class="span3">
                     <img class="img-circle" src="web/img/team/etienne.jpg">
                     <h2>DERBISE Etienne</h2>
                     <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <div class="span 3">
+                        <a class="btn btn-social-icon btn-twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="span 3">
+                        <a class="btn btn-social-icon btn-facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="span 3">
+                        <i class="fa fa-envelope"></i>
+                    </div>
                 </div>
                 <div class="span3">
                     <img class="img-circle" src="web/img/team/alexis.jpg">
                     <h2>COSTA Alexis</h2>
                     <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <div class="span 3">
+                        <a class="btn btn-social-icon btn-twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="span 3">
+                        <a class="btn btn-social-icon btn-facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="span 3">
+                        <i class="fa fa-envelope"></i>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -163,31 +216,72 @@
                     <img class="img-circle" src="web/img/team/fabien.jpg">
                     <h2>GENET Fabien</h2>
                     <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                    <div class="span 3">
+                        <a class="btn btn-social-icon btn-twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="span 3">
+                        <a class="btn btn-social-icon btn-facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="span 3">
+                        <i class="fa fa-envelope"></i>
+                    </div>
                 </div>
                 <div class="span3">
                     <img class="img-circle" src="web/img/team/guillaume.jpg">
                     <h2>PIGAUX Guillaume</h2>
                     <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <div class="span 3">
+                        <a class="btn btn-social-icon btn-twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="span 3">
+                        <a class="btn btn-social-icon btn-facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="span 3">
+                        <i class="fa fa-envelope"></i>
+                    </div>
                 </div>
                 <div class="span3">
                     <img class="img-circle" src="web/img/team/tim.png">
                     <h2>ROBERT Timothée</h2>
                     <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <div class="span 3">
+                        <a class="btn btn-social-icon btn-twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="span 3">
+                        <a class="btn btn-social-icon btn-facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="span 3">
+                        <i class="fa fa-envelope"></i>
+                    </div>
                 </div>
                 <div class="span3">
                     <img class="img-circle" src="web/img/team/alain.jpg">
                     <h2>SRIPATHMANATHAN Alain</h2>
                     <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
                     <div class="span 3">
-                        <a class="btn btn-social btn twitter">
+                        <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
                         </a>
                     </div>
                     <div class="span 3">
-                        facebook
+                        <a class="btn btn-social-icon btn-facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
                     </div>
                     <div class="span 3">
-                        facebook
+                        <i class="fa fa-envelope"></i>
                     </div>
                 </div>
             </div>

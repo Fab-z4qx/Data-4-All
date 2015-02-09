@@ -16,17 +16,22 @@
     <link href="web/Bootstrap/bootstrap-responsive.css" rel="stylesheet">
     <link href="web/Bootstrap/simple-sidebar.css" rel="stylesheet" type="text/css">
     <link href="web/css/accueil.css" rel="stylesheet" type="text/css">
-    <link href="web/Bootstrap/bootstrap-social.css" rel="stylesheet" type="text/css">
+    <link href="web/css/homeEntreprise.css" rel="stylesheet" type="text/css">
+    
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="web/Bootstrap/font-awesome.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     
      <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
+      <script src=""></script>
+      <script src=""></script>
     <![endif]-->
 
     <!-- LES JS -->
+    <script src="web/js/bootstrap.js"></script>
+    <script src="web/js/bootstrap.min.js"></script>
+    <script src="web/js/jquery.js"></script>
 
 </head>
 
