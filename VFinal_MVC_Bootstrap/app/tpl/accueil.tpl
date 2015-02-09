@@ -20,17 +20,17 @@
                         <li><a class="page-scroll" href="#service">Services & Offres</a></li>
                         <li><a class="page-scroll" href="#team">Team</a></li>
                         <li><a class="page-scroll" href="#contact">Contact</a></li>
-                        <fieldset class='textbox'>
-    		                 <input class="input" type="text" placeholder="Username" />
-    		                 <input class="input" type="password" placeholder="Passsword" />
-    		               <a href="index.php?page=connect&action=login"> <input class="btn-primary" name="commit" type="submit" value="Log In" /> </a>
+                        <form class='textbox' action="index.php?page=connect&action=login" method="post">
+    		                 <input class="input" type="text" name="login" id="name" placeholder="Username" />
+    		                 <input class="input" type="password" name="password" id="password" placeholder="Passsword" />
+                             <input class="btn-primary" type="submit" value="OK"/>
                         <li><a class="pull-right" href="#">mot de passe oublié</a></li>
                         <div class="checkbox">
                             <label>
                                 <input type="checkbox"/> Remember me
                             </label>
                         </div>
-    		            </fieldset>
+    		            </form>
                     </ul>
                 </div>
             </div>

@@ -8,7 +8,6 @@ define('ROLE_ADMIN',3);
 class Users {
 
 	private $pdo;
-
 	public function __construct()
 	{
 		$this->pdo = Database::getInstance();
@@ -16,8 +15,9 @@ class Users {
 
 	public function isExist($login,$password)
 	{
-		$sql = "SELECT id_user,role FROM user WHERE login='$login' AND password ='$pass'";
-		$req = $pdo->query($sql);
+		$sql = "SELECT id_user FROM user WHERE login='$login' AND password ='$password'";
+		//echo $sql;
+		$req = $this->pdo->query($sql);
 		if($req->rowCount()> 0)
 		{
 			return true;
@@ -28,8 +28,8 @@ class Users {
 
 	public function getId($login,$password)
 	{
-		$sql = "SELECT id_user FROM user WHERE login='$login' AND password ='$pass'";
-		$req = $pdo->query($sql);
+		$sql = "SELECT id_user FROM user WHERE login='$login' AND password ='$password'";
+		$req = $this->pdo->query($sql);
 		$data = $req->fetch(PDO::FETCH_ASSOC);
 		if(!empty($data)){
 			return $data['id_user'];
@@ -37,23 +37,47 @@ class Users {
 		return NULL;
 	}
 
-	public function getRole($id)
+	public function getRoleById($id)
 	{
 		$sql = "SELECT role FROM user WHERE id_user='$id';";
-		$req = $pdo->query($sql);
+		$req = $this->pdo->query($sql);
 		$data = $req->fetch(PDO::FETCH_ASSOC);
 		if(!empty($data))
 		{
 			switch($data['role'])
 			{
 				case ROLE_PARTICULIER:
-					return 'particulier';
+					return ROLE_PARTICULIER;
 				break;
 				case ROLE_ENTREPRISE:
-					return 'entreprise';
+					return ROLE_ENTREPRISE;
 				break;
 				case ROLE_ADMIN:
-					return 'admin';
+					return ROLE_ADMIN;
+				break;
+			}	
+		}
+		return NULL;
+	}
+
+
+	public function getRoleByUserName($login,$password)
+	{
+		$sql = "SELECT role FROM user WHERE login='$login' AND password ='$password'";
+		$req = $this->pdo->query($sql);
+		$data = $req->fetch(PDO::FETCH_ASSOC);
+		if(!empty($data))
+		{
+			switch($data['role'])
+			{
+				case ROLE_PARTICULIER:
+					return ROLE_PARTICULIER;
+				break;
+				case ROLE_ENTREPRISE:
+					return ROLE_ENTREPRISE;
+				break;
+				case ROLE_ADMIN:
+					return ROLE_ADMIN;
 				break;
 			}	
 		}
@@ -61,14 +85,57 @@ class Users {
 		//return $data['role'];	
 	}
 
+	public function convertRoleToString($idRole)
+	{
+		if(empty($idRole))
+		{
+			return NULL;
+		}
+
+		switch($idRole)
+		{
+			case ROLE_PARTICULIER:
+				return 'particulier';
+			break;
+			case ROLE_ENTREPRISE:
+				return 'entreprise';
+			break;
+			case ROLE_ADMIN:
+				return 'admin';
+			break;
+		}	
+	}
+
+	public function convertRoleToInt($idRole)
+	{
+		if(empty($idRole))
+		{
+			return NULL;
+		}
+
+		switch($idRole)
+		{
+			case 'particulier':
+				return ROLE_PARTICULIER;
+			break;
+			case 'entreprise':
+				return ROLE_ENTREPRISE;
+			break;
+			case 'admin':
+				return ROLE_ADMIN;
+			break;
+		}	
+	}
+
+
 	public function getIdEntreprise($login, $password)
 	{
 		$sql = "SELECT entreprise_id_entreprise FROM user WHERE login='$login' AND password ='$password'";
-		$req = $pdo->query($sql);
-		$data = $req->fetch(PDO::FETCH_ASSOC);
+		$req = $this->pdo->query($sql);
+		$data = $req->fetchAll(PDO::FETCH_ASSOC);
 		if(!empty($data))
 		{
-			return $data['entreprise_id_entreprise'];
+			return $data[0]['entreprise_id_entreprise'];
 		}
 		return NULL;
 	}
