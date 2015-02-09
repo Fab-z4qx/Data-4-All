@@ -82,6 +82,7 @@
         <!-- /CAROUSEL -->
 
         <!-- SERVICES & OFFRES -->
+<section id="service">
         <div class="container marketing">
 
             <!-- marketing -->
@@ -181,9 +182,11 @@
 
         <!-- /SERVICES & OFFRES -->
         </div>
+</sectoin>
         <hr class="featurette-divider">
 
         <!-- TEAM -->
+<section id="team">
         <div class="container team">
             <div class="row">
                 <div class="span3 well">
@@ -349,11 +352,13 @@
                 </div>
             </div>
         </div>
+</section>
         <!-- /TEAM -->
 
         <hr class="featurette-divider">
 
         <!-- CONTACT -->
+        <section id="contact">
 <div class="container contact">
     <form class=" span8">
       <div class="row offset6">
@@ -381,6 +386,7 @@
         </div>
     </form>
 </div>
+            </section>
         <!-- /CONTACT -->
 
     <!-- /CONTAINER FULL-->
