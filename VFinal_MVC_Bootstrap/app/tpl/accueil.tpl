@@ -56,8 +56,8 @@
 	          </div>
 	        </div>
 	        <div class="item">
+                <img  src="web/img/test.jpg">
 	          <div class="container">
-	              <img  src="web/img/test.jpg">
 	            <div class="carousel-caption">
 	              <h1>description</h1>
 	              <p class="lead">description</p>
@@ -84,35 +84,33 @@
         <!-- SERVICES & OFFRES -->
         <div class="container marketing">
 
-<!-- marketing -->
+            <!-- marketing -->
 
-    <div class="container marketing">
+            <hr class="featurette-divider">
 
-      <hr class="featurette-divider">
+          <div class="featurette">
+            <img class="featurette-image pull-right" src="web/img/offre.png">
+            <h2 class="featurette-heading">Une plue-value pour l'entreprise<span class="muted">Description</span></h2>
+            <p class="lead">explication</p>
+          </div>
 
-      <div class="featurette">
-        <img class="featurette-image pull-right" src="web/img/offre.png">
-        <h2 class="featurette-heading">Une plue-value pour l'entreprise<span class="muted">Description</span></h2>
-        <p class="lead">explication</p>
-      </div>
+          <hr class="featurette-divider">
 
-      <hr class="featurette-divider">
+          <div class="featurette">
+            <img class="featurette-image pull-left" src="web/img/offre.png">
+            <h2 class="featurette-heading">Une transparence pour vous<span class="muted">See for yourself.</span></h2>
+            <p class="lead">explication</p>
+          </div>
 
-      <div class="featurette">
-        <img class="featurette-image pull-left" src="web/img/offre.png">
-        <h2 class="featurette-heading">Une transparence pour vous<span class="muted">See for yourself.</span></h2>
-        <p class="lead">explication</p>
-      </div>
+          <hr class="featurette-divider">
 
-      <hr class="featurette-divider">
+          <div class="featurette">
+            <img class="featurette-image pull-right" src="web/img/offre.png">
+            <h2 class="featurette-heading ">Une bdd de folie<span class="muted">Checkmate.</span></h2>
+            <p class="lead">explication</p>
+          </div>
 
-      <div class="featurette">
-        <img class="featurette-image pull-right" src="web/img/offre.png">
-        <h2 class="featurette-heading ">Une bdd de folie<span class="muted">Checkmate.</span></h2>
-        <p class="lead">explication</p>
-      </div>
-
-      <hr class="featurette-divider">
+             <hr class="featurette-divider">
 
             <!-- SERVICES -->
             <div class="row">
@@ -180,15 +178,17 @@
                 </tbody>
             </table>
             <!-- /OFFRES -->
-        </div>
+
         <!-- /SERVICES & OFFRES -->
+        </div>
         <hr class="featurette-divider">
+
         <!-- TEAM -->
         <div class="container team">
             <div class="row">
-                <div class="span3">
+                <div class="span3 well">
                     <img class="img-circle" src="web/img/team/benjamin.jpg">
-                    <h2>BOURGEAUX</h2><h2> Benjamin</h2>
+                    <span class="muted"><h3>BOURGEAUX</h3><h3> Benjamin</h3></span>
                     <p>Leader</p>
                     <p>Heureux de vivre !</p>
                     <p>Heureux de vivre !</p>
@@ -206,9 +206,9 @@
                         <i class="fa fa-envelope"></i>
                     </div>
                 </div>
-                <div class="span3">
+                <div class="span3 well">
                     <img class="img-circle" src="web/img/team/thomas.jpg">
-                    <h2>De CHAMPS</h2><h2>Thomas</h2>
+                    <span class="muted"><h3>De CHAMPS</h3><h3>Thomas</h3></span>
                     <p>Designer</p>
                     <p>Heureux de vivre !</p>
                     <p>Heureux de vivre !</p>
@@ -226,9 +226,9 @@
                         <i class="fa fa-envelope"></i>
                     </div>
                 </div>
-                <div class="span3">
+                <div class="span3 well">
                     <img class="img-circle" src="web/img/team/etienne.jpg">
-                    <h2>DERBISE</h2><h2>Etienne</h2>
+                    <span class="muted"><h3>DERBISE</h3><h3>Etienne</h3></span>
                     <p>Marketing</p>
                     <p>Heureux de vivre !</p>
                     <p>Heureux de vivre !</p>
@@ -246,9 +246,9 @@
                         <i class="fa fa-envelope"></i>
                     </div>
                 </div>
-                <div class="span3">
+                <div class="span3 well">
                     <img class="img-circle" src="web/img/team/alexis.jpg">
-                    <h2>COSTA</h2><h2>Alexis</h2>
+                    <span class="muted"><h3>COSTA</h3><h3>Alexis</h3></span>
                     <p>Marketing</p>
                     <p>Heureux de vivre !</p>
                     <p>Heureux de vivre !</p>
@@ -266,11 +266,10 @@
                         <i class="fa fa-envelope"></i>
                     </div>
                 </div>
-            </div></br>
-            <div class="row">
-                <div class="span3">
+
+                <div class="span3 well">
                     <img class="img-circle" src="web/img/team/fabien.jpg">
-                    <h2>GENET</h2><h2>Fabien</h2>
+                    <span class="muted"><h3>GENET</h3><h3>Fabien</h3></span>
                     <p>Developer</p>
                     <p>Heureux de vivre !</p>
                     <p>Heureux de vivre !</p>
@@ -288,9 +287,9 @@
                         <i class="fa fa-envelope"></i>
                     </div>
                 </div>
-                <div class="span3">
+                <div class="span3 well">
                     <img class="img-circle" src="web/img/team/guillaume.jpg">
-                    <h2>PIGAUX</h2><h2>Guillaume</h2>
+                    <span class="muted"><h3>PIGAUX</h3><h3>Guillaume</h3></span>
                     <p>Developer</p>
                     <p>Heureux de vivre !</p>
                     <p>Heureux de vivre !</p>
@@ -308,9 +307,9 @@
                         <i class="fa fa-envelope"></i>
                     </div>
                 </div>
-                <div class="span3">
+                <div class="span3 well">
                     <img class="img-circle" src="web/img/team/tim.png">
-                    <h2>ROBERT</h2><h2>Timothée</h2>
+                    <span class="muted"><h3>ROBERT</h3><h3>Timothée</h3></span>
                     <p>Developer</p>
                     <p>Heureux de vivre !</p>
                     <p>Heureux de vivre !</p>
@@ -328,9 +327,9 @@
                         <i class="fa fa-envelope"></i>
                     </div>
                 </div>
-                <div class="span3">
+                <div class="span3 well">
                     <img class="img-circle" src="web/img/team/alain.jpg">
-                    <h2>SRIPATHMANATHAN</h2><h2>Alain</h2>
+                    <span class="muted"><h3>SRIPATHMANATHAN</h3><h3>Alain</h3></span>
                     <p>Developer</p>
                     <p>Heureux de vivre !</p>
                     <p>Heureux de vivre !</p>
@@ -353,14 +352,14 @@
         <!-- /TEAM -->
         <!-- CONTACT -->
         <!-- /CONTACT -->
-    </div>
+
     <!-- /CONTAINER FULL-->
     <!-- FOOTER -->
     <hr class="featurette-divider">
 
       <footer><center>
         <a href="#">Back to top</a>
-        <p>© 2013 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p>© 2015 Data4All, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
               </center>
       </footer>
 
