@@ -13,6 +13,12 @@ SIDEBAR
 	background-color: #1ABC9C;
 }
 /*******************************************
+BODY
+*******************************************/
+.body_entreprise{
+	background-color: #ECF0F1;
+}
+/*******************************************
 MENU
 *******************************************/
 #nav_entreprise{
@@ -20,11 +26,9 @@ MENU
 	background-color: #ECF0F1;
 	color: white;
 }
-
 .fa-log-out{
 	color: white;
 }
-
 #color{
 	background-color: blue;
 }

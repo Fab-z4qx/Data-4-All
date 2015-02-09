@@ -1,4 +1,4 @@
-
+<div class="body_entreprise">
 <!-- MENU -->
     <div id="wrapper">
         <!-- Sidebar -->
@@ -63,6 +63,7 @@
                     <h2>Stat 3</h2>
                 </div>
             </div>
+        </div>
     </section>
     <!-- /STATISTIQUES -->
     <hr class="featurette-divider">
@@ -96,3 +97,4 @@
     </section>
     <!-- /DERNIER GRAPH -->
     <hr class="featurette-divider">
+</div>
