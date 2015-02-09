@@ -5,6 +5,9 @@ include('app/config/config_init.php');
 //include 'vues/logo.php';
 //include 'vues/menu.php';  
  
+ //On inclut le pied de page
+include _TPL_.'head.tpl';
+
 //On inclut le contrôleur s'il existe et s'il est spécifié
 if (!empty($_GET['page']) && is_file(_CTRL_.ucfirst($_GET['page']).'Controller.php'))
 {
