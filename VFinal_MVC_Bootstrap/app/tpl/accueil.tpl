@@ -1,8 +1,9 @@
+<div id="accueil">
     <!-- MENU -->
     <div class="navbar navbar-fixed-top navbar-inverse">
         <div class="navbar-inner">
             <div class="container-full">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <a class="btn btn-navbar" toggle="collapse" target=".nav-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -19,11 +20,11 @@
                         <fieldset class='textbox'>
     		                 <input class="input" type="text" placeholder="Username" />
     		                 <input class="input" type="password" placeholder="Passsword" />
-    		               <a href="index.php?page=HomeEntreprise"> <input class="btn-primary" name="commit" type="submit" value="Log In" /> </a>
-                        <li><a class="pull-right" href="#">mot de passe oublié</a></li>
-                        <div class="checkbox">
+    		              <a href="index.php?page=HomeEntreprise"> <input class="btn-primary" name="commit" type="submit" value="Log In" /> </a>
+                            <li><a class="pull-right" href="#">mot de passe oublié</a></li>
+                            <div class="checkbox">
                             <label>
-                                <input type="checkbox"> Remember me
+                                <input type="checkbox"/> Remember me
                             </label>
                         </div>
     		            </fieldset>
@@ -59,8 +60,8 @@
               </div>
             </div>
           </div>
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+          <a class="left carousel-control" href="#myCarousel" slide="prev">‹</a>
+          <a class="right carousel-control" href="#myCarousel" slide="next">›</a>
         </div>
         <!-- /CAROUSEL -->
         <!-- SERVICES & OFFRES -->
@@ -68,17 +69,17 @@
             <!-- SERVICES -->
             <div class="row">
                 <div class="span4">
-                    <img class="img-circle" data-src="web/img/team/alain.jpg">
+                    <img class="img-circle" src="web/img/team/alain.jpg">
                     <h2>BI</h2>
                     <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
                 </div>
                 <div class="span4">
-                    <img class="img-circle" data-src="web/img/team/alain.jpg">
+                    <img class="img-circle" src="web/img/team/alain.jpg">
                     <h2>Open Data</h2>
                     <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
                 </div>
                 <div class="span4">
-                    <img class="img-circle" data-src="web/img/team/alain.jpg">
+                    <img class="img-circle" src="web/img/team/alain.jpg">
                     <h2>Prenium</h2>
                     <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
                 </div>
@@ -131,8 +132,67 @@
         <!-- /SERVICES & OFFRES -->
         <hr class="featurette-divider">
         <!-- TEAM -->
+        <div class="container team">
+            <div class="row">
+                <div class="span3">
+                    <img class="img-circle" src="web/img/team/benjamin.jpg">
+                    <h2>BOURGEAUX Benjamin</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                </div>
+                <div class="span3">
+                    <img class="img-circle" src="web/img/team/thomas.jpg">
+                    <h2>De CHAMPS Thomas</h2>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                </div>
+                <div class="span3">
+                    <img class="img-circle" src="web/img/team/etienne.jpg">
+                    <h2>DERBISE Etienne</h2>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                </div>
+                <div class="span3">
+                    <img class="img-circle" src="web/img/team/alexis.jpg">
+                    <h2>COSTA Alexis</h2>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span3">
+                    <img class="img-circle" src="web/img/team/fabien.jpg">
+                    <h2>GENET Fabien</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                </div>
+                <div class="span3">
+                    <img class="img-circle" src="web/img/team/guillaume.jpg">
+                    <h2>PIGAUX Guillaume</h2>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                </div>
+                <div class="span3">
+                    <img class="img-circle" src="web/img/team/tim.png">
+                    <h2>ROBERT Timothée</h2>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                </div>
+                <div class="span3">
+                    <img class="img-circle" src="web/img/team/alain.jpg">
+                    <h2>SRIPATHMANATHAN Alain</h2>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <div class="span 3">
+                        <a class="btn btn-social btn twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="span 3">
+                        facebook
+                    </div>
+                    <div class="span 3">
+                        facebook
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- /TEAM -->
         <!-- CONTACT -->
         <!-- /CONTACT -->
     </div> 
     <!-- /CONTAINER FULL-->
+</div>
+<!-- /ACCUEIL -->

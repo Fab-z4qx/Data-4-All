@@ -18,8 +18,12 @@ SETTINGS
 /*******************************************
 BODY
 *******************************************/
-body{
-	padding-top: 85px; /* 60px to make the container go all the way to the bottom of the topbar */
+
+/*******************************************
+ACCUEIL
+*******************************************/
+#accueil{
+padding-top: 75px; /* 60px to make the container go all the way to the bottom of the topbar */
 }
 /*******************************************
 MENU
@@ -144,7 +148,16 @@ SERVICES & OFFRES
 /*******************************************
 TEAM
 *******************************************/
-
+.team .span3 {
+  text-align: center;
+}
+.team h2 {
+  font-weight: normal;
+}
+.team .span3 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 /*******************************************
 CONTACT
 *******************************************/

@@ -10,12 +10,16 @@
     <title>D4A</title>
 
     <!-- LES STYLES -->
-    <link href="web/Bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="web/Bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
     <link href="web/Bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="web/Bootstrap/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
     <link href="web/Bootstrap/bootstrap-responsive.css" rel="stylesheet">
-    <link href="web/Bootstrap/simple-sidebar.css" rel="stylesheet">
+    <link href="web/Bootstrap/simple-sidebar.css" rel="stylesheet" type="text/css">
     <link href="web/css/accueil.css" rel="stylesheet" type="text/css">
+    <link href="web/Bootstrap/bootstrap-social.css" rel="stylesheet" type="text/css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="web/Bootstrap/font-awesome.css">
     
      <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
