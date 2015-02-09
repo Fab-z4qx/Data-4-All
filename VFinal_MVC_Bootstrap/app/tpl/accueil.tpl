@@ -35,7 +35,7 @@
     </div>
     <!-- /MENU -->
     {if ({$error} == 'login_invalide')}
-        <div class="error_login"></div>
+        <div class="error_login">error</div>
     {/if}
     <!-- CONTAINER FULL -->
     <div class="container-full">
