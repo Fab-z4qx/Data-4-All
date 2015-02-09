@@ -20,10 +20,12 @@ class ConnectController extends Controller
 			if(Users::isExist($login,$password) ) 
 			{
 				createSession();
+				//echo('log as entreprise');
 			}
 		}
-		$smarty->assign('error', 'login_invalide');
-		$smarty->display('accueil.tpl');
+		//header('Location:index.php?page=HomeEntreprise.php');
+		$this->smarty->assign('error', 'login_invalide');
+		$this->smarty->display(_TPL_.'accueil.tpl');
    }
 
    private function createSession()
@@ -32,8 +34,8 @@ class ConnectController extends Controller
 		$_SESSION['Auth'] = array( //On créer la session ! 
 		'login' => $login,
 		'pass' => $pass,
-		'id_entreprise' => $data['entreprise_id_entreprise'],
-		'role' => $data['role']
+		'id_entreprise' => Users::getIdEntreprise(),
+		'role' => Users::getRole()
 		);
    }
 }

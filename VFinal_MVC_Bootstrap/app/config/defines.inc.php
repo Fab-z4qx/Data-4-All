@@ -16,11 +16,18 @@ define('_MODEL_', _PATH_ . '/app/models/');
 // Define du dossier des Controleurs
 define('_CTRL_', _PATH_ . '/app/controllers/');
 
+// Define du dossier Controleurs entreprise
+define('_CTRL_ENT_', _PATH_ . '/app/controllers/PanelEntreprise/');
+
 // Define du dossier des Configs
 define('_CONFIG_', _PATH_ . '/app/config/');
 
 // Define du dossier des TPL
 define('_TPL_', _PATH_ . '/app/tpl/');
+
+// Define du dossier des TPL
+define('_TPL_ENT_', _PATH_ . '/app/tpl/PanelEntreprise/');
+
 
 // Define du dossier des logs
 define('_LOGS_', _PATH_ . '/app/logs/');
