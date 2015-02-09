@@ -29,18 +29,27 @@ MENU
 .fa-log-out{
 	color: white;
 }
-#color{
-	background-color: blue;
-}
 .titre_page{
 	margin-left: 50px;
 }
 /*******************************************
-STATISTIQUES
+SECTIONS
 *******************************************/
 #statistiques{
 	padding-top: 75px;
-	background-color: white;
+}
+.stat .span4 {
+  text-align: center;
+}
+.stat h2 {
+  font-weight: normal;
+}
+.stat .span4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.titre_section{
+	padding-left: 40px;
 }
 /*******************************************
 NOMBRES FICHIERS
