@@ -11,7 +11,7 @@ class Users {
 
 	public function __construct()
 	{
-		$pdo = Database::getInstance();
+		$this->pdo = Database::getInstance();
 	} 
 
 	public function isExist($login,$password)
@@ -31,7 +31,10 @@ class Users {
 		$sql = "SELECT id_user FROM user WHERE login='$login' AND password ='$pass'";
 		$req = $pdo->query($sql);
 		$data = $req->fetch(PDO::FETCH_ASSOC);
-		return $data['id_user'];
+		if(!empty($data)){
+			return $data['id_user'];
+		}
+		return NULL;
 	}
 
 	public function getRole($id)
@@ -39,22 +42,36 @@ class Users {
 		$sql = "SELECT role FROM user WHERE id_user='$id';";
 		$req = $pdo->query($sql);
 		$data = $req->fetch(PDO::FETCH_ASSOC);
-		switch($data['role'])
+		if(!empty($data))
 		{
-			case ROLE_PARTICULIER:
-				return 'particulier';
-			break;
-			case ROLE_ENTREPRISE:
-				return 'entreprise';
-			break;
-			case ROLE_ADMIN:
-				return 'admin';
-			break;
+			switch($data['role'])
+			{
+				case ROLE_PARTICULIER:
+					return 'particulier';
+				break;
+				case ROLE_ENTREPRISE:
+					return 'entreprise';
+				break;
+				case ROLE_ADMIN:
+					return 'admin';
+				break;
+			}	
 		}
+		return NULL;
 		//return $data['role'];	
 	}
 
-
+	public function getIdEntreprise($login, $password)
+	{
+		$sql = "SELECT entreprise_id_entreprise FROM user WHERE login='$login' AND password ='$password'";
+		$req = $pdo->query($sql);
+		$data = $req->fetch(PDO::FETCH_ASSOC);
+		if(!empty($data))
+		{
+			return $data['entreprise_id_entreprise'];
+		}
+		return NULL;
+	}
 
 }
 

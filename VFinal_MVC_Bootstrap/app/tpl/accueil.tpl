@@ -10,7 +10,7 @@
                 </a>
                 <!--<img src="web/img/logos/logo_site_sans_bord_teal.png" class="img-responsive img-centered" alt="">-->
                 <li class="divider pull-right"></li>
-                <a class="brand " href="#">DATA 4 ALL</a>
+                <a class="brand " href="index.php">DATA 4 ALL</a>
                 <div class="nav-collapse pull-right">
                     <ul class="nav">
                         <li><a class="page-scroll" href="#entreprise">Liste Entreprises</a></li>
@@ -35,7 +35,7 @@
     </div>
     <!-- /MENU -->
     {if ({$error} == 'login_invalide')}
-        <div class="error_login">error</div>
+        <div class="error_login">error de login </div>
     {/if}
     <!-- CONTAINER FULL -->
     <div class="container-full">

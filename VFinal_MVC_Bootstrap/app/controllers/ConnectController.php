@@ -21,7 +21,6 @@ class ConnectController extends Controller
 			{
 				createSession();
 				//echo('log as entreprise');
-				
 			}
 		}
 		//header('Location:index.php?page=HomeEntreprise.php');
@@ -35,8 +34,8 @@ class ConnectController extends Controller
 		$_SESSION['Auth'] = array( //On créer la session ! 
 		'login' => $login,
 		'pass' => $pass,
-		'id_entreprise' => $data['entreprise_id_entreprise'],
-		'role' => $data['role']
+		'id_entreprise' => Users::getIdEntreprise(),
+		'role' => Users::getRole()
 		);
    }
 }
