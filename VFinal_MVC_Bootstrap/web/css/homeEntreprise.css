@@ -9,9 +9,39 @@ SIDEBAR
 #sidebar-wrapper{
 	
 }
+.page_active{
+	background-color: #1ABC9C;
+}
 /*******************************************
 MENU
 *******************************************/
-.page_active{
-	background-color: #34495E;
+#nav_entreprise{
+	left: 250px;
+	background-color: #ECF0F1;
+	color: white;
 }
+
+.fa-log-out{
+	color: white;
+}
+
+#color{
+	background-color: blue;
+}
+.titre_page{
+	margin-left: 50px;
+}
+/*******************************************
+STATISTIQUES
+*******************************************/
+#statistiques{
+	padding-top: 75px;
+	background-color: white;
+}
+/*******************************************
+NOMBRES FICHIERS
+*******************************************/
+
+/*******************************************
+DERNIER GRAPH
+*******************************************/

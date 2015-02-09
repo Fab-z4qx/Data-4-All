@@ -15,6 +15,7 @@
 
                 <div class="nav-collapse pull-right">
                     <ul class="nav">
+                        <li><a class="page-scroll" href="entreprise.php?page=HomeEntreprise">Home Entreprises</a></li>
                         <li><a class="page-scroll" href="#entreprise">Liste Entreprises</a></li>
                         <li><a class="page-scroll" href="#service">Services & Offres</a></li>
                         <li><a class="page-scroll" href="#team">Team</a></li>
@@ -36,7 +37,6 @@
         </div>
     </div>
     <!-- /MENU -->
-    <a href="entreprise.php?page=HomeEntreprise">entreprise</a>
     {if ({$error} == 'login_invalide')}
         <div class="error_login">error de login </div>
     {/if}
@@ -44,42 +44,41 @@
     <div class="container-full">
         <!-- CAROUSEL -->
          <div id="myCarousel" class="carousel slide">
-	      <div class="carousel-inner">
-	        <div class="item active">
-	          <img  src="web/img/test.jpg">
-	          <div class="container">
-	            <div class="carousel-caption">
-	              <h1>description</h1>
-	              <p class="lead">description</p>
-	              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="item">
-	          <div class="container">
-	              <img  src="web/img/test.jpg">
-	            <div class="carousel-caption">
-	              <h1>description</h1>
-	              <p class="lead">description</p>
-	              <a class="btn btn-large btn-primary" href="#">Learn more</a>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="item">
-	            <img  src="web/img/test.jpg">
-	          <div class="container">
-	            <div class="carousel-caption">
-	              <h1>description</h1>
-	              <p class="lead">description</p>
-	              <a class="btn btn-large btn-primary" href="#">description</a>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-          
-	      <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-	      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-	    </div>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img  src="web/img/test.jpg">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>description</h1>
+                  <p class="lead">description</p>
+                  <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="container">
+                  <img  src="web/img/test.jpg">
+                <div class="carousel-caption">
+                  <h1>description</h1>
+                  <p class="lead">description</p>
+                  <a class="btn btn-large btn-primary" href="#">Learn more</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+                <img  src="web/img/test.jpg">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>description</h1>
+                  <p class="lead">description</p>
+                  <a class="btn btn-large btn-primary" href="#">description</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+        </div>
         <!-- /CAROUSEL -->
 
         <!-- SERVICES & OFFRES -->
