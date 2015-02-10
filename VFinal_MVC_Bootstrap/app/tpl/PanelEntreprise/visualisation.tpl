@@ -1,3 +1,4 @@
+<div class="body_entreprise">
 <!-- MENU -->
     <div id="wrapper">
         <!-- Sidebar -->
@@ -35,8 +36,42 @@
             </div>
             <div class="nav-collapse pull-right">
                 <ul class="nav">
-                    <li><a data-toggle="tab" href="#log_out"><i class="fa fa-sign-out"></i> log out</a></li>
+                    <li><a href="index.php?page=connect&action=logout"><i class="fa fa-sign-out"></i> log out</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+<!-- GRAPH 1 - HORIZONTALE FULL -->
+    <div class="container-full">
+        <div class="row">
+            <img class="img-circle" src="web/img/team/benjamin.jpg">
+        </div>
+    </div>
+<!-- /GRAPH 1 - HORIZONTALE FULL -->
+<br>
+<!-- GRAPH 2/3/3 - CARRE -->
+    <div class="container team">
+        <div class="row">
+            <div class="span3 well">
+                <img class="img-circle" src="web/img/team/benjamin.jpg">
+            </div>
+            <div class="span3 well">
+                <img class="img-circle" src="web/img/team/thomas.jpg">
+            </div>
+            <div class="span3 well">
+                <img class="img-circle" src="web/img/team/etienne.jpg">
+            </div>
+        </div>
+    </div>
+<!-- /GRAPH 2/3/4 - CARRE -->
+
+<!-- GRAPH 5 - HORIZONTALE FULL -->
+<div class="container-full">
+    full
+</div>
+<!-- /GRAPH 5 - HORIZONTALE FULL -->
+
+
+
+</div>

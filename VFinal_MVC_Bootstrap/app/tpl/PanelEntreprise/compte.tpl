@@ -36,7 +36,7 @@
             </div>
             <div class="nav-collapse pull-right">
                 <ul class="nav">
-                    <li><a data-toggle="tab" href="#log_out"><i class="fa fa-sign-out"></i> log out</a></li>
+                    <li><a href="index.php?page=connect&action=logout"><i class="fa fa-sign-out"></i> log out</a></li>
                 </ul>
             </div>
         </div>

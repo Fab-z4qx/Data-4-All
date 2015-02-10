@@ -15,7 +15,7 @@
                     <a href="entreprise.php?page=homeEntreprise"><i class="fa fa-home"></i> Accueil</a>
                 </li>
                 <li>
-                    <a href="entreprise.php?page=gestionFichiers"><i class="fa fa-cog"></i> Gestion des fichiers</a>
+                    <a href="entreprise.php?page=gestionFichiers"><i class="fa fa-file"></i> Gestion des fichiers</a>
                 </li>
                 <li>
                     <a href="entreprise.php?page=visualisation"><i class="fa fa-desktop"></i> Visualisation</a>
@@ -37,17 +37,17 @@
             </div>
             <div class="nav-collapse pull-right">
                 <ul class="nav">
-                    <li><a data-toggle="tab" href="#statistiques">Statistiques</a></li>
-                    <li><a data-toggle="tab" href="#nb_fichiers">Nombres de fichiers</a></li>
-                    <li><a data-toggle="tab" href="#espace_dispo">Espace disponible</a></li>
-                    <li><a data-toggle="tab" href="#dernier_graph">Dernier Graphique</a></li>
+                    <li><a class="page-scroll" href="#statistiques">Statistiques</a></li>
+                    <li><a class="page-scroll" href="#nb_fichiers">Nombres de fichiers</a></li>
+                    <li><a class="page-scroll" href="#espace_dispo">Espace disponible</a></li>
+                    <li><a class="page-scroll" href="#dernier_graph">Dernier Graphique</a></li>
                     <li><a href="index.php?page=connect&action=logout"><i class="fa fa-sign-out"></i> log out</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- STATISTIQUES -->
-
+    <div id="statistiques"></div>
     <section id="statistiques">
         <div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">
             <div class="row">
@@ -68,6 +68,7 @@
     <!-- /STATISTIQUES -->
             <hr class="featurette-divider">
     <!-- NOMBRES FICHIERS -->
+    <div id="nb_fichiers"></div>
             <div class="container stat">
                 <div class="row">
                     <h1 class="titre_section">Nombre de Fichiers</h1> <br>
@@ -88,6 +89,7 @@
     <!-- /NOMBRES FICHIERS -->
             <hr class="featurette-divider">
     <!-- ESPACE DISPONIBLE -->
+             <div id="espace_dispo"></div>
             <div class="container stat">
                 <div class="row">
                     <h1 class="titre_section">Espace Disponible</h1> <br>
@@ -108,6 +110,7 @@
     <!-- /ESPACE DISPONIBLE -->
             <hr class="featurette-divider">
     <!-- DERNIER GRAPH -->
+            <div id="dernier_graph"></div>
             <div class="container stat">
                 <div class="row">
                     <h1 class="titre_section">Dernier Graphique</h1> <br>
