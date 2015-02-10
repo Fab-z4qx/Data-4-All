@@ -17,6 +17,7 @@
     <link href="web/Bootstrap/simple-sidebar.css" rel="stylesheet" type="text/css">
     <link href="web/css/accueil.css" rel="stylesheet" type="text/css">
     <link href="web/css/homeEntreprise.css" rel="stylesheet" type="text/css">
+    <link href="web/css/gestionFichiers.css" rel="stylesheet" type="text/css">
     
 
     <!-- FontAwesome -->
