@@ -42,8 +42,10 @@ class ConnectController extends Controller
 			    //$smarty->assign('error', 'login invalide');
 				header('Location:index.php');      
     			exit();    
-		}
-		
+		}// rien d'envoyé sur la page 
+		header('Location:index.php');      
+    	exit(); 
+    	   
 		//$this->smarty->assign('error', 'login_invalide');
 		//$this->smarty->display(_TPL_.'accueil.tpl');
    }
