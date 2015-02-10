@@ -71,12 +71,14 @@
                                     <th>fichier 1</th>
                                     <th>20ko</th>
                                     <th>10/02/2015</th>
-                                    <div class="btn-group" role="group">
-                                        <th><button type="button" class="btn btn-primary">visualiser</button></th>
-                                        <th><button type="button" class="btn btn-info">renommer</button></th>
-                                        <th><button type="button" class="btn btn-warning">téléchargement</button></th>
-                                        <th><button type="button" class="btn btn-danger">supprimer</button></th>
+                                    <th>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-primary">visualiser</button>
+                                        <button type="button" class="btn btn-info">renommer</button>
+                                        <button type="button" class="btn btn-warning">téléchargement</button>
+                                        <button type="button" class="btn btn-danger">supprimer</button>
                                     </div>
+                                    </th>
                                 </tr>
                                 <tr>
                                     <th>fichier 2</th>

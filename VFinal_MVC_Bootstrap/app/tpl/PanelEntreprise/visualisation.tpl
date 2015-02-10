@@ -42,7 +42,7 @@
         </div>
     </nav>
 
-<section id="entreprise_contenu">
+<section id="visualisation_contenu">
 <!-- GRAPH 1 - HORIZONTAL FULL -->
     <div class="container">
         <div class="row">
