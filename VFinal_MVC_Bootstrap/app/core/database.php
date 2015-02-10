@@ -10,11 +10,17 @@ class Database {
       return self::$_instance;
    }
 
+   public function __call($method, array $arg) {
+      // Si on appelle une méthode qui n'existe pas, on 
+      // delegue cet appel à l'objet PDO $this->_db
+      return call_user_func_array(array($this->_db, $method), $arg);
+   }
+
    protected function __construct() 
    {
 			$this->_OS = strtoupper(substr(php_uname("s"), 0, 3));
          $host = '127.0.0.1';
-            $dbname = 'bdd_d4a';
+         $dbname = 'bdd_d4a';
 			$user = 'root';
 
       try
@@ -39,12 +45,6 @@ class Database {
           die('Erreur : '.$e->getMessage());
       }
      
-   }
-
-   public function __call($method, array $arg) {
-      // Si on appelle une méthode qui n'existe pas, on 
-      // delegue cet appel à l'objet PDO $this->_db
-      return call_user_func_array(array($this->_db, $method), $arg);
    }
    
    protected function createDB($dbName){
