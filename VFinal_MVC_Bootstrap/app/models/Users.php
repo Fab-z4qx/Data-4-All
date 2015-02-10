@@ -16,14 +16,17 @@ class Users {
 	public function isExist($login,$password)
 	{
 		$sql = "SELECT id_user FROM user WHERE login='$login' AND password ='$password'";
-		//echo $sql;
 		$req = $this->pdo->query($sql);
-		if($req->rowCount()> 0)
+		if(!empty($req))
 		{
-			return true;
+			if($req->rowCount()> 0)
+			{
+				return true;
+			}
+			else
+				return false;
 		}
-		else
-			return false;
+		return false;
 	}
 
 	public function getId($login,$password)
