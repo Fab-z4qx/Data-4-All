@@ -12,16 +12,16 @@
                 </li>
                 </div>
                 <li>
-                    <a href="entreprise.php?page=homeEntreprise"><i class="fa fa-home"></i> Accueil</a>
+                    <a href="entreprise.php?page=homeEntreprise"><i class="fa fa-home"></i>&nbsp;&nbsp;Accueil</a>
                 </li>
                 <li class="page_active">
-                    <a href="entreprise.php?page=gestionFichiers"><i class="fa fa-cog"></i> Gestion des fichiers</a>
+                    <a href="entreprise.php?page=gestionFichiers"><i class="fa fa-cog"></i>&nbsp;&nbsp;Gestion des fichiers</a>
                 </li>
                 <li>
-                    <a href="entreprise.php?page=visualisation"><i class="fa fa-desktop"></i> Visualisation</a>
+                    <a href="entreprise.php?page=visualisation"><i class="fa fa-desktop"></i>&nbsp;&nbsp;Visualisation</a>
                 </li>
                 <li>
-                    <a href="entreprise.php?page=compte"><i class="fa fa-user"></i> Compte</a>
+                    <a href="entreprise.php?page=compte"><i class="fa fa-user"></i>&nbsp;&nbsp;Compte</a>
                 </li>
                 <!--<li><a href="entreprise.php?page=services">Services</a></li>-->
             </ul>
@@ -34,13 +34,13 @@
     <nav class="navbar navbar-default navbar-fixed-top" id="nav_entreprise">
         <div class="container-full" >
             <div class="titre_page">
-                <a class="brand" href="#">Gestion des fichiers</a>
+                <a class="brand" href="#"><i class="fa fa-cog"></i>&nbsp;&nbsp;Gestion des fichiers</a>
             </div>
             <div class="nav-collapse pull-right">
                 <ul class="nav">
-                    <li><a href="#upload" data-toggle="tab">Chargement</a></li>
-                    <li><a href="#all_files" data-toggle="tab">Tout les fichiers</a></li>
-                    <li><a href="index.php?page=connect&action=logout"><i class="fa fa-sign-out"></i> log out</a></li>
+                    <li><a href="#upload" data-toggle="tab"><i class="fa fa-cloud-upload"></i>&nbsp;&nbsp;Upload</a></li>
+                    <li><a href="#all_files" data-toggle="tab"><i class="fa fa-file"></i>&nbsp;&nbsp;Tout les fichiers</a></li>
+                    <li><a href="index.php?page=connect&action=logout"><i class="fa fa-sign-out"></i>&nbsp;&nbsp;og out</a></li>
                 </ul>
             </div>
         </div>
@@ -53,7 +53,7 @@
             <section id="entreprise_contenu">
                 <div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">
                     
-                        <h1 class="titre_section">Chargement</h1> <br>
+                        <h1 class="titre_section"><i class="fa fa-cloud-upload"></i>&nbsp;&nbsp;&nbsp;Upload</h1> <br>
                         
                     
                 </div>
@@ -64,7 +64,7 @@
         <div class="tab-pane" id="all_files">
               <section id="entreprise_contenu">
                 <div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">
-                        <h1 class="titre_section">Tout les fichiers</h1> <br>
+                        <h1 class="titre_section"><i class="fa fa-file"></i>&nbsp;&nbsp;&nbsp;Tout les fichiers</h1> <br>
                         <table class="table table-striped ">
                             <tbody>
                                 <tr>

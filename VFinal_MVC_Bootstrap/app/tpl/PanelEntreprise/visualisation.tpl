@@ -12,16 +12,16 @@
                 </li>
                 </div>
                 <li>
-                    <a href="entreprise.php?page=homeEntreprise"><i class="fa fa-home"></i> Accueil</a>
+                    <a href="entreprise.php?page=homeEntreprise"><i class="fa fa-home"></i>&nbsp;&nbsp;Accueil</a>
                 </li>
                 <li>
-                    <a href="entreprise.php?page=gestionFichiers"><i class="fa fa-cog"></i> Gestion des fichiers</a>
+                    <a href="entreprise.php?page=gestionFichiers"><i class="fa fa-cog"></i>&nbsp;&nbsp;Gestion des fichiers</a>
                 </li>
                 <li class="page_active">
-                    <a href="entreprise.php?page=visualisation"><i class="fa fa-desktop"></i> Visualisation</a>
+                    <a href="entreprise.php?page=visualisation"><i class="fa fa-desktop"></i>&nbsp;&nbsp;Visualisation</a>
                 </li>
                 <li>
-                    <a href="entreprise.php?page=compte"><i class="fa fa-user"></i> Compte</a>
+                    <a href="entreprise.php?page=compte"><i class="fa fa-user"></i>&nbsp;&nbsp;Compte</a>
                 </li>
                 <!--<li><a href="entreprise.php?page=services">Services</a></li>-->
             </ul>
@@ -32,11 +32,11 @@
 	<nav class="navbar navbar-default navbar-fixed-top" id="nav_entreprise">
         <div class="container-full" >
             <div class="titre_page">
-                <a class="brand" href="#">Visualisation</a>
+                <a class="brand" href="#"><i class="fa fa-desktop"></i>&nbsp;&nbsp;Visualisation</a>
             </div>
             <div class="nav-collapse pull-right">
                 <ul class="nav">
-                    <li><a href="index.php?page=connect&action=logout"><i class="fa fa-sign-out"></i> log out</a></li>
+                    <li><a href="index.php?page=connect&action=logout"><i class="fa fa-sign-out"></i>&nbsp;&nbsp;log out</a></li>
                 </ul>
             </div>
         </div>
