@@ -133,6 +133,94 @@
                                         <th><button type="button" class="btn btn-danger">supprimer</button></th>
                                     </div>
                                 </tr>
+                                <tr>
+                                    <th>fichier 7</th>
+                                    <th>20ko</th>
+                                    <th>10/02/2015</th>
+                                    <div class="btn-group" role="group">
+                                        <th><button type="button" class="btn btn-primary">visualiser</button></th>
+                                        <th><button type="button" class="btn btn-info">renommer</button></th>
+                                        <th><button type="button" class="btn btn-warning">téléchargement</button></th>
+                                        <th><button type="button" class="btn btn-danger">supprimer</button></th>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <th>fichier 8</th>
+                                    <th>20ko</th>
+                                    <th>10/02/2015</th>
+                                    <div class="btn-group" role="group">
+                                        <th><button type="button" class="btn btn-primary">visualiser</button></th>
+                                        <th><button type="button" class="btn btn-info">renommer</button></th>
+                                        <th><button type="button" class="btn btn-warning">téléchargement</button></th>
+                                        <th><button type="button" class="btn btn-danger">supprimer</button></th>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <th>fichier 9</th>
+                                    <th>20ko</th>
+                                    <th>10/02/2015</th>
+                                    <div class="btn-group" role="group">
+                                        <th><button type="button" class="btn btn-primary">visualiser</button></th>
+                                        <th><button type="button" class="btn btn-info">renommer</button></th>
+                                        <th><button type="button" class="btn btn-warning">téléchargement</button></th>
+                                        <th><button type="button" class="btn btn-danger">supprimer</button></th>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <th>fichier 10</th>
+                                    <th>20ko</th>
+                                    <th>10/02/2015</th>
+                                    <div class="btn-group" role="group">
+                                        <th><button type="button" class="btn btn-primary">visualiser</button></th>
+                                        <th><button type="button" class="btn btn-info">renommer</button></th>
+                                        <th><button type="button" class="btn btn-warning">téléchargement</button></th>
+                                        <th><button type="button" class="btn btn-danger">supprimer</button></th>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <th>fichier 11</th>
+                                    <th>20ko</th>
+                                    <th>10/02/2015</th>
+                                    <div class="btn-group" role="group">
+                                        <th><button type="button" class="btn btn-primary">visualiser</button></th>
+                                        <th><button type="button" class="btn btn-info">renommer</button></th>
+                                        <th><button type="button" class="btn btn-warning">téléchargement</button></th>
+                                        <th><button type="button" class="btn btn-danger">supprimer</button></th>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <th>fichier 12</th>
+                                    <th>20ko</th>
+                                    <th>10/02/2015</th>
+                                    <div class="btn-group" role="group">
+                                        <th><button type="button" class="btn btn-primary">visualiser</button></th>
+                                        <th><button type="button" class="btn btn-info">renommer</button></th>
+                                        <th><button type="button" class="btn btn-warning">téléchargement</button></th>
+                                        <th><button type="button" class="btn btn-danger">supprimer</button></th>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <th>fichier 13</th>
+                                    <th>20ko</th>
+                                    <th>10/02/2015</th>
+                                    <div class="btn-group" role="group">
+                                        <th><button type="button" class="btn btn-primary">visualiser</button></th>
+                                        <th><button type="button" class="btn btn-info">renommer</button></th>
+                                        <th><button type="button" class="btn btn-warning">téléchargement</button></th>
+                                        <th><button type="button" class="btn btn-danger">supprimer</button></th>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <th>fichier 14</th>
+                                    <th>20ko</th>
+                                    <th>10/02/2015</th>
+                                    <div class="btn-group" role="group">
+                                        <th><button type="button" class="btn btn-primary">visualiser</button></th>
+                                        <th><button type="button" class="btn btn-info">renommer</button></th>
+                                        <th><button type="button" class="btn btn-warning">téléchargement</button></th>
+                                        <th><button type="button" class="btn btn-danger">supprimer</button></th>
+                                    </div>
+                                </tr>
                             </tbody>
                         </table>
                 </div>
