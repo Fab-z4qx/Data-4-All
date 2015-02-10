@@ -15,7 +15,6 @@
 
                 <div class="nav-collapse pull-right">
                     <ul class="nav">
-                        
                         <li><a class="page-scroll" href="#entreprise">Liste Entreprises</a></li>
                         <li><a class="page-scroll" href="#service">Services & Offres</a></li>
                         <li><a class="page-scroll" href="#team">Team</a></li>
