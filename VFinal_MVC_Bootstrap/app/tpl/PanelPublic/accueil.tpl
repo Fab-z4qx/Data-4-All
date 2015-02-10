@@ -19,18 +19,19 @@
                         <li><a class="page-scroll" href="#service">Services & Offres</a></li>
                         <li><a class="page-scroll" href="#team">Team</a></li>
                         <li><a class="page-scroll" href="#contact">Contact</a></li>
-                        <form class='textbox' action="index.php?page=connect&action=login" method="post">
-    		                 <input class="input" type="text" name="login" id="name" placeholder="Username" />
-    		                 <input class="input" type="password" name="password" id="password" placeholder="Passsword" />
-                             <input class="btn-primary" type="submit" value="OK"/>
-                        <li><a class="accordion-toggle" href="#item1" data-parent="#monaccordeon" data-toggle="collapse">S'inscrire</a> -
-                        <a class= href="#">mot de passe oublié</a></li>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"/> Remember me
-                            </label>
-                        </div>
-    		            </form>
+                        <li> <form class='textbox' action="index.php?page=connect&action=login" method="post">
+                                 <input class="input" type="text" name="login" id="name" placeholder="Username" />
+                                 <input class="input" type="password" name="password" id="password" placeholder="Passsword" />
+                                 <input class="btn-primary" type="submit" value="OK"/>
+                                 <div class="checkbox">
+                                     <label>
+                                        <input type="checkbox"/> Remember me
+                                        <a class="offset1" href="#">Mot de passe oublié </a>
+                                        <a class="pull-right accordion-toggle" href="#item1" data-parent="#monaccordeon" data-toggle="collapse">S'inscrire</a>
+                                    </label>
+                                 </div>
+                            </form>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -48,7 +49,7 @@
                 <div class="accordion-heading">  </div>
                     <div id="item1" class="collapse">
                         <div class="accordion-inner">
-                            <form method="post" action="traitement_form_creation_compte_entreprise.php">
+                            <form method="post" action="traitement_form_creation_compte_entreprise.php"></br>
                                 <label class="form_entreprise" for="nom_entreprise">Nom entreprise :</label>
                                 <input type="text" name="nom_entreprise" id="nom_entreprise"/><br><br>
 
@@ -163,7 +164,7 @@
             <hr class="featurette-divider">
 
           <div class="featurette">
-            <img class="featurette-image pull-right" src="web/img/">
+            <img class="featurette-image pull-right img-circle" src="web/img/icones/Argent_Jaune.png">
             <h2 class="featurette-heading">Une plue-value pour l'entreprise<span class="muted">Description</span></h2>
             <p class="lead">explication</p>
           </div>
@@ -171,7 +172,7 @@
           <hr class="featurette-divider">
 
           <div class="featurette">
-            <img class="featurette-image pull-left" src="web/img/">
+            <img class="featurette-image pull-left img-circle" src="web/img/icones/Stockage Supp_Jaune.png">
             <h2 class="featurette-heading">Une transparence pour vous<span class="muted">See for yourself.</span></h2>
             <p class="lead">explication</p>
           </div>
@@ -179,7 +180,7 @@
           <hr class="featurette-divider">
 
           <div class="featurette">
-            <img class="featurette-image pull-right" src="web/img/">
+            <img class="featurette-image pull-right img-circle" src="web/img/icones/Assistance_Jaune.png">
             <h2 class="featurette-heading ">Une bdd de folie<span class="muted">Checkmate.</span></h2>
             <p class="lead">explication</p>
           </div>
@@ -189,19 +190,19 @@
             <!-- SERVICES -->
             <div class="row">
                 <div class="span4">
-                    <img class="img-circle" src="web/img/team/alain.jpg">
+                    <img class="img-circle" src="web/img/icones/BI_Jaune.png">
                     <h2>BI</h2>
                     <p>Nous récoltons, organisons et hébergeons vos données et nous vous les rendons accessibles de sorte à vous offrir un recul sur votre activité et
                         à vous aider à prendre vos décisions. Nous offrons également un service d’assistance sur toutes question technique que vous pourriez avoir.</p>
                 </div>
                 <div class="span4">
-                    <img class="img-circle" src="web/img/team/alain.jpg">
+                    <img class="img-circle" src="web/img/icones/OpenData_Jaune.png">
                     <h2>Open Data</h2>
                     <p>Nous vous propulsons au-devant de la scène de l’Open Data ! Nous publions vos données sur notre plate-forme pour en permettre la réutilisation : vous
                         affichez ainsi votre transparence et avez une vision d’ensemble de voter activité mise en forme de manière lisible et intuitive.</p>
                 </div>
                 <div class="span4">
-                    <img class="img-circle" src="web/img/team/alain.jpg">
+                    <img class="img-circle" src="web/img/icones/Premium_Jaune.png">
                     <h2>Prenium</h2>
                     <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
                 </div>
@@ -257,6 +258,7 @@
         </div>
 </sectoin>
         <hr class="featurette-divider">
+
 
         <!-- TEAM -->
 <section id="team">
