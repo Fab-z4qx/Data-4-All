@@ -38,7 +38,8 @@ class Database {
          }
 		$this->createDB($dbname);
 		$this->_db = new PDO('mysql:host='.$host.';dbname='.$dbname.';port='.$port.'',''.$user.'', ''.$password.'', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8')); 
-
+		
+		$this->executeQueryFile(_PATH_."/app/BDDSite.sql");
       }
       catch(Exception $e)
       {   // En cas d'erreur, on affiche un message et on arrête tout
@@ -57,4 +58,18 @@ class Database {
 		$sql = "CREATE DATABASE IF NOT EXISTS ".$dbName;
 		$bdd->exec($sql);
    }
+   
+   private function executeQueryFile($filesql) {
+		$query = file_get_contents($filesql);
+		$array = explode(";\n", $query);
+		
+		$b = true;
+		for ($i=0; $i < count($array) ; $i++) {
+			$str = $array[$i];
+			if ($str != '') {
+				 $str .= ';';
+				 $this->_db->query($str);  
+			}  
+		}
+}
 }

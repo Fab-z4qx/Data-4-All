@@ -19,7 +19,7 @@
     <link href="web/css/homeEntreprise.css" rel="stylesheet" type="text/css">
     <link href="web/css/gestionFichiers.css" rel="stylesheet" type="text/css">
     <link href="web/css/import_fichiers.css" rel="stylesheet" type="text/css">
-    
+    <link href="web/css/visualisation.css" rel="stylesheet" type="text/css">
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="web/Bootstrap/font-awesome.css">
