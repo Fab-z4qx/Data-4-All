@@ -5,17 +5,17 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <div>
-                <li class="sidebar-brand">
-                    <a href="index.php?">
-                        <img src="web/img/logos_entreprises/efrei.png">
-                    </a>
-                </li>
+                    <li class="sidebar-brand">
+                        <a href="index.php?">
+                            <img src="web/img/logos_entreprises/efrei.png">
+                        </a>
+                    </li>
                 </div>
                 <li class="page_active">
                     <a href="entreprise.php?page=homeEntreprise"><i class="fa fa-home"></i> Accueil</a>
                 </li>
                 <li>
-                    <a href="entreprise.php?page=gestionFichiers"><i class="fa fa-file"></i> Gestion des fichiers</a>
+                    <a href="entreprise.php?page=gestionFichiers"><i class="fa fa-cog"></i> Gestion des fichiers</a>
                 </li>
                 <li>
                     <a href="entreprise.php?page=visualisation"><i class="fa fa-desktop"></i> Visualisation</a>
@@ -24,6 +24,11 @@
                     <a href="entreprise.php?page=compte"><i class="fa fa-user"></i> Compte</a>
                 </li>
                 <!--<li><a href="entreprise.php?page=services">Services</a></li>-->
+                <li>
+                    <div class="footer_slidebar">
+                        © 2015 Data4All - contact
+                    </div>
+                </li>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -47,8 +52,7 @@
         </div>
     </nav>
     <!-- STATISTIQUES -->
-    <div id="statistiques"></div>
-    <section id="statistiques">
+    <section id="entreprise_contenu">
         <div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">
             <div class="row">
                 <h1 class="titre_section">Statistiques</h1> <br>

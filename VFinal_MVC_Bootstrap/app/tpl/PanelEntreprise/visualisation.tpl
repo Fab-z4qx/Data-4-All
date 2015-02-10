@@ -42,35 +42,102 @@
         </div>
     </nav>
 
-<!-- GRAPH 1 - HORIZONTALE FULL -->
-    <div class="container-full">
+<section id="entreprise_contenu">
+<!-- GRAPH 1 - HORIZONTAL FULL -->
+    <div class="container">
         <div class="row">
-            <img class="img-circle" src="web/img/team/benjamin.jpg">
+            <div class="span11 well">
+                <!-- GRAPH HORIZONTAL A INSERER ICI -->
+                <!--<img src="web/img/exemple/graph1.png">-->
+                GRAPH 1 HORIZONTAL
+            </div>
         </div>
     </div>
-<!-- /GRAPH 1 - HORIZONTALE FULL -->
+<!-- /GRAPH 1 - HORIZONTAL FULL -->
 <br>
-<!-- GRAPH 2/3/3 - CARRE -->
-    <div class="container team">
+<!-- GRAPH 2/3/4 - CARRE -->
+    <div class="container">
         <div class="row">
             <div class="span3 well">
-                <img class="img-circle" src="web/img/team/benjamin.jpg">
+                <!-- GRAPH CARRE A INSERER ICI -->
+                <!--<img class="img-circle" src="web/img/team/benjamin.jpg">-->
+                GRAPH 2 CARRE
             </div>
             <div class="span3 well">
-                <img class="img-circle" src="web/img/team/thomas.jpg">
+                <!-- GRAPH CARRE A INSERER ICI -->
+                <!--<img class="img-circle" src="web/img/team/thomas.jpg">-->
+                GRAPH 3 CARRE
             </div>
             <div class="span3 well">
-                <img class="img-circle" src="web/img/team/etienne.jpg">
+                <!-- GRAPH CARRE A INSERER ICI -->
+                <!--<img class="img-circle" src="web/img/team/etienne.jpg">-->
+                GRAPH 4 CARRE
             </div>
         </div>
     </div>
 <!-- /GRAPH 2/3/4 - CARRE -->
-
-<!-- GRAPH 5 - HORIZONTALE FULL -->
-<div class="container-full">
-    full
-</div>
-<!-- /GRAPH 5 - HORIZONTALE FULL -->
+<br>
+<!-- GRAPH 5 - HORIZONTAL FULL -->
+<div class="container">
+        <div class="row">
+            <div class="span11 well">
+                <!-- GRAPH HORIZONTAL A INSERER ICI -->
+                <!--<img src="web/img/exemple/graph1.png">-->
+                GRAPH 5 HORIZONTAL
+            </div>
+        </div>
+    </div>
+<!-- /GRAPH 5 - HORIZONTAL FULL -->
+<br>
+<!-- GRAPH 6/7/8/9 - CARRE -->
+    <div class="container">
+        <div class="row">
+            <div class="span2 well">
+                <!-- GRAPH CARRE A INSERER ICI -->
+                <!--<img class="img-circle" src="web/img/team/benjamin.jpg">-->
+                GRAPH 6 CARRE
+            </div>
+            <div class="span2 well">
+                <!-- GRAPH CARRE A INSERER ICI -->
+                <!--<img class="img-circle" src="web/img/team/thomas.jpg">-->
+                GRAPH 7 CARRE
+            </div>
+            <div class="span2 well">
+                <!-- GRAPH CARRE A INSERER ICI -->
+                <!--<img class="img-circle" src="web/img/team/etienne.jpg">-->
+                GRAPH 8 CARRE
+            </div>
+            <div class="span2 well">
+                <!-- GRAPH CARRE A INSERER ICI -->
+                <!--<img class="img-circle" src="web/img/team/etienne.jpg">-->
+                GRAPH 9 CARRE
+            </div>
+            <div class="span2 well">
+                <!-- GRAPH CARRE A INSERER ICI -->
+                <!--<img class="img-circle" src="web/img/team/etienne.jpg">-->
+                GRAPH 10 CARRE
+            </div>
+        </div>
+    </div>
+<!-- /GRAPH 6/7/8/9 - CARRE -->
+<br>
+<!-- GRAPH 11/12 - VERTICAL -->
+    <div class="container">
+        <div class="row">
+            <div class="span5 well">
+                <!-- GRAPH VERTICAL A INSERER ICI -->
+                <!--<img class="img-circle" src="web/img/team/benjamin.jpg">-->
+                GRAPH 11 VERTICAL
+            </div>
+            <div class="span5 well">
+                <!-- GRAPH VERTICAL A INSERER ICI -->
+                <!--<img class="img-circle" src="web/img/team/thomas.jpg">-->
+                GRAPH 12 VERTICAL
+            </div>
+        </div>
+    </div>
+<!-- /GRAPH 11/12 - VERTICAL -->
+</section>
 
 
 
