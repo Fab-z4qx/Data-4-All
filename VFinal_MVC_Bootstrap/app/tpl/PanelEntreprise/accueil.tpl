@@ -259,7 +259,6 @@
 </sectoin>
         <hr class="featurette-divider">
 
-
         <!-- TEAM -->
 <section id="team">
         <div class="container team">
