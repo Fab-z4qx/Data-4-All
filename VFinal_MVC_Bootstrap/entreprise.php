@@ -1,5 +1,5 @@
 <?php
-ob_start();
+//ob_start();
 //On démarre la session
 include('app/config/config_init.php');
 //On inclut le logo du site et le menu
@@ -7,7 +7,7 @@ include('app/config/config_init.php');
 //include 'vues/menu.php';  
  
  //On inclut le pied de page
-include _TPL_.'head.tpl';
+include _TPL_COMMON_.'head.tpl';
 
 //On inclut le contrôleur s'il existe et s'il est spécifié
 //print_r($_GET);
@@ -58,6 +58,6 @@ else{
         $index->display();*/
 }
 //On inclut le pied de page
-include _TPL_.'footer.tpl';
+include _TPL_COMMON_.'footer.tpl';
 
 ?>

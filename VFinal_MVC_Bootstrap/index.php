@@ -9,9 +9,9 @@ include('app/config/config_init.php');
 //include _TPL_.'head.tpl';
 
 //On inclut le contrôleur s'il existe et s'il est spécifié
-if (!empty($_GET['page']) && is_file(_CTRL_.ucfirst($_GET['page']).'Controller.php'))
+if (!empty($_GET['page']) && is_file(_CTRL_PUBLIC_.ucfirst($_GET['page']).'Controller.php'))
 {
-        include (_CTRL_.ucfirst($_GET['page']).'Controller.php'); //ucfirst() met la 1er lettre en majuscule pour respecter la convention objet 
+        include (_CTRL_PUBLIC_.ucfirst($_GET['page']).'Controller.php'); //ucfirst() met la 1er lettre en majuscule pour respecter la convention objet 
         $className = ucfirst($_GET['page']).'Controller';
         $controleur = new $className; 
 
@@ -27,7 +27,7 @@ if (!empty($_GET['page']) && is_file(_CTRL_.ucfirst($_GET['page']).'Controller.p
 }// Redirection vers la partie privé entreprise
 else
 {
-        include _CTRL_.'IndexController.php';
+        include _CTRL_PUBLIC_.'IndexController.php';
         $index = new IndexController();
         $index->display();
 }
