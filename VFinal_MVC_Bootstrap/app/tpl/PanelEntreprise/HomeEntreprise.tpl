@@ -31,10 +31,10 @@
                 </li>
             </ul>
         </div>
+    </div>
         <!-- /#sidebar-wrapper -->
 <!-- /MENU --> 
-
-    
+    <!-- ONGLETS TOP HORIZONTAL -->
     <nav class="navbar navbar-default navbar-fixed-top" id="nav_entreprise">
         <div class="container-full" >
             <div class="titre_page">
@@ -51,6 +51,7 @@
             </div>
         </div>
     </nav>
+    <!-- /ONGLETS TOP HORIZONTAL -->
     <!-- STATISTIQUES -->
     <section id="entreprise_contenu">
         <div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">

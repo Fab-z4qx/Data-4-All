@@ -39,8 +39,10 @@ MENU
 /*******************************************
 SECTIONS
 *******************************************/
+
 #entreprise_contenu{
 	padding-top: 75px;
+	padding-left: 250px;
 }
 .stat .span4 {
   text-align: center;
