@@ -56,7 +56,7 @@
                         <h1 class="titre_section"><i class="fa fa-cloud-upload"></i>&nbsp;&nbsp;&nbsp;Upload</h1> <br>
                          <div class="contr"><h2>Vous pouvez selectionner une fichier à importer</h2></div>
                             <div class="upload_form_cont">
-                                <form id="upload_form" enctype="multipart/form-data" method="post" action="htdocs/panel_entreprise/upload_file.php">
+                                <form id="upload_form" enctype="multipart/form-data" method="post" action="entreprise.php?page=gestionfichiers&action=upload">
                                     <div>
                                         <div><label for="file">Selectionner un fichier à importer </label></div>
                                         <div><input type="file" name="file" id="file" onchange="fileSelected();" /></div>

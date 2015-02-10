@@ -80,7 +80,7 @@ function startUploading() {
    
     var oFile = document.getElementById('file').files[0];
     // filter for image files
-    alert(oFile.type);
+    //alert(oFile.type);
     var rFilter = /^(image\/bmp|image\/gif|image\/jpeg|image\/png|image\/tiff|video\/mp4|video\/avi|application\/vnd.ms-excel|application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet|application\/x-xls|application\/xls|application\/x-dos_ms_excel|application\/x-excel|application\/x-ms-excel|application\/x-msexcel|application\/msexcel|application\/vnd.ms-excel)$/i;
 
     if (! rFilter.test(oFile.type)) {
@@ -113,7 +113,7 @@ function startUploading() {
     oXHR.addEventListener('load', uploadFinish, false);
     oXHR.addEventListener('error', uploadError, false);
     oXHR.addEventListener('abort', uploadAbort, false);
-    oXHR.open('POST', 'panel_entreprise/upload_file.php');
+    oXHR.open('POST', 'entreprise.php?page=gestionfichiers&action=upload');
     oXHR.send(vFD);
 
     // set inner timer
