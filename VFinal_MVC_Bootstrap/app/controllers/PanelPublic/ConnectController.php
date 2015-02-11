@@ -6,10 +6,9 @@ if(!isset($_SESSION)){
 class ConnectController extends Controller 
 {
    private $user;
-
    public function __construct()
    {
-   	 $this->user = new Users;
+   	 $this->user = new User;
    } 
 
    public function display() 
@@ -32,7 +31,7 @@ class ConnectController extends Controller
 			if($this->user->isExist($login,sha1($password) )) 
 			{
 				$this->createSession();
-				header('Location:entreprise.php?page=HomeEntreprise.php');
+				header('Location:entreprise.php?page=HomeEntreprise');
 				exit();
 			}
 			else

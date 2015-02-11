@@ -5,7 +5,7 @@ define('ROLE_PARTICULIER',1); //public
 define('ROLE_ENTREPRISE',2);
 define('ROLE_ADMIN',3);
 
-class Users {
+class User {
 
 	private $pdo;
 	public function __construct()
@@ -143,6 +143,30 @@ class Users {
 		return NULL;
 	}
 
+	public function insert($password,$email_entreprise,$role, $id_of_inserted_entreprise)
+	{
+		/* Ajout dans la table user */
+         $id = $this->pdo->lastInsertId();
+         $sql_user = "INSERT INTO `user` 
+         (`id_user`, 
+         `password`, 
+         `login`, 
+         `role`,
+         `entreprise_id_entreprise`) 
+         VALUES 
+         (NULL, 
+         ".$this->pdo->quote(sha1($password)).",
+         ".$this->pdo->quote($email_entreprise).", 
+         ".$this->pdo->quote($role).", 
+         ".$id.");";
+         
+         if($this->pdo->exec($sql_user))
+         { //On à bien cree le compte du nouvelle utilisateur!
+            //header('Location:login.php?acc=ok');
+            echo "compte utilisateurs crée";
+            return $this->pdo->lastInsertId();
+         }
+	}
 }
 
 ?>

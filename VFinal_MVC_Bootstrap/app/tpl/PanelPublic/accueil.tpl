@@ -43,21 +43,18 @@
     {/if}
 <!-- Inscription -->
 <center>
-    <form>
+
         <div id="monaccordeon">
             <div class="accordion-group">
                 <div class="accordion-heading">  </div>
                     <div id="item1" class="collapse">
                         <div class="accordion-inner">
-                            <form method="post" action="traitement_form_creation_compte_entreprise.php"></br>
+                            <form method="post" action="index.php?page=formulaire&action=createaccount"></br>
                                 <label class="form_entreprise" for="nom_entreprise">Nom entreprise :</label>
                                 <input type="text" name="nom_entreprise" id="nom_entreprise"/><br><br>
 
                                 <label class="form_entreprise" for="email_entreprise">Email :</label>
-                                <input type="email_entreprise" name="email_entreprise" id="email_entreprise" require /><br><br>
-
-                                <label class="form_entreprise" for="numero_rue">Numéro de rue :</label>
-                                <input type="text" name="numero_rue" id="numero_rue" require/><br><br>
+                                <input type="email" name="email_entreprise" id="email_entreprise" require /><br><br>
 
                                 <label class="form_entreprise" for="adresse">Adresse :</label>
                                 <input type="text" name="adresse" id="adresse" require/><br><br>
@@ -65,11 +62,11 @@
                                 <label class="form_entreprise" for="adresse_complementaire">Adresse complémentaire :</label>
                                 <input type="text" name="adresse_complementaire" id="adresse_complementaire"/><br><br>
 
-                                <label class="form_entreprise" for="ville">Ville :</label>
-                                <input type="text" name="ville" id="ville"/><br><br>
-
                                 <label class="form_entreprise" for="code_postal">Code Postale :</label>
                                 <input type="text" name="code_postal" id="code_postal"/><br><br>
+
+                                <label class="form_entreprise" for="ville">Ville :</label>
+                                <input type="text" name="ville" id="ville"/><br><br>
 
                                 <label class="form_entreprise" for="pays">Pays :</label>
                                 <input type="text" name="pays" id="pays"/><br><br>
@@ -113,7 +110,6 @@
                 </div>
             </div>
         </div>
-    </form>
 </center>
     <!-- CONTAINER FULL -->
     <div class="container-full">
