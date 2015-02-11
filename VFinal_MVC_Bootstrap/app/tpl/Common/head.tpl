@@ -18,8 +18,8 @@
     <link href="web/css/accueil.css" rel="stylesheet" type="text/css">
     <link href="web/css/homeEntreprise.css" rel="stylesheet" type="text/css">
     <link href="web/css/gestionFichiers.css" rel="stylesheet" type="text/css">
+    <link href="web/css/import_fichiers.css" rel="stylesheet" type="text/css">
     <link href="web/css/visualisation.css" rel="stylesheet" type="text/css">
-    
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="web/Bootstrap/font-awesome.css">
@@ -34,6 +34,7 @@
     <script src="web/js/bootstrap.js"></script>
     <script src="web/js/bootstrap.min.js"></script>
     <script src="web/js/jquery.js"></script>
+    <script src="web/js/upload_file.js"></script>
 
 </head>
 

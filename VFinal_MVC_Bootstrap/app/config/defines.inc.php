@@ -16,6 +16,8 @@ define('_MODEL_', _PATH_ . '/app/models/');
 // Define du dossier des Controleurs
 define('_CTRL_', _PATH_ . '/app/controllers/');
 
+define('_FILES_', _PATH_ . '/app/files/');
+
 // Define du dossier des Controleurs Public
 define('_CTRL_PUBLIC_', _PATH_ . '/app/controllers/PanelPublic/');
 
