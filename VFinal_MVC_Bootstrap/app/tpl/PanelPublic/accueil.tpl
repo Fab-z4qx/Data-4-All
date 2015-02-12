@@ -13,7 +13,7 @@
                 <a class="brand " href="index.php">DATA 4 ALL</a>
                 <div class="nav-collapse pull-right">
                     <ul class="nav">
-                        <li><a class="page-scroll" href="#entreprise">Liste Entreprises</a></li>
+                        <li><a class="page-scroll" href="index.php?page=enterprises">Liste Entreprises</a></li>
                         <li><a class="page-scroll" href="#service">Services & Offres</a></li>
                         <li><a class="page-scroll" href="#team">Team</a></li>
                         <li><a class="page-scroll" href="#contact">Contact</a></li>
@@ -39,10 +39,9 @@
     {if ({$error} == 'login_invalide')}
         <div class="error_login">error de login </div>
     {/if}
-<!-- Inscription -->
 
-    <form>
-        <div id="monaccordeon">
+    <!-- Inscription -->
+    <div id="monaccordeon">
             <div class="accordion-group">
                 <div class="accordion-heading">
                     <div id="item1" class="collapse">
@@ -112,44 +111,52 @@
                                 </div>
                             </form>
                         </div>
-                        </div>
+                     </div>
                 </div>
             </div>
         </div>
-    </form>
 
     <!-- CONTAINER FULL -->
-    <div class="container-full">
+<div class="container-full">
         <!-- CAROUSEL -->
          <div id="myCarousel" class="carousel slide">
 	      <div class="carousel-inner">
 	        <div class="item active">
 	          <img  src="web/img/test.jpg">
 	          <div class="container">
-	            <div class="carousel-caption">
-	              <h1>description</h1>
-	              <p class="lead">description</p>
-	              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+	            <div class="carousel-caption offset4">
+	              <div id="search">
+                    <form>
+                        <input type="search" value="" placeholder="Recherchez votre entreprise" />
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                </div>
 	            </div>
 	          </div>
 	        </div>
 	        <div class="item">
                 <img  src="web/img/test.jpg">
 	          <div class="container">
-	            <div class="carousel-caption">
-	              <h1>description</h1>
-	              <p class="lead">description</p>
-	              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+	            <div class="carousel-caption offset4">
+	              <div id="search">
+                    <form>
+                        <input type="search" value="" placeholder="Recherchez votre entreprise" />
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                </div>
 	            </div>
 	          </div>
 	        </div>
 	        <div class="item">
 	            <img  src="web/img/test.jpg">
 	          <div class="container">
-	            <div class="carousel-caption">
-	              <h1>description</h1>
-	              <p class="lead">description</p>
-	              <a class="btn btn-large btn-primary" href="#">description</a>
+	            <div class="carousel-caption offset4">
+	              <div id="search">
+                    <form>
+                        <input type="search" value="" placeholder="Recherchez votre entreprise" />
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                </div>
 	            </div>
 	          </div>
 	        </div>
@@ -158,15 +165,8 @@
 	      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
 	    </div>
         <!-- /CAROUSEL -->
-      </div>
-<!-- SEARCH -->
-    <div id="search" class="well">
-        <form>
-            <input type="search" value="" placeholder="Recherchez votre entreprise" />
-            <button type="submit" class="btn btn-primary">Search</button>
-        </form>
-    </div>
-<!-- SEARCH -->
+
+
         <!-- SERVICES & OFFRES -->
 <section id="service">
         <div class="container marketing">
@@ -269,8 +269,8 @@
         <!-- /SERVICES & OFFRES -->
         </div>
 </section>
-        <hr class="featurette-divider">
 
+    <hr class="featurette-divider">
 
         <!-- TEAM -->
 <section id="team">
@@ -440,52 +440,51 @@
             </div>
         </div>
 </section>
-        <!-- /TEAM -->
+    <!-- /TEAM -->
 
-        <hr class="featurette-divider">
-
-        <!-- CONTACT -->
-        <section id="contact">
-<div class="container contact">
-    <form class=" span8">
-      <div class="row offset6">
-            <div class="span3">
-                <label>First Name</label>
-                <input type="text" class="span3" placeholder="Your First Name">
-                <label>Last Name</label>
-                <input type="text" class="span3" placeholder="Your Last Name">
-                <label>Email Address</label>
-                <input type="text" class="span3" placeholder="Your email address">
-                <label>Subject
-                <select id="subject" name="subject" class="span3">
-                    <option value="na" selected="">Choose One:</option>
-                    <option value="service">General Customer Service</option>
-                    <option value="suggestions">Suggestions</option>
-                    <option value="product">Product Support</option>
-                </select>
-                </label>
-            </div>
-            <div class="span6">
-                <label>Message</label>
-                <textarea name="message" id="message" class="input-xlarge span5" rows="10"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary pull-right">Send</button>
-        </div>
-    </form>
-</div>
-            </section>
-        <!-- /CONTACT -->
-
-    <!-- /CONTAINER FULL-->
-    <!-- FOOTER -->
     <hr class="featurette-divider">
 
-      <footer><center>
+    <!-- CONTACT -->
+<section id="contact">
+    <div class="container contact">
+        <form class=" span8">
+          <div class="row offset6">
+                <div class="span3">
+                    <label>First Name</label>
+                    <input type="text" class="span3" placeholder="Your First Name">
+                    <label>Last Name</label>
+                    <input type="text" class="span3" placeholder="Your Last Name">
+                    <label>Email Address</label>
+                    <input type="text" class="span3" placeholder="Your email address">
+                    <label>Subject
+                    <select id="subject" name="subject" class="span3">
+                        <option value="na" selected="">Choose One:</option>
+                        <option value="service">General Customer Service</option>
+                        <option value="suggestions">Suggestions</option>
+                        <option value="product">Product Support</option>
+                    </select>
+                    </label>
+                </div>
+                <div class="span3">
+                    <label>Message</label>
+                    <textarea name="message" id="message" class="input-xlarge span5" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary pull-right">Send</button>
+            </div>
+        </form>
+    </div>
+</section>
+    <!-- /CONTACT -->
+
+    <!-- /CONTAINER FULL-->
+     </div>
+    <!-- FOOTER -->
+      <footer>
+          <center>
         <a href="#">Back to top</a>
         <p>© 2015 Data4All <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-              </center>
+          </center>
       </footer>
-
-    </div>
+    <!-- /FOOTER -->
 </div>
 <!-- /ACCUEIL -->
