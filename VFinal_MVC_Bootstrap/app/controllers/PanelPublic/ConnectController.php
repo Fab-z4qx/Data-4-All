@@ -18,15 +18,14 @@ class ConnectController extends Controller
 
    public function logout()
    {
-   	 //echo 'logout';
    	 $_SESSION['Auth'] = array();
    	 $_SESSION['info'] = array();
-	 header('Location:index.php');
+	   header('Location:index.php');
    }
 
    public function login()
    {
-   		if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) ) 
+   	if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) ) 
 		{
 			extract($_POST);
 			if($this->user->isExist($login,sha1($password) )) 
@@ -36,13 +35,14 @@ class ConnectController extends Controller
 				exit();
 			}
 			else
-				//echo 'user not exist'; //// CHANGE FOR SMARTY DISPLAY 
-			    //$smarty->assign('error', 'login invalide');
-				header('Location:index.php');      
-    			exit();    
+      {
+        //$smarty->assign('error', 'login invalide');
+        header('Location:index.php');      
+        exit();    
+      }
 		}// rien d'envoyé sur la page 
 		header('Location:index.php');      
-    	exit(); 
+    exit(); 
     	   
 		//$this->smarty->assign('error', 'login_invalide');
 		//$this->smarty->display(_TPL_.'accueil.tpl');
@@ -50,17 +50,15 @@ class ConnectController extends Controller
 
    private function createSession()
    {
-
-   		//$data = $req->fetch();
    		extract($_POST);
-		$_SESSION['Auth'] = array( //On créer la session ! 
-		'login' => $login,
-		'password' => sha1($password),
-		'id_entreprise' => $this->user->getIdEntreprise($login,sha1($password)),
-		'role' => $this->user->getRoleByUserName($login,sha1($password)),
-		);
-		$entreprise = new Entreprise();
-		$_SESSION['info'] = $entreprise->getInfoEntreprise($_SESSION['Auth']['id_entreprise']);
+  		$_SESSION['Auth'] = array( //On créer la session ! 
+  		'login' => $login,
+  		'password' => sha1($password),
+  		'id_entreprise' => $this->user->getIdEntreprise($login,sha1($password)),
+  		'role' => $this->user->getRoleByUserName($login,sha1($password)),
+  		);
+  		$entreprise = new Entreprise();
+  		$_SESSION['info'] = $entreprise->getInfoEntreprise($_SESSION['Auth']['id_entreprise']);
    }
 }
 
