@@ -19,7 +19,7 @@ error_reporting(E_ERROR | E_PARSE);
 		$dbname = 'bdd_d4a';
 		$port = '3306'; // 3306 for windows && 8889 for mac 
 		$user = 'root';
-		$password = 'root';
+		$password = '';
 
 		//$con = mysql_connect("localhost","root","root");
 
@@ -37,7 +37,7 @@ error_reporting(E_ERROR | E_PARSE);
 	function connexion_serveur()
 	{
 		//echo "****  THIS FUNCION IS DEPRECIATED !!! ***** ";
-		$con = mysql_connect("localhost","root","root");
+		$con = mysql_connect("localhost","root","");
 
 		if (!$con) die('Could not connect: ' . mysql_error());
 			mysql_select_db("BDD_D4A", $con);

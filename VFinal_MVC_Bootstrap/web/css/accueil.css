@@ -23,7 +23,7 @@ BODY
 ACCUEIL
 *******************************************/
 #accueil{
-  padding-top: 75px; /* 60px to make the container go all the way to the bottom of the topbar */
+  padding-top: 65px; /* 75px to make the container go all the way to the bottom of the topbar */
 }
 /*******************************************
 MENU

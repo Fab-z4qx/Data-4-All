@@ -5,7 +5,7 @@ define('ROLE_PARTICULIER',1); //public
 define('ROLE_ENTREPRISE',2);
 define('ROLE_ADMIN',3);
 
-class Users {
+class User {
 
 	private $pdo;
 	public function __construct()
@@ -16,14 +16,17 @@ class Users {
 	public function isExist($login,$password)
 	{
 		$sql = "SELECT id_user FROM user WHERE login='$login' AND password ='$password'";
-		//echo $sql;
 		$req = $this->pdo->query($sql);
-		if($req->rowCount()> 0)
+		if(!empty($req))
 		{
-			return true;
+			if($req->rowCount()> 0)
+			{
+				return true;
+			}
+			else
+				return false;
 		}
-		else
-			return false;
+		return false;
 	}
 
 	public function getId($login,$password)
@@ -140,6 +143,30 @@ class Users {
 		return NULL;
 	}
 
+	public function insert($password,$email_entreprise,$role, $id_of_inserted_entreprise)
+	{
+		/* Ajout dans la table user */
+         $id = $this->pdo->lastInsertId();
+         $sql_user = "INSERT INTO `user` 
+         (`id_user`, 
+         `password`, 
+         `login`, 
+         `role`,
+         `entreprise_id_entreprise`) 
+         VALUES 
+         (NULL, 
+         ".$this->pdo->quote(sha1($password)).",
+         ".$this->pdo->quote($email_entreprise).", 
+         ".$this->pdo->quote($role).", 
+         ".$id.");";
+         
+         if($this->pdo->exec($sql_user))
+         { //On à bien cree le compte du nouvelle utilisateur!
+            //header('Location:login.php?acc=ok');
+            echo "compte utilisateurs crée";
+            return $this->pdo->lastInsertId();
+         }
+	}
 }
 
 ?>
