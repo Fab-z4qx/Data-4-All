@@ -18,7 +18,7 @@ class ConnectController extends Controller
 
    public function logout()
    {
-   	 echo 'logout';
+   	 //echo 'logout';
    	 $_SESSION['Auth'] = array();
    	 $_SESSION['info'] = array();
 	 header('Location:index.php');
@@ -36,7 +36,7 @@ class ConnectController extends Controller
 				exit();
 			}
 			else
-				echo 'user not exist'; //// CHANGE FOR SMARTY DISPLAY 
+				//echo 'user not exist'; //// CHANGE FOR SMARTY DISPLAY 
 			    //$smarty->assign('error', 'login invalide');
 				header('Location:index.php');      
     			exit();    
