@@ -23,9 +23,9 @@ if(!isset($_SESSION)){
         session_start();
 }
 
-if(!Auth::isLogged('entreprise'))
+if(!Auth::isLogged('entreprise') || empty($_SESSION))
 {
-    print_r($_SESSION['Auth']);
+   // print_r($_SESSION['Auth']);
     header('Location:index.php');      
     exit();    
 }
