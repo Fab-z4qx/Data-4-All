@@ -21,6 +21,7 @@ class ConnectController extends Controller
 
    public function logout()
    {
+   	 echo 'logout';
    	 $_SESSION['Auth'] = array();
    	 $_SESSION['info'] = array();
 	 header('Location:index.php');
@@ -31,7 +32,6 @@ class ConnectController extends Controller
    		if( isset($_POST) && !empty($_POST['login']) && !empty($_POST['password']) ) 
 		{
 			extract($_POST);
-
 			if($this->user->isExist($login,sha1($password) )) 
 			{
 				$this->createSession();
