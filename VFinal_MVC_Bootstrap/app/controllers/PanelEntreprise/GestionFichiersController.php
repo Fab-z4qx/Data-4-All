@@ -1,7 +1,4 @@
 <?php
-if(!isset($_SESSION)){
-        session_start();
-}
 
 class GestionFichiersController extends Controller 
 {
@@ -54,8 +51,6 @@ class GestionFichiersController extends Controller
 		echo ("<p>Your file: {$sFileName} has been successfully received.</p> 
 			  <p>Type: {$sFileType}</p><p>Size: {$sFileSize}</p>"); 
 	}
-
-
 
 }
 

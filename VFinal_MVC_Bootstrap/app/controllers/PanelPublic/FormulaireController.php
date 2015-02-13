@@ -20,10 +20,6 @@ class FormulaireController extends Controller
 
    public function createAccount()
    {
-      echo '<pre>';
-      echo print_r($_POST); 
-      echo '</pre>';
-
       if(!isset($_POST) && !empty($_POST))
       {  
          echo "erreur aucune information";
@@ -33,13 +29,11 @@ class FormulaireController extends Controller
       extract($_POST);
       $valid = $this->verifValue();
       if($valid==true)
-      //if($valid == true && captcha_valid())
       {   
          /* Ajout de l'adresse */
          $adresse = new Adresse();
          $id_of_inserted_adresse = $adresse->insert($_POST['adresse'], $adresse_complementaire, $ville, $code_postal, $pays);
 
-         echo 'test';
          /* Ajout de l'entreprise */
          $entreprise = new Entreprise();
          $id_of_inserted_entreprise = $entreprise->insert($nom_entreprise, $email_entreprise, $siret_entreprise, $tel_entreprise, $fax_entreprise, null, 
