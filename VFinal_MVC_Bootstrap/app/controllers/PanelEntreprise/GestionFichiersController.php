@@ -1,10 +1,14 @@
 <?php
-  
+if(!isset($_SESSION)){
+        session_start();
+}
+
 class GestionFichiersController extends Controller 
 {
    public function display() 
    {
    	 //$pdo = Database::getInstance();
+   	
    	 $this->smarty->display(_TPL_ENT_.'gestionFichiers.tpl');
    }
 
@@ -28,11 +32,13 @@ class GestionFichiersController extends Controller
 		$sFileType = $_FILES['file']['type'];
 		$sFileSize = $this->bytesToSize1024($_FILES['file']['size'], 1);
 
-		$target_dir = _FILES_;
-		echo $target_dir;
-		$target_dir = $target_dir . basename( $_FILES["file"]["name"]);
-		$uploadOk=1;
+		$target_dir = _FILES_.$_SESSION['info']['id_entreprise'].'/';
 
+		if(!file_exists($target_dir))
+			mkdir($target_dir, 0555);
+
+		$target_dir = $target_dir .basename($_FILES["file"]["name"]);
+		$uploadOk=1;
 		if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_dir)) {
 		    echo "The file ". basename( $_FILES["file"]["name"]). " has been uploaded.";
 		} else {
@@ -45,12 +51,8 @@ class GestionFichiersController extends Controller
 		}
 
 		if ($_FILES['file']['error'] > 0) $erreur = "Erreur lors du transfert";
-				/*
-				 echo <<<EOF
-				 <p>Your file: {$sFileName} has been successfully received.</p>
-				 <p>Type: {$sFileType}</p>
-				 <p>Size: {$sFileSize}</p>
-				EOF; */
+		echo ("<p>Your file: {$sFileName} has been successfully received.</p> 
+			  <p>Type: {$sFileType}</p><p>Size: {$sFileSize}</p>"); 
 	}
 
 
