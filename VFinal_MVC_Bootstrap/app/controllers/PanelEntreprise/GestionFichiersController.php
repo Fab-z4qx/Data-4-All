@@ -34,7 +34,7 @@ class GestionFichiersController extends Controller
 		if(!file_exists($target_dir))
 			mkdir($target_dir, 0555);
 
-		$target_dir = $target_dir .basename($_FILES["file"]["name"]);
+		$target_dir = $target_dir.basename($_FILES["file"]["name"]);
 		$uploadOk=1;
 		if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_dir)) {
 		    echo "The file ". basename( $_FILES["file"]["name"]). " has been uploaded.";
