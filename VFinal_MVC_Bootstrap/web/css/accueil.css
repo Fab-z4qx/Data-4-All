@@ -16,20 +16,10 @@ SETTINGS
 @-o-viewport        { width: device-width; }
 @viewport           { width: device-width; }
 /*******************************************
-BODY
-*******************************************/
-
-/*******************************************
-ACCUEIL
+marg-MENU
 *******************************************/
 #accueil{
-  padding-top: 65px; /* 75px to make the container go all the way to the bottom of the topbar */
-}
-/*******************************************
-MENU
-*******************************************/
-.input{
-  
+  padding-top: 65px; /* 75px to make the container go all the way to the bottom of the topbar*/
 }
 /*******************************************
 ERROR
@@ -48,7 +38,7 @@ CONTAINER
 CAROUSEL
 *******************************************/
 .carousel {
-  margin-bottom: 60px;
+  margin-bottom: ;
 }
 .carousel .container {
   position: relative;
@@ -134,11 +124,6 @@ MENU
 	margin-bottom: 10px;
 }
 /*******************************************
-BARRE DE RECHERCHE
-*******************************************/
-
-
-/*******************************************
 SERVICES & OFFRES
 *******************************************/
 .marketing .span4 {
@@ -146,6 +131,7 @@ SERVICES & OFFRES
 }
 .marketing h2 {
   font-weight: normal;
+  color: #9370D8;
 }
 .marketing .span4 p {
   margin-left: 10px;
@@ -184,10 +170,13 @@ CONTACT
   margin-right: 10px;
 }
 
-/*******************************************
-carou entreprise
-*******************************************/
+section#contact {
+	background-color: black;
+    color: #FFFFFF;
 
+	.section-heading {
+		color: white;
+	}
 
 /*******************************************
 MEDIA

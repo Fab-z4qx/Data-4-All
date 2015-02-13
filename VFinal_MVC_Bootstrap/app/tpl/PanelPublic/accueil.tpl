@@ -8,14 +8,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <!--<img src="web/img/logos/logo_site_sans_bord_teal.png" class="img-responsive img-centered" alt="">-->
+                <img src="web/img/logos/logo_site_sans_bord_teal.png" class="img-responsive img-centered" alt="">
                 <li class="divider pull-right"></li>
-
                 <a class="brand " href="index.php">DATA 4 ALL</a>
-
                 <div class="nav-collapse pull-right">
                     <ul class="nav">
-                        <li><a class="page-scroll" href="#entreprise">Liste Entreprises</a></li>
+                        <li><a class="page-scroll" href="index.php?page=enterprises">Liste Entreprises</a></li>
                         <li><a class="page-scroll" href="#service">Services & Offres</a></li>
                         <li><a class="page-scroll" href="#team">Team</a></li>
                         <li><a class="page-scroll" href="#contact">Contact</a></li>
@@ -41,112 +39,124 @@
     {if ({$error} == 'login_invalide')}
         <div class="error_login">error de login </div>
     {/if}
-<!-- Inscription -->
-<center>
-    <form>
-        <div id="monaccordeon">
+
+    <!-- Inscription -->
+    <div id="monaccordeon">
             <div class="accordion-group">
-                <div class="accordion-heading">  </div>
+                <div class="accordion-heading">
                     <div id="item1" class="collapse">
                         <div class="accordion-inner">
                             <form method="post" action="traitement_form_creation_compte_entreprise.php"></br>
-                                <label class="form_entreprise" for="nom_entreprise">Nom entreprise :</label>
-                                <input type="text" name="nom_entreprise" id="nom_entreprise"/><br><br>
+                               <div class="span5">
+                                    <label class="form_entreprise" for="nom_entreprise">Nom entreprise :</label>
+                                    <input type="text" name="nom_entreprise" id="nom_entreprise"/><br><br>
 
-                                <label class="form_entreprise" for="email_entreprise">Email :</label>
-                                <input type="email_entreprise" name="email_entreprise" id="email_entreprise" require /><br><br>
+                                    <label class="form_entreprise" for="email_entreprise">Email :</label>
+                                    <input type="email_entreprise" name="email_entreprise" id="email_entreprise" require /><br><br>
 
-                                <label class="form_entreprise" for="numero_rue">Numéro de rue :</label>
-                                <input type="text" name="numero_rue" id="numero_rue" require/><br><br>
+                                    <label class="form_entreprise" for="numero_rue">Numéro de rue :</label>
+                                    <input type="text" name="numero_rue" id="numero_rue" require/><br><br>
 
-                                <label class="form_entreprise" for="adresse">Adresse :</label>
-                                <input type="text" name="adresse" id="adresse" require/><br><br>
+                                    <label class="form_entreprise" for="adresse">Adresse :</label>
+                                    <input type="text" name="adresse" id="adresse" require/><br><br>
 
-                                <label class="form_entreprise" for="adresse_complementaire">Adresse complémentaire :</label>
-                                <input type="text" name="adresse_complementaire" id="adresse_complementaire"/><br><br>
+                                    <label class="form_entreprise" for="adresse_complementaire">Adresse complémentaire :</label>
+                                    <input type="text" name="adresse_complementaire" id="adresse_complementaire"/><br><br>
 
-                                <label class="form_entreprise" for="ville">Ville :</label>
-                                <input type="text" name="ville" id="ville"/><br><br>
+                                    <label class="form_entreprise" for="ville">Ville :</label>
+                                    <input type="text" name="ville" id="ville"/><br><br>
+                                </div>
+                                <div class="span5">
+                                    <label class="form_entreprise" for="code_postal">Code Postale :</label>
+                                    <input type="text" name="code_postal" id="code_postal"/><br><br>
 
-                                <label class="form_entreprise" for="code_postal">Code Postale :</label>
-                                <input type="text" name="code_postal" id="code_postal"/><br><br>
+                                    <label class="form_entreprise" for="pays">Pays :</label>
+                                    <input type="text" name="pays" id="pays"/><br><br>
 
-                                <label class="form_entreprise" for="pays">Pays :</label>
-                                <input type="text" name="pays" id="pays"/><br><br>
+                                    <label class="form_entreprise" for="tel_entreprise">Tel :</label>
+                                    <input type="text" name="tel_entreprise" id="tel_entreprise"/><br><br>
 
-                                <label class="form_entreprise" for="tel_entreprise">Tel :</label>
-                                <input type="text" name="tel_entreprise" id="tel_entreprise"/><br><br>
+                                    <label class="form_entreprise" for="fax_entrepirse">Fax :</label>
+                                    <input type="text" name="fax_entreprise" id="fax_entreprise"/><br><br>
 
-                                <label class="form_entreprise" for="fax_entrepirse">Fax :</label>
-                                <input type="text" name="fax_entreprise" id="fax_entreprise"/><br><br>
+                                    <label class="form_entreprise" for="num_tva_entreprise">Numéro de TVA Intracommunautaire :</label>
+                                    <input type="text" name="num_tva_entreprise" id="num_tva_entreprise"/><br><br>
 
-                                <label class="form_entreprise" for="num_tva_entreprise">Numéro de TVA Intracommunautaire :</label>
-                                <input type="text" name="num_tva_entreprise" id="num_tva_entreprise"/><br><br>
+                                    <label class="form_entreprise" for="siret_entreprise">Numéro Siret :</label>
+                                    <input type="text" name="siret_entreprise" id="siret_entreprise"/><br><br>
+                                </div>
+                                <div class="span5">
+                                    <label class="form_entreprise" for="forme_juridique_entreprise">Forme juridique RCS :</label>
+                                    <input type="text" name="forme_juridique_entreprise" id="forme_juridique_entreprise"/><br><br>
 
-                                <label class="form_entreprise" for="siret_entreprise">Numéro Siret :</label>
-                                <input type="text" name="siret_entreprise" id="siret_entreprise"/><br><br>
+                                    <label class="form_entreprise" for="date_immat_rcs_entreprise">Date immatriculation RCS :</label>
+                                    <input type="text" name="date_immat_rcs_entreprise" id="date_immat_rcs_entreprise"/><br><br>
 
-                                <label class="form_entreprise" for="forme_juridique_entreprise">Forme juridique RCS :</label>
-                                <input type="text" name="forme_juridique_entreprise" id="forme_juridique_entreprise"/><br><br>
+                                    <label class="form_entreprise" for="activite_entreprise">Description de l'activité de l'entreprise :</label>
+                                    <textarea style="resize:none;" rows="1" cols="18" name="activite_entreprise" id="activite_entreprise"></textarea><br><br>
 
-                                <label class="form_entreprise" for="date_immat_rcs_entreprise">Date immatriculation RCS :</label>
-                                <input type="text" name="date_immat_rcs_entreprise" id="date_immat_rcs_entreprise"/><br><br>
+                                    <label class="form_entreprise" for="password">Mot de passe :</label>
+                                    <input type="password" name="password" id="password" require /><br><br>
 
-                                <label class="form_entreprise" for="activite_entreprise">Description de l'activité de l'entreprise :</label>
-                                <textarea style="resize:none;" rows="1" cols="18" name="activite_entreprise" id="activite_entreprise"></textarea><br><br>
+                                    <label class="form_entreprise" for="password_confirmation">Confirmation du mot de passe :</label>
+                                    <input type="password" name="password_confirmation" id="password_confirmation" require /><br><br>
 
-                                <label class="form_entreprise" for="password">Mot de passe :</label>
-                                <input type="password" name="password" id="password" require /><br><br>
-
-                                <label class="form_entreprise" for="password_confirmation">Confirmation du mot de passe :</label>
-                                <input type="password" name="password_confirmation" id="password_confirmation" require /><br><br>
-
-                                <script type="text/javascript">
-                                    $(document).ready(function() {
-                                    $('#captcha2').html($('#captcha').clone(true,true));
-                                    });
-                                </script>
-                                <div id="captcha2"></div>
-                                <input class="bouton_submit" type="submit" value="Continuer">
+                                    <script type="text/javascript">
+                                        $(document).ready(function() {
+                                        $('#captcha2').html($('#captcha').clone(true,true));
+                                        });
+                                    </script>
+                                    <div id="captcha2"></div>
+                                    <input class="bouton_submit" type="submit" value="Continuer">
+                                </div>
                             </form>
                         </div>
+                     </div>
                 </div>
             </div>
         </div>
-    </form>
-</center>
+
     <!-- CONTAINER FULL -->
-    <div class="container-full">
+<div class="container-full">
         <!-- CAROUSEL -->
          <div id="myCarousel" class="carousel slide">
 	      <div class="carousel-inner">
 	        <div class="item active">
 	          <img  src="web/img/test.jpg">
 	          <div class="container">
-	            <div class="carousel-caption">
-	              <h1>description</h1>
-	              <p class="lead">description</p>
-	              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+	            <div class="carousel-caption offset4">
+	              <div id="search">
+                    <form>
+                        <input type="search" value="" placeholder="Recherchez votre entreprise" />
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                </div>
 	            </div>
 	          </div>
 	        </div>
 	        <div class="item">
                 <img  src="web/img/test.jpg">
 	          <div class="container">
-	            <div class="carousel-caption">
-	              <h1>description</h1>
-	              <p class="lead">description</p>
-	              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+	            <div class="carousel-caption offset4">
+	              <div id="search">
+                    <form>
+                        <input type="search" value="" placeholder="Recherchez votre entreprise" />
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                </div>
 	            </div>
 	          </div>
 	        </div>
 	        <div class="item">
 	            <img  src="web/img/test.jpg">
 	          <div class="container">
-	            <div class="carousel-caption">
-	              <h1>description</h1>
-	              <p class="lead">description</p>
-	              <a class="btn btn-large btn-primary" href="#">description</a>
+	            <div class="carousel-caption offset4">
+	              <div id="search">
+                    <form>
+                        <input type="search" value="" placeholder="Recherchez votre entreprise" />
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                </div>
 	            </div>
 	          </div>
 	        </div>
@@ -155,6 +165,8 @@
 	      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
 	    </div>
         <!-- /CAROUSEL -->
+
+
         <!-- SERVICES & OFFRES -->
 <section id="service">
         <div class="container marketing">
@@ -256,9 +268,9 @@
 
         <!-- /SERVICES & OFFRES -->
         </div>
-</sectoin>
-        <hr class="featurette-divider">
+</section>
 
+    <hr class="featurette-divider">
 
         <!-- TEAM -->
 <section id="team">
@@ -428,52 +440,51 @@
             </div>
         </div>
 </section>
-        <!-- /TEAM -->
+    <!-- /TEAM -->
 
-        <hr class="featurette-divider">
-
-        <!-- CONTACT -->
-        <section id="contact">
-<div class="container contact">
-    <form class=" span8">
-      <div class="row offset6">
-            <div class="span3">
-                <label>First Name</label>
-                <input type="text" class="span3" placeholder="Your First Name">
-                <label>Last Name</label>
-                <input type="text" class="span3" placeholder="Your Last Name">
-                <label>Email Address</label>
-                <input type="text" class="span3" placeholder="Your email address">
-                <label>Subject
-                <select id="subject" name="subject" class="span3">
-                    <option value="na" selected="">Choose One:</option>
-                    <option value="service">General Customer Service</option>
-                    <option value="suggestions">Suggestions</option>
-                    <option value="product">Product Support</option>
-                </select>
-                </label>
-            </div>
-            <div class="span6">
-                <label>Message</label>
-                <textarea name="message" id="message" class="input-xlarge span5" rows="10"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary pull-right">Send</button>
-        </div>
-    </form>
-</div>
-            </section>
-        <!-- /CONTACT -->
-
-    <!-- /CONTAINER FULL-->
-    <!-- FOOTER -->
     <hr class="featurette-divider">
 
-      <footer><center>
+    <!-- CONTACT -->
+<section id="contact">
+    <div class="container contact">
+        <form class=" span8">
+          <div class="row offset6">
+                <div class="span3">
+                    <label>First Name</label>
+                    <input type="text" class="span3" placeholder="Your First Name">
+                    <label>Last Name</label>
+                    <input type="text" class="span3" placeholder="Your Last Name">
+                    <label>Email Address</label>
+                    <input type="text" class="span3" placeholder="Your email address">
+                    <label>Subject
+                    <select id="subject" name="subject" class="span3">
+                        <option value="na" selected="">Choose One:</option>
+                        <option value="service">General Customer Service</option>
+                        <option value="suggestions">Suggestions</option>
+                        <option value="product">Product Support</option>
+                    </select>
+                    </label>
+                </div>
+                <div class="span3">
+                    <label>Message</label>
+                    <textarea name="message" id="message" class="input-xlarge span5" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary pull-right">Send</button>
+            </div>
+        </form>
+    </div>
+</section>
+    <!-- /CONTACT -->
+
+    <!-- /CONTAINER FULL-->
+     </div>
+    <!-- FOOTER -->
+      <footer>
+          <center>
         <a href="#">Back to top</a>
         <p>© 2015 Data4All <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-              </center>
+          </center>
       </footer>
-
-    </div>
+    <!-- /FOOTER -->
 </div>
 <!-- /ACCUEIL -->

@@ -25,7 +25,6 @@ class Database {
 
       try
       {
-	  
          if ($this->_OS === 'DAR') 
          {
             $port = '8889'; // 3306 for windows && 8889 for mac 
