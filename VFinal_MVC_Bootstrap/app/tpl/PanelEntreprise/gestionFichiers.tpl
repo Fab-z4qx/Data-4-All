@@ -39,7 +39,7 @@
             <div class="nav-collapse pull-right">
                 <ul class="nav">
                     <li><a href="#upload" data-toggle="tab"><i class="fa fa-upload"></i>&nbsp;&nbsp;Upload</a></li>
-                    <li><a href="#all_files" data-toggle="tab"><i class="fa fa-file"></i>&nbsp;&nbsp;Tout les fichiers</a></li>
+                    <li><a href="#all_files" data-toggle="tab"> <i class="fa fa-file"></i>&nbsp;&nbsp;Tout les fichiers</a></li>
                     <li><a href="index.php?page=connect&action=logout"><i class="fa fa-sign-out"></i>&nbsp;&nbsp;og out</a></li>
                 </ul>
             </div>
@@ -106,7 +106,7 @@
                             </div>
                         </form></center>
                         <br><br>
-                        <table class="table table-striped ">
+                        <table id="listFiles" class="table table-striped ">
                             <tbody>
                                 <tr>
                                     <td>fichier 1</td>
@@ -114,10 +114,10 @@
                                     <td>10/02/2015</td>
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success"><i class="fa fa-desktop"></i>&nbsp;&nbsp;visualiser</button>
-                                            <button type="button" class="btn btn-info"><i class="fa fa-trash"></i>&nbsp;&nbsp;renommer</button>
-                                            <button type="button" class="btn btn-warning"><i class="fa fa-download"></i>&nbsp;&nbsp;téléchargement</button>
-                                            <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;&nbsp;supprimer</button>
+                                            <button type="button" class="btn btn-success" title="visualiser"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-info" title="renommer"><i class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-warning" title="telecharger"><i class="fa fa-download"></i></button>
+                                            <button type="button" class="btn btn-danger" title="supprimer"><i class="fa fa-trash"></i></button>
                                         </div>
                                     </td>
                                 </tr>
@@ -127,10 +127,10 @@
                                     <td>10/02/2015</td>
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success"><i class="fa fa-desktop"></i>&nbsp;&nbsp;visualiser</button>
-                                            <button type="button" class="btn btn-info"><i class="fa fa-trash"></i>&nbsp;&nbsp;renommer</button>
-                                            <button type="button" class="btn btn-warning"><i class="fa fa-download"></i>&nbsp;&nbsp;téléchargement</button>
-                                            <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;&nbsp;supprimer</button>
+                                            <button type="button" class="btn btn-success" title="visualiser"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-info" title="renommer"><i class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-warning" title="telecharger"><i class="fa fa-download"></i></button>
+                                            <button type="button" class="btn btn-danger" title="supprimer"><i class="fa fa-trash"></i></button>
                                         </div>
                                     </td>
                                 </tr>
@@ -140,10 +140,10 @@
                                     <td>10/02/2015</td>
                                      <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success"><i class="fa fa-desktop"></i>&nbsp;&nbsp;visualiser</button>
-                                            <button type="button" class="btn btn-info"><i class="fa fa-trash"></i>&nbsp;&nbsp;renommer</button>
-                                            <button type="button" class="btn btn-warning"><i class="fa fa-download"></i>&nbsp;&nbsp;téléchargement</button>
-                                            <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;&nbsp;supprimer</button>
+                                            <button type="button" class="btn btn-success" title="visualiser"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-info" title="renommer"><i class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-warning" title="telecharger"><i class="fa fa-download"></i></button>
+                                            <button type="button" class="btn btn-danger" title="supprimer"><i class="fa fa-trash"></i></button>
                                         </div>
                                     </td>
                                 </tr>
@@ -153,10 +153,10 @@
                                     <td>10/02/2015</td>
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success"><i class="fa fa-desktop"></i>&nbsp;&nbsp;visualiser</button>
-                                            <button type="button" class="btn btn-info"><i class="fa fa-trash"></i>&nbsp;&nbsp;renommer</button>
-                                            <button type="button" class="btn btn-warning"><i class="fa fa-download"></i>&nbsp;&nbsp;téléchargement</button>
-                                            <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;&nbsp;supprimer</button>
+                                            <button type="button" class="btn btn-success" title="visualiser"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-info" title="renommer"><i class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-warning" title="telecharger"><i class="fa fa-download"></i></button>
+                                            <button type="button" class="btn btn-danger" title="supprimer"><i class="fa fa-trash"></i></button>
                                         </div>
                                     </td>
                                 </tr>
@@ -166,10 +166,10 @@
                                     <td>10/02/2015</td>
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success"><i class="fa fa-desktop"></i>&nbsp;&nbsp;visualiser</button>
-                                            <button type="button" class="btn btn-info"><i class="fa fa-trash"></i>&nbsp;&nbsp;renommer</button>
-                                            <button type="button" class="btn btn-warning"><i class="fa fa-download"></i>&nbsp;&nbsp;téléchargement</button>
-                                            <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;&nbsp;supprimer</button>
+                                            <button type="button" class="btn btn-success" title="visualiser"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-info" title="renommer"><i class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-warning" title="telecharger"><i class="fa fa-download"></i></button>
+                                            <button type="button" class="btn btn-danger" title="supprimer"><i class="fa fa-trash"></i></button>
                                         </div>
                                     </td>
                                 </tr>
@@ -179,10 +179,10 @@
                                     <td>10/02/2015</td>
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success"><i class="fa fa-desktop"></i>&nbsp;&nbsp;visualiser</button>
-                                            <button type="button" class="btn btn-info"><i class="fa fa-trash"></i>&nbsp;&nbsp;renommer</button>
-                                            <button type="button" class="btn btn-warning"><i class="fa fa-download"></i>&nbsp;&nbsp;téléchargement</button>
-                                            <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;&nbsp;supprimer</button>
+                                            <button type="button" class="btn btn-success" title="visualiser"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-info" title="renommer"><i class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-warning" title="telecharger"><i class="fa fa-download"></i></button>
+                                            <button type="button" class="btn btn-danger" title="supprimer"><i class="fa fa-trash"></i></button>
                                         </div>
                                     </td>
                                 </tr>
@@ -192,10 +192,10 @@
                                     <td>10/02/2015</td>
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success"><i class="fa fa-desktop"></i>&nbsp;&nbsp;visualiser</button>
-                                            <button type="button" class="btn btn-info"><i class="fa fa-trash"></i>&nbsp;&nbsp;renommer</button>
-                                            <button type="button" class="btn btn-warning"><i class="fa fa-download"></i>&nbsp;&nbsp;téléchargement</button>
-                                            <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;&nbsp;supprimer</button>
+                                            <button type="button" class="btn btn-success" title="visualiser"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-info" title="renommer"><i class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-warning" title="telecharger"><i class="fa fa-download"></i></button>
+                                            <button type="button" class="btn btn-danger" title="supprimer"><i class="fa fa-trash"></i></button>
                                         </div>
                                     </td>
                                 </tr>
@@ -205,10 +205,10 @@
                                     <td>10/02/2015</td>
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success"><i class="fa fa-desktop"></i>&nbsp;&nbsp;visualiser</button>
-                                            <button type="button" class="btn btn-info"><i class="fa fa-trash"></i>&nbsp;&nbsp;renommer</button>
-                                            <button type="button" class="btn btn-warning"><i class="fa fa-download"></i>&nbsp;&nbsp;téléchargement</button>
-                                            <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;&nbsp;supprimer</button>
+                                            <button type="button" class="btn btn-success" title="visualiser"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-info" title="renommer"><i class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-warning" title="telecharger"><i class="fa fa-download"></i></button>
+                                            <button type="button" class="btn btn-danger" title="supprimer"><i class="fa fa-trash"></i></button>
                                         </div>
                                     </td>
                                 </tr>
@@ -218,10 +218,10 @@
                                     <td>10/02/2015</td>
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success"><i class="fa fa-desktop"></i>&nbsp;&nbsp;visualiser</button>
-                                            <button type="button" class="btn btn-info"><i class="fa fa-trash"></i>&nbsp;&nbsp;renommer</button>
-                                            <button type="button" class="btn btn-warning"><i class="fa fa-download"></i>&nbsp;&nbsp;téléchargement</button>
-                                            <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;&nbsp;supprimer</button>
+                                            <button type="button" class="btn btn-success" title="visualiser"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-info" title="renommer"><i class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-warning" title="telecharger"><i class="fa fa-download"></i></button>
+                                            <button type="button" class="btn btn-danger" title="supprimer"><i class="fa fa-trash"></i></button>
                                         </div>
                                     </td>
                                 </tr>
@@ -231,10 +231,10 @@
                                     <td>10/02/2015</td>
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success"><i class="fa fa-desktop"></i>&nbsp;&nbsp;visualiser</button>
-                                            <button type="button" class="btn btn-info"><i class="fa fa-trash"></i>&nbsp;&nbsp;renommer</button>
-                                            <button type="button" class="btn btn-warning"><i class="fa fa-download"></i>&nbsp;&nbsp;téléchargement</button>
-                                            <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;&nbsp;supprimer</button>
+                                            <button type="button" class="btn btn-success" title="visualiser"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-info" title="renommer"><i class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-warning" title="telecharger"><i class="fa fa-download"></i></button>
+                                            <button type="button" class="btn btn-danger" title="supprimer"><i class="fa fa-trash"></i></button>
                                         </div>
                                     </td>
                                 </tr>
@@ -244,10 +244,10 @@
                                     <td>10/02/2015</td>
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success"><i class="fa fa-desktop"></i>&nbsp;&nbsp;visualiser</button>
-                                            <button type="button" class="btn btn-info"><i class="fa fa-trash"></i>&nbsp;&nbsp;renommer</button>
-                                            <button type="button" class="btn btn-warning"><i class="fa fa-download"></i>&nbsp;&nbsp;téléchargement</button>
-                                            <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;&nbsp;supprimer</button>
+                                            <button type="button" class="btn btn-success" title="visualiser"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-info" title="renommer"><i class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-warning" title="telecharger"><i class="fa fa-download"></i></button>
+                                            <button type="button" class="btn btn-danger" title="supprimer"><i class="fa fa-trash"></i></button>
                                         </div>
                                     </td>
                                 </tr>
@@ -257,10 +257,10 @@
                                     <td>10/02/2015</td>
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success"><i class="fa fa-desktop"></i>&nbsp;&nbsp;visualiser</button>
-                                            <button type="button" class="btn btn-info"><i class="fa fa-trash"></i>&nbsp;&nbsp;renommer</button>
-                                            <button type="button" class="btn btn-warning"><i class="fa fa-download"></i>&nbsp;&nbsp;téléchargement</button>
-                                            <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;&nbsp;supprimer</button>
+                                            <button type="button" class="btn btn-success" title="visualiser"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-info" title="renommer"><i class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-warning" title="telecharger"><i class="fa fa-download"></i></button>
+                                            <button type="button" class="btn btn-danger" title="supprimer"><i class="fa fa-trash"></i></button>
                                         </div>
                                     </td>
                                 </tr>
@@ -270,10 +270,10 @@
                                     <td>10/02/2015</td>
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success"><i class="fa fa-desktop"></i>&nbsp;&nbsp;visualiser</button>
-                                            <button type="button" class="btn btn-info"><i class="fa fa-trash"></i>&nbsp;&nbsp;renommer</button>
-                                            <button type="button" class="btn btn-warning"><i class="fa fa-download"></i>&nbsp;&nbsp;téléchargement</button>
-                                            <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;&nbsp;supprimer</button>
+                                            <button type="button" class="btn btn-success" title="visualiser"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-info" title="renommer"><i class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-warning" title="telecharger"><i class="fa fa-download"></i></button>
+                                            <button type="button" class="btn btn-danger" title="supprimer"><i class="fa fa-trash"></i></button>
                                         </div>
                                     </td>
                                 </tr>
@@ -283,10 +283,10 @@
                                     <td>10/02/2015</td>
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success"><i class="fa fa-desktop"></i>&nbsp;&nbsp;visualiser</button>
-                                            <button type="button" class="btn btn-info"><i class="fa fa-trash"></i>&nbsp;&nbsp;renommer</button>
-                                            <button type="button" class="btn btn-warning"><i class="fa fa-download"></i>&nbsp;&nbsp;téléchargement</button>
-                                            <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;&nbsp;supprimer</button>
+                                            <button type="button" class="btn btn-success" title="visualiser"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-info" title="renommer"><i class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-warning" title="telecharger"><i class="fa fa-download"></i></button>
+                                            <button type="button" class="btn btn-danger" title="supprimer"><i class="fa fa-trash"></i></button>
                                         </div>
                                     </td>
                                 </tr>
@@ -296,10 +296,10 @@
                                     <td>10/02/2015</td>
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success"><i class="fa fa-desktop"></i>&nbsp;&nbsp;visualiser</button>
-                                            <button type="button" class="btn btn-info"><i class="fa fa-trash"></i>&nbsp;&nbsp;renommer</button>
-                                            <button type="button" class="btn btn-warning"><i class="fa fa-download"></i>&nbsp;&nbsp;téléchargement</button>
-                                            <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;&nbsp;supprimer</button>
+                                            <button type="button" class="btn btn-success" title="visualiser"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-info" title="renommer"><i class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-warning" title="telecharger"><i class="fa fa-download"></i></button>
+                                            <button type="button" class="btn btn-danger" title="supprimer"><i class="fa fa-trash"></i></button>
                                         </div>
                                     </td>
                                 </tr>
@@ -309,18 +309,21 @@
                                     <td>10/02/2015</td>
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success"><i class="fa fa-desktop"></i>&nbsp;&nbsp;visualiser</button>
-                                            <button type="button" class="btn btn-info"><i class="fa fa-trash"></i>&nbsp;&nbsp;renommer</button>
-                                            <button type="button" class="btn btn-warning"><i class="fa fa-download"></i>&nbsp;&nbsp;téléchargement</button>
-                                            <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;&nbsp;supprimer</button>
+                                            <button type="button" class="btn btn-success" title="visualiser"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-info" title="renommer"><i class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-warning" title="telecharger"><i class="fa fa-download"></i></button>
+                                            <button type="button" class="btn btn-danger" title="supprimer"><i class="fa fa-trash"></i></button>
                                         </div>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-                        <center><div class="container">
-                            <ul class="pager">
+                        <center><div class="pagination">
+                            <ul>
                                 <li><a href="#">Précédent</a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
                                 <li><a href="#">Suivant</a></li>
                             </ul>
                         </div></center>
