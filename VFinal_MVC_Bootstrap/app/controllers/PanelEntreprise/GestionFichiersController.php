@@ -65,6 +65,9 @@ class GestionFichiersController extends Controller
 		$extension = count ($file_array) - 1;
 		// Je découpe en enlevant l'extension cad (la taille de "jpg" + la taille du point d'où le -1)
 		$New = substr ($file_name,0,strlen($file_name) -strlen ($file_array[$extension])-1);
+		
+		$New=str_replace(array(" ","(",")","-",".","/"),array("","","","","",""), $New);
+		
 		$this->insertFile($target_dir,$New);
 		echo ("<p>insert has been successfully received.</p>");
 	}
@@ -74,6 +77,7 @@ class GestionFichiersController extends Controller
 
  
 		// Chargement du fichier Excel
+		try{
 		$objPHPExcel = PHPExcel_IOFactory::load($file);
 			$sheet = $objPHPExcel->getSheet(0);
 	 
@@ -106,7 +110,9 @@ class GestionFichiersController extends Controller
 			}
 		$cptFirstDim++;
 		}
-		
+		}catch(Exception $e){
+			echo "Erreur lors du chargement du fichier";
+		}
 				
 		$DataFile = new DataFile();
 		$DataFile->createTable($array,$filename);

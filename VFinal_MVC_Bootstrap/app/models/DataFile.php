@@ -11,6 +11,7 @@ class DataFile {
 	public function createTable($array, $name){
 
 		$tableCreate = 'CREATE TABLE IF NOT EXISTS '. $name .' (';
+
 		for($i = 0; $i < count($array[1]); $i++){
 		if($i > 0){
 	 $tableCreate = $tableCreate.", ";
@@ -24,7 +25,8 @@ class DataFile {
 	
 		}
 		$tableCreate = $tableCreate.");";
-	
+
+		$this->pdo->exec($tableCreate);
 	}
 	public function insert($array, $name){
 		$columnName = implode(",", $array[0]);
