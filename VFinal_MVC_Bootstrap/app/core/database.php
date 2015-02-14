@@ -49,8 +49,8 @@ class Database {
 
    public function getDbConnection($dbName)
    {
-      $this->_OS = strtoupper(substr(php_uname("s"), 0, 3));
-      $host = '127.0.0.1';
+     $this->_OS = strtoupper(substr(php_uname("s"), 0, 3));
+     $host = '127.0.0.1';
      // $dbname = 'bdd_d4a';
       $user = 'root';
 
@@ -66,7 +66,7 @@ class Database {
             $port = '3306'; // 3306 for windows && 8889 for mac 
             $password = '';
          }
-      $pdo = new PDO('mysql:host='.$host.';dbname='.$dbname.';port='.$port.'',''.$user.'', ''.$password.'', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8'));
+      $pdo = new PDO('mysql:host='.$host.';dbname='.$dbName.';port='.$port.'',''.$user.'', ''.$password.'', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8'));
       }
       catch(Exception $e)
       {   // En cas d'erreur, on affiche un message et on arrête tout

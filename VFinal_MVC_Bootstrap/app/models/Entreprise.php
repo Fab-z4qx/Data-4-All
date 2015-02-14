@@ -12,7 +12,7 @@ class Entreprise {
 	private $pdo;
 	public function __construct()
 	{
-		$this->pdo = Database::getInstance();
+                $this->pdo = Database::getInstance();
 	}
 
 	public function getInfoEntreprise($idEntreprise)

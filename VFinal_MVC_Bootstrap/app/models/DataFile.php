@@ -6,6 +6,7 @@ class DataFile {
 	public function __construct()
 	{
 		$this->pdo = Database::getInstance();
+		$this->pdo = $this->pdo->getDbConnection('_'.$_SESSION['info']['id_entreprise']);
 	}
 
 	public function createTable($array, $name)
