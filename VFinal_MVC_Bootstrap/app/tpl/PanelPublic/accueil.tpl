@@ -128,7 +128,7 @@
 	              <div id="search">
                     <form>
                         <input type="search" value="" placeholder="Recherchez votre entreprise" />
-                        <button type="submit" class="btn btn-primary">Search</button>
+                        <button type="submit" style="margin-bottom: 20px" class="btn btn-primary">Search</button>
                     </form>
                 </div>
 	            </div>
@@ -166,38 +166,29 @@
 	    </div>
         <!-- /CAROUSEL -->
 
-
         <!-- SERVICES & OFFRES -->
 <section id="service">
         <div class="container marketing">
-
             <!-- marketing -->
-
-            <hr class="featurette-divider">
-
           <div class="featurette">
             <img class="featurette-image pull-right img-circle" src="web/img/icones/Argent_Jaune.png">
             <h2 class="featurette-heading">Une plue-value pour l'entreprise<span class="muted">Description</span></h2>
             <p class="lead">explication</p>
           </div>
-
           <hr class="featurette-divider">
-
           <div class="featurette">
             <img class="featurette-image pull-left img-circle" src="web/img/icones/Stockage Supp_Jaune.png">
             <h2 class="featurette-heading">Une transparence pour vous<span class="muted">See for yourself.</span></h2>
             <p class="lead">explication</p>
           </div>
-
           <hr class="featurette-divider">
-
           <div class="featurette">
             <img class="featurette-image pull-right img-circle" src="web/img/icones/Assistance_Jaune.png">
             <h2 class="featurette-heading ">Une bdd de folie<span class="muted">Checkmate.</span></h2>
             <p class="lead">explication</p>
           </div>
 
-             <hr class="featurette-divider">
+        <hr class="featurette-divider">
 
             <!-- SERVICES -->
             <div class="row">
@@ -224,7 +215,7 @@
         <hr class="featurette-divider">
 
             <!-- OFFRES -->
-            <table class="table table-striped ">
+            <table class="table table-striped table-bordered">
                 <tbody>
                     <tr>
                         <th></th>
@@ -265,7 +256,6 @@
                 </tbody>
             </table>
             <!-- /OFFRES -->
-
         <!-- /SERVICES & OFFRES -->
         </div>
 </section>
@@ -274,8 +264,8 @@
 
         <!-- TEAM -->
 <section id="team">
-        <div class="container team">
-            <div class="row">
+        <div class="container-full team">
+            <div class="row  offset2">
                 <div class="span3 well">
                     <img class="img-circle" src="web/img/team/benjamin.jpg">
                     <span class="muted"><h3>BOURGEAUX</h3><h3> Benjamin</h3></span>
@@ -356,7 +346,8 @@
                         <i class="fa fa-envelope"></i>
                     </div>
                 </div>
-
+                </div>
+<div class="row  offset2">
                 <div class="span3 well">
                     <img class="img-circle" src="web/img/team/fabien.jpg">
                     <span class="muted"><h3>GENET</h3><h3>Fabien</h3></span>
