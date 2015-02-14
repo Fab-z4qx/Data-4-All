@@ -84,7 +84,7 @@ class Database {
 
 		$sql = "CREATE DATABASE IF NOT EXISTS ".$dbName;
 		$bdd->exec($sql);
-      echo $sql;
+      //echo $sql;
       return $bdd;
    }
 
@@ -98,7 +98,6 @@ class Database {
       $sql = "CREATE DATABASE IF NOT EXISTS _".$dbName;
       $result = $bdd->exec($sql);
       return $bdd;
-   
    }
    
    private function executeQueryFile($filesql) 

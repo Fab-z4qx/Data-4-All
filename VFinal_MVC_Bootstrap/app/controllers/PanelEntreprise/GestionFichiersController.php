@@ -68,6 +68,19 @@ class GestionFichiersController extends Controller
 		
 		$this->insertFile($target_dir,$New);
 		echo ("<p>insert has been successfully received.</p>");
+
+		$this->updateInfoData();
+	}
+
+
+	private function updateInfoData()
+	{
+		// Ajoute +1 au nombre de fichier
+		// Reduit la taille dispo
+		//print_r($_FILES);
+		$dataFile = new DataFile();
+		$dataFile->updateNumberFile('+'); // ++1
+		$dataFile->updateSpace($_FILES['file']['size'], '+');
 	}
 	
 	private function insertFile($file,$filename)
@@ -95,9 +108,9 @@ class GestionFichiersController extends Controller
 					{			
 						$value = $cell->getFormattedValue();
 						
-								if(PHPExcel_Shared_Date::isDateTime($cell)) {
-									$value =  (new DateTime(date('d-M-Y',PHPExcel_Shared_Date::ExcelToPHP($cell->getValue()))))->format('d-m-Y');	
-								}
+						if(PHPExcel_Shared_Date::isDateTime($cell)) {
+							$value =  (new DateTime(date('d-M-Y',PHPExcel_Shared_Date::ExcelToPHP($cell->getValue()))))->format('d-m-Y');	
+						}
 						$cellde = gettype($value);
 						if(strcmp($cellde, "string") == 0 ){
 							$array[$cptFirstDim][$cptSecDim] = '"'.$value.'"';

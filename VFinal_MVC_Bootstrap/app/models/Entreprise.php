@@ -50,7 +50,7 @@ class Entreprise {
                 ".$this->pdo->quote($forme_juridique_entreprise).", 
                 ".$this->pdo->quote($activite_entreprise).", 
                 ".$this->pdo->quote(OFFRE_BI).",  
-                ".$this->pdo->quote(DEFAULT_SIZE_BI).", 
+                ".$this->pdo->quote($this->convertMoToOctets(DEFAULT_SIZE_BI)).", 
                 ".$this->pdo->quote(0).", 
                 ".$this->pdo->quote($id_of_inserted_adresse).");";
                         
@@ -61,15 +61,20 @@ class Entreprise {
                 }
 	}
 
-        public function createDbData($id_of_db)
-        {
-           $bddData = $this->pdo->createDbData($id_of_db);
-           if(!empty($bddData))
-           {
-              echo 'bdd Data cree';
-           }
-           //$this->createTableInfo($bddData);
-        }
+    private function convertMoToOctets($mo)
+    {
+        return $mo*1048576;
+    }
+
+    public function createDbData($id_of_db)
+    {
+       $bddData = $this->pdo->createDbData($id_of_db);
+       if(!empty($bddData))
+       {
+          echo 'bdd Data cree';
+       }
+       //$this->createTableInfo($bddData);
+    }
 
 }
 
