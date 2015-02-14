@@ -24,11 +24,11 @@ class Adresse {
          ".$this->pdo->quote($adresse_complementaire).",
          ".$this->pdo->quote($ville).");"; 
 
-		echo $adresse_sql_req;
+		   //echo $adresse_sql_req;
          /* Ajout dans la table Entreprise */
          if($this->pdo->exec($adresse_sql_req))
          {
-         	echo "INSERT";
+         	//echo "INSERT";
          	return $this->pdo->lastInsertId();
          }
 

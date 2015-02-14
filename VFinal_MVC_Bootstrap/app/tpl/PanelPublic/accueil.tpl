@@ -46,16 +46,13 @@
                 <div class="accordion-heading">
                     <div id="item1" class="collapse">
                         <div class="accordion-inner">
-                            <form method="post" action="traitement_form_creation_compte_entreprise.php"></br>
+                            <form method="post" action="index.php?page=formulaire&action=createAccount"></br>
                                <div class="span5">
                                     <label class="form_entreprise" for="nom_entreprise">Nom entreprise :</label>
                                     <input type="text" name="nom_entreprise" id="nom_entreprise"/><br><br>
 
                                     <label class="form_entreprise" for="email_entreprise">Email :</label>
                                     <input type="email_entreprise" name="email_entreprise" id="email_entreprise" require /><br><br>
-
-                                    <label class="form_entreprise" for="numero_rue">Numéro de rue :</label>
-                                    <input type="text" name="numero_rue" id="numero_rue" require/><br><br>
 
                                     <label class="form_entreprise" for="adresse">Adresse :</label>
                                     <input type="text" name="adresse" id="adresse" require/><br><br>
@@ -79,18 +76,12 @@
                                     <label class="form_entreprise" for="fax_entrepirse">Fax :</label>
                                     <input type="text" name="fax_entreprise" id="fax_entreprise"/><br><br>
 
-                                    <label class="form_entreprise" for="num_tva_entreprise">Numéro de TVA Intracommunautaire :</label>
-                                    <input type="text" name="num_tva_entreprise" id="num_tva_entreprise"/><br><br>
-
                                     <label class="form_entreprise" for="siret_entreprise">Numéro Siret :</label>
                                     <input type="text" name="siret_entreprise" id="siret_entreprise"/><br><br>
                                 </div>
                                 <div class="span5">
-                                    <label class="form_entreprise" for="forme_juridique_entreprise">Forme juridique RCS :</label>
+                                    <label class="form_entreprise" for="forme_juridique_entreprise">Forme juridique :</label>
                                     <input type="text" name="forme_juridique_entreprise" id="forme_juridique_entreprise"/><br><br>
-
-                                    <label class="form_entreprise" for="date_immat_rcs_entreprise">Date immatriculation RCS :</label>
-                                    <input type="text" name="date_immat_rcs_entreprise" id="date_immat_rcs_entreprise"/><br><br>
 
                                     <label class="form_entreprise" for="activite_entreprise">Description de l'activité de l'entreprise :</label>
                                     <textarea style="resize:none;" rows="1" cols="18" name="activite_entreprise" id="activite_entreprise"></textarea><br><br>

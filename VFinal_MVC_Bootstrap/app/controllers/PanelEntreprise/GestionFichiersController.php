@@ -60,19 +60,18 @@ class GestionFichiersController extends Controller
 		$file_array = explode ('.',$file_name);
 		// Je récupère l'indice dans le tableau de l'extension "jpg", soit le dernier élément
 		$extension = count ($file_array) - 1;
+
 		// Je découpe en enlevant l'extension cad (la taille de "jpg" + la taille du point d'où le -1)
 		$New = substr ($file_name,0,strlen($file_name) -strlen ($file_array[$extension])-1);
 		$this->insertFile($target_dir,$New);
 		echo ("<p>insert has been successfully received.</p>");
 	}
 	
-	private function insertFile($file,$filename){
-	
-
- 
+	private function insertFile($file,$filename)
+	{
 		// Chargement du fichier Excel
 		$objPHPExcel = PHPExcel_IOFactory::load($file);
-			$sheet = $objPHPExcel->getSheet(0);
+		$sheet = $objPHPExcel->getSheet(0);
 	 
 		/*------------------Loading File into an Array-------------------------------*/
 		$cptFirstDim = 0;
@@ -103,13 +102,10 @@ class GestionFichiersController extends Controller
 			}
 		$cptFirstDim++;
 		}
-		
-				
+	
 		$DataFile = new DataFile();
 		$DataFile->createTable($array,$filename);
-		$DataFile->insert($array,$filename);
-		
-		
+		$DataFile->insert($array,$filename);	
 	}
 
 }
