@@ -63,6 +63,9 @@ class GestionFichiersController extends Controller
 
 		// Je découpe en enlevant l'extension cad (la taille de "jpg" + la taille du point d'où le -1)
 		$New = substr ($file_name,0,strlen($file_name) -strlen ($file_array[$extension])-1);
+		
+		$New=str_replace(array(" ","(",")","-",".","/"),array("","","","","",""), $New);
+		
 		$this->insertFile($target_dir,$New);
 		echo ("<p>insert has been successfully received.</p>");
 	}
@@ -70,39 +73,49 @@ class GestionFichiersController extends Controller
 	private function insertFile($file,$filename)
 	{
 		// Chargement du fichier Excel
-		$objPHPExcel = PHPExcel_IOFactory::load($file);
-		$sheet = $objPHPExcel->getSheet(0);
-	 
-		/*------------------Loading File into an Array-------------------------------*/
-		$cptFirstDim = 0;
-		// On boucle sur les lignes
-		foreach($sheet->getRowIterator() as $row) {
-		//echo '<tr>';
-		 $cptSecDim = 0;
-		// On boucle sur les cellule de la ligne
-			foreach ($row->getCellIterator() as $cell) {
-				if($cptFirstDim ==0){
-					$array[$cptFirstDim][$cptSecDim] = changeToNoPoint(preg_replace('/\s+/', '_',trim(changeToNoAccent($cell->getValue()))));
-				}else{			
-					$value = $cell->getFormattedValue();
-					
-							if(PHPExcel_Shared_Date::isDateTime($cell)) {
-								$value =  (new DateTime(date('d-M-Y',PHPExcel_Shared_Date::ExcelToPHP($cell->getValue()))))->format('d-m-Y');	
-							}
-					$cellde = gettype($value);
-					if(strcmp($cellde, "string") == 0 ){
-						$array[$cptFirstDim][$cptSecDim] = '"'.$value.'"';
-					}elseif(strcmp($cellde, "NULL")  == 0){
-						$array[$cptFirstDim][$cptSecDim] = '"'.'"';
-					}else{
-						$array[$cptFirstDim][$cptSecDim] = $value;
+		try
+		{
+			$objPHPExcel = PHPExcel_IOFactory::load($file);
+			$sheet = $objPHPExcel->getSheet(0);
+		 
+			/*------------------Loading File into an Array-------------------------------*/
+			$cptFirstDim = 0;
+			// On boucle sur les lignes
+			foreach($sheet->getRowIterator() as $row) 
+			{
+			//echo '<tr>';
+			 $cptSecDim = 0;
+			// On boucle sur les cellule de la ligne
+				foreach ($row->getCellIterator() as $cell) 
+				{
+					if($cptFirstDim ==0){
+						$array[$cptFirstDim][$cptSecDim] = changeToNoPoint(preg_replace('/\s+/', '_',trim(changeToNoAccent($cell->getValue()))));
 					}
+					else
+					{			
+						$value = $cell->getFormattedValue();
+						
+								if(PHPExcel_Shared_Date::isDateTime($cell)) {
+									$value =  (new DateTime(date('d-M-Y',PHPExcel_Shared_Date::ExcelToPHP($cell->getValue()))))->format('d-m-Y');	
+								}
+						$cellde = gettype($value);
+						if(strcmp($cellde, "string") == 0 ){
+							$array[$cptFirstDim][$cptSecDim] = '"'.$value.'"';
+						}elseif(strcmp($cellde, "NULL")  == 0){
+							$array[$cptFirstDim][$cptSecDim] = '"'.'"';
+						}else{
+							$array[$cptFirstDim][$cptSecDim] = $value;
+						}
+					}
+					$cptSecDim++;
 				}
-				$cptSecDim++;
+			$cptFirstDim++;
 			}
-		$cptFirstDim++;
+
+		}catch(Exception $e){
+			echo "Erreur lors du chargement du fichier";
 		}
-	
+				
 		$DataFile = new DataFile();
 		$DataFile->createTable($array,$filename);
 		$DataFile->insert($array,$filename);	

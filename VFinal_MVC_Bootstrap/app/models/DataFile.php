@@ -12,6 +12,7 @@ class DataFile {
 	public function createTable($array, $name)
 	{
 		$tableCreate = 'CREATE TABLE IF NOT EXISTS '. $name .' (';
+
 		for($i = 0; $i < count($array[1]); $i++){
 		if($i > 0){
 		 	$tableCreate = $tableCreate.", ";
