@@ -11,9 +11,20 @@ class VisualisationController extends Controller
    public function display() 
    {
    	 //$pdo = Database::getInstance();
-   	 //echo 'fukckk';
+   	 $this->getFileName();
    	 $this->smarty->display(_TPL_ENT_.'visualisation.tpl');
    }
+
+   public function getFileName()
+	{
+		$dataFile = new DataFile();
+		$filesNames = $dataFile->getFileName();
+		/*echo '<pre>';
+		print_r($filesNames);
+		echo '</pre>'; */
+		$this->smarty->assign('filename', $filesNames);
+		$this->smarty->assign('dbname', 'Tables_in__'.$_SESSION['info']['id_entreprise']);
+	}
 
    public function start($id_file)
    {
