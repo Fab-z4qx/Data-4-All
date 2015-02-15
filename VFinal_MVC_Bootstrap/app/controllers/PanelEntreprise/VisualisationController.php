@@ -79,6 +79,8 @@ class VisualisationController extends Controller
 
 		@unlink("graph.jpg"); 
 		$graph->Stroke("graph.jpg");
+		//$this->getFileName();
+		$this->smarty->assign('nom_fichier',$id_file);
 		$this->smarty->assign('graph', '<img src="graph.jpg">' );
 		$this->smarty->display(_TPL_ENT_.'visualisation.tpl');
    }
