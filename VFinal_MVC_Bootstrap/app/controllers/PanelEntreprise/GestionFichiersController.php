@@ -8,7 +8,7 @@ class GestionFichiersController extends Controller
    public function display() 
    {
    	 //$pdo = Database::getInstance();
-   	
+   	 $this->getFileName();
    	 $this->smarty->display(_TPL_ENT_.'gestionFichiers.tpl');
    }
 
@@ -71,7 +71,16 @@ class GestionFichiersController extends Controller
 
 		$this->updateInfoData();
 	}
-
+	public function getFileName()
+	{
+		$dataFile = new DataFile();
+		$filesNames = $dataFile->getFileName();
+		/*echo '<pre>';
+		print_r($filesNames);
+		echo '</pre>'; */
+		$this->smarty->assign('filename', $filesNames);
+		$this->smarty->assign('dbname', 'Tables_in__'.$_SESSION['info']['id_entreprise']);
+	}
 
 	private function updateInfoData()
 	{
@@ -80,7 +89,7 @@ class GestionFichiersController extends Controller
 		//print_r($_FILES);
 		$dataFile = new DataFile();
 		$dataFile->updateNumberFile('+'); // ++1
-		$dataFile->updateSpace($_FILES['file']['size'], '+');
+		$dataFile->updateSpace($_FILES['file']['size'], '-');
 	}
 	
 	private function insertFile($file,$filename)

@@ -68,8 +68,6 @@ class DataFile {
 		$sql = 'UPDATE entreprise SET nombre_fichier ='.$nb_of_file.' WHERE id_entreprise ='.$_SESSION['info']['id_entreprise'];
 		echo $sql;
 		$this->pdo->exec($sql);
-
-
 	}
 
 	public function updateSpace($size, $mode)
@@ -95,6 +93,19 @@ class DataFile {
 
 		$sql = 'UPDATE entreprise SET espace_disponible ='.$space.' WHERE id_entreprise ='.$_SESSION['info']['id_entreprise'];
 		$this->pdo->exec($sql);
+	}
+
+	public function getFileName()
+	{
+		$sql = 'show tables FROM _'.$_SESSION['info']['id_entreprise'];
+		$req = $this->pdo->query($sql);
+		$data = $req->fetchAll(PDO::FETCH_ASSOC);
+		$nameFiles;
+		if(!empty($data)){
+			$nameFiles = $data;
+		}
+		//echo $sql;
+		return $nameFiles;
 	}
 	
 }
