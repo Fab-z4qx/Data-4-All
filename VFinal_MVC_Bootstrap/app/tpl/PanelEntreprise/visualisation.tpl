@@ -92,7 +92,7 @@
                                 {/section}
                             </tbody>
                         </table>
-            {/if}
+            
                         <!--
                         <center><div class="pagination">
                             <ul>
@@ -105,7 +105,7 @@
                         </div></center>
                     -->
                 </div>
-
+{/if}
 {if isset($graph) }
 <!-- GRAPH 1 - HORIZONTAL FULL -->
 
@@ -124,11 +124,11 @@
         <div class="row">
             <div class="span5 well">
                 <!-- GRAPH CARRE A INSERER ICI -->
-                    {$graph}
+                    {$graphPlot}
             </div>
             <div class="span3 well">
                 <!-- GRAPH CARRE A INSERER ICI -->
-                    {$graph}
+                    {$graphPlot}
             </div>
             <div class="span3 well">
                 <!-- GRAPH CARRE A INSERER ICI -->
