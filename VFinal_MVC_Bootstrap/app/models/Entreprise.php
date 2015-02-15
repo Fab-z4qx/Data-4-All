@@ -1,5 +1,8 @@
 <?php
 
+require_once(_MODEL_.'adresse.php');
+
+
 define('OFFRE_OPDATA','0');
 define('OFFRE_BI', '1');
 define('OFFRE_PREMUIM', '2');
@@ -25,6 +28,29 @@ class Entreprise {
 		}
 		return NULL;
 	} 
+
+    public function getAdresse($idAdresse)
+    {
+        $entreprise = new Adresse();
+        return $entreprise->getAdresseOfEntreprise($idAdresse);
+    }
+
+    public function getTypeOffreByName($type)
+    {
+        if($type == OFFRE_OPDATA)
+        {
+            return 'Open Data';
+        }
+        if($type == OFFRE_BI)
+        {
+            return 'Offre BI';
+        }
+        if($type == OFFRE_PREMUIM)
+        {
+            return 'Offre Premuim';
+        }
+
+    }
 
 	public function insert($nom_entreprise, $email_entreprise, $siret_entreprise, $tel_entreprise, $fax_entreprise, $forme_juridique_entreprise, $activite_entreprise, $id_of_inserted_adresse)
 	{
@@ -74,6 +100,17 @@ class Entreprise {
           echo 'bdd Data cree';
        }
        //$this->createTableInfo($bddData);
+    }
+
+    public function getListeEntreprise()
+    {
+        $sql = 'SELECT nom_entreprise FROM entreprise;';
+        $req = $this->pdo->query($sql);
+        $data = $req->fetchAll(PDO::FETCH_ASSOC);
+        if(!empty($data)){
+            return $data;
+        }
+        return NULL;
     }
 
     public function getOffre($idEntreprise)
