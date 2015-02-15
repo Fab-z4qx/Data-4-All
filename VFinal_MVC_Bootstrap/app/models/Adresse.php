@@ -33,6 +33,18 @@ class Adresse {
          }
 
 	}
+
+   public function getAdresseOfEntreprise($id_entreprise_adresse)
+   {
+      $sql = "SELECT * FROM adresse WHERE id_adresse='".$id_entreprise_adresse."';";
+      $req = $this->pdo->query($sql);
+      $data = $req->fetchAll(PDO::FETCH_ASSOC);
+      //print_r($data);
+      if(!empty($data)){
+         return $data[0];
+      }
+      return null;
+   }
 }
 
 ?>
