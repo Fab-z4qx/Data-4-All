@@ -40,7 +40,7 @@
                 <ul class="nav">
                     <li><a href="#upload" data-toggle="tab"><i class="fa fa-upload"></i>&nbsp;&nbsp;Upload</a></li>
                     <li><a href="#all_files" data-toggle="tab"> <i class="fa fa-file"></i>&nbsp;&nbsp;Tout les fichiers</a></li>
-                    <li><a href="index.php?page=connect&action=logout"><i class="fa fa-sign-out"></i>&nbsp;&nbsp;og out</a></li>
+                    <li><a href="index.php?page=connect&action=logout"><i class="fa fa-sign-out"></i>&nbsp;&nbsp;log out</a></li>
                 </ul>
             </div>
         </div>

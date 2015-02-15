@@ -52,9 +52,66 @@
         </div>
     </nav>
     <!-- /ONGLETS TOP HORIZONTAL -->
+
+
     <!-- STATISTIQUES -->
     <section id="entreprise_contenu">
         <div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">
+            <div class="row">
+            <div class="span4">
+                <div class="circle circle-border">
+                    <div class="circle-inner">
+                        <div class="score-text">
+                            <h1>
+                            {if isset($numberOfFile)}
+                                {$numberOfFile}
+                            {/if}
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <h2>Nombre de Fichiers</h2>
+            </div>
+
+            <div class="span4">
+                <div class="circle circle-border">
+                    <div class="circle-inner">
+                        <div class="score-text">
+                            <h1>
+                            {if isset($space)}
+                                {$space}
+                            {/if}
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <h2>Espace Disponible</h2>
+            </div>
+
+            <div class="span4">
+                <div class="circle circle-border">
+                    <div class="circle-inner">
+                        <div class="score-text">
+                        SOME TEXT
+                        </div>
+                    </div>
+                </div>
+                <h2>Dernier Graphique</h2>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- STATISTIQUES -->
+    <section id="entreprise_contenu">
+        <div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">
+            
+
             <div class="row">
                 <h1 class="titre_section"><i class="fa fa-dashboard"></i>&nbsp;&nbsp;&nbsp;Statistiques</h1> <br>
                 <div class="span4">
@@ -86,17 +143,21 @@
                 <div class="row">
                     <h1 class="titre_section"><i class="fa fa-file"></i>&nbsp;&nbsp;&nbsp;Nombre de Fichiers</h1> <br>
                     <div class="span4">
-                    <img class="img-circle" src="web/img/team/alain.jpg">
-                    <h2>Stat 1</h2>
-                </div>
-                <div class="span4">
-                    <img class="img-circle" src="web/img/team/alain.jpg">
-                    <h2>Stat 2</h2>
-                </div>
-                <div class="span4">
-                    <img class="img-circle" src="web/img/team/alain.jpg">
-                    <h2>Stat 3</h2>
-                </div>
+                        
+                        <h2>
+                            {if isset($numberOfFile)}
+                                {$numberOfFile}
+                            {/if}
+                        </h2>
+                    </div>
+                    <div class="span4">
+                        <img class="img-circle" src="web/img/team/alain.jpg">
+                        <h2>Stat 2</h2>
+                    </div>
+                    <div class="span4">
+                        <img class="img-circle" src="web/img/team/alain.jpg">
+                        <h2>Stat 3</h2>
+                    </div>
                 </div>
             </div>
     <!-- /NOMBRES FICHIERS -->
