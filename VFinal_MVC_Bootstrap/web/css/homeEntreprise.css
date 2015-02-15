@@ -60,20 +60,30 @@ SECTIONS
 /*******************************************
 NOMBRES FICHIERS
 *******************************************/
-
+#nb_file:hover{
+	color: #3498DB;
+}
+/*******************************************
+ESPACE DISPO
+*******************************************/
+#space:hover{
+	color: #F39C12;
+}
 /*******************************************
 DERNIER GRAPH
 *******************************************/
-
-
+#last_graph:hover{
+	color: #9B59B6;
+}
 /*******************************************
 CIRCLE
 *******************************************/
 .circle {
 margin-left: auto;
 margin-right: auto;
+margin-top: 20px;
 border-radius: 50%;
-width: 100%;
+width: 50%;
 position: relative;
 }
 
@@ -108,5 +118,5 @@ bottom: 0;
 right: 0;
 height: 1em;
 line-height: 1em;
-font-size: 1em;
+font-size: 2em;
 }

@@ -1,6 +1,6 @@
 <?php
 
-require_once(_MODEL_.'adresse.php');
+//require_once(_MODEL_.'adresse.php');
 
 
 define('OFFRE_OPDATA','0');
