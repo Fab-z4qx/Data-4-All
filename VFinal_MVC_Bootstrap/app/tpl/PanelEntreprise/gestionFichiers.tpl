@@ -115,16 +115,17 @@
                                     <td>10/02/2015</td>
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success" onclick="self.location.href='entreprise.php?page=visualisation&action=start&value={$filename[nom].$dbname}'"><i class="fa fa-desktop"></i>&nbsp;&nbsp;visualiser</button>
-                                            <button type="button" class="btn btn-info"><i class="fa fa-trash"></i>&nbsp;&nbsp;renommer</button>
-                                            <button type="button" class="btn btn-warning"><i class="fa fa-download"></i>&nbsp;&nbsp;téléchargement</button>
-                                            <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;&nbsp;supprimer</button>
+                                            <button type="button" class="btn btn-success" onclick="self.location.href='entreprise.php?page=visualisation&action=start&value={$filename[nom].$dbname}'" title="visualisation"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-info" title="renommer"><i class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-warning" title="télécharger"><i class="fa fa-download"></i></button>
+                                            <button type="button" class="btn btn-danger" title="supprimer"><i class="fa fa-trash"></i></button>
                                         </div>
                                     </td>
                                 </tr>
                                 {/section}
                             </tbody>
                         </table>
+                        <!--
                         <center><div class="pagination">
                             <ul>
                                 <li><a href="#">Précédent</a></li>
@@ -134,6 +135,7 @@
                                 <li><a href="#">Suivant</a></li>
                             </ul>
                         </div></center>
+                    -->
                 </div>
             </section>
         </div>
