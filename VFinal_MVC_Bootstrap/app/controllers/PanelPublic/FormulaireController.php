@@ -31,6 +31,7 @@ class FormulaireController extends Controller
       if($valid==true)
       {   
          /* Ajout de l'adresse */
+		 echo "Test";
          $adresse = new Adresse();
          $id_of_inserted_adresse = $adresse->insert($_POST['adresse'], $adresse_complementaire, $ville, $code_postal, $pays);
 
@@ -57,6 +58,8 @@ class FormulaireController extends Controller
             $result = $entreprise->createDbData($id_of_inserted_entreprise);
          }
       }
+      $this->smarty->assign('accont', 'compte crée');
+      header('Location:index.php');   
    }
 
    public function verifValue()

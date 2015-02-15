@@ -46,14 +46,20 @@
 
     <!-- ALL FILES -->
     <div class="row">
+
+          <!--<div class="col-xs-6 col-md-3"> ... </div>
           <div class="col-xs-6 col-md-3"> ... </div>
           <div class="col-xs-6 col-md-3"> ... </div>
-          <div class="col-xs-6 col-md-3"> ... </div>
-          <div class="col-xs-6 col-md-3"> ... </div>
+          <div class="col-xs-6 col-md-3"> ... </div> -->
     </div>
     <!-- /ALL FILES -->
 
 <section id="visualisation_contenu">
+		<select>
+		{foreach from=$filename item=foo}
+			<option value="volvo"><a href = "entreprise.php?page=visualisation&action=start&value={$foo.Tables_in__1}">{$foo.Tables_in__1}</a></option>
+		{/foreach}
+		</select>
 <!-- GRAPH 1 - HORIZONTAL FULL -->
     <div class="container">
         <div class="row">
@@ -66,23 +72,26 @@
     </div>
 <!-- /GRAPH 1 - HORIZONTAL FULL -->
 <br>
-<!-- GRAPH 2/3/4 - CARRE 
+<!-- GRAPH 2/3/4 - CARRE -->
     <div class="container">
         <div class="row">
-            <div class="span3 well">
+            <div class="span5 well">
                 <!-- GRAPH CARRE A INSERER ICI -->
-                <!--<img class="img-circle" src="web/img/team/benjamin.jpg">
-                GRAPH 2 CARRE
+                 {if isset($graph) }
+                    {$graph}
+                {/if}
             </div>
             <div class="span3 well">
                 <!-- GRAPH CARRE A INSERER ICI -->
-                <!--<img class="img-circle" src="web/img/team/thomas.jpg">
-                GRAPH 3 CARRE
+                 {if isset($graph) }
+                    {$graph}
+                {/if}
             </div>
             <div class="span3 well">
                 <!-- GRAPH CARRE A INSERER ICI -->
-                <!--<img class="img-circle" src="web/img/team/etienne.jpg">
-                GRAPH 4 CARRE
+                 {if isset($graph) }
+                    {$graph}
+                {/if}
             </div>
         </div>
     </div>
