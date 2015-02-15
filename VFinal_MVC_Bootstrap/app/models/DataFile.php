@@ -42,59 +42,6 @@ class DataFile {
 		
 	}
 
-	public function updateNumberFile($mode)
-	{
-		$sql = 'SELECT nombre_fichier FROM entreprise WHERE id_entreprise='.$_SESSION['info']['id_entreprise'];
-		$req = $this->pdo->query($sql);
-		$data = $req->fetch(PDO::FETCH_ASSOC);
-		print_r($data);
-		$nb_of_file = 0;
-		if(!empty($data)){
-			$nb_of_file = $data['nombre_fichier'];
-		}
-		print_r($mode);
-		if($mode == '+')
-		{
-			$nb_of_file++;
-		}
-		else if($mode == '-')
-		{
-			$nb_of_file--;
-		}
-		else
-			exit();
-		echo $nb_of_file;
-
-		$sql = 'UPDATE entreprise SET nombre_fichier ='.$nb_of_file.' WHERE id_entreprise ='.$_SESSION['info']['id_entreprise'];
-		echo $sql;
-		$this->pdo->exec($sql);
-	}
-
-	public function updateSpace($size, $mode)
-	{
-		$sql = 'SELECT espace_disponible FROM entreprise WHERE id_entreprise='.$_SESSION['info']['id_entreprise'];
-		$req = $this->pdo->query($sql);
-		$data = $req->fetch(PDO::FETCH_ASSOC);
-		$space = 0;
-		if(!empty($data)){
-			$space = $data['espace_disponible'];
-		}
-
-		if($mode == '+')
-		{
-			$space = $space + $size;
-		}
-		else if($mode == '-')
-		{
-			$space = $space - $size;
-		}
-		else
-			exit();
-
-		$sql = 'UPDATE entreprise SET espace_disponible ='.$space.' WHERE id_entreprise ='.$_SESSION['info']['id_entreprise'];
-		$this->pdo->exec($sql);
-	}
-
 	public function getFileName()
 	{
 		$sql = 'show tables FROM _'.$_SESSION['info']['id_entreprise'];

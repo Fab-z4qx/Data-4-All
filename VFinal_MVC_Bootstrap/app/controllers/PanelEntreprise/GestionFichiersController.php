@@ -71,6 +71,7 @@ class GestionFichiersController extends Controller
 
 		$this->updateInfoData();
 	}
+
 	public function getFileName()
 	{
 		$dataFile = new DataFile();
@@ -86,10 +87,9 @@ class GestionFichiersController extends Controller
 	{
 		// Ajoute +1 au nombre de fichier
 		// Reduit la taille dispo
-		//print_r($_FILES);
-		$dataFile = new DataFile();
-		$dataFile->updateNumberFile('+'); // ++1
-		$dataFile->updateSpace($_FILES['file']['size'], '-');
+		$entreprise = new Entreprise();
+		$entreprise->updateNumberFile('+'); // ++1
+		$entreprise->updateSpace($_FILES['file']['size'], '-');
 	}
 	
 	private function insertFile($file,$filename)
