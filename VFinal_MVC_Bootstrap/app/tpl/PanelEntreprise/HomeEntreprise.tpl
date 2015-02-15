@@ -43,57 +43,124 @@
             <div class="nav-collapse pull-right">
                 <ul class="nav">
                     <li><a class="page-scroll" href="#statistiques"><i class="fa fa-dashboard"></i>&nbsp;&nbsp;Statistiques</a></li>
+                    <!--
                     <li><a class="page-scroll" href="#nb_fichiers"><i class="fa fa-file"></i>&nbsp;&nbsp;Nombres de fichiers</a></li>
                     <li><a class="page-scroll" href="#espace_dispo"><i class="fa fa-database"></i>&nbsp;&nbsp;Espace disponible</a></li>
                     <li><a class="page-scroll" href="#dernier_graph"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;Dernier Graphique</a></li>
+                    -->
                     <li><a href="index.php?page=connect&action=logout"><i class="fa fa-sign-out"></i>&nbsp;&nbsp;log out</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- /ONGLETS TOP HORIZONTAL -->
+
+
     <!-- STATISTIQUES -->
     <section id="entreprise_contenu">
         <div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">
             <div class="row">
+            <div class="span4" id="nb_file">
+                <div class="circle circle-border">
+                    <div class="circle-inner">
+                        <div class="score-text">
+                            {if isset($numberOfFile)}
+                                {$numberOfFile}
+                            {/if}
+                        </div>
+                    </div>
+                </div>
+                <h2><i class="fa fa-file"></i>&nbsp;&nbsp;&nbsp;Nombre de Fichiers</h2>
+            </div>
+
+            <div class="span4" id="space">
+                <div class="circle circle-border">
+                    <div class="circle-inner">
+                        <div class="score-text">
+                            {if isset($space)}
+                                {$space}
+                            {/if}
+                        </div>
+                    </div>
+                </div>
+                <h2 ><i class="fa fa-database"></i>&nbsp;&nbsp;&nbsp;Espace Disponible</h2>
+            </div>
+
+            <div class="span4" id="last_graph">
+                <div class="circle circle-border">
+                    <div class="circle-inner">
+                        <div class="score-text">
+                        SOME TEXT
+                        </div>
+                    </div>
+                </div>
+                <h2><i class="fa fa-clock-o"></i>&nbsp;&nbsp;Dernier Graphique</h2>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+<!--
+
+    <!-- STATISTIQUES 
+    <section id="entreprise_contenu">
+        <div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">
+            
+
+            <div class="row">
                 <h1 class="titre_section"><i class="fa fa-dashboard"></i>&nbsp;&nbsp;&nbsp;Statistiques</h1> <br>
                 <div class="span4">
                     <img class="img-circle" src="web/img/team/alain.jpg">
-                    <h2>Stat 1</h2>
+                    <h2>
+                        {if isset($numberOfFile)}
+                            {$numberOfFile}
+                        {/if}
+                    </h2>
                 </div>
                 <div class="span4">
                     <img class="img-circle" src="web/img/team/alain.jpg">
-                    <h2>Stat 2</h2>
+                    <h2>
+                        {if isset($space)}
+                            {$space}
+                        {/if}
+                    </h2>
                 </div>
                 <div class="span4">
                     <img class="img-circle" src="web/img/team/alain.jpg">
                     <h2>Stat 3</h2>
                 </div>
             </div>
-    <!-- /STATISTIQUES -->
+    
             <hr class="featurette-divider">
-    <!-- NOMBRES FICHIERS -->
+    <!-- NOMBRES FICHIERS 
     <div id="nb_fichiers"></div>
             <div class="container stat">
                 <div class="row">
                     <h1 class="titre_section"><i class="fa fa-file"></i>&nbsp;&nbsp;&nbsp;Nombre de Fichiers</h1> <br>
                     <div class="span4">
-                    <img class="img-circle" src="web/img/team/alain.jpg">
-                    <h2>Stat 1</h2>
-                </div>
-                <div class="span4">
-                    <img class="img-circle" src="web/img/team/alain.jpg">
-                    <h2>Stat 2</h2>
-                </div>
-                <div class="span4">
-                    <img class="img-circle" src="web/img/team/alain.jpg">
-                    <h2>Stat 3</h2>
-                </div>
+                        
+                        <h2>
+                            {if isset($numberOfFile)}
+                                {$numberOfFile}
+                            {/if}
+                        </h2>
+                    </div>
+                    <div class="span4">
+                        <img class="img-circle" src="web/img/team/alain.jpg">
+                        <h2>Stat 2</h2>
+                    </div>
+                    <div class="span4">
+                        <img class="img-circle" src="web/img/team/alain.jpg">
+                        <h2>Stat 3</h2>
+                    </div>
                 </div>
             </div>
-    <!-- /NOMBRES FICHIERS -->
+    
             <hr class="featurette-divider">
-    <!-- ESPACE DISPONIBLE -->
+    <!-- ESPACE DISPONIBLE 
              <div id="espace_dispo"></div>
             <div class="container stat">
                 <div class="row">
@@ -112,9 +179,9 @@
                 </div>
                 </div>
             </div>
-    <!-- /ESPACE DISPONIBLE -->
+    
             <hr class="featurette-divider">
-    <!-- DERNIER GRAPH -->
+    <!-- DERNIER GRAPH 
             <div id="dernier_graph"></div>
             <div class="container stat">
                 <div class="row">
@@ -135,5 +202,5 @@
             </div>
         </div>
     </section>
-    <!-- /DERNIER GRAPH -->
+    -->
 </div>

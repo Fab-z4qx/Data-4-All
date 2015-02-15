@@ -57,6 +57,8 @@ class FormulaireController extends Controller
             $result = $entreprise->createDbData($id_of_inserted_entreprise);
          }
       }
+      $this->smarty->assign('accont', 'compte crée');
+      header('Location:index.php');   
    }
 
    public function verifValue()

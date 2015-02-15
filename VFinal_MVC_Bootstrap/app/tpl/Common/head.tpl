@@ -31,10 +31,10 @@
     <![endif]-->
 
     <!-- LES JS -->
-    <script src="web/js/bootstrap.js"></script>
-    <script src="web/js/bootstrap.min.js"></script>
-    <script src="web/js/jquery.js"></script>
-    <script src="web/js/upload_file.js"></script>
+    <script type='text/javascript' src="web/js/bootstrap.js"></script>
+    <script type='text/javascript' src="web/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="web/js/jquery.js"></script>
+    <script type='text/javascript' src="web/js/upload_file.js"></script>
 
 </head>
 
