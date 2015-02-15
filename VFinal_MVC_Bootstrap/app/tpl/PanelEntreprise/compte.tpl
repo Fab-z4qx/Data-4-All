@@ -27,8 +27,7 @@
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
-<!-- /MENU -->
-
+    <!-- /MENU -->
     <nav class="navbar navbar-default navbar-fixed-top" id="nav_entreprise">
         <div class="container-full" >
             <div class="titre_page">

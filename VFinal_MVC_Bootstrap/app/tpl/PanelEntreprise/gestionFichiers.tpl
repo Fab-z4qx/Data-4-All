@@ -108,8 +108,9 @@
                         <br><br>
                         <table id="listFiles" class="table table-striped ">
                             <tbody>
+                                {section name=nom loop=$filename}
                                 <tr>
-                                    <td>fichier 1</td>
+                                    <td>{$filename[nom].$dbname}</td>
                                     <td>20ko</td>
                                     <td>10/02/2015</td>
                                     <td>
@@ -316,6 +317,7 @@
                                         </div>
                                     </td>
                                 </tr>
+                                {/section}
                             </tbody>
                         </table>
                         <center><div class="pagination">

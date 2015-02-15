@@ -20,10 +20,6 @@ class FormulaireController extends Controller
 
    public function createAccount()
    {
-      echo '<pre>';
-      echo print_r($_POST); 
-      echo '</pre>';
-
       if(!isset($_POST) && !empty($_POST))
       {  
          echo "erreur aucune information";
@@ -33,25 +29,35 @@ class FormulaireController extends Controller
       extract($_POST);
       $valid = $this->verifValue();
       if($valid==true)
-      //if($valid == true && captcha_valid())
       {   
          /* Ajout de l'adresse */
          $adresse = new Adresse();
          $id_of_inserted_adresse = $adresse->insert($_POST['adresse'], $adresse_complementaire, $ville, $code_postal, $pays);
 
-         echo 'test';
          /* Ajout de l'entreprise */
-         $entreprise = new Entreprise();
-         $id_of_inserted_entreprise = $entreprise->insert($nom_entreprise, $email_entreprise, $siret_entreprise, $tel_entreprise, $fax_entreprise, null, 
-                                     $date_immat_rcs_entreprise, $forme_juridique_entreprise, $num_tva_entreprise, $activite_entreprise, $id_of_inserted_adresse);
+         if(empty($id_of_inserted_adresse)){
+            echo "adresse error"; 
+            exit();
+         }
 
+         $entreprise = new Entreprise();
+         $id_of_inserted_entreprise = $entreprise->insert($nom_entreprise, $email_entreprise, $siret_entreprise, $tel_entreprise, $fax_entreprise,
+                                      $forme_juridique_entreprise,$activite_entreprise, $id_of_inserted_adresse);
+
+         if(empty($id_of_inserted_entreprise)){
+            echo "entreprise error"; 
+            exit();
+         }
          /* Ajout de l'utilisateur */
          $user = new User();
          $id_of_inserted_user = $user->insert($password,$email_entreprise,ROLE_ENTREPRISE, $id_of_inserted_entreprise);
-      }
-		//TO DO
-   }
 
+         if(!empty($id_of_inserted_user))
+         {
+            $result = $entreprise->createDbData($id_of_inserted_entreprise);
+         }
+      }
+   }
 
    public function verifValue()
    {

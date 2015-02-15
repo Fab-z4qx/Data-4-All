@@ -2,16 +2,13 @@
 require_once _CORE_.'PHPExcel_1.8.0_doc/Classes/PHPExcel/IOFactory.php';
 require_once _CORE_.'Lib.php';
 require_once(_MODEL_.'DataFile.php');
-if(!isset($_SESSION)){
-        session_start();
-}
 
 class GestionFichiersController extends Controller 
 {
    public function display() 
    {
    	 //$pdo = Database::getInstance();
-   	
+   	 $this->getFileName();
    	 $this->smarty->display(_TPL_ENT_.'gestionFichiers.tpl');
    }
 
@@ -40,7 +37,7 @@ class GestionFichiersController extends Controller
 		if(!file_exists($target_dir))
 			mkdir($target_dir, 0555);
 
-		$target_dir = $target_dir .basename($_FILES["file"]["name"]);
+		$target_dir = $target_dir.basename($_FILES["file"]["name"]);
 		$uploadOk=1;
 		if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_dir)) {
 		    echo "The file ". basename( $_FILES["file"]["name"]). " has been uploaded.";
@@ -63,6 +60,7 @@ class GestionFichiersController extends Controller
 		$file_array = explode ('.',$file_name);
 		// Je récupère l'indice dans le tableau de l'extension "jpg", soit le dernier élément
 		$extension = count ($file_array) - 1;
+
 		// Je découpe en enlevant l'extension cad (la taille de "jpg" + la taille du point d'où le -1)
 		$New = substr ($file_name,0,strlen($file_name) -strlen ($file_array[$extension])-1);
 		
@@ -70,58 +68,80 @@ class GestionFichiersController extends Controller
 		
 		$this->insertFile($target_dir,$New);
 		echo ("<p>insert has been successfully received.</p>");
+
+		$this->updateInfoData();
+	}
+	public function getFileName()
+	{
+		$dataFile = new DataFile();
+		$filesNames = $dataFile->getFileName();
+		/*echo '<pre>';
+		print_r($filesNames);
+		echo '</pre>'; */
+		$this->smarty->assign('filename', $filesNames);
+		$this->smarty->assign('dbname', 'Tables_in__'.$_SESSION['info']['id_entreprise']);
+	}
+
+	private function updateInfoData()
+	{
+		// Ajoute +1 au nombre de fichier
+		// Reduit la taille dispo
+		//print_r($_FILES);
+		$dataFile = new DataFile();
+		$dataFile->updateNumberFile('+'); // ++1
+		$dataFile->updateSpace($_FILES['file']['size'], '-');
 	}
 	
-	private function insertFile($file,$filename){
-	
-
- 
+	private function insertFile($file,$filename)
+	{
 		// Chargement du fichier Excel
-		try{
-		$objPHPExcel = PHPExcel_IOFactory::load($file);
+		try
+		{
+			$objPHPExcel = PHPExcel_IOFactory::load($file);
 			$sheet = $objPHPExcel->getSheet(0);
-	 
-		/*------------------Loading File into an Array-------------------------------*/
-		$cptFirstDim = 0;
-		// On boucle sur les lignes
-		foreach($sheet->getRowIterator() as $row) {
-		//echo '<tr>';
-		 $cptSecDim = 0;
-		// On boucle sur les cellule de la ligne
-			foreach ($row->getCellIterator() as $cell) {
-				if($cptFirstDim ==0){
-					$array[$cptFirstDim][$cptSecDim] = changeToNoPoint(preg_replace('/\s+/', '_',trim(changeToNoAccent($cell->getValue()))));
-				}else{			
-					$value = $cell->getFormattedValue();
-					
-							if(PHPExcel_Shared_Date::isDateTime($cell)) {
-								$value =  (new DateTime(date('d-M-Y',PHPExcel_Shared_Date::ExcelToPHP($cell->getValue()))))->format('d-m-Y');	
-							}
-					$cellde = gettype($value);
-					if(strcmp($cellde, "string") == 0 ){
-						$array[$cptFirstDim][$cptSecDim] = '"'.$value.'"';
-					}elseif(strcmp($cellde, "NULL")  == 0){
-						$array[$cptFirstDim][$cptSecDim] = '"'.'"';
-					}else{
-						$array[$cptFirstDim][$cptSecDim] = $value;
+		 
+			/*------------------Loading File into an Array-------------------------------*/
+			$cptFirstDim = 0;
+			// On boucle sur les lignes
+			foreach($sheet->getRowIterator() as $row) 
+			{
+			//echo '<tr>';
+			 $cptSecDim = 0;
+			// On boucle sur les cellule de la ligne
+				foreach ($row->getCellIterator() as $cell) 
+				{
+					if($cptFirstDim ==0){
+						$array[$cptFirstDim][$cptSecDim] = changeToNoPoint(preg_replace('/\s+/', '_',trim(changeToNoAccent($cell->getValue()))));
 					}
+					else
+					{			
+						$value = $cell->getFormattedValue();
+						
+						if(PHPExcel_Shared_Date::isDateTime($cell)) {
+							$value =  (new DateTime(date('d-M-Y',PHPExcel_Shared_Date::ExcelToPHP($cell->getValue()))))->format('d-m-Y');	
+						}
+						$cellde = gettype($value);
+						if(strcmp($cellde, "string") == 0 ){
+							$array[$cptFirstDim][$cptSecDim] = '"'.$value.'"';
+						}elseif(strcmp($cellde, "NULL")  == 0){
+							$array[$cptFirstDim][$cptSecDim] = '"'.'"';
+						}else{
+							$array[$cptFirstDim][$cptSecDim] = $value;
+						}
+					}
+					$cptSecDim++;
 				}
-				$cptSecDim++;
+			$cptFirstDim++;
 			}
-		$cptFirstDim++;
-		}
+
 		}catch(Exception $e){
 			echo "Erreur lors du chargement du fichier";
 		}
 				
 		$DataFile = new DataFile();
 		$DataFile->createTable($array,$filename);
-		$DataFile->insert($array,$filename);
-		
-		
+		$DataFile->insert($array,$filename);	
 	}
-
-
 
 }
 
