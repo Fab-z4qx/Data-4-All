@@ -76,6 +76,39 @@ class Entreprise {
        //$this->createTableInfo($bddData);
     }
 
+    public function getOffre($idEntreprise)
+    {
+        $sql = 'SELECT type_offre FROM entreprise WHERE id_entreprise ='.$idEntreprise.';';
+        $req = $this->pdo->query($sql);
+        $data = $req->fetch(PDO::FETCH_ASSOC);
+        if(!empty($data)){
+            return $data['type_offre'];
+        }
+        return NULL;
+    }
+
+    public function getSpace($idEntreprise)
+    {
+        $sql = 'SELECT espace_disponible FROM entreprise WHERE id_entreprise ='.$idEntreprise.';';
+        $req = $this->pdo->query($sql);
+        $data = $req->fetch(PDO::FETCH_ASSOC);
+        if(!empty($data)){
+            return $data['espace_disponible'];
+        }
+        return NULL; 
+    }
+
+    public function getNumberFile($idEntreprise)
+    {
+       $sql = 'SELECT nombre_fichier FROM entreprise WHERE id_entreprise ='.$idEntreprise.';';
+        $req = $this->pdo->query($sql);
+        $data = $req->fetch(PDO::FETCH_ASSOC);
+        if(!empty($data)){
+            return $data['nombre_fichier'];
+        }
+        return NULL; 
+    }
+
 }
 
 ?>
