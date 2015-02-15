@@ -1,12 +1,13 @@
 <?php
   
-require_once(_MODEL_.'entreprise.php');
+//require_once(_MODEL_.'entreprise.php');
 
 class CompteController extends Controller 
 {
    public function display() 
    {
    	 //$pdo = Database::getInstance();
+   	/*
    	 $entreprise = new Entreprise();
    	 $this->smarty->assign('nom_entreprise', $_SESSION['info']['nom_entreprise']);
    	 $this->smarty->assign('email_entreprise', $_SESSION['info']['email_entreprise']);
@@ -19,6 +20,7 @@ class CompteController extends Controller
    	 echo '<pre>';
    	 	print_r($entreprise->getAdresse($_SESSION['info']['id_adresse']));
    	 echo '</pre>';
+   	 */
    	 $this->smarty->display(_TPL_ENT_.'compte.tpl');
    }
 }
