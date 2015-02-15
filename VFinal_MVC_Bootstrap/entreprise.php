@@ -43,7 +43,13 @@ if (!empty($_GET['page']) && is_file(_CTRL_ENT_.ucfirst($_GET['page']).'Controll
         	$controleur->display();
         }
         else{
-        	$controleur->$actionName();
+            if(isset($_GET['value']))
+            {
+                $value = $_GET['value'];
+                $controleur->$actionName($value);
+            }
+            else   
+        	   $controleur->$actionName();
         }
 }// Redirection vers la partie privé entreprise
 else{

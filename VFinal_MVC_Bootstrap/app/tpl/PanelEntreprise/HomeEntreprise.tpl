@@ -59,11 +59,19 @@
                 <h1 class="titre_section"><i class="fa fa-dashboard"></i>&nbsp;&nbsp;&nbsp;Statistiques</h1> <br>
                 <div class="span4">
                     <img class="img-circle" src="web/img/team/alain.jpg">
-                    <h2>Stat 1</h2>
+                    <h2>
+                        {if isset($numberOfFile)}
+                            {$numberOfFile}
+                        {/if}
+                    </h2>
                 </div>
                 <div class="span4">
                     <img class="img-circle" src="web/img/team/alain.jpg">
-                    <h2>Stat 2</h2>
+                    <h2>
+                        {if isset($space)}
+                            {$space}
+                        {/if}
+                    </h2>
                 </div>
                 <div class="span4">
                     <img class="img-circle" src="web/img/team/alain.jpg">
