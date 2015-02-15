@@ -39,6 +39,7 @@ function fileSelected() {
 
     // filter for image files
     var rFilter = /^(image\/bmp|image\/gif|image\/jpeg|image\/png|image\/tiff|video\/mp4|video\/avi|application\/vnd.ms-excel|application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet|application\/x-xls|application\/xls|application\/x-dos_ms_excel|application\/x-excel|application\/x-ms-excel|application\/x-msexcel|application\/msexcel|application\/vnd.ms-excel)$/i;
+    //alert(oFile.type);
     if (! rFilter.test(oFile.type)) {
         document.getElementById('error').style.display = 'block';
         return;
@@ -79,14 +80,17 @@ function fileSelected() {
 function startUploading() {
    
     var oFile = document.getElementById('file').files[0];
+    console.log(oFile);
+    console.log(oFile.type);
+    //alert(oFile.type);
     // filter for image files
     //alert(oFile.type);
     var rFilter = /^(image\/bmp|image\/gif|image\/jpeg|image\/png|image\/tiff|video\/mp4|video\/avi|application\/vnd.ms-excel|application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet|application\/x-xls|application\/xls|application\/x-dos_ms_excel|application\/x-excel|application\/x-ms-excel|application\/x-msexcel|application\/msexcel|application\/vnd.ms-excel)$/i;
 
-    if (! rFilter.test(oFile.type)) {
+    if (!rFilter.test(oFile.type)) {
         document.getElementById('error').style.display = 'block';
         alert('file incorrect');
-        return;
+        //return;
     }
 
      // cleanup all temp states

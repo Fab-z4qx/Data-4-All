@@ -63,8 +63,9 @@
         </select>
 
         --> 
-        {if !isset($graph)}
+        
         <div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">
+        {if !isset($graph)}
                         <h1 class="titre_section"><i class="fa fa-file"></i>&nbsp;&nbsp;&nbsp;Tous les fichiers</h1> <br>
                         <center><form class="navbar-form navbar-right inline-form">
                             <div class="form-group">
@@ -104,7 +105,7 @@
                             </ul>
                         </div></center>
                     -->
-                </div>
+   
 
 {if isset($graph) }
 <!-- GRAPH 1 - HORIZONTAL FULL -->
@@ -199,5 +200,6 @@
         </div>
     </div>
 <!-- /GRAPH 11/12 - VERTICAL -->
+ </div>
 </section>
 </div>

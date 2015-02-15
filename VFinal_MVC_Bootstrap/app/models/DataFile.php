@@ -47,7 +47,7 @@ class DataFile {
 		$sql = 'show tables FROM _'.$_SESSION['info']['id_entreprise'];
 		$req = $this->pdo->query($sql);
 		$data = $req->fetchAll(PDO::FETCH_ASSOC);
-		$nameFile="";
+		$nameFiles="";
 		if(!empty($data)){
 			$nameFiles = $data;
 		}
