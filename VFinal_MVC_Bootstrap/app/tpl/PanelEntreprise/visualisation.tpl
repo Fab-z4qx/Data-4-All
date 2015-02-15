@@ -29,6 +29,7 @@
         <!-- /#sidebar-wrapper -->
 <!-- /MENU -->
 
+    <!-- ONGLETS -->
 	<nav class="navbar navbar-default navbar-fixed-top" id="nav_entreprise">
         <div class="container-full" >
             <div class="titre_page">
@@ -41,6 +42,16 @@
             </div>
         </div>
     </nav>
+    <!-- /ONGLETS -->
+
+    <!-- ALL FILES -->
+    <div class="row">
+          <div class="col-xs-6 col-md-3"> ... </div>
+          <div class="col-xs-6 col-md-3"> ... </div>
+          <div class="col-xs-6 col-md-3"> ... </div>
+          <div class="col-xs-6 col-md-3"> ... </div>
+    </div>
+    <!-- /ALL FILES -->
 
 <section id="visualisation_contenu">
 <!-- GRAPH 1 - HORIZONTAL FULL -->
