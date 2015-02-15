@@ -31,6 +31,7 @@ class FormulaireController extends Controller
       if($valid==true)
       {   
          /* Ajout de l'adresse */
+		 echo "Test";
          $adresse = new Adresse();
          $id_of_inserted_adresse = $adresse->insert($_POST['adresse'], $adresse_complementaire, $ville, $code_postal, $pays);
 
