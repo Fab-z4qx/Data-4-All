@@ -11,13 +11,18 @@ class VisualisationController extends Controller
    public function display() 
    {
    	 //$pdo = Database::getInstance();
-   	echo 'fukckk';
+   	 //echo 'fukckk';
    	 $this->smarty->display(_TPL_ENT_.'visualisation.tpl');
    }
 
-   public function start()
+   public function start($id_file)
    {
-   		$id_file = 'exportbb';
+   	// ************************************************* //
+   	// ********* IL FAUT CONTROLER LA VALEUR *********** //
+   	// ************************************************* //
+
+   		//echo $id_file;
+   		//$id_file = 'exportbb';
    		$dataFile = new DataFile();
 
 		$data = $dataFile->getTypeAlea($id_file);

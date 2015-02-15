@@ -115,7 +115,7 @@
                                     <td>10/02/2015</td>
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success"><i class="fa fa-desktop"></i>&nbsp;&nbsp;visualiser</button>
+                                            <button type="button" class="btn btn-success" onclick="self.location.href='entreprise.php?page=visualisation&action=start&value={$filename[nom].$dbname}'"><i class="fa fa-desktop"></i>&nbsp;&nbsp;visualiser</button>
                                             <button type="button" class="btn btn-info"><i class="fa fa-trash"></i>&nbsp;&nbsp;renommer</button>
                                             <button type="button" class="btn btn-warning"><i class="fa fa-download"></i>&nbsp;&nbsp;téléchargement</button>
                                             <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;&nbsp;supprimer</button>
