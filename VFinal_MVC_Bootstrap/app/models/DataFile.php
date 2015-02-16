@@ -58,7 +58,6 @@ class DataFile
 
 	public function getTypeAlea($id_file)
 	{
-		
 		$sql = 'SELECT type_alea, count(*) as nb from '.$id_file.' group by type_alea';
 		$req = $this->pdoData->query($sql);
 		$data = $req->fetchAll(PDO::FETCH_ASSOC);
@@ -74,6 +73,13 @@ class DataFile
 		echo '<pre>';
 		print_r($data);
 		echo '</pre>';
+		return $data;
+	}
+	
+	public function getPiece($id_file){
+		$sql = 'SELECT Piece,sum(Nb__Pieces_finies) as nbPi, sum(Heures) as heure from '.$id_file.'  group by `Piece`order by heure';
+		$req = $this->pdoData->query($sql);
+		$data = $req->fetchAll(PDO::FETCH_ASSOC);
 		return $data;
 	}
 	
