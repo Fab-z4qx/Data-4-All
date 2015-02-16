@@ -1,6 +1,7 @@
 <?php
   
 //require_once(_MODEL_.'entreprise.php');
+require_once(_MODEL_.'datafile.php');
 
 class CompteController extends Controller 
 {
@@ -21,6 +22,8 @@ class CompteController extends Controller
    	 	print_r($entreprise->getAdresse($_SESSION['info']['id_adresse']));
    	 echo '</pre>';
    	 */
+       $datafile = new DataFile();
+       $datafile->getDbSize();
    	 $this->smarty->display(_TPL_ENT_.'compte.tpl');
    }
 }
