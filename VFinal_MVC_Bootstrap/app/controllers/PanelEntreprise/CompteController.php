@@ -22,8 +22,8 @@ class CompteController extends Controller
    	 	print_r($entreprise->getAdresse($_SESSION['info']['id_adresse']));
    	 echo '</pre>';
    	 */
-       $datafile = new DataFile();
-       $datafile->getDbSize();
+       //$datafile = new DataFile();
+      // $datafile->getDbSize();
    	 $this->smarty->display(_TPL_ENT_.'compte.tpl');
    }
 }
