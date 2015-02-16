@@ -89,7 +89,7 @@ function startUploading() {
 
     if (!rFilter.test(oFile.type)) {
         document.getElementById('error').style.display = 'block';
-        alert('file incorrect');
+        //alert('file incorrect');
         //return;
     }
 
