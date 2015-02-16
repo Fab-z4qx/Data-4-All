@@ -98,7 +98,7 @@
         <div class="tab-pane" id="all_files">
               <section id="entreprise_contenu">
                 <div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">
-                        <h1 class="titre_section"><i class="fa fa-file"></i>&nbsp;&nbsp;&nbsp;Tout les fichiers</h1> <br>
+                        <h1 class="titre_section"><i class="fa fa-file"></i>&nbsp;&nbsp;&nbsp;Tous les fichiers</h1> <br>
                         <center><form class="navbar-form navbar-right inline-form">
                             <div class="form-group">
                                 <input type="search" class="input-sm form-control" placeholder="Nom">
@@ -106,6 +106,7 @@
                             </div>
                         </form></center>
                         <br><br>
+                        {if isset($filename)}
                         <table id="listFiles" class="table table-striped ">
                             <tbody>
                                 {section name=nom loop=$filename}
@@ -125,6 +126,7 @@
                                 {/section}
                             </tbody>
                         </table>
+                        {/if}
                         <!--
                         <center><div class="pagination">
                             <ul>
