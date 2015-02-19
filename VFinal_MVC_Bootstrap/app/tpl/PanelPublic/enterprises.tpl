@@ -53,12 +53,6 @@
                     <a href="#" class="btn btn-warning modal-download"><i class="icon-white icon-download-alt"></i></a>
                 </h2>
                 <img src="web/img/offre.png" class="img-responsive img-centered" alt="">
-                <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
-                <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id eli</p>
-                <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
-                <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
-                <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-                <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
             </div>
 
             <div class="tab-pane" id="Efrei2">
@@ -67,12 +61,6 @@
                     <a href="#" class="btn btn-warning modal-download"><i class="icon-white icon-download-alt"></i></a>
                 </h2>
                 <img src="web/img/test.jpg" class="img-responsive img-centered" alt="">
-                <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
-                <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id eli</p>
-                <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
-                <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
-                <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-                <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
             </div>
 
             <div class="tab-pane" id="Entreprise">
@@ -87,7 +75,7 @@
 <!-- /DESCRIPTION_ENTREPRISES -->
 
 <!-- Pagination -->
-<div class="offset3" id="page_navigation"> </div> <!-- inactive pour le moment -->
+<!--<div class="offset3" id="page_navigation"> </div>  inactive pour le moment -->
 
 <script>
     var show_per_page = 1;
