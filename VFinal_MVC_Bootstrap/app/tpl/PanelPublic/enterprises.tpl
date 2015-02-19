@@ -87,6 +87,8 @@
 <!-- /DESCRIPTION_ENTREPRISES -->
 
 <!-- Pagination -->
+<div class="offset3" id="page_navigation"> </div> <!-- inactive pour le moment -->
+
 <script>
     var show_per_page = 1;
     var current_page = 0;
