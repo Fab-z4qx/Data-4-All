@@ -35,12 +35,12 @@
             </div>
         </div>
     </div>
-    <!-- /MENU -->
+<!-- /MENU -->
     {if ({$error} == 'login_invalide')}
         <div class="error_login">error de login </div>
     {/if}
 
-    <!-- Inscription -->
+<!-- Inscription -->
     <div id="monaccordeon">
             <div class="accordion-group">
                 <div class="accordion-heading">
@@ -107,9 +107,9 @@
             </div>
         </div>
 
-    <!-- CONTAINER FULL -->
+<!-- CONTAINER FULL -->
 <div class="container-full">
-        <!-- CAROUSEL -->
+<!-- CAROUSEL -->
          <div id="myCarousel" class="carousel slide">
 	      <div class="carousel-inner">
 	        <div class="item active">
@@ -155,9 +155,9 @@
 	      <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
 	      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
 	    </div>
-        <!-- /CAROUSEL -->
+<!-- /CAROUSEL -->
 
-        <!-- SERVICES & OFFRES -->
+<!-- SERVICES & OFFRES -->
 <section id="service">
         <div class="container marketing">
             <!-- marketing -->
@@ -181,7 +181,7 @@
 
         <hr class="featurette-divider">
 
-            <!-- SERVICES -->
+    <!-- SERVICES -->
             <div class="row">
                 <div class="span4">
                     <img class="img-circle" src="web/img/icones/BI_Jaune.png">
@@ -201,11 +201,11 @@
                     <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
                 </div>
             </div>
-            <!-- /SERVICES -->
+    <!-- /SERVICES -->
 
         <hr class="featurette-divider">
 
-            <!-- OFFRES -->
+    <!-- OFFRES -->
             <table class="table table-striped table-bordered">
                 <tbody>
                     <tr>
@@ -246,14 +246,14 @@
                     </tr>
                 </tbody>
             </table>
-            <!-- /OFFRES -->
-        <!-- /SERVICES & OFFRES -->
         </div>
+       <!-- /OFFRES -->
+<!-- /SERVICES & OFFRES -->
 </section>
 
     <hr class="featurette-divider">
 
-        <!-- TEAM -->
+<!-- TEAM -->
 <section id="team">
         <div class="container-full team">
             <div class="row  offset2">
@@ -337,8 +337,8 @@
                         <i class="fa fa-envelope"></i>
                     </div>
                 </div>
-                </div>
-<div class="row  offset2">
+            </div>
+            <div class="row  offset2">
                 <div class="span3 well">
                     <img class="img-circle" src="web/img/team/fabien.jpg">
                     <span class="muted"><h3>GENET</h3><h3>Fabien</h3></span>
@@ -422,11 +422,11 @@
             </div>
         </div>
 </section>
-    <!-- /TEAM -->
+<!-- /TEAM -->
 
     <hr class="featurette-divider">
 
-    <!-- CONTACT -->
+<!-- CONTACT -->
 <section id="contact">
     <div class="container contact">
         <form class=" span8">
@@ -456,17 +456,17 @@
         </form>
     </div>
 </section>
-    <!-- /CONTACT -->
+<!-- /CONTACT -->
 
-    <!-- /CONTAINER FULL-->
+<!-- /CONTAINER FULL-->
      </div>
-    <!-- FOOTER -->
+<!-- FOOTER -->
       <footer>
           <center>
         <a href="#">Back to top</a>
         <p>© 2015 Data4All <a href="#">Privacy</a> · <a href="#">Terms</a></p>
           </center>
       </footer>
-    <!-- /FOOTER -->
+<!-- /FOOTER -->
 </div>
 <!-- /ACCUEIL -->
