@@ -46,66 +46,128 @@
                 <div class="accordion-heading">
                     <div id="item1" class="collapse">
                         <div class="accordion-inner">
-                            <form method="post" action="index.php?page=formulaire&action=createAccount"></br>
-                               <div class="span5">
-                                    <label class="form_entreprise" for="nom_entreprise">Nom entreprise :</label>
-                                    <input type="text" name="nom_entreprise" id="nom_entreprise"/><br><br>
-
-                                    <label class="form_entreprise" for="email_entreprise">Email :</label>
-                                    <input type="email_entreprise" name="email_entreprise" id="email_entreprise" require /><br><br>
-
-                                    <label class="form_entreprise" for="adresse">Adresse :</label>
-                                    <input type="text" name="adresse" id="adresse" require/><br><br>
-
-                                    <label class="form_entreprise" for="adresse_complementaire">Adresse complémentaire :</label>
-                                    <input type="text" name="adresse_complementaire" id="adresse_complementaire"/><br><br>
-
-                                    <label class="form_entreprise" for="ville">Ville :</label>
-                                    <input type="text" name="ville" id="ville"/><br><br>
+                            <div class="container">
+                                <div class="stepwizard">
+                                    <div class="stepwizard-row setup-panel">
+                                        <div class="stepwizard-step">
+                                            <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+                                            <p>Step 1</p>
+                                        </div>
+                                        <div class="stepwizard-step">
+                                            <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+                                            <p>Step 2</p>
+                                        </div>
+                                        <div class="stepwizard-step">
+                                            <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+                                            <p>Step 3</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="span5">
-                                    <label class="form_entreprise" for="code_postal">Code Postale :</label>
-                                    <input type="text" name="code_postal" id="code_postal"/><br><br>
 
-                                    <label class="form_entreprise" for="pays">Pays :</label>
-                                    <input type="text" name="pays" id="pays"/><br><br>
-
-                                    <label class="form_entreprise" for="tel_entreprise">Tel :</label>
-                                    <input type="text" name="tel_entreprise" id="tel_entreprise"/><br><br>
-
-                                    <label class="form_entreprise" for="fax_entrepirse">Fax :</label>
-                                    <input type="text" name="fax_entreprise" id="fax_entreprise"/><br><br>
-
-                                    <label class="form_entreprise" for="siret_entreprise">Numéro Siret :</label>
-                                    <input type="text" name="siret_entreprise" id="siret_entreprise"/><br><br>
-                                </div>
-                                <div class="span5">
-                                    <label class="form_entreprise" for="forme_juridique_entreprise">Forme juridique :</label>
-                                    <input type="text" name="forme_juridique_entreprise" id="forme_juridique_entreprise"/><br><br>
-
-                                    <label class="form_entreprise" for="activite_entreprise">Description de l'activité de l'entreprise :</label>
-                                    <textarea style="resize:none;" rows="1" cols="18" name="activite_entreprise" id="activite_entreprise"></textarea><br><br>
-
-                                    <label class="form_entreprise" for="password">Mot de passe :</label>
-                                    <input type="password" name="password" id="password" require /><br><br>
-
-                                    <label class="form_entreprise" for="password_confirmation">Confirmation du mot de passe :</label>
-                                    <input type="password" name="password_confirmation" id="password_confirmation" require /><br><br>
-
-                                    <script type="text/javascript">
-                                        $(document).ready(function() {
-                                        $('#captcha2').html($('#captcha').clone(true,true));
-                                        });
-                                    </script>
-                                    <div id="captcha2"></div>
-                                    <input class="bouton_submit" type="submit" value="Continuer">
-                                </div>
-                            </form>
+                                <form role="form">
+                                    <form method="post" action="index.php?page=formulaire&action=createAccount">
+                                        <div class="row setup-content" id="step-1">
+                                            <div class="col-xs-12">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="form_entreprise" for="nom_entreprise">Nom entreprise :</label>
+                                                        <input type="text" required="required" name="nom_entreprise" id="nom_entreprise"/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="form_entreprise" for="email_entreprise">Email :</label>
+                                                        <input type="email_entreprise" required="required" name="email_entreprise" id="email_entreprise"/>
+                                                    </div>
+                                                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row setup-content" id="step-2">
+                                            <div class="col-xs-12">
+                                                <div class="col-md-12">
+                                                    <div class="span4">
+                                                        <div class="form-group">
+                                                            <label class="form_entreprise" for="adresse">Adresse :</label>
+                                                            <input type="text" required="required" name="adresse" id="adresse"/>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="form_entreprise" for="adresse_complementaire">Adresse complémentaire :</label>
+                                                            <input type="text" name="adresse_complementaire" id="adresse_complementaire"/>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="form_entreprise" for="ville">Ville :</label>
+                                                            <input type="text" name="ville" id="ville"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="span4">
+                                                        <div class="form-group">
+                                                            <label class="form_entreprise" for="code_postal">Code Postale :</label>
+                                                            <input type="text" name="code_postal" id="code_postal"/>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="form_entreprise" for="pays">Pays :</label>
+                                                            <input type="text" name="pays" id="pays"/>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="form_entreprise" for="tel_entreprise">Tel :</label>
+                                                            <input type="text" name="tel_entreprise" id="tel_entreprise"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="span4">
+                                                        <div class="form-group">
+                                                            <label class="form_entreprise" for="fax_entrepirse">Fax :</label>
+                                                            <input type="text" name="fax_entreprise" id="fax_entreprise"/>
+                                                        </div>
+                                                     </div>
+                                                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row setup-content" id="step-3">
+                                            <div class="col-xs-12">
+                                                <div class="col-md-12">
+                                                    <div class="span4">
+                                                        <div class="form-group">
+                                                            <label class="form_entreprise" for="siret_entreprise">Numéro Siret :</label>
+                                                            <input type="text" name="siret_entreprise" id="siret_entreprise"/>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="form_entreprise" for="forme_juridique_entreprise">Forme juridique :</label>
+                                                            <input type="text" name="forme_juridique_entreprise" id="forme_juridique_entreprise"/>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="form_entreprise" for="activite_entreprise">Description de l'activité de l'entreprise :</label>
+                                                            <textarea style="resize:none;" rows="1" cols="18" name="activite_entreprise" id="activite_entreprise"></textarea><br><br>
+                                                        </div>
+                                                    </div>
+                                                    <div class="span4">
+                                                        <div class="form-group">
+                                                            <label class="form_entreprise" for="password">Mot de passe :</label>
+                                                            <input type="password" required="required" name="password" id="password"/>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="form_entreprise" for="password_confirmation">Confirmation du mot de passe :</label>
+                                                            <input type="password" required="required" name="password_confirmation" id="password_confirmation"/>
+                                                        </div>
+                                                     </div>
+                                                    <script type="text/javascript">
+                                                                        $(document).ready(function() {
+                                                                        $('#captcha2').html($('#captcha').clone(true,true));
+                                                                        });
+                                                    </script>
+                                                    <div id="captcha2"></div>
+                                                    <input class="bouton_submit" type="submit" value="Continuer">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </form>
+                            </div>
                         </div>
                      </div>
                 </div>
             </div>
         </div>
+<!-- /Inscription -->
 
 <!-- CONTAINER FULL -->
 <div class="container-full">
@@ -469,4 +531,51 @@
       </footer>
 <!-- /FOOTER -->
 </div>
+
+<!-- SCRIPT_Inscription -->
+<script>
+$(document).ready(function () {
+
+    var navListItems = $('div.setup-panel div a'),
+            allWells = $('.setup-content'),
+            allNextBtn = $('.nextBtn');
+
+    allWells.hide();
+
+    navListItems.click(function (e) {
+        e.preventDefault();
+        var $target = $($(this).attr('href')),
+                $item = $(this);
+
+        if (!$item.hasClass('disabled')) {
+            navListItems.removeClass('btn-primary').addClass('btn-default');
+            $item.addClass('btn-primary');
+            allWells.hide();
+            $target.show();
+            $target.find('input:eq(0)').focus();
+        }
+    });
+
+    allNextBtn.click(function(){
+        var curStep = $(this).closest(".setup-content"),
+            curStepBtn = curStep.attr("id"),
+            nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+            curInputs = curStep.find("input[type='text'],input[type='url']"),
+            isValid = true;
+
+        $(".form-group").removeClass("has-error");
+        for(var i=0; i<curInputs.length; i++){
+            if (!curInputs[i].validity.valid){
+                isValid = false;
+                $(curInputs[i]).closest(".form-group").addClass("has-error");
+            }
+        }
+
+        if (isValid)
+            nextStepWizard.removeAttr('disabled').trigger('click');
+    });
+
+    $('div.setup-panel div a.btn-primary').trigger('click');
+});</script>
+<!-- /SCRIPT_Inscription -->
 <!-- /ACCUEIL -->
