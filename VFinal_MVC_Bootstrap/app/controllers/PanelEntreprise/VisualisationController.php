@@ -18,22 +18,16 @@ class VisualisationController extends Controller
    public function getFileName()
 	{
 		$dataFile = new DataFile();
-		$filesNames = $dataFile->getFileName();
-		/*echo '<pre>';
-		print_r($filesNames);
-		echo '</pre>'; */
-		$this->smarty->assign('filename', $filesNames);
+		$filesInfo = $dataFile->getFileInfo();
+		$this->smarty->assign('fileinfo', $filesInfo);
 		$this->smarty->assign('dbname', 'Tables_in__'.$_SESSION['info']['id_entreprise']);
 	}
 
    public function start($id_file)
    {
    	// ************************************************* //
-   	// ********* IL FAUT CONTROLER LA VALEUR *********** //
+   	// ********* IL FAUT CONTROLER LA VALEUR de $ID_FILE *********** //
    	// ************************************************* //
-
-   		//echo $id_file;
-   		//$id_file = 'exportbb';
 		$this->smarty->assign('nom_fichier',$id_file);
 		$this->pieGraphe($id_file);
 		$this->plotGraphe($id_file);
@@ -45,13 +39,8 @@ class VisualisationController extends Controller
 
 		$data = $dataFile->getTypeAlea($id_file);
 
-		//$res = mysql_query($query);
 		$name = array();
 		$value = array();
-
-		/*echo '<pre>';
-		print_r($data);
-		echo '</pre>';*/
 		foreach ($data as $dat) {
 			if($dat['nb'] != 0){
 				array_push($name, $dat['type_alea']);
@@ -81,13 +70,15 @@ class VisualisationController extends Controller
 		$graph->legend->SetColumns(3);
 		$graph->legend->SetFrameWeight(2);
 		$graph->title->Set("Type d'evenement");
-	$graph->SetMarginColor("#f5f5f5");
+	    $graph->SetMarginColor("#f5f5f5");
 		@unlink("graph.jpg"); 
 		$graph->Stroke("graph.jpg");
 		//$this->getFileName();
 		$this->smarty->assign('graph', '<img src="graph.jpg">' );
    }
-   private function plotGraphe($id_file){
+
+   private function plotGraphe($id_file)
+   {
       	$dataFile = new DataFile();
 		$data = $dataFile->getPiece($id_file);
 		$sql = 'SELECT Piece,sum(Nb__Pieces_finies) as nbPi, sum(Heures) as heure from '.$id_file.'  group by `Piece`order by heure';
@@ -102,42 +93,40 @@ class VisualisationController extends Controller
 
 		}
 		
+		// Create the graph. These two calls are always required
+		$graph = new Graph(500,500,'auto');
+		$graph->SetScale("textlin");
 
+		$theme_class=new UniversalTheme;
+		$graph->SetTheme($theme_class);
 
-// Create the graph. These two calls are always required
-$graph = new Graph(500,500,'auto');
-$graph->SetScale("textlin");
+		$graph->yaxis->SetTickPositions($data3y);
+		$graph->SetBox(false);
 
-$theme_class=new UniversalTheme;
-$graph->SetTheme($theme_class);
+		$graph->ygrid->SetFill(false);
 
-$graph->yaxis->SetTickPositions($data3y);
-$graph->SetBox(false);
+		$graph->yaxis->HideLine(false);
+		$graph->yaxis->HideTicks(false,false);
 
-$graph->ygrid->SetFill(false);
+		// Create the bar plots
+		//$b1plot = new BarPlot($data1y);
+		$b3plot = new BarPlot($data2y);
 
-$graph->yaxis->HideLine(false);
-$graph->yaxis->HideTicks(false,false);
+		// Create the grouped bar plot
+		$gbplot = new GroupBarPlot(array($b3plot));
+		// ...and add it to the graPH
+		$graph->SetColor("#f5f5f5");
+		$graph->Add($gbplot);
 
-// Create the bar plots
-//$b1plot = new BarPlot($data1y);
-$b3plot = new BarPlot($data2y);
+		$graph->xaxis->HideLabels();
+		$graph->yaxis->HideLabels();
+		$b3plot->SetFillColor("#1111cc");
 
-// Create the grouped bar plot
-$gbplot = new GroupBarPlot(array($b3plot));
-// ...and add it to the graPH
-$graph->SetColor("#f5f5f5");
-$graph->Add($gbplot);
-
-$graph->xaxis->HideLabels();
-$graph->yaxis->HideLabels();
-$b3plot->SetFillColor("#1111cc");
-
-$graph->title->Set("Bar Plots");
-		@unlink("graphPlot.jpg"); 
-		$graph->Stroke("graphPlot.jpg");
-		$this->smarty->assign('graphPlot', '<img src="graphPlot.jpg">' );
-   }
+		$graph->title->Set("Bar Plots");
+				@unlink("graphPlot.jpg"); 
+				$graph->Stroke("graphPlot.jpg");
+				$this->smarty->assign('graphPlot', '<img src="graphPlot.jpg">' );
+  	}
 }
 
 ?>

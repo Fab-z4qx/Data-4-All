@@ -47,12 +47,25 @@ class DataFile {
 		$sql = 'show tables FROM _'.$_SESSION['info']['id_entreprise'];
 		$req = $this->pdo->query($sql);
 		$data = $req->fetchAll(PDO::FETCH_ASSOC);
-		$nameFile="";
 		if(!empty($data)){
-			$nameFiles = $data;
+			return $data;
 		}
-		//echo $sql;
-		return $nameFiles;
+		return NULL;
+	}
+
+	public function getFileInfo()
+	{
+		$sql = "SELECT table_name AS 'nom', round(((data_length + index_length) / 1024 / 1024), 2) AS 'size', CAST(create_time AS DATE) AS 'date'
+		FROM information_schema.tables 
+		WHERE table_schema =  '_".$_SESSION['info']['id_entreprise']."';";
+
+		$req = $this->pdo->query($sql);
+		$data = $req->fetchAll(PDO::FETCH_ASSOC);
+		if(!empty($data)){
+			return $data;
+		}
+		return NULL;
+
 	}
 
 	public function getTypeAlea($id_file)
