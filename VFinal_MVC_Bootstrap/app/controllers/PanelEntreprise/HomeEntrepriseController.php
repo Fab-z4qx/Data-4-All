@@ -16,6 +16,17 @@ class HomeEntrepriseController extends Controller
    {
    	return round($value/1048576,2);
    }
+
+   public function search($entreprise)
+   {
+      /* NEED CONTROLE DE LA VALEUR INJECTION SQL */
+
+      $ent = new Entreprise();
+      $ent->searchEntreprise($entreprise);
+
+
+
+   }
 }
 
 ?>

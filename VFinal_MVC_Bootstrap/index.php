@@ -8,7 +8,7 @@ function startController()
 	include (_CTRL_PUBLIC_.ucfirst($_GET['page']).'Controller.php'); //ucfirst() met la 1er lettre en majuscule pour respecter la convention objet 
     $className = ucfirst($_GET['page']).'Controller';
     $controleur = new $className; 
-
+    
     if(isset($_GET['action']))
     	$actionName = $_GET['action'];
     
@@ -21,13 +21,10 @@ function startController()
     }
 }
 
-/* LIST OF CONTROLLER WITHOUT INCLUDE TPL */
 $controler_with_no_include  = array('connect', 'formulaire');	
-
 if (!empty($_GET['page']) && is_file(_CTRL_PUBLIC_.ucfirst($_GET['page']).'Controller.php'))
 {
-							
-	if( in_array($_GET['page'], $controler_with_no_include) )  //sidans le tableau in include pas les TPL
+	if( in_array($_GET['page'], $controler_with_no_include) )  //si dans le tableau in include pas les TPL
 	{
 		startController();
 	}
@@ -37,7 +34,7 @@ if (!empty($_GET['page']) && is_file(_CTRL_PUBLIC_.ucfirst($_GET['page']).'Contr
 		startController();
 		include _TPL_COMMON_.'footer.tpl';
 	}  
-}// Redirection vers la partie privé entreprise
+}
 else
 {
 	include _TPL_COMMON_.'head.tpl';

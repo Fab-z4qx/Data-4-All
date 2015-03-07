@@ -14,12 +14,12 @@ class Entreprise {
 	private $pdo;
 	public function __construct()
 	{
-                $this->pdo = Database::getInstance();
+        $this->pdo = Database::getInstance();
 	}
 
 	public function getInfoEntreprise($idEntreprise)
 	{
-		$sql = 'SELECT * FROM entreprise WHERE id_entreprise ='.$idEntreprise.';';
+		$sql = "SELECT * FROM entreprise WHERE id_entreprise ='".$idEntreprise."';";
 		$req = $this->pdo->query($sql);
 		$data = $req->fetch(PDO::FETCH_ASSOC);
 		if(!empty($data)){
@@ -27,6 +27,17 @@ class Entreprise {
 		}
 		return NULL;
 	} 
+
+    public function searchEntreprise($nom)
+    {
+        $sql = "SELECT id_entreprise FROM entreprise WHERE nom_entreprise ='".$nom."';";
+        $req = $this->pdo->query($sql);
+        $data = $req->fetch(PDO::FETCH_ASSOC);
+        if(!empty($data)){
+            return $data;
+        }
+        return NULL;   
+    }
 
     public function getAdresse($idAdresse)
     {

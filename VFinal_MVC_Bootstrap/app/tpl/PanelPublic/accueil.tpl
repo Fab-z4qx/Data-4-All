@@ -13,7 +13,7 @@
                 <a class="brand " href="index.php">DATA 4 ALL</a>
                 <div class="nav-collapse pull-right">
                     <ul class="nav">
-                        <li><a class="page-scroll" href="index.php?page=index&action=entreprise">Liste Entreprises</a></li>
+                        <li><a class="page-scroll" href="index.php?page=entreprise">Liste Entreprises</a></li>
                         <li><a class="page-scroll" href="#service">Services & Offres</a></li>
                         <li><a class="page-scroll" href="#team">Team</a></li>
                         <li><a class="page-scroll" href="#contact">Contact</a></li>
@@ -179,9 +179,9 @@
 	          <div class="container">
 	            <div class="carousel-caption offset4">
 	              <div id="search">
-                    <form>
-                        <input type="search" value="" placeholder="Recherchez votre entreprise" />
-                        <button type="submit" style="margin-bottom: 20px" class="btn btn-primary">Search</button>
+                    <form action="index.php?page=entreprise&action=search" method="post">
+                        <input type="search" value="" placeholder="Recherchez votre entreprise" name="nom" id="nom" />
+                        <button type="submit" style="margin-bottom: 20px" class="btn btn-primary" >Search</button>
                     </form>
                 </div>
 	            </div>
