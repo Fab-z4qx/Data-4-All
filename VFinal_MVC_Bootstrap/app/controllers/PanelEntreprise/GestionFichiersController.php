@@ -75,11 +75,8 @@ class GestionFichiersController extends Controller
 	public function getFileName()
 	{
 		$dataFile = new DataFile();
-		$filesNames = $dataFile->getFileName();
-		/*echo '<pre>';
-		print_r($filesNames);
-		echo '</pre>'; */
-		$this->smarty->assign('filename', $filesNames);
+		$filesInfo = $dataFile->getFileInfo();
+		$this->smarty->assign('fileinfo', $filesInfo);
 		$this->smarty->assign('dbname', 'Tables_in__'.$_SESSION['info']['id_entreprise']);
 	}
 

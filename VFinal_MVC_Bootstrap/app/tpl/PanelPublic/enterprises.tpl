@@ -1,6 +1,6 @@
 <div id="liste entreprise">
 
-    <!-- MENU -->
+<!-- MENU -->
     <div class="navbar navbar-static-top navbar-inverse">
         <div class="navbar-inner">
             <div class="container-full">
@@ -21,335 +21,64 @@
         </div>
     </div>
 <!-- MENU -->
-<center>
-<div class="jumbotron well">
-  <h1>Liste des entreprises qui nous font confiances</h1>
-  <p>Ici une petite descriptions</p>
-  <p><a class="btn btn-primary btn-lg">En savoir plus</a></p>
-</div>
-    </center>
-<!-- Liste entreprise -->
-    <br/>
-    <div class="container offset5">
-        <div class="row">
-            <div id="content">
-                <div class="span4 well">
-                    <table class="table table-striped ">
-                        <tbody>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="http://www.linux-france.org/article/these/the_osd/fr-the_open_source_definition-4.html" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
 
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="span4 well">
-                    <table class="table table-striped ">
-                        <tbody>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="span4 well">
-                    <table class="table table-striped ">
-                        <tbody>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="span4 well">
-                    <table class="table table-striped ">
-                        <tbody>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="span4 well">
-                    <table class="table table-striped ">
-                        <tbody>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="span4 well">
-                    <table class="table table-striped ">
-                        <tbody>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-            </div>
+<!-- Titre -->
+    <center>
+        <div class="jumbotron well">
+          <h1>Liste des entreprises qui nous font confiances</h1>
+          <p>Ici une petite descriptions</p>
+          <p><a class="btn btn-primary btn-lg">En savoir plus</a></p>
         </div>
-        <div class="offset3" id="page_navigation"> </div>
-    </div>
+    </center>
+<!-- /Titre -->
 
+<!-- Liste entreprise -->
+    <div class="container-full">
+        <div class="row">
+            <div class=" span2 tabbable tabs-left">
+        <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#Efrei" data-toggle="tab">Efrei</a></li>
+            <li><a href="#Efrei2" data-toggle="tab">Efrei2</a></li>
+            <li><a href="#Entreprise" data-toggle="tab">Entreprise</a></li>
+        </ul>
+    </div>
 <!-- /Liste entreprise -->
 
+<!-- DESCRIPTION_ENTREPRISES -->
+    <div class="offset2">
+        <div class="tab-content">
+            <div class="tab-pane active" id="Efrei">
+                <h2>
+                    <span class="muted"> <a href="http://www.efrei.fr/ ">EFREI</a></span>
+                    <a href="#" class="btn btn-warning modal-download"><i class="icon-white icon-download-alt"></i></a>
+                </h2>
+                <img src="web/img/offre.png" class="img-responsive img-centered" alt="">
+            </div>
+
+            <div class="tab-pane" id="Efrei2">
+                <h2>
+                    <span class="muted"> <a href="http://www.efrei.fr/ ">EFREI2</a></span>
+                    <a href="#" class="btn btn-warning modal-download"><i class="icon-white icon-download-alt"></i></a>
+                </h2>
+                <img src="web/img/test.jpg" class="img-responsive img-centered" alt="">
+            </div>
+
+            <div class="tab-pane" id="Entreprise">
+                 <h2>
+                    <span class="muted"> <a href="http://www.efrei.fr/ ">Entreprise</a></span>
+                    <a href="#" class="btn btn-warning modal-download"><i class="icon-white icon-download-alt"></i></a>
+
+                </h2>
+            </div>
+        </div>
+    </div>
+<!-- /DESCRIPTION_ENTREPRISES -->
+
 <!-- Pagination -->
+<!--<div class="offset3" id="page_navigation"> </div>  inactive pour le moment -->
+
 <script>
-    var show_per_page = 2;
+    var show_per_page = 1;
     var current_page = 0;
     function set_display(first, last) {
         $('#content').children().css('display', 'none');

@@ -83,7 +83,7 @@
                         </div>
                     </div>
                 </div>
-                <h2 ><i class="fa fa-database"></i>&nbsp;&nbsp;&nbsp;Espace Disponible</h2>
+                <h2 ><i class="fa fa-database"></i>&nbsp;&nbsp;&nbsp;Espace Utilisé</h2>
             </div>
 
             <div class="span4" id="last_graph">

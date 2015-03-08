@@ -14,12 +14,12 @@ class Entreprise {
 	private $pdo;
 	public function __construct()
 	{
-                $this->pdo = Database::getInstance();
+        $this->pdo = Database::getInstance();
 	}
 
 	public function getInfoEntreprise($idEntreprise)
 	{
-		$sql = 'SELECT * FROM entreprise WHERE id_entreprise ='.$idEntreprise.';';
+		$sql = "SELECT * FROM entreprise WHERE id_entreprise ='".$idEntreprise."';";
 		$req = $this->pdo->query($sql);
 		$data = $req->fetch(PDO::FETCH_ASSOC);
 		if(!empty($data)){
@@ -27,6 +27,17 @@ class Entreprise {
 		}
 		return NULL;
 	} 
+
+    public function searchEntreprise($nom)
+    {
+        $sql = "SELECT id_entreprise FROM entreprise WHERE nom_entreprise ='".$nom."';";
+        $req = $this->pdo->query($sql);
+        $data = $req->fetch(PDO::FETCH_ASSOC);
+        if(!empty($data)){
+            return $data;
+        }
+        return NULL;   
+    }
 
     public function getAdresse($idAdresse)
     {
@@ -123,9 +134,22 @@ class Entreprise {
         return NULL;
     }
 
+    public function getUse($idEntreprise)
+    {
+        $sql = "SELECT round(sum(data_length+index_length)/1024/1024,4) AS 'size' FROM information_schema.tables 
+                WHERE table_schema = '_".$idEntreprise."'GROUP BY table_schema;";
+
+        $req = $this->pdo->query($sql);
+        $data = $req->fetch(PDO::FETCH_ASSOC);
+        if(!empty($data)){
+            return $data['size'];
+        }
+        return NULL; 
+    }
+
     public function getSpace($idEntreprise)
     {
-        $sql = 'SELECT espace_disponible FROM entreprise WHERE id_entreprise ='.$idEntreprise.';';
+        $sql = 'SELECT espace_disponible FROM entreprise WHERE id_entreprise='.$_SESSION['info']['id_entreprise'];
         $req = $this->pdo->query($sql);
         $data = $req->fetch(PDO::FETCH_ASSOC);
         if(!empty($data)){
@@ -136,13 +160,13 @@ class Entreprise {
 
     public function getNumberFile($idEntreprise)
     {
-       $sql = 'SELECT nombre_fichier FROM entreprise WHERE id_entreprise ='.$idEntreprise.';';
+        $sql = "SELECT count(table_name) FROM INFORMATION_SCHEMA.TABLES WHERE table_schema = '_".$idEntreprise."'";
         $req = $this->pdo->query($sql);
         $data = $req->fetch(PDO::FETCH_ASSOC);
         if(!empty($data)){
-            return $data['nombre_fichier'];
+            return $data['count(table_name)'];
         }
-        return NULL; 
+        return NULL;
     }
 
     public function updateSpace($size, $mode)
