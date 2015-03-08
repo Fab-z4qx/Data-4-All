@@ -39,7 +39,7 @@
             <div class="nav-collapse pull-right">
                 <ul class="nav">
                     <li><a href="#upload" data-toggle="tab"><i class="fa fa-upload"></i>&nbsp;&nbsp;Upload</a></li>
-                    <li><a href="#all_files" data-toggle="tab"> <i class="fa fa-file"></i>&nbsp;&nbsp;Tout les fichiers</a></li>
+                    <li><a href="#all_files" data-toggle="tab"> <i class="fa fa-file"></i>&nbsp;&nbsp;Tous les fichiers</a></li>
                     <li><a href="index.php?page=connect&action=logout"><i class="fa fa-sign-out"></i>&nbsp;&nbsp;log out</a></li>
                 </ul>
             </div>
@@ -127,7 +127,7 @@
                             </tbody>
                         </table>
                         {/if}
-                        <!--
+                        
                         <center><div class="pagination">
                             <ul>
                                 <li><a href="#">Précédent</a></li>
@@ -137,7 +137,7 @@
                                 <li><a href="#">Suivant</a></li>
                             </ul>
                         </div></center>
-                    -->
+                    
                 </div>
             </section>
         </div>
