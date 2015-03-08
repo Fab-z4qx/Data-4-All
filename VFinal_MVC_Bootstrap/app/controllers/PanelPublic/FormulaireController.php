@@ -1,9 +1,9 @@
 <?php
 
-
 require_once(_MODEL_.'Adresse.php');
 require_once(_MODEL_.'Entreprise.php');
 require_once(_MODEL_.'User.php');
+require_once(_MODEL_.'Contact.php');
 
 class FormulaireController extends Controller 
 {
@@ -22,6 +22,9 @@ class FormulaireController extends Controller
    {
       if(!isset($_POST) && !empty($_POST))
       {  
+         /*********************************************************/
+         /************** VUE SMARTY A AJOUTER *********************/
+         /*********************************************************/
          echo "erreur aucune information";
          exit();
       }
@@ -31,12 +34,15 @@ class FormulaireController extends Controller
       if($valid==true)
       {   
          /* Ajout de l'adresse */
-		 echo "Test";
          $adresse = new Adresse();
          $id_of_inserted_adresse = $adresse->insert($_POST['adresse'], $adresse_complementaire, $ville, $code_postal, $pays);
 
          /* Ajout de l'entreprise */
-         if(empty($id_of_inserted_adresse)){
+         if(empty($id_of_inserted_adresse))
+         {
+            /*********************************************************/
+            /************** VUE SMARTY A AJOUTER *********************/
+            /*********************************************************/
             echo "adresse error"; 
             exit();
          }
@@ -45,7 +51,11 @@ class FormulaireController extends Controller
          $id_of_inserted_entreprise = $entreprise->insert($nom_entreprise, $email_entreprise, $siret_entreprise, $tel_entreprise, $fax_entreprise,
                                       $forme_juridique_entreprise,$activite_entreprise, $id_of_inserted_adresse);
 
-         if(empty($id_of_inserted_entreprise)){
+         if(empty($id_of_inserted_entreprise))
+         {
+            /*********************************************************/
+            /************** VUE SMARTY A AJOUTER *********************/
+            /*********************************************************/
             echo "entreprise error"; 
             exit();
          }
@@ -56,9 +66,15 @@ class FormulaireController extends Controller
          if(!empty($id_of_inserted_user))
          {
             $result = $entreprise->createDbData($id_of_inserted_entreprise);
+            /*********************************************************/
+            /************** VUE SMARTY A AJOUTER *********************/
+            /*********************************************************/
          }
       }
-      $this->smarty->assign('accont', 'compte crée');
+         /*********************************************************/
+         /************** VUE SMARTY A AJOUTER *********************/
+         /*********************************************************/
+      $this->smarty->assign('accont', 'compte_crée');
       header('Location:index.php');   
    }
 
@@ -156,13 +172,33 @@ class FormulaireController extends Controller
             echo('<div class="information_invalide">Password non définit</div>');
             $valid = false;
          }
-
          return $valid;
    }
 
-   public function question()
+   public function contact()
    {
-		//TO DO
+
+      /*********************************************************/
+      /************** INJECTION SQL ****************************/
+      /*********************************************************/
+      $cont = new Contact();
+      $res = $cont->insert($_POST['nom'], $_POST['email'], $_POST['subject'], $_POST['message']);
+
+      if($res != NULL)
+      {
+         /*********************************************************/
+         /************** VUE SMARTY A AJOUTER *********************/
+         /*********************************************************/
+         echo 'VOTRE REQUETE A ETE ENVOYEE';
+      }
+      else 
+      {
+         /*********************************************************/
+         /************** VUE SMARTY A AJOUTER *********************/
+         /*********************************************************/
+         echo 'Probleme';
+      }
+
    }
 }
 
