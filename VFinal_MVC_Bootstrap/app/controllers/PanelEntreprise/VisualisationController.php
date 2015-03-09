@@ -123,9 +123,9 @@ class VisualisationController extends Controller
 		$b3plot->SetFillColor("#1111cc");
 
 		$graph->title->Set("Bar Plots");
-				@unlink("graphPlot.jpg"); 
-				$graph->Stroke("graphPlot.jpg");
-				$this->smarty->assign('graphPlot', '<img src="graphPlot.jpg">' );
+		@unlink("graphPlot.jpg"); 
+		$graph->Stroke("graphPlot.jpg");
+		$this->smarty->assign('graphPlot', '<img src="graphPlot.jpg">' );
   	}
 }
 
