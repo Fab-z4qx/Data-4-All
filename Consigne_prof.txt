@@ -10,6 +10,4 @@
 - J'ai des données et je veux les visualiser, les partager etc. 
 - Tableau.com ?
 - Si on ne sais pas comment le faire, il faut expliquer comment le faire. 
-
-
 - Thesorus (dictionnaire synonyme anglais ) pour trouver des noms de services etc
