@@ -41,8 +41,9 @@ SECTIONS
 *******************************************/
 
 #entreprise_contenu{
-	padding-top: 75px;
+	padding-top: 200px; /*75px*/
 	padding-left: 250px;
+	padding-bottom: 510px;
 }
 .stat .span4 {
   text-align: center;

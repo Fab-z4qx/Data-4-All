@@ -39,7 +39,7 @@
             <div class="nav-collapse pull-right">
                 <ul class="nav">
                     <li><a href="#upload" data-toggle="tab"><i class="fa fa-upload"></i>&nbsp;&nbsp;Upload</a></li>
-                    <li><a href="#all_files" data-toggle="tab"> <i class="fa fa-file"></i>&nbsp;&nbsp;Tout les fichiers</a></li>
+                    <li><a href="#all_files" data-toggle="tab"> <i class="fa fa-file"></i>&nbsp;&nbsp;Tous les fichiers</a></li>
                     <li><a href="index.php?page=connect&action=logout"><i class="fa fa-sign-out"></i>&nbsp;&nbsp;log out</a></li>
                 </ul>
             </div>
@@ -106,17 +106,17 @@
                             </div>
                         </form></center>
                         <br><br>
-                        {if isset($filename)}
+                        {if isset($fileinfo)}
                         <table id="listFiles" class="table table-striped ">
                             <tbody>
-                                {section name=nom loop=$filename}
+                                {section name=nom loop=$fileinfo}
                                 <tr>
-                                    <td>{$filename[nom].$dbname}</td>
-                                    <td>20ko</td>
-                                    <td>10/02/2015</td>
+                                    <td>{$fileinfo[nom].nom}</td>
+                                    <td>{$fileinfo[nom].size} Mo</td>
+                                    <td>{$fileinfo[nom].date} </td>
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success" onclick="self.location.href='entreprise.php?page=visualisation&action=start&value={$filename[nom].$dbname}'" title="visualisation"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-success" onclick="self.location.href='entreprise.php?page=visualisation&action=start&value={$fileinfo[nom].nom}'" title="visualisation"><i class="fa fa-desktop"></i></button>
                                             <button type="button" class="btn btn-info" title="renommer"><i class="fa fa-edit"></i></button>
                                             <button type="button" class="btn btn-warning" title="télécharger"><i class="fa fa-download"></i></button>
                                             <button type="button" class="btn btn-danger" title="supprimer"><i class="fa fa-trash"></i></button>
@@ -127,7 +127,7 @@
                             </tbody>
                         </table>
                         {/if}
-                        <!--
+                        
                         <center><div class="pagination">
                             <ul>
                                 <li><a href="#">Précédent</a></li>
@@ -137,7 +137,7 @@
                                 <li><a href="#">Suivant</a></li>
                             </ul>
                         </div></center>
-                    -->
+                    
                 </div>
             </section>
         </div>

@@ -13,7 +13,7 @@
                 <a class="brand " href="index.php">DATA 4 ALL</a>
                 <div class="nav-collapse pull-right">
                     <ul class="nav">
-                        <li><a class="page-scroll" href="index.php?page=index&action=entreprise">Liste Entreprises</a></li>
+                        <li><a class="page-scroll" href="index.php?page=entreprise">Liste Entreprises</a></li>
                         <li><a class="page-scroll" href="#service">Services & Offres</a></li>
                         <li><a class="page-scroll" href="#team">Team</a></li>
                         <li><a class="page-scroll" href="#contact">Contact</a></li>
@@ -179,9 +179,9 @@
 	          <div class="container">
 	            <div class="carousel-caption offset4">
 	              <div id="search">
-                    <form>
-                        <input type="search" value="" placeholder="Recherchez votre entreprise" />
-                        <button type="submit" style="margin-bottom: 20px" class="btn btn-primary">Search</button>
+                    <form action="index.php?page=entreprise&action=search" method="post">
+                        <input type="search" value="" placeholder="Recherchez votre entreprise" name="nom" id="nom" />
+                        <button type="submit" style="margin-bottom: 20px" class="btn btn-primary" >Search</button>
                     </form>
                 </div>
 	            </div>
@@ -192,8 +192,8 @@
 	          <div class="container">
 	            <div class="carousel-caption offset4">
 	              <div id="search">
-                    <form>
-                        <input type="search" value="" placeholder="Recherchez votre entreprise" />
+                    <form action="index.php?page=entreprise&action=search" method="post">
+                        <input type="search" value="" placeholder="Recherchez votre entreprise" name="nom" id="nom" />
                         <button type="submit" class="btn btn-primary">Search</button>
                     </form>
                 </div>
@@ -205,8 +205,8 @@
 	          <div class="container">
 	            <div class="carousel-caption offset4">
 	              <div id="search">
-                    <form>
-                        <input type="search" value="" placeholder="Recherchez votre entreprise" />
+                    <form action="index.php?page=entreprise&action=search" method="post">
+                        <input type="search" value="" placeholder="Recherchez votre entreprise" name="nom" id="nom" />
                         <button type="submit" class="btn btn-primary">Search</button>
                     </form>
                 </div>
@@ -491,15 +491,13 @@
 <!-- CONTACT -->
 <section id="contact">
     <div class="container contact">
-        <form class=" span8">
+        <form class=" span8" action="index.php?page=formulaire&action=contact" method="post">
           <div class="row offset6">
                 <div class="span3">
                     <label>First Name</label>
-                    <input type="text" class="span3" placeholder="Your First Name">
-                    <label>Last Name</label>
-                    <input type="text" class="span3" placeholder="Your Last Name">
+                    <input type="text" class="span3" placeholder="Your First Name" name="nom" id="nom" >
                     <label>Email Address</label>
-                    <input type="text" class="span3" placeholder="Your email address">
+                    <input type="text" class="span3" placeholder="Your email address" name="email" id="email">
                     <label>Subject
                     <select id="subject" name="subject" class="span3">
                         <option value="na" selected="">Choose One:</option>
