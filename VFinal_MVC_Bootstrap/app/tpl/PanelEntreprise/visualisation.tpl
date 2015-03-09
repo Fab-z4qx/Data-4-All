@@ -117,6 +117,9 @@
             <div class="span11 well">
                 <h1>{$nom_fichier} </h1>
                     {$graph}
+<svg>
+</svg>
+
             </div>
         </div>
     </div>

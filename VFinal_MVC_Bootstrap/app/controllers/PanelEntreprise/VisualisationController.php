@@ -41,8 +41,8 @@ class VisualisationController extends Controller
    }
    
    private function pieGraphe($id_file){
-	   		$dataFile = new DataFile();
 
+	   	$dataFile = new DataFile();
 		$data = $dataFile->getTypeAlea($id_file);
 
 		//$res = mysql_query($query);
@@ -58,6 +58,8 @@ class VisualisationController extends Controller
 				array_push($value, $dat['nb']);
 			}
 		}
+		//print_r($name);
+		//print_r($value);
 		/*
 		while ($row = mysql_fetch_assoc($res)) 
 		{
@@ -81,12 +83,13 @@ class VisualisationController extends Controller
 		$graph->legend->SetColumns(3);
 		$graph->legend->SetFrameWeight(2);
 		$graph->title->Set("Type d'evenement");
-	$graph->SetMarginColor("#f5f5f5");
+		$graph->SetMarginColor("#f5f5f5");
 		@unlink("graph.jpg"); 
 		$graph->Stroke("graph.jpg");
 		//$this->getFileName();
 		$this->smarty->assign('graph', '<img src="graph.jpg">' );
    }
+
    private function plotGraphe($id_file){
       	$dataFile = new DataFile();
 		$data = $dataFile->getPiece($id_file);
@@ -103,41 +106,68 @@ class VisualisationController extends Controller
 		}
 		
 
+		// Create the graph. These two calls are always required
+		$graph = new Graph(500,500,'auto');
+		$graph->SetScale("textlin");
 
-// Create the graph. These two calls are always required
-$graph = new Graph(500,500,'auto');
-$graph->SetScale("textlin");
+		$theme_class=new UniversalTheme;
+		$graph->SetTheme($theme_class);
 
-$theme_class=new UniversalTheme;
-$graph->SetTheme($theme_class);
+		$graph->yaxis->SetTickPositions($data3y);
+		$graph->SetBox(false);
 
-$graph->yaxis->SetTickPositions($data3y);
-$graph->SetBox(false);
+		$graph->ygrid->SetFill(false);
 
-$graph->ygrid->SetFill(false);
+		$graph->yaxis->HideLine(false);
+		$graph->yaxis->HideTicks(false,false);
 
-$graph->yaxis->HideLine(false);
-$graph->yaxis->HideTicks(false,false);
+		// Create the bar plots
+		//$b1plot = new BarPlot($data1y);
+		$b3plot = new BarPlot($data2y);
 
-// Create the bar plots
-//$b1plot = new BarPlot($data1y);
-$b3plot = new BarPlot($data2y);
+		// Create the grouped bar plot
+		$gbplot = new GroupBarPlot(array($b3plot));
+		// ...and add it to the graPH
+		$graph->SetColor("#f5f5f5");
+		$graph->Add($gbplot);
 
-// Create the grouped bar plot
-$gbplot = new GroupBarPlot(array($b3plot));
-// ...and add it to the graPH
-$graph->SetColor("#f5f5f5");
-$graph->Add($gbplot);
+		$graph->xaxis->HideLabels();
+		$graph->yaxis->HideLabels();
+		$b3plot->SetFillColor("#1111cc");
 
-$graph->xaxis->HideLabels();
-$graph->yaxis->HideLabels();
-$b3plot->SetFillColor("#1111cc");
+		$graph->title->Set("Bar Plots");
+				@unlink("graphPlot.jpg"); 
+				$graph->Stroke("graphPlot.jpg");
+				$this->smarty->assign('graphPlot', '<img src="graphPlot.jpg">' );
+		}
 
-$graph->title->Set("Bar Plots");
-		@unlink("graphPlot.jpg"); 
-		$graph->Stroke("graphPlot.jpg");
-		$this->smarty->assign('graphPlot', '<img src="graphPlot.jpg">' );
-   }
+		public function jsTest($id_file)
+		{
+			$dataFile = new DataFile();
+			$data = $dataFile->getTypeAlea($id_file);
+
+			$value = array();
+			array_push($value, array('value'));
+			foreach ($data as $dat) 
+			{
+				if($dat['nb'] != 0)
+				{
+					//array_push($name, $dat['type_alea']);
+					$test = array($dat['nb']);
+					array_push($value, $test);
+				}
+			}
+
+			$fp = fopen('file.csv', 'w');
+			//print_r($value);
+			//fputcsv($fp, $value);
+			foreach ($value as $fields) {
+			    fputcsv($fp, $fields);
+			}
+
+			fclose($fp);
+		}
+
 }
 
 ?>
