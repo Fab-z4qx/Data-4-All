@@ -40,14 +40,11 @@ class VisualisationController extends Controller
    		$target = _FILES_.$_SESSION['info']['id_entreprise'].'/';
    		$temp =  _FILES_.'tmp/';
    		$nom = $id_file.".xls";
-   		$poids = filesize($temp.$nom);
-   		//$finfo = finfo_open(, FILEINFO_MIME_TYPE);
+   		//$poids = filesize($temp.$nom);
    		$finfo = finfo_open(FILEINFO_MIME_TYPE);
    		$info = finfo_file($finfo, $temp.$nom);
-   		//print_r($info);
-   		 //exit();
    		copy($target.$nom, $temp.$nom);
-   	 	//header('Content-Description: File Transfer');
+
 	   	header('Content-Type: '.$info);
 	   	header('Content-Disposition: attachment; filename=' . basename($temp.$nom));
 	   	header("Pragma: no-cache");
@@ -61,13 +58,26 @@ class VisualisationController extends Controller
 	    readfile($temp.$nom);
 	    exit();
    }
+
+   public function renameFile($id_file)
+   {
+   		//TO DO 
+	  /* 	SELECT table_name
+	FROM information_schema.tables
+	WHERE table_name = 'exportbb'*/
+   }
+
+
+   public function removeFile($id_file)
+   {
+   		//TO DO 
+   }
    
    private function pieGraphe($id_file)
    {
-	   		$dataFile = new DataFile();
+	   	$dataFile = new DataFile();
 
 		$data = $dataFile->getTypeAlea($id_file);
-
 		$name = array();
 		$value = array();
 		foreach ($data as $dat) {
