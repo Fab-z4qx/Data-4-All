@@ -33,12 +33,51 @@ class VisualisationController extends Controller
 		$this->plotGraphe($id_file);
 		$this->smarty->display(_TPL_ENT_.'visualisation.tpl');
    }
+
+   public function getRawFile($id_file)
+   {
+   		//echo "test";
+   		$target = _FILES_.$_SESSION['info']['id_entreprise'].'/';
+   		$temp =  _FILES_.'tmp/';
+   		$nom = $id_file.".xls";
+   		//$poids = filesize($temp.$nom);
+   		$finfo = finfo_open(FILEINFO_MIME_TYPE);
+   		$info = finfo_file($finfo, $temp.$nom);
+   		copy($target.$nom, $temp.$nom);
+
+	   	header('Content-Type: '.$info);
+	   	header('Content-Disposition: attachment; filename=' . basename($temp.$nom));
+	   	header("Pragma: no-cache");
+		header("Expires: 0");
+	   	header('Content-Transfer-Encoding: binary');
+	   	header('Expires: 0');
+	   	header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+	   	header('Pragma: public');
+	    print_r($temp.$nom); 
+	    flush();
+	    readfile($temp.$nom);
+	    exit();
+   }
+
+   public function renameFile($id_file)
+   {
+   		//TO DO 
+	  /* 	SELECT table_name
+	FROM information_schema.tables
+	WHERE table_name = 'exportbb'*/
+   }
+
+
+   public function removeFile($id_file)
+   {
+   		//TO DO 
+   }
    
-   private function pieGraphe($id_file){
-	   		$dataFile = new DataFile();
+   private function pieGraphe($id_file)
+   {
+	   	$dataFile = new DataFile();
 
 		$data = $dataFile->getTypeAlea($id_file);
-
 		$name = array();
 		$value = array();
 		foreach ($data as $dat) {
