@@ -40,3 +40,60 @@
             </div>
         </div>
     </nav>
+
+<section id="entreprise_contenu_compte">
+    <form method="post" action="index.php?page=formulaire&action=createAccount">
+                    <div class="form-group">
+                        <label class="form_entreprise" for="nom_entreprise">Nom entreprise :</label>
+                        <input type="text" required="required" name="nom_entreprise" id="nom_entreprise"  value="$numberOfFile"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="form_entreprise" for="email_entreprise">Email :</label>
+                        <input type="email_entreprise" required="required" name="email_entreprise" id="email_entreprise"/>
+                    </div>
+                        <div class="form-group">
+                            <label class="form_entreprise" for="adresse">Adresse :</label>
+                            <input type="text" required="required" name="adresse" id="adresse"/>
+                        </div>
+                        <div class="form-group">
+                            <label class="form_entreprise" for="adresse_complementaire">Adresse complémentaire :</label>
+                            <input type="text" name="adresse_complementaire" id="adresse_complementaire"/>
+                        </div>
+                        <div class="form-group">
+                            <label class="form_entreprise" for="ville">Ville :</label>
+                            <input type="text" name="ville" id="ville"/>
+                        </div>
+                    
+                    
+                        <div class="form-group">
+                            <label class="form_entreprise" for="code_postal">Code Postale :</label>
+                            <input type="text" name="code_postal" id="code_postal"/>
+                        </div>
+                        <div class="form-group">
+                            <label class="form_entreprise" for="pays">Pays :</label>
+                            <input type="text" name="pays" id="pays"/>
+                        </div>
+                        <div class="form-group">
+                            <label class="form_entreprise" for="tel_entreprise">Tel :</label>
+                            <input type="text" name="tel_entreprise" id="tel_entreprise"/>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label class="form_entreprise" for="fax_entrepirse">Fax :</label>
+                            <input type="text" name="fax_entreprise" id="fax_entreprise"/>
+                        </div>
+                     
+                        <div class="form-group">
+                            <label class="form_entreprise" for="siret_entreprise">Numéro Siret :</label>
+                            <input type="text" name="siret_entreprise" id="siret_entreprise"/>
+                        </div>
+                        <div class="form-group">
+                            <label class="form_entreprise" for="forme_juridique_entreprise">Forme juridique :</label>
+                            <input type="text" name="forme_juridique_entreprise" id="forme_juridique_entreprise"/>
+                        </div>
+                        
+                    
+                    <input class="bouton_submit" type="submit" value="Sauvegarder les modifications">
+                
+    </form>
+</section>
