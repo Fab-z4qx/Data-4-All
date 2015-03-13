@@ -1,6 +1,6 @@
 <?php
 
-//require_once(_MODEL_.'adresse.php');
+require_once(_MODEL_.'adresse.php');
 
 define('OFFRE_OPDATA','0');
 define('OFFRE_BI', '1');
@@ -8,6 +8,8 @@ define('OFFRE_PREMUIM', '2');
 define('DEFAULT_SIZE_OPDATA','50');
 define('DEFAULT_SIZE_BI','100');
 define('DEFAULT_SIZE_PREMUIM','200');
+
+
 
 class Entreprise {
 
