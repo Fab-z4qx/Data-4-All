@@ -36,21 +36,13 @@
                 <div class="span4 well">
                     <table class="table table-striped ">
                         <tbody>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
+                        <!-- Modifs pour afficher les entreprise présent dans la bdd -->
+                        {section name=list loop=$listeEntreprise}
+                                <td><B>{$listeEntreprise[list].nom_entreprise}</B></td>
+                                <td><a href="index.php?page=entreprise&action=info&value={$listeEntreprise[list].id_entreprise}" class="btn btn-info">Info</a></td>
                                 <td><a href="http://www.linux-france.org/article/these/the_osd/fr-the_open_source_definition-4.html" class="btn btn-success">Télécharger</a></td>
                             </tr>
-                            <tr>
-                                <td><B>Entreprise 2</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 3</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
+                        {/section}
                         </tbody>
                     </table>
                 </div>

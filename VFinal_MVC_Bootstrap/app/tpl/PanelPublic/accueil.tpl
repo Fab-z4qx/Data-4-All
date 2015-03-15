@@ -64,7 +64,7 @@
                                     </div>
                                 </div>
 
-                                <form role="form">
+                                <form role="form" method="post" action="index.php?page=formulaire&action=createAccount" >
                                     <form method="post" action="index.php?page=formulaire&action=createAccount">
                                         <div class="row setup-content" id="step-1">
                                             <div class="col-xs-12">
@@ -149,11 +149,11 @@
                                                             <input type="password" required="required" name="password_confirmation" id="password_confirmation"/>
                                                         </div>
                                                      </div>
-                                                    <script type="text/javascript">
+                                                    <!-- <script type="text/javascript">
                                                                         $(document).ready(function() {
                                                                         $('#captcha2').html($('#captcha').clone(true,true));
                                                                         });
-                                                    </script>
+                                                    </script> -->
                                                     <div id="captcha2"></div>
                                                     <input class="bouton_submit" type="submit" value="Continuer">
                                                 </div>

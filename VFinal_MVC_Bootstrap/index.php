@@ -22,8 +22,7 @@ function startController()
 }
 
 /* LIST OF CONTROLLER WITHOUT INCLUDE TPL */
-//$controler_with_no_include  = array('connect', 'formulaire');	
-/*
+/* $controler_with_no_include  = array('connect', 'formulaire');	
 if (!empty($_GET['page']) && is_file(_CTRL_PUBLIC_.ucfirst($_GET['page']).'Controller.php'))
 {
 	include (_CTRL_PUBLIC_.ucfirst($_GET['page']).'Controller.php'); //ucfirst() met la 1er lettre en majuscule pour respecter la convention objet 

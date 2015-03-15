@@ -116,7 +116,7 @@ class Entreprise {
 
     public function getListeEntreprise()
     {
-        $sql = 'SELECT nom_entreprise FROM entreprise;';
+        $sql = 'SELECT nom_entreprise, id_entreprise FROM entreprise;';
         $req = $this->pdo->query($sql);
         $data = $req->fetchAll(PDO::FETCH_ASSOC);
         if(!empty($data)){
