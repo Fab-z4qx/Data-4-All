@@ -12,7 +12,7 @@ class EntrepriseController
     public function listeEntreprise()
     {
         $ent = new Entreprise();
-        return json_encode($ent->getListeEntreprise());
+        return $ent->getListeEntreprise();
     }
 
     /**
@@ -24,7 +24,7 @@ class EntrepriseController
     {
         $ent = new Entreprise();
         if ($ent) {
-            return json_encode($ent->getInfoEntreprise($id));
+            return $ent->getInfoEntreprise($id);
         }
         throw new RestException(404, 'User not found');
     }
