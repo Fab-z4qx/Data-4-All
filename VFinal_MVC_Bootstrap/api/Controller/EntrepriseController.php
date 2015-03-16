@@ -1,6 +1,6 @@
 <?php
 
-require_once _MODEL_.'Entreprise.php';
+require_once _MODEL_API_.'Entreprise.php';
 
 class EntrepriseController
 {

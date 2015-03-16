@@ -13,6 +13,8 @@ define('_CORE_', _PATH_ . '../app/core/');
 // Define du dossier Model
 define('_MODEL_', _PATH_ . '../app/models/');
 
+define('_MODEL_API_', _PATH_ . '/models/');
+
 // Define du dossier des Controleurs
 define('_CTRL_', _PATH_ . '../app/controllers/');
 
