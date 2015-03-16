@@ -11,8 +11,24 @@ class EntrepriseController
      */
     public function listeEntreprise()
     {
-        $data = new Entreprise();
-        return json_encode($data->getListeEntreprise());
+        $ent = new Entreprise();
+        return json_encode($ent->getListeEntreprise());
     }
+
+    /**
+     * Returns a JSON string object to the browser when hitting the root of the domain
+     *
+     * @url GET /entreprise/$id
+     */
+    public function infoEntreprise($id)
+    {
+        $ent = new Entreprise();
+        if ($ent) {
+            return json_encode($ent->getInfoEntreprise($id));
+        }
+        throw new RestException(404, 'User not found');
+    }
+
+
 
 }
