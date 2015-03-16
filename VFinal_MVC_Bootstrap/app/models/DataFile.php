@@ -40,7 +40,6 @@ class DataFile
 			$insertQuery = 'INSERT INTO '. $name . '('.$columnName.') VALUES('.$values.')';
 			$this->pdoData->exec($insertQuery);
 		}
-		
 	}
 
 	public function getFileName()
