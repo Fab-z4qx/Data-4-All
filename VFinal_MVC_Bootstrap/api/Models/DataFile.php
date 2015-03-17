@@ -138,9 +138,21 @@ class DataFile
 		return NULL;
 	}
 
+	public function getDataRangeCollumn($id_ent, $id_file, $collumn, $range1, $range2)
+	{
+		$this->getInstance($id_ent);
+		$sql = 'SELECT '.$collumn.' from '.$id_file.' LIMIT '.$range1.','.$range2;
+		$req = $this->pdo->query($sql);
+		$data = $req->fetchAll(PDO::FETCH_ASSOC);
+		if(!empty($data)){
+			return $data;
+		}
+		return NULL;
+	}
+
 	private function idToName($id)
 	{
-		
+		;
 	}
 
 	

@@ -15,10 +15,11 @@ class FileController
         return "file test";
     }
 
-     /**
+     /** 
      * Returns a JSON string object to the browser with all datafile name into db of entreprise
      *
      * @url GET /file/$id
+     * @url GET /file/$id/
      */
     public function getFileName($id)
     {
@@ -30,6 +31,7 @@ class FileController
      * Returns a JSON string object to the browser with all datafile name into db of entreprise
      *
      * @url GET /file/info/$id
+     * @url GET /file/info/$id/
      */
     public function getFileInfo($id=null)
     {
@@ -71,7 +73,17 @@ class FileController
         return $data->getDataRange($id_ent, $id_file, $range1, $range2);
     }
 
-    
+
+    /**
+     * Returns a JSON string object to the browser with specifiqueValue
+     *
+     * @url GET /file/value/$id_ent/$id_file/$collumn/$range1/$range2
+     */
+    public function getDataRangeCollumn($id_ent=null, $id_file=null,$collumn=null,$range1=null,$range2=null)
+    {
+        $data = new DataFile();
+        return $data->getDataRangeCollumn($id_ent, $id_file, $collumn, $range1, $range2);
+    }
 
     /*************************************************************************/
     /******************************** POST METHODE ***************************/
