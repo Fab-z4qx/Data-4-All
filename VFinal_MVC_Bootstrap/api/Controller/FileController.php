@@ -7,7 +7,7 @@ class FileController
     /**
      * Returns a JSON string object to the browser when hitting the root of the domain
      *
-     * @url GET /file
+     * @url GET /files
      */
     public function test()
     {
@@ -49,7 +49,7 @@ class FileController
     }
 
     /**
-     * Returns a JSON string object to the browser with all size of db
+     * Returns a JSON string object to the browser with all data from file
      *
      * @url GET /file/value/$id_ent/$id_file
      */
@@ -58,6 +58,30 @@ class FileController
         $data = new DataFile();
         return $data->getData($id_ent, $id_file);
     }
+
+
+    /**
+     * Returns a JSON string object to the browser with all size of db
+     *
+     * @url GET /file/value/$id_ent/$id_file/$range1/$range2
+     */
+    public function getDataFromFileRange($id_ent=null, $id_file=null, $range1=null, $range2=null)
+    {
+        $data = new DataFile();
+        return $data->getDataRange($id_ent, $id_file, $range1, $range2);
+    }
+
+    
+
+    /*************************************************************************/
+    /******************************** POST METHODE ***************************/
+    /*************************************************************************/
+
+
+
+    /*************************************************************************/
+    /******************************** PUT METHODE ***************************/
+    /*************************************************************************/
    
 
 }
