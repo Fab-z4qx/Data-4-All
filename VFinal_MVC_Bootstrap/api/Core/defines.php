@@ -10,6 +10,9 @@ define('_PATH_', dirname(dirname(__FILE__).'/').'/');
 // Define du dossier Coeur
 define('_CORE_', _PATH_ . '../app/core/');
 
+// Define du dossier Coeur
+define('_CORE_API_', _PATH_ . '/core/');
+
 // Define du dossier Model
 define('_MODEL_', _PATH_ . '../app/models/');
 

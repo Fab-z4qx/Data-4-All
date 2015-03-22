@@ -66,37 +66,35 @@ class Entreprise {
 
 	public function insert($nom_entreprise, $email_entreprise, $siret_entreprise, $tel_entreprise, $fax_entreprise, $forme_juridique_entreprise, $activite_entreprise, $id_of_inserted_adresse)
 	{
-		$entreprise_sql_req = "INSERT INTO `entreprise` (
-                `id_entreprise`, 
-                `nom_entreprise`, 
-                `email_entreprise`, 
-                `siret_entreprise`, 
-                `tel_entreprise`, 
-                `fax_entreprise`, 
-                `forme_juridique_entreprise`, 
-                `activite_entreprise`, 
-                `type_offre`,
-                `espace_disponible`,
-                `nombre_fichier`,
-                `id_adresse`)
-                VALUES (NULL, 
-                ".$this->pdo->quote($nom_entreprise).",  
-                ".$this->pdo->quote($email_entreprise).", 
-                ".$this->pdo->quote($siret_entreprise).",  
-                ".$this->pdo->quote($tel_entreprise).", 
-                ".$this->pdo->quote($fax_entreprise).",  
-                ".$this->pdo->quote($forme_juridique_entreprise).", 
-                ".$this->pdo->quote($activite_entreprise).", 
-                ".$this->pdo->quote(OFFRE_BI).",  
-                ".$this->pdo->quote($this->convertMoToOctets(DEFAULT_SIZE_BI)).", 
-                ".$this->pdo->quote(0).", 
-                ".$this->pdo->quote($id_of_inserted_adresse).");";
-                        
-                //echo $entreprise_sql_req;
-                if($this->pdo->exec($entreprise_sql_req))
-                {
-                   return $this->pdo->lastInsertId();
-                }
+		$entreprise_sql_req = 
+        "INSERT INTO `entreprise` (
+        `id_entreprise`, 
+        `nom_entreprise`, 
+        `email_entreprise`, 
+        `siret_entreprise`, 
+        `tel_entreprise`, 
+        `fax_entreprise`, 
+        `forme_juridique_entreprise`, 
+        `activite_entreprise`, 
+        `type_offre`,
+        `espace_disponible`,
+        `id_adresse`)
+        VALUES (NULL, 
+        ".$this->pdo->quote($nom_entreprise).",  
+        ".$this->pdo->quote($email_entreprise).", 
+        ".$this->pdo->quote($siret_entreprise).",  
+        ".$this->pdo->quote($tel_entreprise).", 
+        ".$this->pdo->quote($fax_entreprise).",  
+        ".$this->pdo->quote($forme_juridique_entreprise).", 
+        ".$this->pdo->quote($activite_entreprise).", 
+        ".$this->pdo->quote(OFFRE_BI).",  
+        ".$this->pdo->quote($this->convertMoToOctets(DEFAULT_SIZE_BI)).", 
+        ".$this->pdo->quote($id_of_inserted_adresse).");";
+                
+        if($this->pdo->exec($entreprise_sql_req))
+        {
+           return $this->pdo->lastInsertId();
+        }
 	}
 
     private function convertMoToOctets($mo)

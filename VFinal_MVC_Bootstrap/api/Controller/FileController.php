@@ -88,12 +88,26 @@ class FileController
     /*************************************************************************/
     /******************************** POST METHODE ***************************/
     /*************************************************************************/
-
-
+ 
+    /**
+     * Returns a JSON string object to the browser with specifiqueValue
+     *
+     * @url POST /file/upload/$id_ent
+     * CURL EX : curl -i -F file=test -F filedata=@ex.xlsx http://localhost:8888/htdocs/D4A/Data4All/VFinal_MVC_Bootstrap/api/file/upload/1
+     */
+    public function postXlsFile($id_ent=null)
+    {
+        $data = new DataFile();
+        $data->upload($id_ent);
+        //return $data->getDataRangeCollumn($id_ent, $id_file, $collumn, $range1, $range2);
+    }
 
     /*************************************************************************/
     /******************************** PUT METHODE ***************************/
     /*************************************************************************/
    
+    
+
+
 
 }

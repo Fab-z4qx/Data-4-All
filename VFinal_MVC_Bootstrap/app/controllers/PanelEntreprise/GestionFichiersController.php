@@ -35,13 +35,17 @@ class GestionFichiersController extends Controller
 		$target_dir = _FILES_.$_SESSION['info']['id_entreprise'].'/';
 
 		if(!file_exists($target_dir))
-			mkdir($target_dir, 0555);
+			mkdir($target_dir, 0777);
 
 		$target_dir = $target_dir.basename($_FILES["file"]["name"]);
 		$uploadOk=1;
-		if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_dir)) {
+		//print_r($_FILES);
+		if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_dir)) 
+		{
 		    echo "The file ". basename( $_FILES["file"]["name"]). " has been uploaded.";
-		} else {
+		} 
+		else 
+		{
 		    echo "Sorry, there was an error uploading your file.";
 		    if ($_FILES['file']['error'] == UPLOAD_ERR_NO_FILE ) $erreur = "Fichier manquant";
 		    if ($_FILES['file']['error'] == UPLOAD_ERR_INI_SIZE ) $erreur = "Taille limite php";
@@ -69,7 +73,7 @@ class GestionFichiersController extends Controller
 		$this->insertFile($target_dir,$New);
 		echo ("<p>insert has been successfully received.</p>");
 
-		$this->updateInfoData();
+		//$this->updateInfoData();
 	}
 
 	public function getFileName()
