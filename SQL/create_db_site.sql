@@ -37,8 +37,8 @@ sujet_contact VARCHAR(255),
 message_contact TEXT,
 PRIMARY KEY (id_contact) ) ENGINE=InnoDB;
 
-DROP TABLE IF EXISTS Fichiers ;
-CREATE TABLE Fichiers (id_fichier INT  AUTO_INCREMENT NOT NULL,
+DROP TABLE IF EXISTS fichiers ;
+CREATE TABLE fichiers (id_fichier INT  AUTO_INCREMENT NOT NULL,
 nom_fichier VARCHAR(40),
 id_entreprise INT NOT NULL,
 PRIMARY KEY (id_fichier) ) ENGINE=InnoDB;
@@ -46,4 +46,4 @@ PRIMARY KEY (id_fichier) ) ENGINE=InnoDB;
 ALTER TABLE user ADD CONSTRAINT FK_user_entreprise_id_entreprise FOREIGN KEY (entreprise_id_entreprise) REFERENCES entreprise (id_entreprise);
 
 ALTER TABLE entreprise ADD CONSTRAINT FK_entreprise_id_adresse FOREIGN KEY (id_adresse) REFERENCES adresse (id_adresse);
-ALTER TABLE Fichiers ADD CONSTRAINT FK_Fichiers_id_entreprise FOREIGN KEY (id_entreprise) REFERENCES entreprise (id_entreprise);
+ALTER TABLE fichiers ADD CONSTRAINT FK_fichiers_id_entreprise FOREIGN KEY (id_entreprise) REFERENCES entreprise (id_entreprise);
