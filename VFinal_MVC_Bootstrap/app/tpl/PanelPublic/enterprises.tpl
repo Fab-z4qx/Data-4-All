@@ -1,7 +1,7 @@
 <div id="liste entreprise">
-
+    
     <!-- MENU -->
-    <div class="navbar navbar-static-top navbar-inverse">
+    <div class="navbar navbar-fixed-top navbar-inverse">
         <div class="navbar-inner">
             <div class="container-full">
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -20,14 +20,17 @@
             </div>
         </div>
     </div>
-<!-- MENU -->
-<center>
-<div class="jumbotron well">
-  <h1>Liste des entreprises qui nous font confiances</h1>
-  <p>Ici une petite descriptions</p>
-  <p><a class="btn btn-primary btn-lg">En savoir plus</a></p>
-</div>
+<!--/ MENU -->
+
+    <center>
+        <div class="jumbotron well">
+          <h1>Liste des entreprises qui nous font confiances</h1>
+          <h4>Retrouvez toutes les informations sur les entreprises qui ont choisi notre solution.
+              Si vous souhaitez également partager vos données n'hésitez pas à nous contacter.</h4>
+          <p><a class="btn btn-primary btn-lg">En savoir plus</a></p>
+        </div>
     </center>
+
 <!-- Liste entreprise -->
     <br/>
     <div class="container offset5">
@@ -50,7 +53,6 @@
         </div>
         <div class="offset3" id="page_navigation"> </div>
     </div>
-
 <!-- /Liste entreprise -->
 
 <!-- Pagination -->

@@ -36,11 +36,13 @@
         </div>
     </div>
 <!-- /MENU -->
+
     {if ({$error} == 'login_invalide')}
         <div class="error_login">error de login </div>
     {/if}
 
 <!-- Inscription -->
+
     <div id="monaccordeon">
             <div class="accordion-group">
                 <div class="accordion-heading">
@@ -167,10 +169,13 @@
                 </div>
             </div>
         </div>
+
 <!-- /Inscription -->
 
 <!-- CONTAINER FULL -->
+
 <div class="container-full">
+
 <!-- CAROUSEL -->
          <div id="myCarousel" class="carousel slide">
 	      <div class="carousel-inner">
@@ -194,7 +199,7 @@
 	              <div id="search">
                     <form action="index.php?page=entreprise&action=search" method="post">
                         <input type="search" value="" placeholder="Recherchez votre entreprise" name="nom" id="nom" />
-                        <button type="submit" class="btn btn-primary">Search</button>
+                        <button type="submit" style="margin-bottom: 20px" class="btn btn-primary" >Search</button>
                     </form>
                 </div>
 	            </div>
@@ -207,7 +212,7 @@
 	              <div id="search">
                     <form action="index.php?page=entreprise&action=search" method="post">
                         <input type="search" value="" placeholder="Recherchez votre entreprise" name="nom" id="nom" />
-                        <button type="submit" class="btn btn-primary">Search</button>
+                        <button type="submit" style="margin-bottom: 20px" class="btn btn-primary" >Search</button>
                     </form>
                 </div>
 	            </div>
@@ -224,26 +229,32 @@
         <div class="container marketing">
             <!-- marketing -->
           <div class="featurette">
-            <img class="featurette-image pull-right img-circle" src="web/img/icones/Argent_Jaune.png">
-            <h2 class="featurette-heading">Une plue-value pour l'entreprise<span class="muted">Description</span></h2>
-            <p class="lead">explication</p>
+            <img class="featurette-image pull-left img-circle" src="web/img/icones/Argent_Jaune.png">
+            <h2 class="featurette-heading pull-left ">Une plue-value pour l'entreprise</h2></br></br></br></br>
+            <p class="lead">Les données d’une entreprise sont nombreuses et il serait de dommage de ne
+                    pas tiré profit de cette source pour votre entreprise. Grâce à notre solution, prenez la bonne décision au bon moment, en ayant les bonnes informations.
+                    Prévoyez l’avenir en prenant les décisions correspondant à votre plan longue durée.</p>
           </div>
           <hr class="featurette-divider">
           <div class="featurette">
-            <img class="featurette-image pull-left img-circle" src="web/img/icones/Stockage Supp_Jaune.png">
-            <h2 class="featurette-heading">Une transparence pour vous<span class="muted">See for yourself.</span></h2>
-            <p class="lead">explication</p>
+            <img class="featurette-image pull-right img-circle" src="web/img/icones/Stockage Supp_Jaune.png">
+            <h2 class="featurette-heading pull-right">Une transparence pour vous</h2></br></br></br></br>
+            <p class="lead">Vous avez de nombreuse donnée, et vous souhaitez les mettre à disposition de tous pour :
+                <li>Montrer que vous n’avez rien a caché</li>
+                <li>Permettez a chacun de faire de la recherche pour votre entreprise</li>
+                <li>Stimulez l’économie</li>
+            </p>
           </div>
           <hr class="featurette-divider">
           <div class="featurette">
-            <img class="featurette-image pull-right img-circle" src="web/img/icones/Assistance_Jaune.png">
-            <h2 class="featurette-heading ">Une bdd de folie<span class="muted">Checkmate.</span></h2>
-            <p class="lead">explication</p>
+            <img class="featurette-image pull-left img-circle" src="web/img/icones/Assistance_Jaune.png">
+            <h2 class="featurette-heading pull-left">Une bdd de folie</h2></br></br></br></br>
+            <p class="lead">Chargez vos données, exploitez vos données, et choisissez celle que vous voulez diffuser au monde. Stimulez l'économie et affichez votre transparence
+                d’une main, récupérez les informations et prenez les décisions de l’autre. </p>
           </div>
-
         <hr class="featurette-divider">
-
     <!-- SERVICES -->
+           <center> <h2 class="featurette-heading center">Choisissez l'offre qui vous correspond le mieux !</h2></center></br>
             <div class="row">
                 <div class="span4">
                     <img class="img-circle" src="web/img/icones/BI_Jaune.png">
@@ -260,13 +271,12 @@
                 <div class="span4">
                     <img class="img-circle" src="web/img/icones/Premium_Jaune.png">
                     <h2>Prenium</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <p>L’offre premium comprend l’offre BI ainsi que que l’offre Open DATA. En choisissant cette offre vous propulserez votre entreprise sur les devants de
+                        la scène grâce à l’Open Data, tout en ayant un service d’aide à la décision performant.</p>
                 </div>
             </div>
     <!-- /SERVICES -->
-
         <hr class="featurette-divider">
-
     <!-- OFFRES -->
             <table class="table table-striped table-bordered">
                 <tbody>
@@ -310,13 +320,22 @@
             </table>
         </div>
        <!-- /OFFRES -->
+
 <!-- /SERVICES & OFFRES -->
+
 </section>
 
     <hr class="featurette-divider">
 
 <!-- TEAM -->
 <section id="team">
+    <center>
+        <div class="jumbotron well">
+          <h2>Nous vous présentons notre super équipe !</h2>
+        </div>
+    </center>
+
+
         <div class="container-full team">
             <div class="row  offset2">
                 <div class="span3 well">
@@ -486,45 +505,16 @@
 </section>
 <!-- /TEAM -->
 
-    <hr class="featurette-divider">
-
-<!-- CONTACT -->
-<section id="contact">
-    <div class="container contact">
-        <form class=" span8" action="index.php?page=formulaire&action=contact" method="post">
-          <div class="row offset6">
-                <div class="span3">
-                    <label>First Name</label>
-                    <input type="text" class="span3" placeholder="Your First Name" name="nom" id="nom" >
-                    <label>Email Address</label>
-                    <input type="text" class="span3" placeholder="Your email address" name="email" id="email">
-                    <label>Subject
-                    <select id="subject" name="subject" class="span3">
-                        <option value="na" selected="">Choose One:</option>
-                        <option value="service">General Customer Service</option>
-                        <option value="suggestions">Suggestions</option>
-                        <option value="product">Product Support</option>
-                    </select>
-                    </label>
-                </div>
-                <div class="span3">
-                    <label>Message</label>
-                    <textarea name="message" id="message" class="input-xlarge span5" rows="10"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary pull-right">Send</button>
-            </div>
-        </form>
-    </div>
-</section>
-<!-- /CONTACT -->
+     <hr class="featurette-divider">
 
 <!-- /CONTAINER FULL-->
      </div>
 <!-- FOOTER -->
+
       <footer>
           <center>
         <a href="#">Back to top</a>
-        <p>© 2015 Data4All <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p>© 2015 Data4All · <a href="#">Contact</a> · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
           </center>
       </footer>
 <!-- /FOOTER -->
@@ -576,4 +566,5 @@ $(document).ready(function () {
     $('div.setup-panel div a.btn-primary').trigger('click');
 });</script>
 <!-- /SCRIPT_Inscription -->
+
 <!-- /ACCUEIL -->
