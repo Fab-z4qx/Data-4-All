@@ -180,7 +180,7 @@
          <div id="myCarousel" class="carousel slide">
 	      <div class="carousel-inner">
 	        <div class="item active">
-	          <img  src="web/img/test.jpg">
+	          <img  src="web/img/Image_Carrousel_4.png">
 	          <div class="container">
 	            <div class="carousel-caption offset4">
 	              <div id="search">
