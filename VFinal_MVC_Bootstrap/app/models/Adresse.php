@@ -1,7 +1,6 @@
 <?php
 
 class Adresse {
-
 	private $pdo;
 	public function __construct()
 	{

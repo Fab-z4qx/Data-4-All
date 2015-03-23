@@ -5,9 +5,9 @@ class Database {
    protected $_db;
    private $_OS;
 
-   static public function getInstance() {
+   static public function getInstance($dbName=null) {
       if( is_null(self::$_instance) )
-         self::$_instance = new Database();
+         self::$_instance = new Database($dbName);
       return self::$_instance;
    }
 
@@ -17,34 +17,40 @@ class Database {
       return call_user_func_array(array($this->_db, $method), $arg);
    }
 
-   protected function __construct() 
+   protected function __construct($dbName) 
    {
-		$this->_OS = strtoupper(substr(php_uname("s"), 0, 3));
-      $host = '127.0.0.1';
-      $dbname = 'bdd_d4a';
-		$user = 'root';
-      try
+      if($dbName == null)
       {
-         if ($this->_OS === 'DAR') 
+         $this->_OS = strtoupper(substr(php_uname("s"), 0, 3));
+         $host = '127.0.0.1';
+         $dbname = 'bdd_d4a';
+         $user = 'root';
+         try
          {
-            $port = '8889'; // 3306 for windows && 8889 for mac 
-            $password = 'root';
-         } 
-         else 
-         {
-            $port = '3306'; // 3306 for windows && 8889 for mac 
-            $password = '';
-         }
+            if ($this->_OS === 'DAR') 
+            {
+               $port = '8889'; // 3306 for windows && 8889 for mac 
+               $password = 'root';
+            } 
+            else 
+            {
+               $port = '3306'; // 3306 for windows && 8889 for mac 
+               $password = '';
+            }
 
-		//$this->createDB($dbname);
-		$this->_db = new PDO('mysql:host='.$host.';dbname='.$dbname.';port='.$port.'',''.$user.'', ''.$password.'', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8')); 
-		//$this->executeQueryFile(_PATH_."/app/BDDSite.sql");
+         //$this->createDB($dbname);
+         $this->_db = new PDO('mysql:host='.$host.';dbname='.$dbname.';port='.$port.'',''.$user.'', ''.$password.'', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8')); 
+         //$this->executeQueryFile(_PATH_."/app/BDDSite.sql");
+         }
+         catch(Exception $e)
+         {   // En cas d'erreur, on affiche un message et on arrête tout
+             die('Erreur : '.$e->getMessage());
+         }
       }
-      catch(Exception $e)
-      {   // En cas d'erreur, on affiche un message et on arrête tout
-          die('Erreur : '.$e->getMessage());
+      else
+      {
+         $this->_db = $this->getDbConnection($dbName);
       }
-     
    }
 
    public function getDbConnection($dbName)

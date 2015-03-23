@@ -1,6 +1,6 @@
 <?php
 
-require_once(_MODEL_.'Adresse.php');
+//require_once(_MODEL_.'Adresse.php');
 require_once(_MODEL_.'Entreprise.php');
 require_once(_MODEL_.'User.php');
 require_once(_MODEL_.'Contact.php');
@@ -8,10 +8,11 @@ require_once(_MODEL_.'Contact.php');
 class FormulaireController extends Controller 
 {
    //private $user;
-   public function __construct()
+  /* public function __construct()
    {
+      parent::__construct();
    	 //$this->user = new Users;
-   } 
+   } */ 
 
    public function display() 
    {
@@ -74,8 +75,9 @@ class FormulaireController extends Controller
          /*********************************************************/
          /************** VUE SMARTY A AJOUTER *********************/
          /*********************************************************/
-      $this->smarty->assign('accont', 'compte_crée');
-      header('Location:index.php');   
+      //var_dump($this);
+      $this->smarty->assign('accont', 'compte_cree');
+      //header('Location:index.php');   
    }
 
    public function verifValue()

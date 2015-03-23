@@ -1,7 +1,7 @@
 <div id="liste entreprise">
-
+    
     <!-- MENU -->
-    <div class="navbar navbar-static-top navbar-inverse">
+    <div class="navbar navbar-fixed-top navbar-inverse">
         <div class="navbar-inner">
             <div class="container-full">
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -20,14 +20,17 @@
             </div>
         </div>
     </div>
-<!-- MENU -->
-<center>
-<div class="jumbotron well">
-  <h1>Liste des entreprises qui nous font confiances</h1>
-  <p>Ici une petite descriptions</p>
-  <p><a class="btn btn-primary btn-lg">En savoir plus</a></p>
-</div>
+<!--/ MENU -->
+
+    <center>
+        <div class="jumbotron well">
+          <h1>Liste des entreprises qui nous font confiances</h1>
+          <h4>Retrouvez toutes les informations sur les entreprises qui ont choisi notre solution.
+              Si vous souhaitez également partager vos données n'hésitez pas à nous contacter.</h4>
+          <p><a class="btn btn-primary btn-lg">En savoir plus</a></p>
+        </div>
     </center>
+
 <!-- Liste entreprise -->
     <br/>
     <div class="container offset5">
@@ -36,21 +39,13 @@
                 <div class="span4 well">
                     <table class="table table-striped ">
                         <tbody>
-                            <tr>
-                                <td><B>Entreprise 1</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
+                        <!-- Modifs pour afficher les entreprise présent dans la bdd -->
+                        {section name=list loop=$listeEntreprise}
+                                <td><B>{$listeEntreprise[list].nom_entreprise}</B></td>
+                                <td><a href="index.php?page=entreprise&action=info&value={$listeEntreprise[list].id_entreprise}" class="btn btn-info">Info</a></td>
                                 <td><a href="http://www.linux-france.org/article/these/the_osd/fr-the_open_source_definition-4.html" class="btn btn-success">Télécharger</a></td>
                             </tr>
-                            <tr>
-                                <td><B>Entreprise 2</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-
-                            </tr>
-                            <tr>
-                                <td><B>Entreprise 3</B></td>
-                                <td><a href="#" class="btn btn-info">Info</a></td>
-                                <td><a href="#" class="btn btn-success">Télécharger</a></td>
-                            </tr>
+                        {/section}
                         </tbody>
                     </table>
                 </div>
@@ -58,7 +53,6 @@
         </div>
         <div class="offset3" id="page_navigation"> </div>
     </div>
-
 <!-- /Liste entreprise -->
 
 <!-- Pagination -->

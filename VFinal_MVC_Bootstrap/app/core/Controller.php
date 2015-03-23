@@ -1,10 +1,10 @@
 <?php 
 
-
 class Controller 
 {
    protected $smarty;
-   public function __construct() {
+   public function __construct() 
+   {
       $this->smarty = new Smarty();
    }
 }

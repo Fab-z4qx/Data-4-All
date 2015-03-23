@@ -1,6 +1,7 @@
 <?php
 
-class DataFile {
+class DataFile 
+{
 
 	private $pdo;
 	private $pdoData;
@@ -39,7 +40,6 @@ class DataFile {
 			$insertQuery = 'INSERT INTO '. $name . '('.$columnName.') VALUES('.$values.')';
 			$this->pdoData->exec($insertQuery);
 		}
-		
 	}
 
 	public function getFileName()
@@ -73,6 +73,18 @@ class DataFile {
 		$sql = 'SELECT type_alea, count(*) as nb from '.$id_file.' group by type_alea';
 		$req = $this->pdoData->query($sql);
 		$data = $req->fetchAll(PDO::FETCH_ASSOC);
+		return $data;
+	}
+
+
+	public function getDbSize()
+	{
+		$sql = 'SELECT table_schema "DB Name", Round(Sum(data_length + index_length) / 1024 / 1024, 1) "DB Size in MB" FROM information_schema.tables GROUP BY table_schema';
+		$req = $this->pdoData->query($sql);
+		$data = $req->fetchAll(PDO::FETCH_ASSOC);
+		echo '<pre>';
+		print_r($data);
+		echo '</pre>';
 		return $data;
 	}
 	
