@@ -20,6 +20,7 @@ marg-MENU
 *******************************************/
 #accueil{
   padding-top: 65px; /* 75px to make the container go all the way to the bottom of the topbar*/
+  margin-top:20px;
 }
 /*******************************************
 ERROR
@@ -31,7 +32,7 @@ ERROR
 inscription
 *******************************************/
 body{
-    margin-top:20px;
+    
 }
 
 .stepwizard-step p {

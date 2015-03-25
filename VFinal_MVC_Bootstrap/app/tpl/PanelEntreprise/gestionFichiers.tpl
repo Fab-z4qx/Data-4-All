@@ -7,7 +7,7 @@
                 <div>
                 <li class="sidebar-brand">
                     <a href="index.php?">
-                        <img src="web/img/logos_entreprises/efrei.png">
+                        <img src="web/img/logos/Logo_D4A_Teal_Bords.png">
                     </a>
                 </li>
                 </div>
@@ -22,6 +22,11 @@
                 </li>
                 <li>
                     <a href="entreprise.php?page=compte"><i class="fa fa-user"></i>&nbsp;&nbsp;Compte</a>
+                </li>
+                <li>
+                    <div class="footer_slidebar">
+                        © 2015 Data4All - contact
+                    </div>
                 </li>
                 <!--<li><a href="entreprise.php?page=services">Services</a></li>-->
             </ul>
@@ -50,7 +55,7 @@
     <div id="TabModalContent" class="tab-content">
         <!-- ONGLET UPLOAD -->
         <div class="tab-pane active" id="upload">
-            <section id="entreprise_contenu">
+            <section id="entreprise_gestion_fichier_contenu">
                 <div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">
                     
                         <h1 class="titre_section"><i class="fa fa-upload"></i>&nbsp;&nbsp;&nbsp;Upload</h1> <br>
@@ -96,7 +101,7 @@
         <!-- /ONGLET UPLOAD -->
         <!-- ONGLET ALL FILES -->
         <div class="tab-pane" id="all_files">
-              <section id="entreprise_contenu">
+              <section id="entreprise_gestion_fichier_contenu">
                 <div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">
                         <h1 class="titre_section"><i class="fa fa-file"></i>&nbsp;&nbsp;&nbsp;Tous les fichiers</h1> <br>
                         <center><form class="navbar-form navbar-right inline-form">

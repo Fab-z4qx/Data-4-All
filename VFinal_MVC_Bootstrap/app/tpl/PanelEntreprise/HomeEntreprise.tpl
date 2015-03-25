@@ -7,7 +7,7 @@
                 <div>
                     <li class="sidebar-brand">
                         <a href="index.php?">
-                            <img src="web/img/logos_entreprises/efrei.png">
+                            <img src="web/img/logos/Logo_D4A_Teal_Bords.png">
                         </a>
                     </li>
                 </div>

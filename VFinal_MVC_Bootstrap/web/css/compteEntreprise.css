@@ -9,7 +9,6 @@ SECTIONS
 *******************************************/
 
 #entreprise_contenu_compte{
-	padding-top: 100px; /*75px*/
-	padding-left: 150px;
-	padding-bottom: 0px;
+	padding-top: 100px; 
+	padding-bottom: 50px; 
 }

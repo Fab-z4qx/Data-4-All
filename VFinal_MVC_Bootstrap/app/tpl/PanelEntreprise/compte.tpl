@@ -1,4 +1,4 @@
-
+<div class="body_entreprise">
 <!-- MENU -->
     <div id="wrapper">
         <!-- Sidebar -->
@@ -7,7 +7,7 @@
                 <div>
                 <li class="sidebar-brand">
                     <a href="index.php?">
-                        <img src="web/img/logos_entreprises/efrei.png">
+                        <img src="web/img/logos/Logo_D4A_Teal_Bords.png">
                     </a>
                 </li>
                 </div>
@@ -22,6 +22,11 @@
                 </li>
                 <li class="page_active">
                     <a href="entreprise.php?page=compte"><i class="fa fa-user"></i>&nbsp;&nbsp;Compte</a>
+                </li>
+                <li>
+                    <div class="footer_slidebar">
+                        © 2015 Data4All - contact
+                    </div>
                 </li>
                 <!--<li><a href="entreprise.php?page=services">Services</a></li>-->
             </ul>
@@ -44,7 +49,9 @@
 
 
 <section id="entreprise_contenu_compte">
-    <form method="post" action="index.php?page=formulaire&action=createAccount">
+    <div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">
+
+        <form method="post" action="index.php?page=formulaire&action=createAccount">
                     <div class="form-group">
                         <label class="form_entreprise" for="nom_entreprise">Nom entreprise :</label>
                         <input type="text" required="required" name="nom_entreprise" id="nom_entreprise"  value="{$nom_entreprise}"/>
@@ -100,5 +107,8 @@
                     
                     <input class="bouton_submit" type="submit" value="Sauvegarder les modifications">
                 
-    </form>
+        </form>
+    </div>
 </section>
+
+</div>
