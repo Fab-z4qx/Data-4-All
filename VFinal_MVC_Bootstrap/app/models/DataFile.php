@@ -13,7 +13,8 @@ class DataFile
 
 	public function createTable($array, $name)
 	{
-		$tableCreate = 'CREATE TABLE IF NOT EXISTS '. $name .' (';
+		$id = $this->generateUUID();
+		$tableCreate = 'CREATE TABLE IF NOT EXISTS '. $id .' (';
 
 		for($i = 0; $i < count($array[1]); $i++){
 		if($i > 0){
@@ -29,6 +30,16 @@ class DataFile
 		}
 		$tableCreate = $tableCreate.");";
 		$this->pdoData->exec($tableCreate);
+	}
+
+	private function generateUUID()
+	{
+ 		return uniqid();
+	}
+
+	private function updateFichierTable($name,$id)
+	{
+		//INSERT INTO `bdd_d4a`.`fichiers` (`id_fichier`, `nom_fichier`, `id_fichier_entreprise`, `id_entreprise`) VALUES (NULL, 'bdd', '55fff6598', '1');
 	}
 
 	public function insert($array, $name)
