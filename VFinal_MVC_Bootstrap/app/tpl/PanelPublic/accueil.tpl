@@ -197,7 +197,7 @@
 	          </div>
 	        </div>
 	        <div class="item">
-                <img  src="web/img/test.jpg">
+                <img  src="web/img/Image_Carrousel_4.png">
 	          <div class="container">
 	            <div class="carousel-caption offset4">
 	              <div id="search">
@@ -210,7 +210,7 @@
 	          </div>
 	        </div>
 	        <div class="item">
-	            <img  src="web/img/test.jpg">
+	            <img  src="web/img/Image_Carrousel_3.png">
 	          <div class="container">
 	            <div class="carousel-caption offset4">
 	              <div id="search">
