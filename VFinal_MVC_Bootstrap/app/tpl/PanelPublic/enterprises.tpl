@@ -1,5 +1,5 @@
 <div id="liste entreprise">
-    
+
     <!-- MENU -->
     <div class="navbar navbar-fixed-top navbar-inverse">
         <div class="navbar-inner">

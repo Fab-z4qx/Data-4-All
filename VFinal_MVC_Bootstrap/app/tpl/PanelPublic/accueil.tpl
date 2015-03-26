@@ -8,7 +8,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <img src="web/img/logos/logo_site_sans_bord_teal.png" class="img-responsive img-centered" alt="">
+                <a class="brand " href="index.php"><img src="web/img/logos/logo_site_sans_bord_teal.png" class="img-responsive img-centered"></a>
                 <li class="divider pull-right"></li>
                 <a class="brand " href="index.php">DATA 4 ALL</a>
                 <div class="nav-collapse pull-right">
@@ -23,7 +23,7 @@
                                  <input class="btn-primary" type="submit" value="OK"/>
                                  <div class="checkbox">
                                      <label>
-                                        <input type="checkbox"/> Remember me
+                                        <input type="checkbox"/> se souvenir de moi
                                         <a class="offset1" href="#">Mot de passe oublié </a>
                                         <a class="pull-right accordion-toggle" href="#item1" data-parent="#monaccordeon" data-toggle="collapse">S'inscrire</a>
                                     </label>
@@ -53,15 +53,19 @@
                                     <div class="stepwizard-row setup-panel">
                                         <div class="stepwizard-step">
                                             <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
-                                            <p>Step 1</p>
+                                            <p>Etape 1</p>
                                         </div>
                                         <div class="stepwizard-step">
                                             <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-                                            <p>Step 2</p>
+                                            <p>Etape 2</p>
                                         </div>
                                         <div class="stepwizard-step">
                                             <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-                                            <p>Step 3</p>
+                                            <p>Etape 3</p>
+                                        </div>
+                                        <div class="stepwizard-step">
+                                            <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
+                                            <p>Fin</p>
                                         </div>
                                     </div>
                                 </div>
@@ -79,7 +83,7 @@
                                                         <label class="form_entreprise" for="email_entreprise">Email :</label>
                                                         <input type="email_entreprise" required="required" name="email_entreprise" id="email_entreprise"/>
                                                     </div>
-                                                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+                                                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Suivant</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -120,7 +124,7 @@
                                                             <input type="text" name="fax_entreprise" id="fax_entreprise"/>
                                                         </div>
                                                      </div>
-                                                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+                                                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Suivant</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -444,8 +448,8 @@
                     <img class="img-circle" src="web/img/team/guillaume.jpg">
                     <span class="muted"><h3>PIGAUX</h3><h3>Guillaume</h3></span>
                     <p>Developer</p>
-                    <p>Heureux de vivre !</p>
-                    <p>Heureux de vivre !</p>
+                    <p>Petit Eccueuil</p>
+                    <p>Développe pour le plaisir</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
@@ -513,7 +517,7 @@
 
       <footer>
           <center>
-        <a href="#">Back to top</a>
+        <a href="#">Retour au début</a>
         <p>© 2015 Data4All · <a href="#">Contact</a> · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
           </center>
       </footer>
