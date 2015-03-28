@@ -12,3 +12,11 @@ SECTIONS
 	padding-top: 100px; 
 	padding-bottom: 50px; 
 }
+
+#group_form_contact{
+	padding-top: 2%;
+	padding-left: 5%;
+	padding-bottom: 2%;
+	background-color: white;
+	box-shadow: 0 0 5px #888 inset;
+}

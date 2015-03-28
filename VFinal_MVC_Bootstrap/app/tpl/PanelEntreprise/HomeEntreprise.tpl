@@ -98,9 +98,17 @@
             </div>
         </div>
         </div>
+
+        <div class="container">
+            <center>
+                <div id="moreSpace">
+                    <h2>Besoin de plus d'espace de stockage</h2>
+                    <button type="button" id="buttonMoreSpace" class="btn btn-lg">Obtenir</button>
+                </div>
+            </center>
+        </div>
+
     </section>
-
-
 
 
 <!--
