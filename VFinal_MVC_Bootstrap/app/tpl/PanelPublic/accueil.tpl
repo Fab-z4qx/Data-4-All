@@ -165,6 +165,18 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="row setup-content" id="step-4">
+                                            <div class="col-xs-12">
+                                                <div class="col-md-12">
+                                                        <center>
+                                                            <div class="jumbotron well">
+                                                              <h1>Félicitation !</h1>
+                                                              <h4>Vous êtes maintenant inscrit, vous allez recevoir un mail de confirmation à l'adresse que vous nous avez indiqué.</h4>
+                                                            </div>
+                                                        </center>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </form>
                                 </form>
                             </div>
