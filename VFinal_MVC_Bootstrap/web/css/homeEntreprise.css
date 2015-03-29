@@ -41,9 +41,8 @@ SECTIONS
 *******************************************/
 
 #entreprise_contenu{
-	padding-top: 200px; /*75px*/
+	padding-top: 150px; /*75px*/
 	padding-left: 250px;
-	padding-bottom: 510px;
 }
 .stat .span4 {
   text-align: center;
@@ -57,6 +56,20 @@ SECTIONS
 }
 .titre_section{
 	padding-left: 40px;
+}
+
+#moreSpace{
+	margin-top: 15%;
+}
+
+.btn-lg.round {
+    border-radius: 24px;
+}
+
+#entreprise_moreSpace{
+	padding-top: 75px;
+	padding-left: 250px;
+	padding-bottom: 160px;
 }
 /*******************************************
 NOMBRES FICHIERS
