@@ -346,12 +346,12 @@
                     <img class="img-circle" src="web/img/team/benjamin.jpg">
                     <span class="muted"><h3>BOURGEAUX</h3><h3> Benjamin</h3></span>
                     <p>Leader</p>
-                    <p>Heureux de vivre !</p>
-                    <p>Heureux de vivre !</p>
+                    <p>Nepascraquernepascraquer</p>
+                    <p>C'est qui le patron ici ?!!</p>
                     <div class="span 3">
-                        <a class="btn btn-social-icon btn-twitter">
+                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
-                        </a>
+                         </a>
                     </div>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-facebook">
@@ -359,19 +359,21 @@
                         </a>
                     </div>
                     <div class="span 3">
-                        <i class="fa fa-envelope"></i>
+                        <a class="btn btn-social-icon btn-google-plus">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="span3 well">
                     <img class="img-circle" src="web/img/team/thomas.jpg">
                     <span class="muted"><h3>De CHAMPS</h3><h3>Thomas</h3></span>
                     <p>Designer</p>
-                    <p>Heureux de vivre !</p>
-                    <p>Heureux de vivre !</p>
+                    <p>Ron...zZZz..ron..zZZ..ron?</p>
+                    <p>Ça a commencé ?</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
-                        </a>
+                         </a>
                     </div>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-facebook">
@@ -379,19 +381,21 @@
                         </a>
                     </div>
                     <div class="span 3">
-                        <i class="fa fa-envelope"></i>
+                        <a class="btn btn-social-icon btn-google-plus">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="span3 well">
                     <img class="img-circle" src="web/img/team/etienne.jpg">
                     <span class="muted"><h3>DERBISE</h3><h3>Etienne</h3></span>
                     <p>Marketing</p>
-                    <p>Heureux de vivre !</p>
-                    <p>Heureux de vivre !</p>
+                    <p>Putain! Ou sont mes Sneakers!?</p>
+                    <p>Bon Chance !</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
-                        </a>
+                         </a>
                     </div>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-facebook">
@@ -399,19 +403,21 @@
                         </a>
                     </div>
                     <div class="span 3">
-                        <i class="fa fa-envelope"></i>
+                        <a class="btn btn-social-icon btn-google-plus">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="span3 well">
                     <img class="img-circle" src="web/img/team/alexis.jpg">
                     <span class="muted"><h3>COSTA</h3><h3>Alexis</h3></span>
                     <p>Marketing</p>
-                    <p>Heureux de vivre !</p>
-                    <p>Heureux de vivre !</p>
+                    <p>Toujours à faire des blagues</p>
+                    <p>N'aime pas perdre son temps!</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
-                        </a>
+                         </a>
                     </div>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-facebook">
@@ -419,7 +425,9 @@
                         </a>
                     </div>
                     <div class="span 3">
-                        <i class="fa fa-envelope"></i>
+                        <a class="btn btn-social-icon btn-google-plus">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -428,12 +436,12 @@
                     <img class="img-circle" src="web/img/team/fabien.jpg">
                     <span class="muted"><h3>GENET</h3><h3>Fabien</h3></span>
                     <p>Developer</p>
-                    <p>Heureux de vivre !</p>
-                    <p>Heureux de vivre !</p>
+                    <p>Tu peux me joindre</p>
+                    <p>au 06...</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
-                        </a>
+                         </a>
                     </div>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-facebook">
@@ -441,19 +449,21 @@
                         </a>
                     </div>
                     <div class="span 3">
-                        <i class="fa fa-envelope"></i>
+                        <a class="btn btn-social-icon btn-google-plus">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="span3 well">
                     <img class="img-circle" src="web/img/team/guillaume.jpg">
                     <span class="muted"><h3>PIGAUX</h3><h3>Guillaume</h3></span>
                     <p>Developer</p>
-                    <p>Petit Eccueuil</p>
+                    <p>Petit Ecureuil</p>
                     <p>Développe pour le plaisir</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
-                        </a>
+                         </a>
                     </div>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-facebook">
@@ -461,19 +471,21 @@
                         </a>
                     </div>
                     <div class="span 3">
-                        <i class="fa fa-envelope"></i>
+                        <a class="btn btn-social-icon btn-google-plus">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="span3 well">
                     <img class="img-circle" src="web/img/team/tim.png">
                     <span class="muted"><h3>ROBERT</h3><h3>Timothée</h3></span>
                     <p>Developer</p>
-                    <p>Heureux de vivre !</p>
-                    <p>Heureux de vivre !</p>
+                    <p>Développeur passionné</p>
+                    <p>pas forcément passionnant!</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
-                        </a>
+                         </a>
                     </div>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-facebook">
@@ -481,19 +493,21 @@
                         </a>
                     </div>
                     <div class="span 3">
-                        <i class="fa fa-envelope"></i>
+                        <a class="btn btn-social-icon btn-google-plus">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="span3 well">
                     <img class="img-circle" src="web/img/team/alain.jpg">
                     <span class="muted"><h3>SRIPATHMANATHAN</h3><h3>Alain</h3></span>
                     <p>Developer</p>
-                    <p>Heureux de vivre !</p>
-                    <p>Heureux de vivre !</p>
+                    <p>Grand et Blond</p>
+                    <p>L'avenir c'est moi !</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
-                        </a>
+                         </a>
                     </div>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-facebook">
@@ -501,7 +515,9 @@
                         </a>
                     </div>
                     <div class="span 3">
-                        <i class="fa fa-envelope"></i>
+                        <a class="btn btn-social-icon btn-google-plus">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
                     </div>
                 </div>
             </div>
