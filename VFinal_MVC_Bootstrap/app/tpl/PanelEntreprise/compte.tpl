@@ -49,8 +49,10 @@
 
 
 <section id="entreprise_contenu_compte">
+
     <div id="group_form_contact" class="container stat">
 
+            <h1 class="titre_section"><i class="fa fa-refresh"></i>&nbsp;&nbsp;&nbsp;Gardez à jour votre profil</h1> <br>
 
     
         <form method="post" action="index.php?page=formulaire&action=createAccount">

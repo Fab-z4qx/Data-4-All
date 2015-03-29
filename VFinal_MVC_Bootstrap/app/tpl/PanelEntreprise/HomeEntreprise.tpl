@@ -103,112 +103,33 @@
             <center>
                 <div id="moreSpace">
                     <h2>Besoin de plus d'espace de stockage</h2>
-                    <button type="button" id="buttonMoreSpace" class="btn btn-lg">Obtenir</button>
                 </div>
             </center>
         </div>
-
     </section>
 
 
-<!--
+        
 
-    <!-- STATISTIQUES 
-    <section id="entreprise_contenu">
+<section id="entreprise_moreSpace">
         <div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">
-            
-
             <div class="row">
-                <h1 class="titre_section"><i class="fa fa-dashboard"></i>&nbsp;&nbsp;&nbsp;Statistiques</h1> <br>
-                <div class="span4">
-                    <img class="img-circle" src="web/img/team/alain.jpg">
-                    <h2>
-                        {if isset($numberOfFile)}
-                            {$numberOfFile}
-                        {/if}
-                    </h2>
-                </div>
-                <div class="span4">
-                    <img class="img-circle" src="web/img/team/alain.jpg">
-                    <h2>
-                        {if isset($space)}
-                            {$space}
-                        {/if}
-                    </h2>
-                </div>
-                <div class="span4">
-                    <img class="img-circle" src="web/img/team/alain.jpg">
-                    <h2>Stat 3</h2>
-                </div>
+            <div class="span4" id="nb_file">
+                <h2><i class="fa fa-plus"></i>&nbsp;&nbsp;&nbsp;100 Mo</h2>
+                <button type="button" id="buttonMoreSpace" class="btn btn-lg">Obtenir</button>
             </div>
-    
-            <hr class="featurette-divider">
-    <!-- NOMBRES FICHIERS 
-    <div id="nb_fichiers"></div>
-            <div class="container stat">
-                <div class="row">
-                    <h1 class="titre_section"><i class="fa fa-file"></i>&nbsp;&nbsp;&nbsp;Nombre de Fichiers</h1> <br>
-                    <div class="span4">
-                        
-                        <h2>
-                            {if isset($numberOfFile)}
-                                {$numberOfFile}
-                            {/if}
-                        </h2>
-                    </div>
-                    <div class="span4">
-                        <img class="img-circle" src="web/img/team/alain.jpg">
-                        <h2>Stat 2</h2>
-                    </div>
-                    <div class="span4">
-                        <img class="img-circle" src="web/img/team/alain.jpg">
-                        <h2>Stat 3</h2>
-                    </div>
-                </div>
+
+            <div class="span4" id="space">
+                <h2 ><i class="fa fa-plus"></i>&nbsp;&nbsp;&nbsp;200 Mo</h2>
+                <button type="button" id="buttonMoreSpace" class="btn btn-lg">Obtenir</button>
             </div>
-    
-            <hr class="featurette-divider">
-    <!-- ESPACE DISPONIBLE 
-             <div id="espace_dispo"></div>
-            <div class="container stat">
-                <div class="row">
-                    <h1 class="titre_section"><i class="fa fa-database"></i>&nbsp;&nbsp;&nbsp;Espace Disponible</h1> <br>
-                    <div class="span4">
-                    <img class="img-circle" src="web/img/team/alain.jpg">
-                    <h2>Stat 1</h2>
-                </div>
-                <div class="span4">
-                    <img class="img-circle" src="web/img/team/alain.jpg">
-                    <h2>Stat 2</h2>
-                </div>
-                <div class="span4">
-                    <img class="img-circle" src="web/img/team/alain.jpg">
-                    <h2>Stat 3</h2>
-                </div>
-                </div>
-            </div>
-    
-            <hr class="featurette-divider">
-    <!-- DERNIER GRAPH 
-            <div id="dernier_graph"></div>
-            <div class="container stat">
-                <div class="row">
-                    <h1 class="titre_section"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;Dernier Graphique</h1> <br>
-                    <div class="span4">
-                    <img class="img-circle" src="web/img/team/alain.jpg">
-                    <h2>Stat 1</h2>
-                </div>
-                <div class="span4">
-                    <img class="img-circle" src="web/img/team/alain.jpg">
-                    <h2>Stat 2</h2>
-                </div>
-                <div class="span4">
-                    <img class="img-circle" src="web/img/team/alain.jpg">
-                    <h2>Stat 3</h2>
-                </div>
-                </div>
+
+            <div class="span4" id="last_graph">
+                <h2><i class="fa fa-plus"></i>&nbsp;&nbsp;300 Mo</h2>
+                <button type="button" id="buttonMoreSpace" class="btn btn-lg">Obtenir</button>
+                <p></p><p></p>
             </div>
         </div>
-    </section>
-    -->
+        </div>
+
 </div>
