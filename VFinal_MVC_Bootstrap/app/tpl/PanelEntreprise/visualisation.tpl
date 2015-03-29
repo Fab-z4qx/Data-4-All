@@ -88,9 +88,9 @@
                                     <td>{$fileinfo[nom].date} </td>
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success" onclick="self.location.href='entreprise.php?page=visualisation&action=start&value={$fileinfo[nom].nom}'" title="visualisation"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-success" onclick="self.location.href='entreprise.php?page=visualisation&action=start&value={$fileinfo[nom].id}'" title="visualisation"><i class="fa fa-desktop"></i></button>
                                             <button type="button" class="btn btn-info"  title="renommer"><i class="fa fa-edit"></i></button>
-                                            <button type="button" class="btn btn-warning" onclick="self.location.href='entreprise.php?page=visualisation&action=getRawFile&value={$fileinfo[nom].nom}'" title="télécharger"><i class="fa fa-download"></i></button>
+                                            <button type="button" class="btn btn-warning" onclick="self.location.href='entreprise.php?page=visualisation&action=getRawFile&value={$fileinfo[nom].id}'" title="télécharger"><i class="fa fa-download"></i></button>
                                             <button type="button" class="btn btn-danger" title="supprimer"><i class="fa fa-trash"></i></button>
                                         </div>
                                     </td>

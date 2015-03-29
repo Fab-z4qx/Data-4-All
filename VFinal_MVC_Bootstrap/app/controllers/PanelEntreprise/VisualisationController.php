@@ -76,7 +76,6 @@ class VisualisationController extends Controller
    private function pieGraphe($id_file)
    {
 	   	$dataFile = new DataFile();
-
 		$data = $dataFile->getTypeAlea($id_file);
 		$name = array();
 		$value = array();

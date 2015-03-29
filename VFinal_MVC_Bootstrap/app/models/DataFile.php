@@ -30,6 +30,22 @@ class DataFile
 		}
 		$tableCreate = $tableCreate.");";
 		$this->pdoData->exec($tableCreate);
+		$this->updateFichierTable($name,$id);
+		return $id;
+	}
+
+	private function updateFichierTable($name,$id)
+	{
+		$sql = "INSERT INTO `bdd_d4a`.`fichiers` 
+		(`id_fichier`, 
+		`nom_fichier`, 
+		`id_fichier_entreprise`,
+		`id_entreprise`) 
+		VALUES (NULL, 
+		'".$name."', 
+		'".$id."', 
+		'".$_SESSION['info']['id_entreprise']."');";
+		return $req = $this->pdo->exec($sql);
 	}
 
 	private function generateUUID()
@@ -37,9 +53,26 @@ class DataFile
  		return uniqid();
 	}
 
-	private function updateFichierTable($name,$id)
+	public function nameToId($name_file)
 	{
-		//INSERT INTO `bdd_d4a`.`fichiers` (`id_fichier`, `nom_fichier`, `id_fichier_entreprise`, `id_entreprise`) VALUES (NULL, 'bdd', '55fff6598', '1');
+		$sql = "select id_fichier_entreprise from fichiers where nom_fichier='".$name_file."';";
+		$req = $this->pdo->query($sql);
+		$data = $req->fetchAll(PDO::FETCH_ASSOC);
+		if(!empty($data)){
+			return $data[0]["nom_fichier"];
+		}
+		return NULL;
+	}
+
+	public function idToName($id_file)
+	{
+		$sql = "select nom_fichier from fichiers where id_fichier_entreprise='".$id_file."';";
+		$req = $this->pdo->query($sql);
+		$data = $req->fetchAll(PDO::FETCH_ASSOC);
+		if(!empty($data)){
+			return $data[0]["nom_fichier"];
+		}
+		return NULL;
 	}
 
 	public function insert($array, $name)
@@ -72,6 +105,12 @@ class DataFile
 
 		$req = $this->pdo->query($sql);
 		$data = $req->fetchAll(PDO::FETCH_ASSOC);
+		$i=0;
+		foreach ($data as $n ) {
+			$data[$i]['id'] = $data[$i]['nom'];
+			$data[$i]['nom'] = $this->idToName($n['nom']);
+			$i++;
+		}
 		if(!empty($data)){
 			return $data;
 		}
@@ -82,6 +121,7 @@ class DataFile
 	public function getTypeAlea($id_file)
 	{
 		$sql = 'SELECT type_alea, count(*) as nb from '.$id_file.' group by type_alea';
+		var_dump($sql);
 		$req = $this->pdoData->query($sql);
 		$data = $req->fetchAll(PDO::FETCH_ASSOC);
 		return $data;
@@ -93,9 +133,6 @@ class DataFile
 		$sql = 'SELECT table_schema "DB Name", Round(Sum(data_length + index_length) / 1024 / 1024, 1) "DB Size in MB" FROM information_schema.tables GROUP BY table_schema';
 		$req = $this->pdoData->query($sql);
 		$data = $req->fetchAll(PDO::FETCH_ASSOC);
-		echo '<pre>';
-		print_r($data);
-		echo '</pre>';
 		return $data;
 	}
 	
