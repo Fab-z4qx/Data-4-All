@@ -141,7 +141,7 @@ class GestionFichiersController extends Controller
 				
 		$DataFile = new DataFile();
 		$DataFile->createTable($array,$filename);
-		$DataFile->insert($array,$filename);	
+		$DataFile->insert($array,$filename);
 	}
 
 }

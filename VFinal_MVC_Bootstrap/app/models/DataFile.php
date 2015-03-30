@@ -67,6 +67,17 @@ class DataFile
 		return NULL;
 
 	}
+	
+	public function getTableHeader($idfile){
+		
+		$sql = 'show columns FROM _'.$_SESSION['info']['id_entreprise'];
+		$req = $this->pdoData->query($sql);
+		$data = $req->fetchAll(PDO::FETCH_ASSOC);
+		if(!empty($data)){
+			return $data;
+		}
+		return NULL;
+	}
 
 	public function getTypeAlea($id_file)
 	{
@@ -93,6 +104,18 @@ class DataFile
 		$req = $this->pdoData->query($sql);
 		$data = $req->fetchAll(PDO::FETCH_ASSOC);
 		return $data;
+	}
+
+	public function defineModel(){
+
+	}
+
+	public function getModel(){
+
+	}
+
+	public function modifyModel(){
+		
 	}
 	
 }
