@@ -262,7 +262,7 @@
             <!-- marketing -->
           <div class="featurette">
             <img class="featurette-image pull-left img-circle" src="web/img/icones/Argent_Jaune.png">
-            <h2 class="featurette-heading pull-left ">Une plue-value pour l'entreprise</h2></br></br></br></br>
+            <h2 class="featurette-heading pull-left ">Une plue-value pour votre entreprise</h2></br></br></br></br>
             <p class="lead">Les données d’une entreprise sont nombreuses et il serait de dommage de ne
                     pas tiré profit de cette source pour votre entreprise. Grâce à notre solution, prenez la bonne décision au bon moment, en ayant les bonnes informations.
                     Prévoyez l’avenir en prenant les décisions correspondant à votre plan longue durée.</p>
@@ -270,7 +270,7 @@
           <hr class="featurette-divider">
           <div class="featurette">
             <img class="featurette-image pull-right img-circle" src="web/img/icones/Stockage Supp_Jaune.png">
-            <h2 class="featurette-heading pull-right">Une transparence pour vous</h2></br></br></br></br>
+            <h2 class="featurette-heading pull-right">Une transparence pour vos données</h2></br></br></br></br>
             <p class="lead">Vous avez de nombreuse donnée, et vous souhaitez les mettre à disposition de tous pour :
                 <li>Montrer que vous n’avez rien a caché</li>
                 <li>Permettez a chacun de faire de la recherche pour votre entreprise</li>
@@ -280,7 +280,7 @@
           <hr class="featurette-divider">
           <div class="featurette">
             <img class="featurette-image pull-left img-circle" src="web/img/icones/Assistance_Jaune.png">
-            <h2 class="featurette-heading pull-left">Une bdd de folie</h2></br></br></br></br>
+            <h2 class="featurette-heading pull-left">Communiquez avec le monde entier</h2></br></br></br></br>
             <p class="lead">Chargez vos données, exploitez vos données, et choisissez celle que vous voulez diffuser au monde. Stimulez l'économie et affichez votre transparence
                 d’une main, récupérez les informations et prenez les décisions de l’autre. </p>
           </div>
@@ -302,7 +302,7 @@
                 </div>
                 <div class="span4">
                     <img class="img-circle" src="web/img/icones/Premium_Jaune.png">
-                    <h2>Prenium</h2>
+                    <h2>Premium</h2>
                     <p>L’offre premium comprend l’offre BI ainsi que que l’offre Open DATA. En choisissant cette offre vous propulserez votre entreprise sur les devants de
                         la scène grâce à l’Open Data, tout en ayant un service d’aide à la décision performant.</p>
                 </div>
@@ -321,9 +321,9 @@
                     </tr>
                     <tr>
                         <td><B>Prix de base</B></td>
-                        <td>1600€/mois</td>
-                        <td>2700€/mois</td>
-                        <td>3500€/mois</td>
+                        <td>1600 €/mois</td>
+                        <td>2700 €/mois</td>
+                        <td>3500 €/mois</td>
                     </tr>
                     <tr>
                         <td><B>Assistance & mise en service</B></td>
@@ -335,13 +335,13 @@
                         <td><B>Stockage de base</B></td>
                         <td>50 Mo + 100k de requête</td>
                         <td>100 Mo</td>
-                        <td>200 2o</td>
+                        <td>200 Mo</td>
                     </tr>
                     <tr>
                         <td><B>Stockage supplémentaire</B></td>
-                        <td>250 €/mois le jeu de 100 MO</br> de données </br>+ 1 jeu de 10 Mo offert par</br> jeu de 100 Mo acheté</td>
+                        <td>250 €/mois le jeu de 100 MO</br> de données + 1 jeu de 10 Mo offert par</br> jeu de 100 Mo acheté</td>
                         <td>300 €/mois les 100 Mo</td>
-                        <td>Open Data</br>+</br>BI</td>
+                        <td>Open Data + BI</td>
                     </tr>
                     <tr>
                         <td><B>Assistance 24/7</B></td>
@@ -419,7 +419,7 @@
                     <img class="img-circle" src="web/img/team/etienne.jpg">
                     <span class="muted"><h3>DERBISE</h3><h3>Etienne</h3></span>
                     <p>Marketing</p>
-                    <p>Putain! Où sont mes Sneakers!?</p>
+                    <p>P*****! Où sont mes Sneakers!?</p>
                     <p>Bon Chance !</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">

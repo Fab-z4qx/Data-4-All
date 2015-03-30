@@ -177,7 +177,6 @@
           <h1>Liste des entreprises qui nous font confiances</h1>
           <h4>Retrouvez toutes les informations sur les entreprises qui ont choisi notre solution.
               Si vous souhaitez également partager vos données n'hésitez pas à nous contacter.</h4>
-          <p><a class="btn btn-primary btn-lg">En savoir plus</a></p>
         </div>
     </center>
 

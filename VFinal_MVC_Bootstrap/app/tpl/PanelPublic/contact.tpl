@@ -214,7 +214,7 @@
 			Nom<span style="color:#FF0000">*</span> <br/><input type="text" /> <br/>
 			Prenom<span style="color:#FF0000">*</span> <br/><input type="text" /> <br/>
 			e-mail<span style="color:#FF0000">*</span> <br/><input type="email" /> <br/>
-			Société <br/><input type="text" /> <br/><br/>
+			Société <br/><input type="text" /> <br/>
 		</h5>
 		<h4>Exprimez-vous</h4>
 		<h5>Objet</h5>
@@ -228,7 +228,7 @@
 
 		<label for="themessage"><h5>Votre message</h5></label>
 		<textarea name="themessage" id="themessage" class="input-xlarge span7" rows="10"></textarea>
-		<br><br>
+		<br>
 		<h6><span style="color:#FF0000">*Champs obligatoires</span></h6><br/>
 		<input type="submit" value="Envoyer"/>
     </div>
