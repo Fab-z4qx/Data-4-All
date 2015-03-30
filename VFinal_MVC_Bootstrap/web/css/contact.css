@@ -18,9 +18,23 @@ SETTINGS
 /*******************************************
 marg-MENU
 *******************************************/
-#listeentreprise{
+#contact{
   padding-top: 65px; /* 75px to make the container go all the way to the bottom of the topbar*/
   margin-top:20px;
+}
+/*******************************************
+marg-formaulaire-center
+*******************************************/
+#main {
+ margin:0 auto;
+ float:none;
+    background-color: rgba(245, 245, 245, 0.4);
+}
+/*******************************************
+ERROR
+*******************************************/
+.error_login{
+  color: red;
 }
 /*******************************************
 inscription
@@ -70,6 +84,13 @@ inscription
   font-size: 12px;
   line-height: 1.428571429;
   border-radius: 15px;
+}
+/*******************************************
+CONTAINER
+*******************************************/
+.container-full {
+  margin: 0 auto;
+  width: 100%;
 }
 /*******************************************
 Featurette

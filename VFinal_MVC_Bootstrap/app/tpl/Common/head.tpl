@@ -16,6 +16,9 @@
     <link href="web/Bootstrap/bootstrap-responsive.css" rel="stylesheet">
     <link href="web/Bootstrap/simple-sidebar.css" rel="stylesheet" type="text/css">
     <link href="web/css/accueil.css" rel="stylesheet" type="text/css">
+    <link href="web/css/contact.css" rel="stylesheet" type="text/css">
+    <link href="web/css/enterprises.css" rel="stylesheet" type="text/css">
+    <link href="web/css/fichier_entreprise.css" rel="stylesheet" type="text/css">
     <link href="web/css/homeEntreprise.css" rel="stylesheet" type="text/css">
     <link href="web/css/gestionFichiers.css" rel="stylesheet" type="text/css">
     <link href="web/css/import_fichiers.css" rel="stylesheet" type="text/css">

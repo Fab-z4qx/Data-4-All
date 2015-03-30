@@ -10,6 +10,10 @@ class IndexController extends Controller
    {
    	 $this->smarty->display(_TPL_PUBLIC_.'contact.tpl');
    }
+   public function display_ent()
+   {
+   	 $this->smarty->display(_TPL_PUBLIC_.'fichier_entreprise.tpl');
+   }
 }
 
 

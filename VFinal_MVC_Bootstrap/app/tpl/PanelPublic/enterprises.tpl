@@ -1,12 +1,4 @@
 <div id="listeentreprise">
-
-<style type="text/css">
-  #listeentreprise{
-  padding-top: 65px; /* 75px to make the container go all the way to the bottom of the topbar*/
-  margin-top:20px;
-}
-</style>
-
     <!-- MENU -->
     <div class="navbar navbar-fixed-top navbar-inverse">
         <div class="navbar-inner">
@@ -21,14 +13,17 @@
                 <a class="brand " href="index.php">DATA 4 ALL</a>
                 <div class="nav-collapse pull-right">
                     <ul class="nav">
-                        <li><a class="page-scroll" href="#contact">Contact</a></li>
+                        <li><a class="page-scroll" href="index.php?page=entreprise">Liste Entreprises</a></li>
+                        <li><a class="page-scroll" href="index.php">Services & Offres</a></li>
+                        <li><a class="page-scroll" href="index.php">Team</a></li>
+                        <li><a class="page-scroll" href="index.php?page=index&action=display_c">Contact</a></li>
                         <li> <form class='textbox' action="index.php?page=connect&action=login" method="post">
-                                 <input class="input" type="text" name="login" id="name" placeholder="Username" />
+                                 <input class="input" type="text" name="login" id="name&" placeholder="Username" />
                                  <input class="input" type="password" name="password" id="password" placeholder="Passsword" />
                                  <input class="btn-primary" type="submit" value="OK"/>
                                  <div class="checkbox">
                                      <label>
-                                        <input type="checkbox"/> se souvenir de moi
+                                        <input type="checkbox"/><font color="#8080BC"> se souvenir de moi</font>
                                         <a class="offset1" href="#">Mot de passe oublié </a>
                                         <a class="pull-right accordion-toggle" href="#item1" data-parent="#monaccordeon" data-toggle="collapse">S'inscrire</a>
                                     </label>
@@ -182,7 +177,6 @@
           <h1>Liste des entreprises qui nous font confiances</h1>
           <h4>Retrouvez toutes les informations sur les entreprises qui ont choisi notre solution.
               Si vous souhaitez également partager vos données n'hésitez pas à nous contacter.</h4>
-          <p><a class="btn btn-primary btn-lg">En savoir plus</a></p>
         </div>
     </center>
 
@@ -198,7 +192,7 @@
                         {section name=list loop=$listeEntreprise}
                                 <td><B>{$listeEntreprise[list].nom_entreprise}</B></td>
                                 <td><a href="index.php?page=entreprise&action=info&value={$listeEntreprise[list].id_entreprise}" class="btn btn-info">Info</a></td>
-                                <td><a href="http://www.linux-france.org/article/these/the_osd/fr-the_open_source_definition-4.html" class="btn btn-success">Télécharger</a></td>
+                                <td><a href="index.php?page=index&action=display_ent">Télécharger</a></td>
                             </tr>
                         {/section}
                         </tbody>
@@ -263,3 +257,50 @@
     });
 </script>
 <!-- Pagination -->
+
+<!-- SCRIPT_Inscription -->
+<script>
+$(document).ready(function () {
+
+    var navListItems = $('div.setup-panel div a'),
+            allWells = $('.setup-content'),
+            allNextBtn = $('.nextBtn');
+
+    allWells.hide();
+
+    navListItems.click(function (e) {
+        e.preventDefault();
+        var $target = $($(this).attr('href')),
+                $item = $(this);
+
+        if (!$item.hasClass('disabled')) {
+            navListItems.removeClass('btn-primary').addClass('btn-default');
+            $item.addClass('btn-primary');
+            allWells.hide();
+            $target.show();
+            $target.find('input:eq(0)').focus();
+        }
+    });
+
+    allNextBtn.click(function(){
+        var curStep = $(this).closest(".setup-content"),
+            curStepBtn = curStep.attr("id"),
+            nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+            curInputs = curStep.find("input[type='text'],input[type='url']"),
+            isValid = true;
+
+        $(".form-group").removeClass("has-error");
+        for(var i=0; i<curInputs.length; i++){
+            if (!curInputs[i].validity.valid){
+                isValid = false;
+                $(curInputs[i]).closest(".form-group").addClass("has-error");
+            }
+        }
+
+        if (isValid)
+            nextStepWizard.removeAttr('disabled').trigger('click');
+    });
+
+    $('div.setup-panel div a.btn-primary').trigger('click');
+});</script>
+<!-- /SCRIPT_Inscription -->
