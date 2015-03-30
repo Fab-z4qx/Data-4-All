@@ -103,15 +103,9 @@
 
             
 
-            <div class="span4" id="last_graph">
-                <div class="circle circle-border">
-                    <div class="circle-inner">
-                        <div class="score-text">
-                        SOME TEXT
-                        </div>
-                    </div>
-                </div>
-                <h2><i class="fa fa-clock-o"></i>&nbsp;&nbsp;Dernier Graphique</h2>
+            <div class="span4" id="last_graph" style="margin-top: 4%;">
+                <div id="title_last_graph">Dernier Graph</div>
+                <img src="web/img/graph.jpg">
             </div>
         </div>
         </div>

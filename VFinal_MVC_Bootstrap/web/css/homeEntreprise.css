@@ -78,6 +78,22 @@ SECTIONS
     display: inline-block;
     margin: 1em;
 }
+
+#title_last_graph{
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	text-anchor: middle;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	font-stretch: normal;
+	font-size: 32px;
+	line-height: normal;
+	font-family: Arial;
+	fill-opacity: 1;
+	stroke: none;
+	color:  rgb(153, 153, 153);
+	margin-bottom: 5%;
+}
 /*******************************************
 NOMBRES FICHIERS
 *******************************************/
