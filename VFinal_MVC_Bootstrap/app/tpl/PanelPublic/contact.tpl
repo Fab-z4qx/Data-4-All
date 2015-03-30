@@ -206,6 +206,7 @@
 <!-- /Inscription -->
 
 <!-- contact -->
+    <div class="span8 well">
 		<h2>Contactez-Nous</h2>
 		<br/>
 		<h4>Veuillez saisir vos coordonées</h4>
@@ -230,5 +231,8 @@
 		<br><br>
 		<h6><span style="color:#FF0000">*Champs obligatoires</span></h6><br/>
 		<input type="submit" value="Envoyer"/>
+    </div>
 <!-- /contact -->
+
+
 </div>
