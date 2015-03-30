@@ -26,7 +26,9 @@ class FormulaireController extends Controller
          /*********************************************************/
          /************** VUE SMARTY A AJOUTER *********************/
          /*********************************************************/
-         echo "erreur aucune information";
+         //echo "erreur aucune information";
+         $this->smarty->assign('account', 'aucune_information');
+         $this->smarty->display(_TPL_PUBLIC_.'accueil.tpl');
          exit();
       }
 
@@ -44,7 +46,9 @@ class FormulaireController extends Controller
             /*********************************************************/
             /************** VUE SMARTY A AJOUTER *********************/
             /*********************************************************/
-            echo "adresse error"; 
+             $this->smarty->assign('account', 'adresse_error');
+             $this->smarty->display(_TPL_PUBLIC_.'accueil.tpl');
+            //echo "adresse error"; 
             exit();
          }
 
@@ -57,7 +61,9 @@ class FormulaireController extends Controller
             /*********************************************************/
             /************** VUE SMARTY A AJOUTER *********************/
             /*********************************************************/
-            echo "entreprise error"; 
+            //echo "entreprise error"; 
+            $this->smarty->assign('account', 'entreprise_error');
+            $this->smarty->display(_TPL_PUBLIC_.'accueil.tpl');
             exit();
          }
          /* Ajout de l'utilisateur */
@@ -76,7 +82,10 @@ class FormulaireController extends Controller
          /************** VUE SMARTY A AJOUTER *********************/
          /*********************************************************/
       //var_dump($this);
-      $this->smarty->assign('accont', 'compte_cree');
+      $this->smarty->assign('account', 'compte_cree');
+      include _TPL_COMMON_.'head.tpl';
+      $this->smarty->display(_TPL_PUBLIC_.'accueil.tpl');
+      include _TPL_COMMON_.'footer.tpl';
       //header('Location:index.php');   
    }
 
@@ -191,6 +200,7 @@ class FormulaireController extends Controller
          /*********************************************************/
          /************** VUE SMARTY A AJOUTER *********************/
          /*********************************************************/
+
          echo 'VOTRE REQUETE A ETE ENVOYEE';
       }
       else 

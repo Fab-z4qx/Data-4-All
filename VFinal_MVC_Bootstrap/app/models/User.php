@@ -163,7 +163,7 @@ class User {
          if($this->pdo->exec($sql_user))
          { //On à bien cree le compte du nouvelle utilisateur!
             //header('Location:login.php?acc=ok');
-            echo "compte utilisateurs cree";
+            //echo "compte utilisateurs cree";
             return $this->pdo->lastInsertId();
          }
 	}

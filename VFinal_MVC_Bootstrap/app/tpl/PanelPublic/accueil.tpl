@@ -165,6 +165,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        {if ({$account} == 'compte_cree')}
                                         <div class="row setup-content" id="step-4">
                                             <div class="col-xs-12">
                                                 <div class="col-md-12">
@@ -177,6 +178,21 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        {/if}
+                                        {if ({$account} == 'login_error')}
+                                        <div class="row setup-content" id="step-4">
+                                            <div class="col-xs-12">
+                                                <div class="col-md-12">
+                                                        <center>
+                                                            <div class="jumbotron well">
+                                                              <h1>ERROR !</h1>
+                                                              <h4></h4>
+                                                            </div>
+                                                        </center>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {/if}
                                     </form>
                                 </form>
                             </div>
