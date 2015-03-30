@@ -1,4 +1,4 @@
-
+<div class="body_entreprise">
 <!-- MENU -->
     <div id="wrapper">
         <!-- Sidebar -->
@@ -7,7 +7,7 @@
                 <div>
                 <li class="sidebar-brand">
                     <a href="index.php?">
-                        <img src="web/img/logos_entreprises/efrei.png">
+                        <img src="web/img/logos/Logo_D4A_Teal_Bords.png">
                     </a>
                 </li>
                 </div>
@@ -22,6 +22,11 @@
                 </li>
                 <li class="page_active">
                     <a href="entreprise.php?page=compte"><i class="fa fa-user"></i>&nbsp;&nbsp;Compte</a>
+                </li>
+                <li>
+                    <div class="footer_slidebar">
+                        © 2015 Data4All - contact
+                    </div>
                 </li>
                 <!--<li><a href="entreprise.php?page=services">Services</a></li>-->
             </ul>
@@ -44,7 +49,16 @@
 
 
 <section id="entreprise_contenu_compte">
-    <form method="post" action="index.php?page=formulaire&action=createAccount">
+
+    <div id="group_form_contact" class="container stat">
+
+            <h1 class="titre_section"><i class="fa fa-refresh"></i>&nbsp;&nbsp;&nbsp;Gardez à jour votre profil</h1> <br>
+
+    
+        <form method="post" action="index.php?page=formulaire&action=createAccount">
+
+            <div class="group_form" class="col-xs-6">
+                
                     <div class="form-group">
                         <label class="form_entreprise" for="nom_entreprise">Nom entreprise :</label>
                         <input type="text" required="required" name="nom_entreprise" id="nom_entreprise"  value="{$nom_entreprise}"/>
@@ -53,6 +67,8 @@
                         <label class="form_entreprise" for="email_entreprise">Email :</label>
                         <input type="email_entreprise" required="required" name="email_entreprise" id="email_entreprise" value="{$email_entreprise}"/>
                     </div>
+            </div>
+            <div class="group_form" class="col-xs-6">
                         <div class="form-group">
                             <label class="form_entreprise" for="adresse">Adresse :</label>
                             <input type="text" required="required" name="adresse" id="adresse" value="{$adresse}"/>
@@ -74,6 +90,8 @@
                             <label class="form_entreprise" for="pays">Pays :</label>
                             <input type="text" name="pays" id="pays" value="{$pays}"/>
                         </div>
+                </div>
+            <div class="group_form" class="col-xs-6">
                         <div class="form-group">
                             <label class="form_entreprise" for="tel_entreprise">Tel :</label>
                             <input type="text" name="tel_entreprise" id="tel_entreprise" value="{$tel_entreprise}"/>
@@ -83,7 +101,6 @@
                             <label class="form_entreprise" for="fax_entrepirse">Fax :</label>
                             <input type="text" name="fax_entreprise" id="fax_entreprise" value="{$fax_entreprise}"/>
                         </div>
-                     
                         <div class="form-group">
                             <label class="form_entreprise" for="siret_entreprise">Numéro Siret :</label>
                             <input type="text" name="siret_entreprise" id="siret_entreprise" value="{$siret_entreprise}"/>
@@ -92,13 +109,20 @@
                             <label class="form_entreprise" for="forme_juridique_entreprise">Forme juridique :</label>
                             <input type="text" name="forme_juridique_entreprise" id="forme_juridique_entreprise" value="{$forme_juridique_entreprise}"/>
                         </div>
+                </div>
+            <div class="group_form" class="col-xs-6">
                         <div class="form-group">
                             <label class="form_entreprise" for="type_offre">Type d'offre :</label>
                             <input type="text" name="type_offre" id="type_offre" value="{$type_offre}"/>
                         </div>
-                        
-                    
+            </div>
+            
                     <input class="bouton_submit" type="submit" value="Sauvegarder les modifications">
                 
-    </form>
+        
+        </form>
+
+    </div>
 </section>
+
+</div>

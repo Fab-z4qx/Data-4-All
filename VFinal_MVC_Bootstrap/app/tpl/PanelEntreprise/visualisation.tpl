@@ -7,7 +7,7 @@
                 <div>
                 <li class="sidebar-brand">
                     <a href="index.php?">
-                        <img src="web/img/logos_entreprises/efrei.png">
+                        <img src="web/img/logos/Logo_D4A_Teal_Bords.png">
                     </a>
                 </li>
                 </div>
@@ -22,6 +22,11 @@
                 </li>
                 <li>
                     <a href="entreprise.php?page=compte"><i class="fa fa-user"></i>&nbsp;&nbsp;Compte</a>
+                </li>
+                <li>
+                    <div class="footer_slidebar">
+                        © 2015 Data4All - contact
+                    </div>
                 </li>
                 <!--<li><a href="entreprise.php?page=services">Services</a></li>-->
             </ul>

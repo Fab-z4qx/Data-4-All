@@ -4,5 +4,14 @@ TABLE LISTE FILES
 #listFiles{
 	margin-left: auto;
 	margin-right: auto;
-	width: 35%;
+	width: 55%;
+}
+
+/*******************************************
+SECTIONS
+*******************************************/
+#entreprise_gestion_fichier_contenu{
+	padding-top: 100px;
+	padding-left: 250px;
+	padding-bottom: 475px; 
 }

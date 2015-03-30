@@ -8,7 +8,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <img src="web/img/logos/logo_site_sans_bord_teal.png" class="img-responsive img-centered" alt="">
+                <a class="brand " href="index.php"><img src="web/img/logos/logo_site_sans_bord_teal.png" class="img-responsive img-centered"></a>
                 <li class="divider pull-right"></li>
                 <a class="brand " href="index.php">DATA 4 ALL</a>
                 <div class="nav-collapse pull-right">
@@ -23,7 +23,7 @@
                                  <input class="btn-primary" type="submit" value="OK"/>
                                  <div class="checkbox">
                                      <label>
-                                        <input type="checkbox"/> Remember me
+                                        <input type="checkbox"/> se souvenir de moi
                                         <a class="offset1" href="#">Mot de passe oublié </a>
                                         <a class="pull-right accordion-toggle" href="#item1" data-parent="#monaccordeon" data-toggle="collapse">S'inscrire</a>
                                     </label>
@@ -53,15 +53,19 @@
                                     <div class="stepwizard-row setup-panel">
                                         <div class="stepwizard-step">
                                             <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
-                                            <p>Step 1</p>
+                                            <p>Etape 1</p>
                                         </div>
                                         <div class="stepwizard-step">
                                             <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-                                            <p>Step 2</p>
+                                            <p>Etape 2</p>
                                         </div>
                                         <div class="stepwizard-step">
                                             <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-                                            <p>Step 3</p>
+                                            <p>Etape 3</p>
+                                        </div>
+                                        <div class="stepwizard-step">
+                                            <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
+                                            <p>Fin</p>
                                         </div>
                                     </div>
                                 </div>
@@ -79,7 +83,7 @@
                                                         <label class="form_entreprise" for="email_entreprise">Email :</label>
                                                         <input type="email_entreprise" required="required" name="email_entreprise" id="email_entreprise"/>
                                                     </div>
-                                                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+                                                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Suivant</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -120,7 +124,7 @@
                                                             <input type="text" name="fax_entreprise" id="fax_entreprise"/>
                                                         </div>
                                                      </div>
-                                                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+                                                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Suivant</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -161,6 +165,18 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="row setup-content" id="step-4">
+                                            <div class="col-xs-12">
+                                                <div class="col-md-12">
+                                                        <center>
+                                                            <div class="jumbotron well">
+                                                              <h1>Félicitation !</h1>
+                                                              <h4>Vous êtes maintenant inscrit, vous allez recevoir un mail de confirmation à l'adresse que vous nous avez indiqué.</h4>
+                                                            </div>
+                                                        </center>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </form>
                                 </form>
                             </div>
@@ -193,7 +209,7 @@
 	          </div>
 	        </div>
 	        <div class="item">
-                <img  src="web/img/test.jpg">
+                <img  src="web/img/Image_Carrousel_3.jpg">
 	          <div class="container">
 	            <div class="carousel-caption offset4">
 	              <div id="search">
@@ -206,7 +222,7 @@
 	          </div>
 	        </div>
 	        <div class="item">
-	            <img  src="web/img/test.jpg">
+	            <img  src="web/img/Image_Carrousel_5.png">
 	          <div class="container">
 	            <div class="carousel-caption offset4">
 	              <div id="search">
@@ -342,12 +358,12 @@
                     <img class="img-circle" src="web/img/team/benjamin.jpg">
                     <span class="muted"><h3>BOURGEAUX</h3><h3> Benjamin</h3></span>
                     <p>Leader</p>
-                    <p>Heureux de vivre !</p>
-                    <p>Heureux de vivre !</p>
+                    <p>Nepascraquernepascraquer</p>
+                    <p>C'est qui le patron ici ?!!</p>
                     <div class="span 3">
-                        <a class="btn btn-social-icon btn-twitter">
+                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
-                        </a>
+                         </a>
                     </div>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-facebook">
@@ -355,19 +371,21 @@
                         </a>
                     </div>
                     <div class="span 3">
-                        <i class="fa fa-envelope"></i>
+                        <a class="btn btn-social-icon btn-google-plus">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="span3 well">
                     <img class="img-circle" src="web/img/team/thomas.jpg">
                     <span class="muted"><h3>De CHAMPS</h3><h3>Thomas</h3></span>
                     <p>Designer</p>
-                    <p>Heureux de vivre !</p>
-                    <p>Heureux de vivre !</p>
+                    <p>Ron...zZZz..ron..zZZ..ron?</p>
+                    <p>Ça a commencé ?</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
-                        </a>
+                         </a>
                     </div>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-facebook">
@@ -375,19 +393,21 @@
                         </a>
                     </div>
                     <div class="span 3">
-                        <i class="fa fa-envelope"></i>
+                        <a class="btn btn-social-icon btn-google-plus">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="span3 well">
                     <img class="img-circle" src="web/img/team/etienne.jpg">
                     <span class="muted"><h3>DERBISE</h3><h3>Etienne</h3></span>
                     <p>Marketing</p>
-                    <p>Heureux de vivre !</p>
-                    <p>Heureux de vivre !</p>
+                    <p>Putain! Ou sont mes Sneakers!?</p>
+                    <p>Bon Chance !</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
-                        </a>
+                         </a>
                     </div>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-facebook">
@@ -395,19 +415,21 @@
                         </a>
                     </div>
                     <div class="span 3">
-                        <i class="fa fa-envelope"></i>
+                        <a class="btn btn-social-icon btn-google-plus">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="span3 well">
                     <img class="img-circle" src="web/img/team/alexis.jpg">
                     <span class="muted"><h3>COSTA</h3><h3>Alexis</h3></span>
                     <p>Marketing</p>
-                    <p>Heureux de vivre !</p>
-                    <p>Heureux de vivre !</p>
+                    <p>Toujours à faire des blagues</p>
+                    <p>N'aime pas perdre son temps!</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
-                        </a>
+                         </a>
                     </div>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-facebook">
@@ -415,7 +437,9 @@
                         </a>
                     </div>
                     <div class="span 3">
-                        <i class="fa fa-envelope"></i>
+                        <a class="btn btn-social-icon btn-google-plus">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -424,12 +448,12 @@
                     <img class="img-circle" src="web/img/team/fabien.jpg">
                     <span class="muted"><h3>GENET</h3><h3>Fabien</h3></span>
                     <p>Developer</p>
-                    <p>Heureux de vivre !</p>
-                    <p>Heureux de vivre !</p>
+                    <p>Tu peux me joindre</p>
+                    <p>au 06...</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
-                        </a>
+                         </a>
                     </div>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-facebook">
@@ -437,19 +461,21 @@
                         </a>
                     </div>
                     <div class="span 3">
-                        <i class="fa fa-envelope"></i>
+                        <a class="btn btn-social-icon btn-google-plus">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="span3 well">
                     <img class="img-circle" src="web/img/team/guillaume.jpg">
                     <span class="muted"><h3>PIGAUX</h3><h3>Guillaume</h3></span>
                     <p>Developer</p>
-                    <p>Heureux de vivre !</p>
-                    <p>Heureux de vivre !</p>
+                    <p>Petit Ecureuil</p>
+                    <p>Développe pour le plaisir</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
-                        </a>
+                         </a>
                     </div>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-facebook">
@@ -457,19 +483,21 @@
                         </a>
                     </div>
                     <div class="span 3">
-                        <i class="fa fa-envelope"></i>
+                        <a class="btn btn-social-icon btn-google-plus">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="span3 well">
                     <img class="img-circle" src="web/img/team/tim.png">
                     <span class="muted"><h3>ROBERT</h3><h3>Timothée</h3></span>
                     <p>Developer</p>
-                    <p>Heureux de vivre !</p>
-                    <p>Heureux de vivre !</p>
+                    <p>Développeur passionné</p>
+                    <p>pas forcément passionnant!</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
-                        </a>
+                         </a>
                     </div>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-facebook">
@@ -477,19 +505,21 @@
                         </a>
                     </div>
                     <div class="span 3">
-                        <i class="fa fa-envelope"></i>
+                        <a class="btn btn-social-icon btn-google-plus">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="span3 well">
                     <img class="img-circle" src="web/img/team/alain.jpg">
                     <span class="muted"><h3>SRIPATHMANATHAN</h3><h3>Alain</h3></span>
                     <p>Developer</p>
-                    <p>Heureux de vivre !</p>
-                    <p>Heureux de vivre !</p>
+                    <p>Grand et Blond</p>
+                    <p>L'avenir c'est moi !</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
-                        </a>
+                         </a>
                     </div>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-facebook">
@@ -497,7 +527,9 @@
                         </a>
                     </div>
                     <div class="span 3">
-                        <i class="fa fa-envelope"></i>
+                        <a class="btn btn-social-icon btn-google-plus">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -513,7 +545,7 @@
 
       <footer>
           <center>
-        <a href="#">Back to top</a>
+        <a href="#">Retour au début</a>
         <p>© 2015 Data4All · <a href="#">Contact</a> · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
           </center>
       </footer>
