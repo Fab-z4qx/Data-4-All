@@ -1,12 +1,4 @@
 <div id="listeentreprise">
-
-<style type="text/css">
-  #listeentreprise{
-  padding-top: 65px; /* 75px to make the container go all the way to the bottom of the topbar*/
-  margin-top:20px;
-}
-</style>
-
     <!-- MENU -->
     <div class="navbar navbar-fixed-top navbar-inverse">
         <div class="navbar-inner">
@@ -21,9 +13,12 @@
                 <a class="brand " href="index.php">DATA 4 ALL</a>
                 <div class="nav-collapse pull-right">
                     <ul class="nav">
-                        <li><a class="page-scroll" href="#contact">Contact</a></li>
+                        <li><a class="page-scroll" href="index.php?page=entreprise">Liste Entreprises</a></li>
+                        <li><a class="page-scroll" href="#service">Services & Offres</a></li>
+                        <li><a class="page-scroll" href="#team">Team</a></li>
+                        <li><a class="page-scroll" href="index.php?page=index&action=display_c">Contact</a></li>
                         <li> <form class='textbox' action="index.php?page=connect&action=login" method="post">
-                                 <input class="input" type="text" name="login" id="name" placeholder="Username" />
+                                 <input class="input" type="text" name="login" id="name&" placeholder="Username" />
                                  <input class="input" type="password" name="password" id="password" placeholder="Passsword" />
                                  <input class="btn-primary" type="submit" value="OK"/>
                                  <div class="checkbox">
@@ -198,7 +193,7 @@
                         {section name=list loop=$listeEntreprise}
                                 <td><B>{$listeEntreprise[list].nom_entreprise}</B></td>
                                 <td><a href="index.php?page=entreprise&action=info&value={$listeEntreprise[list].id_entreprise}" class="btn btn-info">Info</a></td>
-                                <td><a href="http://www.linux-france.org/article/these/the_osd/fr-the_open_source_definition-4.html" class="btn btn-success">Télécharger</a></td>
+                                <td><a href="index.php?page=index&action=display_ent">Télécharger</a></td>
                             </tr>
                         {/section}
                         </tbody>
