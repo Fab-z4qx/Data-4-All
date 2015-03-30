@@ -73,7 +73,8 @@ SECTIONS
 }
 
 #g1,#g2 {
-    width:400px; height:320px;
+    width:400px; 
+    height:320px;
     display: inline-block;
     margin: 1em;
 }

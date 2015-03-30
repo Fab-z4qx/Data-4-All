@@ -22,9 +22,11 @@
                     {$space}
                 {/if}, 
           min: 0,
-          max: 100,
-          title: "Espace Utilisé",
-          label: ""
+          max: {if isset($space_max)}
+                    {$space_max}
+                {/if},
+          title: "Espace Utilisé (Mo)",
+          label: "Mo"
         });
       
       };
