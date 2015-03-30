@@ -107,7 +107,7 @@ class Entreprise {
        $bddData = $this->pdo->createDbData($id_of_db);
        if(!empty($bddData))
        {
-          echo 'bdd Data cree';
+          //echo 'bdd Data cree';
        }
        //$this->createTableInfo($bddData);
     }
