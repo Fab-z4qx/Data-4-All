@@ -206,7 +206,7 @@
 <!-- /Inscription -->
 
 <!-- contact -->
-    <div class="span8 well">
+    <div id="main" class="span8 well">
 		<h2>Contactez-Nous</h2>
 		<br/>
 		<h4>Veuillez saisir vos coordonées</h4>
