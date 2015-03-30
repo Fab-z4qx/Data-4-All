@@ -310,12 +310,13 @@
     <!-- /SERVICES -->
         <hr class="featurette-divider">
     <!-- OFFRES -->
+
             <table class="table table-striped table-bordered">
                 <tbody>
                     <tr>
                         <th></th>
-                        <th><h2>BI</h2></th>
                         <th><h2>Open Data</h2></th>
+                        <th><h2>BI</h2></th>
                         <th><h2>Premium</h2></th>
                     </tr>
                     <tr>
@@ -332,25 +333,25 @@
                     </tr>
                     <tr>
                         <td><B>Stockage de base</B></td>
-                        <td>Nop !</td>
-                        <td>100 mo</td>
-                        <td>200 mo</td>
+                        <td>50 Mo + 100k de requête</td>
+                        <td>100 Mo</td>
+                        <td>200 2o</td>
                     </tr>
                     <tr>
                         <td><B>Stockage supplémentaire</B></td>
-                        <td>row 3,col 2</td>
-                        <td>row 3,col 3</td>
-                        <td>row 1,col 3</td>
+                        <td>250 €/mois le jeu de 100 MO</br> de données </br>+ 1 jeu de 10 Mo offert par</br> jeu de 100 Mo acheté</td>
+                        <td>300 €/mois les 100 Mo</td>
+                        <td>Open Data</br>+</br>BI</td>
                     </tr>
                     <tr>
                         <td><B>Assistance 24/7</B></td>
-                        <td>row 3,col 2</td>
-                        <td>row 3,col 3</td>
-                        <td>row 1,col 3</td>
+                        <td>150 €/mois</td>
+                        <td>250 €/mois</td>
+                        <td>350 €/mois</td>
                     </tr>
                 </tbody>
             </table>
-        </div>
+
        <!-- /OFFRES -->
 
 <!-- /SERVICES & OFFRES -->
@@ -362,7 +363,7 @@
 <!-- TEAM -->
 <section id="team">
     <center>
-        <div id="test" class="jumbotron well">
+        <div class="jumbotron well">
           <h2>Nous vous présentons notre super équipe !</h2>
         </div>
     </center>
