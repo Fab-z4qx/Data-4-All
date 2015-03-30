@@ -16,9 +16,9 @@
                         <li><a class="page-scroll" href="index.php?page=entreprise">Liste Entreprises</a></li>
                         <li><a class="page-scroll" href="#service">Services & Offres</a></li>
                         <li><a class="page-scroll" href="#team">Team</a></li>
-                        <li><a class="page-scroll" href="#contact">Contact</a></li>
+                        <li><a class="page-scroll" href="index.php?page=index&action=display_c">Contact</a></li>
                         <li> <form class='textbox' action="index.php?page=connect&action=login" method="post">
-                                 <input class="input" type="text" name="login" id="name" placeholder="Username" />
+                                 <input class="input" type="text" name="login" id="name&" placeholder="Username" />
                                  <input class="input" type="password" name="password" id="password" placeholder="Passsword" />
                                  <input class="btn-primary" type="submit" value="OK"/>
                                  <div class="checkbox">
@@ -165,7 +165,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row setup-content" id="step-4">
+                                        <div class="row setup-content" id="step-4"><!--partie de confirmation à rajouter :) -->
                                             <div class="col-xs-12">
                                                 <div class="col-md-12">
                                                         <center>
@@ -300,7 +300,7 @@
                         <th></th>
                         <th><h2>BI</h2></th>
                         <th><h2>Open Data</h2></th>
-                        <th><h2>Prenium</h2></th>
+                        <th><h2>Premium</h2></th>
                     </tr>
                     <tr>
                         <td><B>Prix de base</B></td>
