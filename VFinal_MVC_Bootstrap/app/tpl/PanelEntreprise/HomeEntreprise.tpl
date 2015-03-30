@@ -1,3 +1,34 @@
+<script>
+      var g1, g2;
+      
+      window.onload = function(){
+        
+        var g1 = new JustGage({
+          id: "g1", 
+          value: {if isset($numberOfFile)}
+                    {$numberOfFile}
+                {/if}, 
+          min: 0,
+          max: 100,
+          title: "Nombres de fichiers",
+          label: ""
+        });
+
+
+        
+        var g2 = new JustGage({
+          id: "g2", 
+          value: {if isset($space)}
+                    {$space}
+                {/if}, 
+          min: 0,
+          max: 100,
+          title: "Espace Utilisé",
+          label: ""
+        });
+      
+      };
+    </script>
 <div class="body_entreprise">
 <!-- MENU -->
     <div id="wrapper">
@@ -61,30 +92,14 @@
         <div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">
             <div class="row">
             <div class="span4" id="nb_file">
-                <div class="circle circle-border">
-                    <div class="circle-inner">
-                        <div class="score-text">
-                            {if isset($numberOfFile)}
-                                {$numberOfFile}
-                            {/if}
-                        </div>
-                    </div>
-                </div>
-                <h2><i class="fa fa-file"></i>&nbsp;&nbsp;&nbsp;Nombre de Fichiers</h2>
+                <div id="g1"></div>
             </div>
 
             <div class="span4" id="space">
-                <div class="circle circle-border">
-                    <div class="circle-inner">
-                        <div class="score-text">
-                            {if isset($space)}
-                                {$space}
-                            {/if}
-                        </div>
-                    </div>
-                </div>
-                <h2 ><i class="fa fa-database"></i>&nbsp;&nbsp;&nbsp;Espace Utilisé</h2>
+                <div id="g2"></div>
             </div>
+
+            
 
             <div class="span4" id="last_graph">
                 <div class="circle circle-border">
@@ -111,7 +126,7 @@
 
         
 
-<section id="entreprise_moreSpace">
+    <section id="entreprise_moreSpace">
         <div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">
             <div class="row">
             <div class="span4" id="nb_file">
@@ -131,5 +146,10 @@
             </div>
         </div>
         </div>
+
+
+    </section>
+
+   
 
 </div>

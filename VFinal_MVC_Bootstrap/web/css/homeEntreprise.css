@@ -71,6 +71,12 @@ SECTIONS
 	padding-left: 250px;
 	padding-bottom: 160px;
 }
+
+#g1,#g2 {
+    width:400px; height:320px;
+    display: inline-block;
+    margin: 1em;
+}
 /*******************************************
 NOMBRES FICHIERS
 *******************************************/
