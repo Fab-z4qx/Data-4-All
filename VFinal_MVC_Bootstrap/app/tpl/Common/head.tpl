@@ -8,7 +8,7 @@
     <meta name="author" content="">
     
     <title>D4A</title>
-
+<link rel="icon"  type="image/png"  href="web/img/logos/Logo_D4A_Teal_Bords.png">
     <!-- LES STYLES -->
     <link href="web/Bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
     <link href="web/Bootstrap/bootstrap.css" rel="stylesheet" type="text/css">

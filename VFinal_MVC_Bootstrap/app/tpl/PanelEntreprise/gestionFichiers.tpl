@@ -56,10 +56,11 @@
         <!-- ONGLET UPLOAD -->
         <div class="tab-pane active" id="upload">
             <section id="entreprise_gestion_fichier_contenu">
+                {if !isset($array) } 
                 <div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">
                     
                         <h1 class="titre_section"><i class="fa fa-upload"></i>&nbsp;&nbsp;&nbsp;Upload</h1> <br>
-                         <div class="contr"><h2>Vous pouvez selectionner une fichier à importer</h2></div>
+                         <div class="contr"><h2>Vous pouvez selectionner un fichier à importer</h2></div>
                             <div class="upload_form_cont">
                                 <form id="upload_form" enctype="multipart/form-data" method="post" action="entreprise.php?page=gestionfichiers&action=upload">
                                     <div>
@@ -96,6 +97,22 @@
                                 <img id="preview" />
                             </div>
                 </div>
+                {/if}
+                <br>
+                {if isset($array) && (count($array) > 0) } 
+                <div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">
+                    <h1 class="titre_section"><i class="fa fa-upload"></i>&nbsp;&nbsp;&nbsp;Definition d'un modèle </h1> <br>
+                     <div class="upload_form_cont">
+                        <select id="firstArguF">
+                            {foreach from=$array item=foo}
+                                <option>{$foo}</option> 
+                            {/foreach}
+                        </select>
+                        <select id="secondArguF">
+                        </select>
+                    </div>
+                </div>
+                {/if}
             </section>
         </div>
         <!-- /ONGLET UPLOAD -->
