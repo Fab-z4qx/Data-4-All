@@ -14,8 +14,8 @@
                 <div class="nav-collapse pull-right">
                     <ul class="nav">
                         <li><a class="page-scroll" href="index.php?page=entreprise">Liste Entreprises</a></li>
-                        <li><a class="page-scroll" href="#service">Services & Offres</a></li>
-                        <li><a class="page-scroll" href="#team">Team</a></li>
+                        <li><a class="page-scroll" href="index.php">Services & Offres</a></li>
+                        <li><a class="page-scroll" href="index.php">Team</a></li>
                         <li><a class="page-scroll" href="index.php?page=index&action=display_c">Contact</a></li>
                         <li> <form class='textbox' action="index.php?page=connect&action=login" method="post">
                                  <input class="input" type="text" name="login" id="name&" placeholder="Username" />
@@ -23,7 +23,7 @@
                                  <input class="btn-primary" type="submit" value="OK"/>
                                  <div class="checkbox">
                                      <label>
-                                        <input type="checkbox"/> se souvenir de moi
+                                        <input type="checkbox"/><font color="#8080BC"> se souvenir de moi</font>
                                         <a class="offset1" href="#">Mot de passe oublié </a>
                                         <a class="pull-right accordion-toggle" href="#item1" data-parent="#monaccordeon" data-toggle="collapse">S'inscrire</a>
                                     </label>

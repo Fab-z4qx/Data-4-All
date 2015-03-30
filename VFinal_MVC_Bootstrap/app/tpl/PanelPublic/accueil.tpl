@@ -23,7 +23,7 @@
                                  <input class="btn-primary" type="submit" value="OK"/>
                                  <div class="checkbox">
                                      <label>
-                                        <input type="checkbox"/> se souvenir de moi
+                                        <input type="checkbox"/><font color="#8080BC"> se souvenir de moi</font>
                                         <a class="offset1" href="#">Mot de passe oublié </a>
                                         <a class="pull-right accordion-toggle" href="#item1" data-parent="#monaccordeon" data-toggle="collapse">S'inscrire</a>
                                     </label>
@@ -362,7 +362,7 @@
 <!-- TEAM -->
 <section id="team">
     <center>
-        <div class="jumbotron well">
+        <div id="test" class="jumbotron well">
           <h2>Nous vous présentons notre super équipe !</h2>
         </div>
     </center>
@@ -374,7 +374,7 @@
                     <img class="img-circle" src="web/img/team/benjamin.jpg">
                     <span class="muted"><h3>BOURGEAUX</h3><h3> Benjamin</h3></span>
                     <p>Leader</p>
-                    <p>Nepascraquernepascraquer</p>
+                    <p>Ton idée est passionante mais...</p>
                     <p>C'est qui le patron ici ?!!</p>
                     <div class="span 3">
                          <a class="btn btn-social-icon btn-twitter">
@@ -418,7 +418,7 @@
                     <img class="img-circle" src="web/img/team/etienne.jpg">
                     <span class="muted"><h3>DERBISE</h3><h3>Etienne</h3></span>
                     <p>Marketing</p>
-                    <p>Putain! Ou sont mes Sneakers!?</p>
+                    <p>Putain! Où sont mes Sneakers!?</p>
                     <p>Bon Chance !</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
@@ -487,7 +487,7 @@
                     <span class="muted"><h3>PIGAUX</h3><h3>Guillaume</h3></span>
                     <p>Developer</p>
                     <p>Petit Ecureuil</p>
-                    <p>Développe pour le plaisir</p>
+                    <p>actuellement en hibernation.</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>

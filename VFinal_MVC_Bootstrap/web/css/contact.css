@@ -28,6 +28,7 @@ marg-formaulaire-center
 #main {
  margin:0 auto;
  float:none;
+    background-color: rgba(245, 245, 245, 0.4);
 }
 /*******************************************
 ERROR
