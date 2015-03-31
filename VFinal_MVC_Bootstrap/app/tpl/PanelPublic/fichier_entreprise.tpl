@@ -203,11 +203,47 @@
         </div>
 
 <!-- /Inscription -->
+<!-- liste fichier -->
+   {if !isset($graph)}
+        <div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">
 
+                        <h1 class="titre_section"><i class="fa fa-file"></i>&nbsp;&nbsp;&nbsp;Tous les fichiers</h1> <br>
+                        <center><form class="navbar-form navbar-right inline-form">
+                            <div class="form-group">
+                                <input type="search" class="input-sm form-control" placeholder="Nom">
+                                <button type="submit" class="btn btn-primary">Chercher</button>
+                            </div>
+                        </form></center>
+                        <br><br>
+                        <table id="listFiles" class="table table-striped ">
+                            <tbody>
+                                {section name=nom loop=$fileinfo}
+                                <tr>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-success" onclick="self.location.href='entreprise.php?page=visualisation&model'" title="visualisation"><i class="fa fa-desktop"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                {/section}
+                            </tbody>
+                        </table>
 
+                        <!--
+                        <center><div class="pagination">
+                            <ul>
+                                <li><a href="#">Précédent</a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">Suivant</a></li>
+                            </ul>
+                        </div></center>
+                    -->
 
-    <h1>fichiers telecharger entreprise</h1>
-
+                </div>
+	{/if}
+<!-- /liste fichier -->
 </div>
 
 <!-- SCRIPT_Inscription -->
