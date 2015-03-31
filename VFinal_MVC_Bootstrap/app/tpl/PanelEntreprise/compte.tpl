@@ -55,7 +55,7 @@
             <h1 class="titre_section"><i class="fa fa-refresh"></i>&nbsp;&nbsp;&nbsp;Gardez à jour votre profil</h1> <br>
 
     <div class="span4">
-        <form method="post" action="entreprise.php?page=compte&action=update">
+        <form method="post" action="entreprise.php?page=compte&action=updateEntreprise">
             <div class="group_form" class="col-xs-6">
                 
                     <div class="form-group">
@@ -86,20 +86,12 @@
                             <input type="text" name="forme_juridique_entreprise" id="forme_juridique_entreprise" value="{$forme_juridique_entreprise}"/>
                         </div>
                 </div>
-
-            <div class="group_form" class="col-xs-6">
-                        <div class="form-group">
-                            <label class="form_entreprise" for="type_offre">Type d'offre :</label>
-                            <input type="text" name="type_offre" id="type_offre" value="{$type_offre}"/>
-                        </div>
-            </div>
             
                     <input class="bouton_submit" type="submit" value="Sauvegarder les modifications">
         </form>
     </div>
     <div class="span4">
-        <form method="post" action="index.php?page=formulaire&action=createAccount">
-
+    <form method="post" action="entreprise.php?page=compte&action=updateAdresse">
             <div class="group_form" class="col-xs-6">
                         <div class="form-group">
                             <label class="form_entreprise" for="adresse">Adresse :</label>
