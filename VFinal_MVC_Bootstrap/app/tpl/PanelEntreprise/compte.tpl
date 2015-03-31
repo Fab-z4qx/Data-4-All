@@ -54,7 +54,7 @@
 
             <h1 class="titre_section"><i class="fa fa-refresh"></i>&nbsp;&nbsp;&nbsp;Gardez à jour votre profil</h1> <br>
 
-    
+    <div class="span4">
         <form method="post" action="index.php?page=formulaire&action=createAccount">
 
             <div class="group_form" class="col-xs-6">
@@ -68,29 +68,6 @@
                         <input type="email_entreprise" required="required" name="email_entreprise" id="email_entreprise" value="{$email_entreprise}"/>
                     </div>
             </div>
-            <div class="group_form" class="col-xs-6">
-                        <div class="form-group">
-                            <label class="form_entreprise" for="adresse">Adresse :</label>
-                            <input type="text" required="required" name="adresse" id="adresse" value="{$adresse}"/>
-                        </div>
-                        <div class="form-group">
-                            <label class="form_entreprise" for="adresse_complementaire">Adresse complémentaire :</label>
-                            <input type="text" name="adresse_complementaire" id="adresse_complementaire" value="{$adresse_complementaire}"/>
-                        </div>
-                        <div class="form-group">
-                            <label class="form_entreprise" for="ville">Ville :</label>
-                            <input type="text" name="ville" id="ville" value="{$ville}"/>
-                        </div>
-                    
-                        <div class="form-group">
-                            <label class="form_entreprise" for="code_postal">Code Postale :</label>
-                            <input type="text" name="code_postal" id="code_postal" value="{$code_postal}"/>
-                        </div>
-                        <div class="form-group">
-                            <label class="form_entreprise" for="pays">Pays :</label>
-                            <input type="text" name="pays" id="pays" value="{$pays}"/>
-                        </div>
-                </div>
             <div class="group_form" class="col-xs-6">
                         <div class="form-group">
                             <label class="form_entreprise" for="tel_entreprise">Tel :</label>
@@ -118,10 +95,39 @@
             </div>
             
                     <input class="bouton_submit" type="submit" value="Sauvegarder les modifications">
-                
-        
         </form>
+    </div>
+    <div class="span4">
+        <form method="post" action="index.php?page=formulaire&action=createAccount">
 
+            <div class="group_form" class="col-xs-6">
+                        <div class="form-group">
+                            <label class="form_entreprise" for="adresse">Adresse :</label>
+                            <input type="text" required="required" name="adresse" id="adresse" value="{$adresse}"/>
+                        </div>
+                        <div class="form-group">
+                            <label class="form_entreprise" for="adresse_complementaire">Adresse complémentaire :</label>
+                            <input type="text" name="adresse_complementaire" id="adresse_complementaire" value="{$adresse_complementaire}"/>
+                        </div>
+                        <div class="form-group">
+                            <label class="form_entreprise" for="ville">Ville :</label>
+                            <input type="text" name="ville" id="ville" value="{$ville}"/>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label class="form_entreprise" for="code_postal">Code Postale :</label>
+                            <input type="text" name="code_postal" id="code_postal" value="{$code_postal}"/>
+                        </div>
+                        <div class="form-group">
+                            <label class="form_entreprise" for="pays">Pays :</label>
+                            <input type="text" name="pays" id="pays" value="{$pays}"/>
+                        </div>
+                </div>
+            
+            
+                    <input class="bouton_submit" type="submit" value="Sauvegarder les modifications">
+        </form>
+    </div>
     </div>
 </section>
 
