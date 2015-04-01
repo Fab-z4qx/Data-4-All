@@ -8,7 +8,7 @@
     <meta name="author" content="">
     
     <title>D4A</title>
-
+<link rel="icon"  type="image/png"  href="web/img/logos/Logo_D4A_Teal_Bords.png">
     <!-- LES STYLES -->
     <link href="web/Bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
     <link href="web/Bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
@@ -16,6 +16,9 @@
     <link href="web/Bootstrap/bootstrap-responsive.css" rel="stylesheet">
     <link href="web/Bootstrap/simple-sidebar.css" rel="stylesheet" type="text/css">
     <link href="web/css/accueil.css" rel="stylesheet" type="text/css">
+    <link href="web/css/contact.css" rel="stylesheet" type="text/css">
+    <link href="web/css/enterprises.css" rel="stylesheet" type="text/css">
+    <link href="web/css/fichier_entreprise.css" rel="stylesheet" type="text/css">
     <link href="web/css/homeEntreprise.css" rel="stylesheet" type="text/css">
     <link href="web/css/gestionFichiers.css" rel="stylesheet" type="text/css">
     <link href="web/css/import_fichiers.css" rel="stylesheet" type="text/css">
@@ -36,6 +39,11 @@
     <script type='text/javascript' src="web/js/bootstrap.min.js"></script>
     <script type='text/javascript' src="web/js/jquery.js"></script>
     <script type='text/javascript' src="web/js/upload_file.js"></script>
+    <script type='text/javascript' src="web/js/justgage.1.0.1.js"></script>
+    <script type='text/javascript' src="web/js/justgage.1.0.1.min.js"></script>
+    <script type='text/javascript' src="web/js/raphael.2.1.0.min.js"></script>
+
+
 
 </head>
 

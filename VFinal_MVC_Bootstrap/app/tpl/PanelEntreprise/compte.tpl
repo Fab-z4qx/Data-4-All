@@ -54,9 +54,8 @@
 
             <h1 class="titre_section"><i class="fa fa-refresh"></i>&nbsp;&nbsp;&nbsp;Gardez à jour votre profil</h1> <br>
 
-    
-        <form method="post" action="index.php?page=formulaire&action=createAccount">
-
+    <div class="span4">
+        <form method="post" action="entreprise.php?page=compte&action=updateEntreprise">
             <div class="group_form" class="col-xs-6">
                 
                     <div class="form-group">
@@ -68,6 +67,31 @@
                         <input type="email_entreprise" required="required" name="email_entreprise" id="email_entreprise" value="{$email_entreprise}"/>
                     </div>
             </div>
+            <div class="group_form" class="col-xs-6">
+                        <div class="form-group">
+                            <label class="form_entreprise" for="tel_entreprise">Tel :</label>
+                            <input type="text" name="tel_entreprise" id="tel_entreprise" value="{$tel_entreprise}"/>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label class="form_entreprise" for="fax_entrepirse">Fax :</label>
+                            <input type="text" name="fax_entreprise" id="fax_entreprise" value="{$fax_entreprise}"/>
+                        </div>
+                        <div class="form-group">
+                            <label class="form_entreprise" for="siret_entreprise">Numéro Siret :</label>
+                            <input type="text" name="siret_entreprise" id="siret_entreprise" value="{$siret_entreprise}"/>
+                        </div>
+                        <div class="form-group">
+                            <label class="form_entreprise" for="forme_juridique_entreprise">Forme juridique :</label>
+                            <input type="text" name="forme_juridique_entreprise" id="forme_juridique_entreprise" value="{$forme_juridique_entreprise}"/>
+                        </div>
+                </div>
+            
+                    <input class="bouton_submit" type="submit" value="Sauvegarder les modifications">
+        </form>
+    </div>
+    <div class="span4">
+    <form method="post" action="entreprise.php?page=compte&action=updateAdresse">
             <div class="group_form" class="col-xs-6">
                         <div class="form-group">
                             <label class="form_entreprise" for="adresse">Adresse :</label>
@@ -91,37 +115,11 @@
                             <input type="text" name="pays" id="pays" value="{$pays}"/>
                         </div>
                 </div>
-            <div class="group_form" class="col-xs-6">
-                        <div class="form-group">
-                            <label class="form_entreprise" for="tel_entreprise">Tel :</label>
-                            <input type="text" name="tel_entreprise" id="tel_entreprise" value="{$tel_entreprise}"/>
-                        </div>
-                    
-                        <div class="form-group">
-                            <label class="form_entreprise" for="fax_entrepirse">Fax :</label>
-                            <input type="text" name="fax_entreprise" id="fax_entreprise" value="{$fax_entreprise}"/>
-                        </div>
-                        <div class="form-group">
-                            <label class="form_entreprise" for="siret_entreprise">Numéro Siret :</label>
-                            <input type="text" name="siret_entreprise" id="siret_entreprise" value="{$siret_entreprise}"/>
-                        </div>
-                        <div class="form-group">
-                            <label class="form_entreprise" for="forme_juridique_entreprise">Forme juridique :</label>
-                            <input type="text" name="forme_juridique_entreprise" id="forme_juridique_entreprise" value="{$forme_juridique_entreprise}"/>
-                        </div>
-                </div>
-            <div class="group_form" class="col-xs-6">
-                        <div class="form-group">
-                            <label class="form_entreprise" for="type_offre">Type d'offre :</label>
-                            <input type="text" name="type_offre" id="type_offre" value="{$type_offre}"/>
-                        </div>
-            </div>
+            
             
                     <input class="bouton_submit" type="submit" value="Sauvegarder les modifications">
-                
-        
         </form>
-
+    </div>
     </div>
 </section>
 

@@ -8,16 +8,22 @@ function startController()
 	include (_CTRL_PUBLIC_.ucfirst($_GET['page']).'Controller.php'); //ucfirst() met la 1er lettre en majuscule pour respecter la convention objet 
     $className = ucfirst($_GET['page']).'Controller';
     $controleur = new $className; 
+
     if(isset($_GET['action']))
     	$actionName = $_GET['action'];
     
-    if(empty($_GET['action']))
-    {
-    	$controleur->display();
+    if(empty($_GET['action'])){
+            $controleur->display();
     }
     else
     {
-    	$controleur->$actionName();
+        if(isset($_GET['value']))
+        {
+            $value = $_GET['value'];
+            $controleur->$actionName($value);
+        }
+        else   
+           $controleur->$actionName();
     }
 }
 

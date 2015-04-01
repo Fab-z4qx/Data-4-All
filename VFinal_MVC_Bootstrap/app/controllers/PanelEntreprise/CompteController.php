@@ -23,6 +23,29 @@ class CompteController extends Controller
      $this->smarty->assign('pays',$adresse['pays']);
    	 $this->smarty->display(_TPL_ENT_.'compte.tpl');
    }
+
+   public function updateEntreprise()
+   {
+      extract($_POST);
+      $entreprise = new Entreprise();
+      $result = $entreprise->updateInfo($_SESSION["info"]["id_entreprise"],$nom_entreprise, $email_entreprise, $siret_entreprise, $tel_entreprise, $fax_entreprise, $forme_juridique_entreprise);
+      if($result == true)
+        echo "Information mis à jour ";
+      else
+        echo "erreur lors de la maj";
+   }
+
+   public function updateAdresse()
+   {
+      extract($_POST);
+      $adresse = new Adresse();
+      $result = $adresse->updateInfo($_SESSION["info"]["id_adresse"], $_POST['adresse'], $adresse_complementaire, $ville, $code_postal, $pays);
+       if($result == true)
+        echo "Information mis à jour ";
+      else
+        echo "erreur lors de la maj";
+   }
+
 }
 
 ?>

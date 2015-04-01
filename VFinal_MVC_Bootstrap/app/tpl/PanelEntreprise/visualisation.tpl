@@ -68,9 +68,9 @@
         </select>
 
         --> 
-        
+   {if !isset($graph)}     
         <div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">
-        {if !isset($graph)}
+			
                         <h1 class="titre_section"><i class="fa fa-file"></i>&nbsp;&nbsp;&nbsp;Tous les fichiers</h1> <br>
                         <center><form class="navbar-form navbar-right inline-form">
                             <div class="form-group">
@@ -112,7 +112,21 @@
                     -->
 
                 </div>
-{/if}
+	{/if}
+	<br>
+	{if isset($smarty.get.model)} 
+	<div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">
+			
+                        <h1 class="titre_section"><i class="fa fa-file"></i>&nbsp;&nbsp;&nbsp;Tous les fichiers</h1> <br>
+						<select id="firstArguF">
+                            
+                                <option>echo</option> 
+                            
+                        </select>
+                        <select id="secondArguF">
+                        </select>
+	</div>
+	{/if}
 
 {if isset($graph) }
 <!-- GRAPH 1 - HORIZONTAL FULL -->

@@ -97,6 +97,25 @@ class Entreprise {
         }
 	}
 
+    public function updateInfo($idEntreprise, $nom_entreprise, $email_entreprise, $siret_entreprise, $tel_entreprise, $fax_entreprise, $forme_juridique_entreprise)
+    {
+        $sql = "UPDATE `bdd_d4a`.`entreprise` SET
+        `nom_entreprise` = '".$nom_entreprise."',
+        `email_entreprise` = '".$email_entreprise."', 
+        `siret_entreprise` = '".$siret_entreprise."',
+        `tel_entreprise` = '".$tel_entreprise."',
+        `fax_entreprise` = '".$fax_entreprise."', 
+        `forme_juridique_entreprise` = '".$forme_juridique_entreprise."', 
+        `email_entreprise` = '".$email_entreprise."'  
+         WHERE `entreprise`.`id_entreprise` = ".$idEntreprise.";";
+
+        if($this->pdo->exec($sql))
+        {
+           return true;
+        }
+        return false;
+    }
+
     private function convertMoToOctets($mo)
     {
         return $mo*1048576;
@@ -107,7 +126,7 @@ class Entreprise {
        $bddData = $this->pdo->createDbData($id_of_db);
        if(!empty($bddData))
        {
-          echo 'bdd Data cree';
+          //echo 'bdd Data cree';
        }
        //$this->createTableInfo($bddData);
     }

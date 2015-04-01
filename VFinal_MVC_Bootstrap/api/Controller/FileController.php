@@ -92,8 +92,8 @@ class FileController
     /**
      * Returns a JSON string object to the browser with specifiqueValue
      *
-     * @url POST /file/upload/$id_ent
-     * CURL EX : curl -i -F file=test -F filedata=@ex.xlsx http://localhost:8888/htdocs/D4A/Data4All/VFinal_MVC_Bootstrap/api/file/upload/1
+     * @url POST /file/upload/xls/$id_ent
+     * CURL EX : curl -i -F file=test -F filedata=@ex.xlsx http://localhost:8888/htdocs/D4A/Data4All/VFinal_MVC_Bootstrap/api/file/upload/xls/1
      */
     public function postXlsFile($id_ent=null)
     {

@@ -1,5 +1,4 @@
-<div id="contact">
-
+<div id="fichier_ent">
     <!-- MENU -->
     <div class="navbar navbar-fixed-top navbar-inverse">
         <div class="navbar-inner">
@@ -204,37 +203,54 @@
         </div>
 
 <!-- /Inscription -->
+<!-- liste fichier -->
+   {if !isset($graph)}
+        <div class="container stat" style="background-color: white;box-shadow: 0 0 5px #888 inset;">
 
-<!-- contact -->
-    <div id="main" class="span8 well">
-		<h2>Contactez-Nous</h2>
-		<br/>
-		<h4>Veuillez saisir vos coordonées</h4>
-		<h5>
-			Nom<span style="color:#FF0000">*</span> <br/><input type="text" /> <br/>
-			Prenom<span style="color:#FF0000">*</span> <br/><input type="text" /> <br/>
-			e-mail<span style="color:#FF0000">*</span> <br/><input type="email" /> <br/>
-			Société <br/><input type="text" /> <br/>
-		</h5>
-		<h4>Exprimez-vous</h4>
-		<h5>Objet</h5>
-		<select name="objet" id="objet">
-            <option value="na" selected>Choisissez un objet</option>
-            <option value="Questions">Informations/Questions</option>
-            <option value="Service client">Service client</option>
-            <option value="Suggestions">Suggestions</option>
-            <option value="SupportProduit">Support produit</option>
-		</select>
+                        <h1 class="titre_section"><i class="fa fa-file"></i>&nbsp;&nbsp;&nbsp;Tous les fichiers</h1> <br>
+                        <center><form class="navbar-form navbar-right inline-form">
+                            <div class="form-group">
+                                <input type="search" class="input-sm form-control" placeholder="Nom">
+                                <button type="submit" class="btn btn-primary">Chercher</button>
+                            </div>
+                        </form></center>
+                        <br><br>
+                        {if isset($fileinfo)}
+                        <table id="listFiles" class="table table-striped ">
+                            <tbody>
+                                {section name=nom loop=$fileinfo}
+                                <tr>
+                                    <td>{$fileinfo[nom].nom}</td>
+                                    <td>{$fileinfo[nom].size} Mo</td>
+                                    <td>{$fileinfo[nom].date} </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-success" onclick="self.location.href='api/file/value/{$id_entreprise}/{$fileinfo[nom].nom}/0/10'" 
+                                            title="visualisation"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-warning" title="télécharger"><i class="fa fa-download"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                {/section}
+                            </tbody>
+                        </table>
+                        {/if}
 
-		<label for="themessage"><h5>Votre message</h5></label>
-		<textarea name="themessage" id="themessage" class="input-xlarge span7" rows="10"></textarea>
-		<br>
-		<h6><span style="color:#FF0000">*Champs obligatoires</span></h6><br/>
-		<input type="submit" value="Envoyer"/>
-    </div>
-<!-- /contact -->
+                        <!--
+                        <center><div class="pagination">
+                            <ul>
+                                <li><a href="#">Précédent</a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">Suivant</a></li>
+                            </ul>
+                        </div></center>
+                    -->
 
-
+                </div>
+	{/if}
+<!-- /liste fichier -->
 </div>
 
 <!-- SCRIPT_Inscription -->

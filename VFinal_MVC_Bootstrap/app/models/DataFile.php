@@ -5,10 +5,13 @@ class DataFile
 
 	private $pdo;
 	private $pdoData;
-	public function __construct()
+	public function __construct($id_entreprise=null)
 	{
 		$this->pdo = Database::getInstance();
-		$this->pdoData = $this->pdo->getDbConnection('_'.$_SESSION['info']['id_entreprise']);
+		if($id_entreprise==null)
+			$this->pdoData = $this->pdo->getDbConnection('_'.$_SESSION['info']['id_entreprise']);
+		else
+			$this->pdoData = $this->pdo->getDbConnection('_'.$id_entreprise);
 	}
 
 	public function createTable($array, $name)
@@ -97,11 +100,19 @@ class DataFile
 		return NULL;
 	}
 
-	public function getFileInfo()
+	public function getFileInfo($id_entreprise=null)
 	{
-		$sql = "SELECT table_name AS 'nom', round(((data_length + index_length) / 1024 / 1024), 2) AS 'size', CAST(create_time AS DATE) AS 'date'
-		FROM information_schema.tables 
-		WHERE table_schema =  '_".$_SESSION['info']['id_entreprise']."';";
+		if($id_entreprise==null){
+			$sql = "SELECT table_name AS 'nom', round(((data_length + index_length) / 1024 / 1024), 2) AS 'size', CAST(create_time AS DATE) AS 'date'
+			FROM information_schema.tables 
+			WHERE table_schema =  '_".$_SESSION['info']['id_entreprise']."';";
+		}
+		else{
+			$sql = "SELECT table_name AS 'nom', round(((data_length + index_length) / 1024 / 1024), 2) AS 'size', CAST(create_time AS DATE) AS 'date'
+			FROM information_schema.tables 
+			WHERE table_schema =  '_".$id_entreprise."';";
+		}
+		
 
 		$req = $this->pdo->query($sql);
 		$data = $req->fetchAll(PDO::FETCH_ASSOC);
@@ -116,6 +127,17 @@ class DataFile
 		}
 		return NULL;
 
+	}
+	
+	public function getTableHeader($idfile){
+		
+		$sql = 'show columns FROM _'.$_SESSION['info']['id_entreprise'];
+		$req = $this->pdoData->query($sql);
+		$data = $req->fetchAll(PDO::FETCH_ASSOC);
+		if(!empty($data)){
+			return $data;
+		}
+		return NULL;
 	}
 
 	public function getTypeAlea($id_file)
@@ -141,6 +163,18 @@ class DataFile
 		$req = $this->pdoData->query($sql);
 		$data = $req->fetchAll(PDO::FETCH_ASSOC);
 		return $data;
+	}
+
+	public function defineModel(){
+
+	}
+
+	public function getModel(){
+
+	}
+
+	public function modifyModel(){
+		
 	}
 	
 }

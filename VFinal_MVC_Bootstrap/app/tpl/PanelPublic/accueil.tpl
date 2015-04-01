@@ -16,14 +16,14 @@
                         <li><a class="page-scroll" href="index.php?page=entreprise">Liste Entreprises</a></li>
                         <li><a class="page-scroll" href="#service">Services & Offres</a></li>
                         <li><a class="page-scroll" href="#team">Team</a></li>
-                        <li><a class="page-scroll" href="#contact">Contact</a></li>
+                        <li><a class="page-scroll" href="index.php?page=index&action=display_c">Contact</a></li>
                         <li> <form class='textbox' action="index.php?page=connect&action=login" method="post">
-                                 <input class="input" type="text" name="login" id="name" placeholder="Username" />
+                                 <input class="input" type="text" name="login" id="name&" placeholder="Username" />
                                  <input class="input" type="password" name="password" id="password" placeholder="Passsword" />
                                  <input class="btn-primary" type="submit" value="OK"/>
                                  <div class="checkbox">
                                      <label>
-                                        <input type="checkbox"/> se souvenir de moi
+                                        <input type="checkbox"/><font color="#8080BC"> se souvenir de moi</font>
                                         <a class="offset1" href="#">Mot de passe oublié </a>
                                         <a class="pull-right accordion-toggle" href="#item1" data-parent="#monaccordeon" data-toggle="collapse">S'inscrire</a>
                                     </label>
@@ -165,6 +165,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        {if ({$account} == 'compte_cree')}
                                         <div class="row setup-content" id="step-4">
                                             <div class="col-xs-12">
                                                 <div class="col-md-12">
@@ -177,6 +178,21 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        {/if}
+                                        {if ({$account} == 'login_error')}
+                                        <div class="row setup-content" id="step-4">
+                                            <div class="col-xs-12">
+                                                <div class="col-md-12">
+                                                        <center>
+                                                            <div class="jumbotron well">
+                                                              <h1>ERROR !</h1>
+                                                              <h4></h4>
+                                                            </div>
+                                                        </center>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {/if}
                                     </form>
                                 </form>
                             </div>
@@ -246,7 +262,7 @@
             <!-- marketing -->
           <div class="featurette">
             <img class="featurette-image pull-left img-circle" src="web/img/icones/Argent_Jaune.png">
-            <h2 class="featurette-heading pull-left ">Une plue-value pour l'entreprise</h2></br></br></br></br>
+            <h2 class="featurette-heading pull-left ">Une plue-value pour votre entreprise</h2></br></br></br></br>
             <p class="lead">Les données d’une entreprise sont nombreuses et il serait de dommage de ne
                     pas tiré profit de cette source pour votre entreprise. Grâce à notre solution, prenez la bonne décision au bon moment, en ayant les bonnes informations.
                     Prévoyez l’avenir en prenant les décisions correspondant à votre plan longue durée.</p>
@@ -254,7 +270,7 @@
           <hr class="featurette-divider">
           <div class="featurette">
             <img class="featurette-image pull-right img-circle" src="web/img/icones/Stockage Supp_Jaune.png">
-            <h2 class="featurette-heading pull-right">Une transparence pour vous</h2></br></br></br></br>
+            <h2 class="featurette-heading pull-right">Une transparence pour vos données</h2></br></br></br></br>
             <p class="lead">Vous avez de nombreuse donnée, et vous souhaitez les mettre à disposition de tous pour :
                 <li>Montrer que vous n’avez rien a caché</li>
                 <li>Permettez a chacun de faire de la recherche pour votre entreprise</li>
@@ -264,7 +280,7 @@
           <hr class="featurette-divider">
           <div class="featurette">
             <img class="featurette-image pull-left img-circle" src="web/img/icones/Assistance_Jaune.png">
-            <h2 class="featurette-heading pull-left">Une bdd de folie</h2></br></br></br></br>
+            <h2 class="featurette-heading pull-left">Communiquez avec le monde entier</h2></br></br></br></br>
             <p class="lead">Chargez vos données, exploitez vos données, et choisissez celle que vous voulez diffuser au monde. Stimulez l'économie et affichez votre transparence
                 d’une main, récupérez les informations et prenez les décisions de l’autre. </p>
           </div>
@@ -286,7 +302,7 @@
                 </div>
                 <div class="span4">
                     <img class="img-circle" src="web/img/icones/Premium_Jaune.png">
-                    <h2>Prenium</h2>
+                    <h2>Premium</h2>
                     <p>L’offre premium comprend l’offre BI ainsi que que l’offre Open DATA. En choisissant cette offre vous propulserez votre entreprise sur les devants de
                         la scène grâce à l’Open Data, tout en ayant un service d’aide à la décision performant.</p>
                 </div>
@@ -294,19 +310,20 @@
     <!-- /SERVICES -->
         <hr class="featurette-divider">
     <!-- OFFRES -->
+
             <table class="table table-striped table-bordered">
                 <tbody>
                     <tr>
                         <th></th>
-                        <th><h2>BI</h2></th>
                         <th><h2>Open Data</h2></th>
-                        <th><h2>Prenium</h2></th>
+                        <th><h2>BI</h2></th>
+                        <th><h2>Premium</h2></th>
                     </tr>
                     <tr>
                         <td><B>Prix de base</B></td>
-                        <td>1600€/mois</td>
-                        <td>2700€/mois</td>
-                        <td>3500€/mois</td>
+                        <td>1600 €/mois</td>
+                        <td>2700 €/mois</td>
+                        <td>3500 €/mois</td>
                     </tr>
                     <tr>
                         <td><B>Assistance & mise en service</B></td>
@@ -316,25 +333,25 @@
                     </tr>
                     <tr>
                         <td><B>Stockage de base</B></td>
-                        <td>Nop !</td>
-                        <td>100 mo</td>
-                        <td>200 mo</td>
+                        <td>50 Mo + 100k de requête</td>
+                        <td>100 Mo</td>
+                        <td>200 Mo</td>
                     </tr>
                     <tr>
                         <td><B>Stockage supplémentaire</B></td>
-                        <td>row 3,col 2</td>
-                        <td>row 3,col 3</td>
-                        <td>row 1,col 3</td>
+                        <td>250 €/mois le jeu de 100 MO</br> de données + 1 jeu de 10 Mo offert par</br> jeu de 100 Mo acheté</td>
+                        <td>300 €/mois les 100 Mo</td>
+                        <td>Open Data + BI</td>
                     </tr>
                     <tr>
                         <td><B>Assistance 24/7</B></td>
-                        <td>row 3,col 2</td>
-                        <td>row 3,col 3</td>
-                        <td>row 1,col 3</td>
+                        <td>150 €/mois</td>
+                        <td>250 €/mois</td>
+                        <td>350 €/mois</td>
                     </tr>
                 </tbody>
             </table>
-        </div>
+
        <!-- /OFFRES -->
 
 <!-- /SERVICES & OFFRES -->
@@ -358,7 +375,7 @@
                     <img class="img-circle" src="web/img/team/benjamin.jpg">
                     <span class="muted"><h3>BOURGEAUX</h3><h3> Benjamin</h3></span>
                     <p>Leader</p>
-                    <p>Nepascraquernepascraquer</p>
+                    <p>Ton idée est passionante mais...</p>
                     <p>C'est qui le patron ici ?!!</p>
                     <div class="span 3">
                          <a class="btn btn-social-icon btn-twitter">
@@ -402,7 +419,7 @@
                     <img class="img-circle" src="web/img/team/etienne.jpg">
                     <span class="muted"><h3>DERBISE</h3><h3>Etienne</h3></span>
                     <p>Marketing</p>
-                    <p>Putain! Ou sont mes Sneakers!?</p>
+                    <p>P*****! Où sont mes Sneakers!?</p>
                     <p>Bon Chance !</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
@@ -471,7 +488,7 @@
                     <span class="muted"><h3>PIGAUX</h3><h3>Guillaume</h3></span>
                     <p>Developer</p>
                     <p>Petit Ecureuil</p>
-                    <p>Développe pour le plaisir</p>
+                    <p>actuellement en hibernation.</p>
                     <div class="span 3">
                         <a class="btn btn-social-icon btn-twitter">
                             <i class="fa fa-twitter"></i>
@@ -546,7 +563,7 @@
       <footer>
           <center>
         <a href="#">Retour au début</a>
-        <p>© 2015 Data4All · <a href="#">Contact</a> · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p>© 2015 Data4All · <a href="index.php?page=index&action=display_c">Contact</a> · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
           </center>
       </footer>
 <!-- /FOOTER -->

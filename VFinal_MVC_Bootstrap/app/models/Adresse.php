@@ -27,18 +27,33 @@ class Adresse {
          /* Ajout dans la table Entreprise */
          if($this->pdo->exec($adresse_sql_req))
          {
-         	//echo "INSERT";
          	return $this->pdo->lastInsertId();
          }
-
 	}
+
+    public function updateInfo($id_adresse, $addr, $adresse_complementaire, $ville, $code_postal, $pays)
+    {
+        // var_dump($adrr);
+        $sql = "UPDATE `bdd_d4a`.`adresse` SET
+        `adresse` = '".$addr."',
+        `adresse_complementaire` = '".$adresse_complementaire."', 
+        `ville` = '".$ville."',
+        `code_postal` = '".$code_postal."',
+        `pays` = '".$pays."' 
+         WHERE `adresse`.`id_adresse` = ".$id_adresse.";";
+         
+        if($this->pdo->exec($sql))
+        {
+           return true;
+        }
+        return false;
+    }
 
    public function getAdresseOfEntreprise($id_entreprise_adresse)
    {
       $sql = "SELECT * FROM adresse WHERE id_adresse='".$id_entreprise_adresse."';";
       $req = $this->pdo->query($sql);
       $data = $req->fetchAll(PDO::FETCH_ASSOC);
-      //print_r($data);
       if(!empty($data)){
          return $data[0];
       }

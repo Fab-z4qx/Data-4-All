@@ -45,7 +45,7 @@ SECTIONS
 	padding-left: 250px;
 }
 .stat .span4 {
-  text-align: center;
+  /*text-align: center;*/
 }
 .stat h2 {
   font-weight: normal;
@@ -70,6 +70,29 @@ SECTIONS
 	padding-top: 75px;
 	padding-left: 250px;
 	padding-bottom: 160px;
+}
+
+#g1,#g2 {
+    width:400px; 
+    height:320px;
+    display: inline-block;
+    margin: 1em;
+}
+
+#title_last_graph{
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	text-anchor: middle;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	font-stretch: normal;
+	font-size: 32px;
+	line-height: normal;
+	font-family: Arial;
+	fill-opacity: 1;
+	stroke: none;
+	color:  rgb(153, 153, 153);
+	margin-bottom: 5%;
 }
 /*******************************************
 NOMBRES FICHIERS
