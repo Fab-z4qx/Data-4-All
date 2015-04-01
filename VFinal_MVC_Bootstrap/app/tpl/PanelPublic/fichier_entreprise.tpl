@@ -225,7 +225,8 @@
                                     <td>{$fileinfo[nom].date} </td>
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success" onclick="self.location.href='entreprise.php?page=visualisation&action=start&value={$fileinfo[nom].nom}'" title="visualisation"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-success" onclick="self.location.href='api/file/value/{$id_entreprise}/{$fileinfo[nom].nom}/0/10'" 
+                                            title="visualisation"><i class="fa fa-desktop"></i></button>
                                             <button type="button" class="btn btn-warning" title="télécharger"><i class="fa fa-download"></i></button>
                                         </div>
                                     </td>

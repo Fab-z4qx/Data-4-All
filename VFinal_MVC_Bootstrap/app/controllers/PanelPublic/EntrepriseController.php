@@ -50,6 +50,7 @@ class EntrepriseController extends Controller
       $dataFile = new DataFile($value);
       $filesInfo = $dataFile->getFileInfo($value);
       var_dump($filesInfo);
+      $this->smarty->assign('id_entreprise', $value);
       $this->smarty->assign('fileinfo', $filesInfo);
       $this->smarty->display(_TPL_PUBLIC_.'fichier_entreprise.tpl');
    }
