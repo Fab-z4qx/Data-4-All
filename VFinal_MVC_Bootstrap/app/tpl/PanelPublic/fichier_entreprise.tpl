@@ -215,19 +215,27 @@
                             </div>
                         </form></center>
                         <br><br>
+                        {if isset($fileinfo)}
                         <table id="listFiles" class="table table-striped ">
                             <tbody>
                                 {section name=nom loop=$fileinfo}
                                 <tr>
+                                    <td>{$fileinfo[nom].nom}</td>
+                                    <td>{$fileinfo[nom].size} Mo</td>
+                                    <td>{$fileinfo[nom].date} </td>
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success" onclick="self.location.href='entreprise.php?page=visualisation&model'" title="visualisation"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-success" onclick="self.location.href='entreprise.php?page=visualisation&action=start&value={$fileinfo[nom].nom}'" title="visualisation"><i class="fa fa-desktop"></i></button>
+                                            <button type="button" class="btn btn-info" title="renommer"><i class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-warning" title="télécharger"><i class="fa fa-download"></i></button>
+                                            <button type="button" class="btn btn-danger" title="supprimer"><i class="fa fa-trash"></i></button>
                                         </div>
                                     </td>
                                 </tr>
                                 {/section}
                             </tbody>
                         </table>
+                        {/if}
 
                         <!--
                         <center><div class="pagination">

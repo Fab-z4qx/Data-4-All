@@ -192,7 +192,7 @@
                         {section name=list loop=$listeEntreprise}
                                 <td><B>{$listeEntreprise[list].nom_entreprise}</B></td>
                                 <td><a href="index.php?page=entreprise&action=info&value={$listeEntreprise[list].id_entreprise}" class="btn btn-info">Info</a></td>
-                                <td><a href="index.php?page=index&action=display_ent">Télécharger</a></td>
+                                <td><a href="index.php?page=entreprise&action=info&value={$listeEntreprise[list].id_entreprise}">Télécharger</a></td>
                             </tr>
                         {/section}
                         </tbody>

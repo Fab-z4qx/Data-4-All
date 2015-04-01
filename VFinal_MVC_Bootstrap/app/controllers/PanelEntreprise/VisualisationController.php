@@ -26,7 +26,7 @@ class VisualisationController extends Controller
    public function start($id_file)
    {
    	// ************************************************* //
-   	// ********* IL FAUT CONTROLER LA VALEUR de $ID_FILE *********** //
+   	// ***** IL FAUT CONTROLER LA VALEUR de $ID_FILE *** //
    	// ************************************************* //
 		$this->smarty->assign('nom_fichier',$id_file);
 		$this->pieGraphe($id_file);
