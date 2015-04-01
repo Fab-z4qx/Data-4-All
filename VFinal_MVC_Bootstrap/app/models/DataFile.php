@@ -143,7 +143,6 @@ class DataFile
 	public function getTypeAlea($id_file)
 	{
 		$sql = 'SELECT type_alea, count(*) as nb from '.$id_file.' group by type_alea';
-		var_dump($sql);
 		$req = $this->pdoData->query($sql);
 		$data = $req->fetchAll(PDO::FETCH_ASSOC);
 		return $data;
