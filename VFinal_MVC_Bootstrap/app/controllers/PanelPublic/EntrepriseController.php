@@ -36,20 +36,29 @@ class EntrepriseController extends Controller
 		if( isset($_POST) && !empty($_POST['nom']) )
 		{
 			$result = $ent->searchEntreprise($_POST['nom']);
+         if($result != null)
+         {
+            $dataFile = new DataFile($result['id_entreprise']);
+            $filesInfo = $dataFile->getFileInfo($result['id_entreprise']);
+            $this->smarty->assign('id_entreprise', $result['id_entreprise']);
+            $this->smarty->assign('fileinfo', $filesInfo);
+            $this->smarty->display(_TPL_PUBLIC_.'fichier_entreprise.tpl');
+         }
+         else{
+            echo "l'entreprise n'existe pas !";
+         }
 		}
-		else{
-			$this->display();
+		else
+      {
+
+			$this->smarty->display(_TPL_PUBLIC_.'enterprises.tpl');
 		}
    }
 
    public function info($value=null)
    {
-      echo '<pre>';
-      var_dump($value);
-      echo '</pre>';
       $dataFile = new DataFile($value);
       $filesInfo = $dataFile->getFileInfo($value);
-      var_dump($filesInfo);
       $this->smarty->assign('id_entreprise', $value);
       $this->smarty->assign('fileinfo', $filesInfo);
       $this->smarty->display(_TPL_PUBLIC_.'fichier_entreprise.tpl');
