@@ -38,8 +38,9 @@ message_contact TEXT,
 PRIMARY KEY (id_contact) ) ENGINE=InnoDB;
 
 DROP TABLE IF EXISTS fichiers ;
-CREATE TABLE fichiers (id_fichier INT  AUTO_INCREMENT NOT NULL,
+CREATE TABLE fichiers (id_fichier INT(35)  AUTO_INCREMENT NOT NULL,
 nom_fichier VARCHAR(40),
+id_fichier_entreprise VARCHAR(25),
 id_entreprise INT NOT NULL,
 PRIMARY KEY (id_fichier) ) ENGINE=InnoDB;
 

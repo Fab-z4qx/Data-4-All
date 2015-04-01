@@ -1,5 +1,4 @@
 <?php
-
 require 'Core/defines.php';
 require 'Core/RestServer.php';
 require '../app/core/database.php';
