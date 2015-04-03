@@ -120,7 +120,7 @@ class VisualisationController extends Controller
    {
       	$dataFile = new DataFile();
 		$data = $dataFile->getPiece($id_file);
-		$sql = 'SELECT Piece,sum(Nb__Pieces_finies) as nbPi, sum(Heures) as heure from '.$id_file.'  group by `Piece`order by heure';
+		$sql = 'SELECT Piece,sum(Nb__Pieces_finies) as nbPi, sum(Heures) as heure from `'.$id_file.'`  group by `Piece`order by heure';
 			
 		//$data1y=array();
 		$data2y=array();

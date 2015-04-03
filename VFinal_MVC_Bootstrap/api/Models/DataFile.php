@@ -81,7 +81,7 @@ class DataFile
 	}
 	
 	public function getPiece($id_file){
-		$sql = 'SELECT Piece,sum(Nb__Pieces_finies) as nbPi, sum(Heures) as heure from '.$id_file.'  group by `Piece`order by heure';
+		$sql = 'SELECT Piece,sum(Nb__Pieces_finies) as nbPi, sum(Heures) as heure from `'.$id_file.'`  group by `Piece`order by heure';
 		$req = $this->pdoData->query($sql);
 		$data = $req->fetchAll(PDO::FETCH_ASSOC);
 		return $data;
@@ -90,7 +90,7 @@ class DataFile
 	public function getData($id_ent, $id_file)
 	{
 		$this->getInstance($id_ent);
-		$sql = 'SELECT * from '.$id_file;
+		$sql = 'SELECT * from `'.$id_file.'`';
 		$req = $this->pdo->query($sql);
 		$data = $req->fetchAll(PDO::FETCH_ASSOC);
 		if(!empty($data)){
@@ -102,7 +102,7 @@ class DataFile
 	public function getDataRange($id_ent, $id_file, $range1, $range2)
 	{
 		$this->getInstance($id_ent);
-		$sql = 'SELECT * from '.$id_file.' LIMIT '.$range1.','.$range2;
+		$sql = 'SELECT * from `'.$id_file.'` LIMIT '.$range1.','.$range2;
 		$req = $this->pdo->query($sql);
 		$data = $req->fetchAll(PDO::FETCH_ASSOC);
 		if(!empty($data)){
@@ -114,7 +114,7 @@ class DataFile
 	public function getDataRangeCollumn($id_ent, $id_file, $collumn, $range1, $range2)
 	{
 		$this->getInstance($id_ent);
-		$sql = 'SELECT '.$collumn.' from '.$id_file.' LIMIT '.$range1.','.$range2;
+		$sql = 'SELECT '.$collumn.' from `'.$id_file.'` LIMIT '.$range1.','.$range2;
 		$req = $this->pdo->query($sql);
 		$data = $req->fetchAll(PDO::FETCH_ASSOC);
 		if(!empty($data)){
@@ -238,7 +238,7 @@ class DataFile
 
 	public function createTable($array, $name)
 	{
-		$tableCreate = 'CREATE TABLE IF NOT EXISTS '. $name .' (';
+		$tableCreate = 'CREATE TABLE IF NOT EXISTS `'. $name .'` (';
 
 		for($i = 0; $i < count($array[1]); $i++){
 		if($i > 0){
@@ -262,7 +262,7 @@ class DataFile
 		for($i = 1; $i < count($array); $i++)
 		{
 			$values = implode(",", $array[$i]);
-			$insertQuery = 'INSERT INTO '. $name . '('.$columnName.') VALUES('.$values.')';
+			$insertQuery = 'INSERT INTO `'. $name . '` ('.$columnName.') VALUES('.$values.')';
 			$this->pdo->exec($insertQuery);
 		}
 	} 

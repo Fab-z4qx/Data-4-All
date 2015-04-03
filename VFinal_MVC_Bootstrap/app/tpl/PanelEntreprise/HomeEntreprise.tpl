@@ -13,8 +13,6 @@
           title: "Nombres de fichiers",
           label: ""
         });
-
-
         
         var g2 = new JustGage({
           id: "g2", 

@@ -17,7 +17,8 @@ class DataFile
 	public function createTable($array, $name)
 	{
 		$id = $this->generateUUID();
-		$tableCreate = 'CREATE TABLE IF NOT EXISTS '. $id .' (';
+		$tableCreate = "CREATE TABLE IF NOT EXISTS `". $id ."` (";
+		//var_dump($tableCreate);
 
 		for($i = 0; $i < count($array[1]); $i++){
 		if($i > 0){
@@ -84,7 +85,7 @@ class DataFile
 		for($i = 1; $i < count($array); $i++)
 		{
 			$values = implode(",", $array[$i]);
-			$insertQuery = 'INSERT INTO '. $name . '('.$columnName.') VALUES('.$values.')';
+			$insertQuery = 'INSERT INTO  `'. $name . '` ('.$columnName.') VALUES('.$values.')';
 			$this->pdoData->exec($insertQuery);
 		}
 	}
@@ -142,7 +143,7 @@ class DataFile
 
 	public function getTypeAlea($id_file)
 	{
-		$sql = 'SELECT type_alea, count(*) as nb from '.$id_file.' group by type_alea';
+		$sql = 'SELECT type_alea, count(*) as nb from  `'.$id_file.'` group by type_alea';
 		$req = $this->pdoData->query($sql);
 		$data = $req->fetchAll(PDO::FETCH_ASSOC);
 		return $data;
@@ -158,7 +159,7 @@ class DataFile
 	}
 	
 	public function getPiece($id_file){
-		$sql = 'SELECT Piece,sum(Nb__Pieces_finies) as nbPi, sum(Heures) as heure from '.$id_file.'  group by `Piece`order by heure';
+		$sql = 'SELECT Piece,sum(Nb__Pieces_finies) as nbPi, sum(Heures) as heure from  `'.$id_file.'`  group by `Piece`order by heure';
 		$req = $this->pdoData->query($sql);
 		$data = $req->fetchAll(PDO::FETCH_ASSOC);
 		return $data;
