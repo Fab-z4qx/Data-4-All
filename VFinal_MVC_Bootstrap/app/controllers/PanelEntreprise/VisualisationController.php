@@ -28,7 +28,8 @@ class VisualisationController extends Controller
    	// ************************************************* //
    	// ***** IL FAUT CONTROLER LA VALEUR de $ID_FILE *** //
    	// ************************************************* //
-		$this->smarty->assign('nom_fichier',$id_file);
+   		$dataFile = new DataFile($_SESSION['info']['id_entreprise']);
+		$this->smarty->assign('nom_fichier',$dataFile->idToName($id_file));
 		$this->pieGraphe($id_file);
 		$this->plotGraphe($id_file);
 		$this->smarty->display(_TPL_ENT_.'visualisation.tpl');
@@ -76,7 +77,6 @@ class VisualisationController extends Controller
    private function pieGraphe($id_file)
    {
 	   	$dataFile = new DataFile();
-
 		$data = $dataFile->getTypeAlea($id_file);
 		$name = array();
 		$value = array();
