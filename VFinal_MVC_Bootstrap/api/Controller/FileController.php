@@ -1,6 +1,7 @@
 <?php
 
 require_once _MODEL_API_.'DataFile.php';
+require_once 'VisualisationController.php';
 
 class FileController
 {
@@ -12,7 +13,6 @@ class FileController
     public function test()
     {
         $data = new DataFile();
-        //$string = ""
         return "file test";
     }
 
@@ -27,6 +27,33 @@ class FileController
        $data = new DataFile();
        return $data->getFileName($id_ent);
     }
+
+
+     /** 
+     * Returns a JSON string object to the browser with all datafile name into db of entreprise
+     *
+     * @url GET /file/plot/$id_ent/$id_file
+     * @url GET /file/plot/$id_ent/$id_file/
+     */
+    public function getPlot($id_ent,$id_file){
+        $vis = new VisualisationController();
+        return $vis->getPlot($id_ent,$id_file);
+    }
+
+    /** 
+     * Returns a JSON string object to the browser with all datafile name into db of entreprise
+     *
+     * @url GET /file/collum/$id_ent/$id_file
+     * @url GET /file/collum/$id_ent/$id_file
+     */
+    public function getCollum($id_ent, $id_file)
+    {
+       $data = new DataFile();
+       return $data->getCollumName($id_ent, $id_file);
+    }
+
+
+
 
      /**
      * Returns a JSON string object to the browser with all datafile name into db of entreprise

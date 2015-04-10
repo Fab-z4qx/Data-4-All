@@ -2,6 +2,7 @@
 
 require_once _CORE_.'PHPExcel_1.8.0_doc/Classes/PHPExcel.php';
 require_once _CORE_API_.'/lib.php';
+//require_once _MODEL_API_.'VisualisationController.php';
 
 
 class DataFile 
@@ -62,14 +63,15 @@ class DataFile
 
 	}
 
-	/*
-	public function getTypeAlea($id_file)
+	
+	public function getTypeAlea($id_ent, $id_file)
 	{
-		$sql = 'SELECT type_alea, count(*) as nb from '.$id_file.' group by type_alea';
-		$req = $this->pdoData->query($sql);
+		$this->getInstance($id_ent);
+		$sql = 'SELECT type_alea, count(*) as nb from `'.$id_file.'` group by type_alea';
+		$req = $this->pdo->query($sql);
 		$data = $req->fetchAll(PDO::FETCH_ASSOC);
 		return $data;
-	}*/
+	}
 
 	public function getDbSize($id)
 	{
@@ -98,6 +100,21 @@ class DataFile
 		}
 		return NULL;
 	}
+
+	public function getCollumName($id_ent, $id_file)
+	{
+		$this->getInstance($id_ent);
+		$sql = 'DESCRIBE `'.$id_file.'`;';
+		//var_dump($sql);
+		$req = $this->pdo->query($sql);
+		$data = $req->fetchAll(PDO::FETCH_ASSOC);
+		if(!empty($data)){
+			return $data;
+		}
+		return NULL;
+	}
+
+
 
 	public function getDataRange($id_ent, $id_file, $range1, $range2)
 	{
