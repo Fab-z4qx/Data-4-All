@@ -1,7 +1,0 @@
-
-<section id="transparence">
-
-
-
-
-</section>
