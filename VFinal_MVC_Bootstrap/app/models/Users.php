@@ -51,7 +51,6 @@ class Users {
 				return 'admin';
 			break;
 		}
-		//return $data['role'];	
 	}
 
 

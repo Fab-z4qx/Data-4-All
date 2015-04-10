@@ -18,7 +18,6 @@ class DataFile
 	{
 		$id = $this->generateUUID();
 		$tableCreate = "CREATE TABLE IF NOT EXISTS `". $id ."` (";
-		//var_dump($tableCreate);
 
 		for($i = 0; $i < count($array[1]); $i++){
 		if($i > 0){

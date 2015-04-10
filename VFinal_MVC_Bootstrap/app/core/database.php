@@ -1,5 +1,6 @@
 <?php
 
+/* Classe PDO permettant de se connecter à la bdd */
 class Database {
    static protected $_instance = null;
    protected $_db;

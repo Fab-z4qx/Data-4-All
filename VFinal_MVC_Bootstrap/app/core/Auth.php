@@ -1,13 +1,9 @@
 <?php
 
-//require('common.inc.php');
-//require(ROOT_DIR.INCLUDES.'data4all.inc.php');
-//require(ROOT_DIR.INCLUDES.'fonctions.php');
-//require(ROOT_DIR.INCLUDES.'lib/lib.php');
-
 require_once(_MODEL_.'User.php');
 require_once(_MODEL_.'Entreprise.php');
 
+/* Classe permettant de gerer l'authentification */
 class Auth
 {
 	static function isAdmin()

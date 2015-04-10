@@ -128,7 +128,6 @@ class Entreprise {
        {
           //echo 'bdd Data cree';
        }
-       //$this->createTableInfo($bddData);
     }
 
     public function getListeEntreprise()

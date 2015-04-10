@@ -1,8 +1,9 @@
 <?php
   
-//require_once(_MODEL_.'entreprise.php');
 require_once(_MODEL_.'datafile.php');
 
+
+/* Classe permettant de gerer la page compte d'une entreprise */
 class CompteController extends Controller 
 {
    public function display() 

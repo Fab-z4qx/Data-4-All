@@ -3,11 +3,12 @@ require_once _CORE_.'PHPExcel_1.8.0_doc/Classes/PHPExcel/IOFactory.php';
 require_once _CORE_.'Lib.php';
 require_once(_MODEL_.'DataFile.php');
 
+
+/* Controller permettant de gerer la page "fichier" d'une entreprise */
 class GestionFichiersController extends Controller 
 {
    public function display() 
    {
-   	 //$pdo = Database::getInstance();
    	 $this->getFileName();
    	 $this->smarty->display(_TPL_ENT_.'gestionFichiers.tpl');
    }
@@ -39,7 +40,6 @@ class GestionFichiersController extends Controller
 
 		$target_dir = $target_dir.basename($_FILES["file"]["name"]);
 		$uploadOk=1;
-		//print_r($_FILES);
 		if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_dir)) 
 		{
 		    echo "The file ". basename( $_FILES["file"]["name"]). " has been uploaded.";
@@ -142,9 +142,6 @@ class GestionFichiersController extends Controller
 		$DataFile = new DataFile();
 		$id = $DataFile->createTable($array,$filename);
 		$DataFile->insert($array,$id);	
-
-		//$DataFile->createTable($array,$filename);
-		//$DataFile->insert($array,$filename);
 	}
 
 }

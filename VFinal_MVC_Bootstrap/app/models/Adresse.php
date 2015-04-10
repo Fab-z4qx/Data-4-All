@@ -9,7 +9,7 @@ class Adresse {
 
 	public function insert($adresse, $adresse_complementaire, $ville, $code_postal, $pays)
 	{
-		 $adresse_sql_req = "INSERT INTO `adresse` 
+		      $adresse_sql_req = "INSERT INTO `adresse` 
          (`id_adresse`, 
          `code_postal`, 
          `pays`, 
@@ -23,7 +23,6 @@ class Adresse {
          ".$this->pdo->quote($adresse_complementaire).",
          ".$this->pdo->quote($ville).");"; 
 
-		   //echo $adresse_sql_req;
          /* Ajout dans la table Entreprise */
          if($this->pdo->exec($adresse_sql_req))
          {
@@ -33,7 +32,6 @@ class Adresse {
 
     public function updateInfo($id_adresse, $addr, $adresse_complementaire, $ville, $code_postal, $pays)
     {
-        // var_dump($adrr);
         $sql = "UPDATE `bdd_d4a`.`adresse` SET
         `adresse` = '".$addr."',
         `adresse_complementaire` = '".$adresse_complementaire."', 

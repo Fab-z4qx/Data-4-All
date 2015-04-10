@@ -7,13 +7,6 @@ require_once(_MODEL_.'Contact.php');
 
 class FormulaireController extends Controller 
 {
-   //private $user;
-  /* public function __construct()
-   {
-      parent::__construct();
-   	 //$this->user = new Users;
-   } */ 
-
    public function display() 
    {
    	 //To Do

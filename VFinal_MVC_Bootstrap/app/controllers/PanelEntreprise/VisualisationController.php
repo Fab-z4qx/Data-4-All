@@ -6,11 +6,11 @@ require_once (_CORE_.'jpgraph/src/jpgraph_pie.php');
 require_once (_CORE_.'jpgraph/src/jpgraph_pie3d.php');
 require_once (_MODEL_.'DataFile.php');
 
+/* Controller de la page de visualisation d'une controller */
 class VisualisationController extends Controller 
 {
    public function display() 
    {
-   	 //$pdo = Database::getInstance();
    	 $this->getFileName();
    	 $this->smarty->display(_TPL_ENT_.'visualisation.tpl');
    }
@@ -37,11 +37,9 @@ class VisualisationController extends Controller
 
    public function getRawFile($id_file)
    {
-   		//echo "test";
    		$target = _FILES_.$_SESSION['info']['id_entreprise'].'/';
    		$temp =  _FILES_.'tmp/';
    		$nom = $id_file.".xls";
-   		//$poids = filesize($temp.$nom);
    		$finfo = finfo_open(FILEINFO_MIME_TYPE);
    		$info = finfo_file($finfo, $temp.$nom);
    		copy($target.$nom, $temp.$nom);
@@ -86,14 +84,7 @@ class VisualisationController extends Controller
 				array_push($value, $dat['nb']);
 			}
 		}
-		/*
-		while ($row = mysql_fetch_assoc($res)) 
-		{
-		    array_push($name, $row['type_alea']);
-			array_push($value, $row['nb']);
-		}*/
-		//print_r($name);
-		//print_r($value);
+		
 		$graph = new PieGraph(800,500,'auto');
 		$graph->SetScale("textlin");
 
@@ -112,7 +103,6 @@ class VisualisationController extends Controller
 	    $graph->SetMarginColor("#f5f5f5");
 		@unlink("graph.jpg"); 
 		$graph->Stroke("graph.jpg");
-		//$this->getFileName();
 		$this->smarty->assign('graph', '<img src="graph.jpg">' );
    }
 
@@ -121,8 +111,7 @@ class VisualisationController extends Controller
       	$dataFile = new DataFile();
 		$data = $dataFile->getPiece($id_file);
 		$sql = 'SELECT Piece,sum(Nb__Pieces_finies) as nbPi, sum(Heures) as heure from `'.$id_file.'`  group by `Piece`order by heure';
-			
-		//$data1y=array();
+
 		$data2y=array();
 		$data3y=array();
 		foreach ($data as $dat) {
@@ -148,7 +137,6 @@ class VisualisationController extends Controller
 		$graph->yaxis->HideTicks(false,false);
 
 		// Create the bar plots
-		//$b1plot = new BarPlot($data1y);
 		$b3plot = new BarPlot($data2y);
 
 		// Create the grouped bar plot
