@@ -11,6 +11,7 @@ define('DEFAULT_SIZE_BI','100');
 define('DEFAULT_SIZE_PREMUIM','200');
 
 
+/* Model permettant de manipuler la classe entreprise */
 class Entreprise {
 
 	private $pdo;

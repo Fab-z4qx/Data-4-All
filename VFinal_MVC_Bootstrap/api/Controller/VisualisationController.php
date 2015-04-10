@@ -4,6 +4,9 @@ require_once (_CORE_.'jpgraph/src/jpgraph_bar.php');
 require_once (_CORE_.'jpgraph/src/jpgraph_pie.php');
 require_once (_CORE_.'jpgraph/src/jpgraph_pie3d.php');
 
+
+/* Class permettant de faire le traitement sous forme de graphe */
+/* Il manque des choses par rapport à la version web */
 class VisualisationController 
 {
 
@@ -42,10 +45,6 @@ class VisualisationController
 		//return @unlink("graph.jpg"); 
 		$this->smarty->assign('graph', '<img src="graph.jpg">' );
    }
-
-
-
-
 }
 
 ?>

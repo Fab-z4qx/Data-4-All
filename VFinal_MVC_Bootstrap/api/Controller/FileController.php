@@ -3,6 +3,8 @@
 require_once _MODEL_API_.'DataFile.php';
 require_once 'VisualisationController.php';
 
+
+/* Controller permettant de consulter les données */
 class FileController
 {
     /**

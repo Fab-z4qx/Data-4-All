@@ -2,27 +2,17 @@
 
 require_once _CORE_.'PHPExcel_1.8.0_doc/Classes/PHPExcel.php';
 require_once _CORE_API_.'/lib.php';
-//require_once _MODEL_API_.'VisualisationController.php';
 
-
+/* Model permettant de manipuler les fichiers de données en bdd */
 class DataFile 
 {
 
 	private $pdo;
-	//private $pdoData;
-
-	/*public function __construct()
-	{
-		//$this->pdo = Database::getInstance();
-		//$this->pdoData = $this->pdo->getDbConnection('_'.$_SESSION['info']['id_entreprise']);
-	}
-	*/
 
 	/* Il faut check si l'id est valide */
 	private function getInstance($id)
 	{
 		$this->pdo = Database::getInstance('_'.$id);
-		//$this->pdo = $this->pdo->getDbConnection('_'.$id);
 	}
 
 	 /**
@@ -248,7 +238,6 @@ class DataFile
 			echo "Erreur lors du chargement du fichier";
 		}
 				
-		//$DataFile = new DataFile();
 		$this->createTable($array,$filename);
 		$this->insert($array,$filename);	
 	}
@@ -289,8 +278,6 @@ class DataFile
 	    $unit = array('B','KB','MB');
 	    return @round($bytes / pow(1024, ($i = floor(log($bytes, 1024)))), $precision).' '.$unit[$i];
    }
-
-  
 	
 }
 

@@ -6,8 +6,8 @@ require 'Controller/TestController.php';
 require 'Controller/EntrepriseController.php';
 require 'Controller/FileController.php';
 
-$server = new RestServer('debug');
-$server->addClass('TestController');
+//$server = new RestServer('debug');
+$server = new RestServer('production');
 $server->addClass('EntrepriseController');
 $server->addClass('FileController');
 $server->handle();

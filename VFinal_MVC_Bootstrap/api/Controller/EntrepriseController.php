@@ -2,6 +2,8 @@
 
 require_once _MODEL_API_.'Entreprise.php';
 
+
+/* Controller Entreprise */
 class EntrepriseController
 {
     /**
