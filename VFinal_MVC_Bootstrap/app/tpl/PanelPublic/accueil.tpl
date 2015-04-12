@@ -563,7 +563,7 @@
       <footer>
           <center>
         <a href="#">Retour au début</a>
-        <p>© 2015 Data4All · <a href="index.php?page=index&action=display_c">Contact</a> · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p>© 2015 Data4All · <a href="index.php?page=index&action=display_c">Contact</a> · <a href="web/img/CGV.pdf">Terms</a></p>
           </center>
       </footer>
 <!-- /FOOTER -->
