@@ -101,9 +101,9 @@ class VisualisationController extends Controller
 		$graph->legend->SetFrameWeight(2);
 		$graph->title->Set("Type d'evenement");
 	    $graph->SetMarginColor("#f5f5f5");
-		@unlink("graph.jpg"); 
-		$graph->Stroke("graph.jpg");
-		$this->smarty->assign('graph', '<img src="graph.jpg">' );
+		@unlink("web/img/graph.jpg"); 
+		$graph->Stroke("web/img/graph.jpg");
+		$this->smarty->assign('graph', '<img src="web/img/graph.jpg">' );
    }
 
    private function plotGraphe($id_file)
