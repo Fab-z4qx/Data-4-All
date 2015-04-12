@@ -100,11 +100,12 @@
             </div>
 
             
-
+	{if isset($graph)}
             <div class="span4" id="last_graph" style="margin-top: 4%;">
                 <div id="title_last_graph">Dernier Graph</div>
-                <img src="web/img/graph.jpg">
+                <img src={$graph}>
             </div>
+			{/if}
         </div>
         </div>
 
