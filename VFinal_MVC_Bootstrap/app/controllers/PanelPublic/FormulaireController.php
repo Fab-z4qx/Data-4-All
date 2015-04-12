@@ -84,8 +84,11 @@ class FormulaireController extends Controller
 
    public function verifValue()
    {
-         $valid = true;
-         extract($_POST);
+         //$valid = true;
+         //extract($_POST);
+
+         return true;
+         /*
          if( !verifierAdresseMail($email_entreprise) ) //Si les emails sont invalides
          {
             echo('<div class="information_invalide">Les emails ne sont pas des mail!</div>');
@@ -177,6 +180,7 @@ class FormulaireController extends Controller
             $valid = false;
          }
          return $valid;
+         */
    }
 
    public function contact()
