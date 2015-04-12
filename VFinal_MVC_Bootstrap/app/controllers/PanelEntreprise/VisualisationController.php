@@ -101,9 +101,9 @@ class VisualisationController extends Controller
 		$graph->legend->SetFrameWeight(2);
 		$graph->title->Set("Type d'evenement");
 	    $graph->SetMarginColor("#f5f5f5");
-		@unlink("graph.jpg"); 
-		$graph->Stroke("graph.jpg");
-		$this->smarty->assign('graph', '<img src="graph.jpg">' );
+		@unlink("web/img/graph.jpg"); 
+		$graph->Stroke("web/img/graph.jpg");
+		$this->smarty->assign('graph', '<img src="web/img/graph.jpg">' );
    }
 
    private function plotGraphe($id_file)
@@ -111,13 +111,13 @@ class VisualisationController extends Controller
       	$dataFile = new DataFile();
 		$data = $dataFile->getPiece($id_file);
 		$sql = 'SELECT Piece,sum(Nb__Pieces_finies) as nbPi, sum(Heures) as heure from `'.$id_file.'`  group by `Piece`order by heure';
-
-		$data2y=array();
-		$data3y=array();
+			
+		//$data1y=array();
+		$piece=array();
+		$heure=array();
 		foreach ($data as $dat) {
-				
-				array_push($data2y, $dat['nbPi']);
-				array_push($data3y, $dat['heure']);
+				array_push($piece, $dat['nbPi']);
+				array_push($heure, $dat['heure']);
 
 		}
 		
@@ -127,17 +127,17 @@ class VisualisationController extends Controller
 
 		$theme_class=new UniversalTheme;
 		$graph->SetTheme($theme_class);
-
-		$graph->yaxis->SetTickPositions($data3y);
+		
+		//Define axis property 
+		
+		//$graph->yaxis->SetTickPositions($data2y);
 		$graph->SetBox(false);
-
 		$graph->ygrid->SetFill(false);
-
 		$graph->yaxis->HideLine(false);
 		$graph->yaxis->HideTicks(false,false);
 
 		// Create the bar plots
-		$b3plot = new BarPlot($data2y);
+		$b3plot = new BarPlot($piece);
 
 		// Create the grouped bar plot
 		$gbplot = new GroupBarPlot(array($b3plot));
@@ -150,9 +150,9 @@ class VisualisationController extends Controller
 		$b3plot->SetFillColor("#1111cc");
 
 		$graph->title->Set("Bar Plots");
-		@unlink("graphPlot.jpg"); 
-		$graph->Stroke("graphPlot.jpg");
-		$this->smarty->assign('graphPlot', '<img src="graphPlot.jpg">' );
+		@unlink("web/img/graphPlot.jpg"); 
+		$graph->Stroke("web/img/graphPlot.jpg");
+		$this->smarty->assign('graphPlot', '<img src="web/img/graphPlot.jpg">' );
   	}
 }
 
