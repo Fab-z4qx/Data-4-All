@@ -24,7 +24,6 @@ INSERT INTO entreprise(nom_entreprise,email_entreprise,siret_entreprise,tel_entr
 VALUE ("EFREI","efrei@efrei.fr","73282932000074","0102050405","0105030405","SAS","Ecole",1,104857600,3);
 
 
-
 INSERT INTO user(password,login,role,entreprise_id_entreprise) VALUE("782dd27ea8e3b4f4095ffa38eeb4d20b59069077","d4a@gmail.com",2,1);
 INSERT INTO user(password,login,role,entreprise_id_entreprise) VALUE("782dd27ea8e3b4f4095ffa38eeb4d20b59069077","bosch@gmail.com,2,2);
 INSERT INTO user(password,login,role,entreprise_id_entreprise) VALUE("782dd27ea8e3b4f4095ffa38eeb4d20b59069077","sanofi@gmail.com",2,3);

@@ -6,17 +6,17 @@ class HomeEntrepriseController extends Controller
    public function display() 
    {
    	   $entreprise = new Entreprise();
-	   echo $entreprise->getNumberFile($_SESSION['info']['id_entreprise']);
+	   //echo $entreprise->getNumberFile($_SESSION['info']['id_entreprise']);
 		if($entreprise->getNumberFile($_SESSION['info']['id_entreprise']) > 0){
 			$this->smarty->assign('numberOfFile', $entreprise->getNumberFile($_SESSION['info']['id_entreprise']));
 		}else{
-			echo "ici";
+			//echo "ici";
 				$this->smarty->assign('numberOfFile', 0);
 		}
 		if($entreprise->getUse($_SESSION['info']['id_entreprise']) > 0){
 			$this->smarty->assign('space', $entreprise->getNumberFile($_SESSION['info']['id_entreprise']));
 		}else{
-			echo "ici";
+			//echo "ici";
 				$this->smarty->assign('space', 0);
 		}
 		if(file_exists("web/img/graph.jpg")){
